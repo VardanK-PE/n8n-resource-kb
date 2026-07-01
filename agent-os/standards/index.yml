@@ -1,0 +1,29 @@
+# Agent OS Standards Index
+
+notes:
+  - id: notes/auto-manual-blocks
+    file: notes/auto-manual-blocks.md
+    summary: Guarded auto / manual block markers and the contract that refresh never touches manual content.
+  - id: notes/frontmatter-schema
+    file: notes/frontmatter-schema.md
+    summary: YAML frontmatter shape for workflow, resource, and changelog notes; refresh-owned vs. manual-editable keys.
+
+sync:
+  - id: sync/resource-taxonomy
+    file: sync/resource-taxonomy.md
+    summary: n8n node-type → vault resource-category mapping for v1, plus the open-taxonomy rule (flag unknowns in the changelog).
+  - id: sync/fingerprint
+    file: sync/fingerprint.md
+    summary: SHA-256 hash over a canonical workflow projection (nodes, connections, settings, extracted resources). Drives change detection.
+  - id: sync/refresh-procedure
+    file: sync/refresh-procedure.md
+    summary: End-to-end runbook for "refresh the vault" intents. Uses n8n REST API via curl + jq; composes every other standard.
+  - id: sync/reverse-lookup
+    file: sync/reverse-lookup.md
+    summary: Runbook for "what uses X?" intents. Reads resource notes via plain file I/O; never modifies them.
+  - id: sync/changelog-format
+    file: sync/changelog-format.md
+    summary: Required structure for vault/changelogs/YYYY-MM-DD.md notes, including taxonomy-gap entries.
+  - id: sync/large-workflow-handling
+    file: sync/large-workflow-handling.md
+    summary: How to work with hundred-KB-scale workflow JSON without blowing context — cache to vault/_cache/, extract via scripts/jq/*.jq, never Read raw JSON.

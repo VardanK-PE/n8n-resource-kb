@@ -1,0 +1,37 @@
+---
+type: database
+resource_id: "postgres/6GBwfPL6n9QZ81ho"
+current_name: "postgres (via Postgres Sandbox-Live)"
+aliases: ["postgres (via Postgres Sandbox-Live)","postgres (via Postgres account 2)"]
+auto_generated_at: 2026-06-01T22:51:45Z
+---
+
+<!-- auto:start -->
+
+# postgres (via Postgres Sandbox-Live)
+
+- **Resource id (canonical):** `postgres/6GBwfPL6n9QZ81ho`
+- **Current name:** postgres (via Postgres Sandbox-Live)
+- **Historical aliases:**
+  - postgres (via Postgres Sandbox-Live)
+  - postgres (via Postgres account 2)
+- **Engine:** `postgres`
+- **Credential:** Postgres Sandbox-Live
+
+## Used by
+
+- [[../../workflows/olb-sandbox-login-monitoring|OLB Sandbox Login Monitoring]] — op `executeQuery` — node "Postgres" (id `0c952a62-4703-4454-ba53-7216bfd8d7df`)
+- [[../../workflows/sandbox-live-maroo-testing|Sandbox Live - Maroo Testing]] — op `executeQuery` — node "Postgres" (id `856757db-c47e-44a9-adb5-81d6898e73bf`)
+- [[../../workflows/sandbox-live-maroo-testing|Sandbox Live - Maroo Testing]] — op `select`, table `{"__rl":true,"value":"account_groups","mode":"list","cachedResultName":"account_groups"}` — node "Postgres1" (id `def2e646-c77e-4372-85cc-42c74537fe2b`)
+- [[../../workflows/service-titan-failed-payments-sandox|Service-Titan Failed Payments (sandox)]] — op `executeQuery` — node "Postgres" (id `7039d945-251a-4291-8b29-ab6948421c15`)
+- [[../../workflows/st-sandbox-logs-monitor|ST Sandbox Logs Monitor]] — op `executeQuery` — node "Postgres" (id `6fe3fea5-2332-498d-96b5-e2e5cb95354a`)
+- [[../../workflows/st-sandbox-logs-monitor|ST Sandbox Logs Monitor]] — op `executeQuery` — node "Postgres1" (id `e3025fe2-e7e1-45f1-963e-954d230bc101`)
+- [[../../workflows/st-sandbox-logs-monitor|ST Sandbox Logs Monitor]] — op `executeQuery` — node "Postgres2" (id `b31fcb5f-d6d4-4b3b-9301-8678f8173837`)
+
+<!-- auto:end -->
+
+<!-- manual:start -->
+
+<!-- Add owner, criticality, runbook URL, rotation cadence, etc. -->
+
+<!-- manual:end -->

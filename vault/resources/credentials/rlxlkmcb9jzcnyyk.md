@@ -1,0 +1,32 @@
+---
+type: credential
+resource_id: "rlXLkMcb9jzcnYYK"
+current_name: "Postgres ST production read replica"
+aliases: ["Postgres ST production read replica"]
+auto_generated_at: 2026-06-01T22:51:45Z
+---
+
+<!-- auto:start -->
+
+# Postgres ST production read replica
+
+- **Resource id (canonical):** `rlXLkMcb9jzcnYYK`
+- **Current name:** Postgres ST production read replica
+- **n8n credential type:** `postgres`
+
+## Used by
+
+- [[../../workflows/pe-mcp-server|PE MCP Server]] — node "ServiceTitan Account Postgress DB" (id `61b822e6-6e8d-4426-a2a6-a62c25732b9a`)
+- [[../../workflows/pe-mcp-server-code-library-executor|PE MCP Server: Code Library Executor]] — node "Execute a SQL query" (id `3112c9dc-2c49-4a67-abe3-c28a79047b2f`)
+- [[../../workflows/pe-mid-status-scanner|PE Mid Status Scanner]] — node "Execute a SQL query1" (id `6d7176ff-1f88-43e6-92c7-66b4cc0f2677`)
+- [[../../workflows/service-titan-failed-payments-prod|Service-Titan Failed Payments (prod)]] — node "Postgres" (id `7631373d-1d00-4cd6-9b6d-81a316e9cd36`)
+- [[../../workflows/shiftagent-ai-related|ShiftAgent AI Related]] — node "Execute a SQL query1" (id `b4f2424a-ba46-450a-a56a-873884eb17b0`)
+- [[../../workflows/st-prod-logs-monitor|ST Prod Logs Monitor]] — node "Postgres" (id `b8a0bd88-7b84-4f3b-a794-f83786bea116`)
+
+<!-- auto:end -->
+
+<!-- manual:start -->
+
+<!-- Add owner, criticality, runbook URL, rotation cadence, etc. -->
+
+<!-- manual:end -->
