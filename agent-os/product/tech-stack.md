@@ -1,6 +1,6 @@
 # Tech Stack
 
-This product has no traditional frontend/backend split. It is a **knowledge base composed of markdown files**, with sync driven by an existing CLI assistant (Claude Code) talking to two MCP servers.
+This product has no traditional frontend/backend split. It is a **knowledge base composed of markdown files**, with sync driven by an existing CLI assistant (Claude Code) talking to the n8n REST API and writing markdown directly.
 
 ## Storage / "Frontend"
 
@@ -19,9 +19,11 @@ This product has no traditional frontend/backend split. It is a **knowledge base
 ## Sync Engine
 
 - **Claude Code** (this CLI) is the sync engine. There is no standalone service to deploy. Refresh runs on-demand when the user triggers it through Claude.
-- **MCP tools used**:
-  - `n8n-mcp` — fetches workflow definitions, schemas, and metadata from the n8n instance. Skills already present in this environment: `n8n-mcp-tools-expert`, `n8n-node-configuration`, `n8n-workflow-patterns`, `n8n-expression-syntax`, `n8n-validation-expert`.
-  - `obsidian` MCP — reads, writes, lists, and searches notes in the vault (`mcp__obsidian__read_note`, `write_note`, `patch_note`, `search_notes`, `list_directory`, `get_frontmatter`, `update_frontmatter`, etc.).
+- **Tooling used**:
+  - **n8n REST API** via `curl` + `jq` — the source of truth for n8n state. Auth from `.env` (`N8N_API_URL`, `N8N_API_KEY`). Endpoints: `GET /api/v1/workflows`, `GET /api/v1/workflows/{id}`.
+  - **`jq` programs under `scripts/jq/`** — every workflow-JSON extraction goes through these pre-written scripts rather than inline `jq`. Full workflow JSON is cached under `vault/_cache/workflows/<id>.json` (gitignored) and read only through `jq` projections, never loaded whole into context.
+  - **Plain file I/O** — `Read` for existing notes, `Write` for new notes, and `Edit` (exact-match against the auto block) for updates, so the manual-annotation block is never clobbered.
+- **Not used at runtime**: the `n8n-mcp` MCP server (unstable on this instance) and the `obsidian` MCP server (points at an unrelated vault). The n8n-focused skills (`n8n-mcp-tools-expert`, `n8n-node-configuration`, `n8n-workflow-patterns`, `n8n-expression-syntax`, `n8n-validation-expert`) remain useful as **reference docs** when investigating an unfamiliar node.
 
 ## Change Detection
 
@@ -37,5 +39,5 @@ N/A — there is no database. The vault and the live n8n instance together hold 
 
 ## Other
 
-- **Optional git** — committing the vault gives durable history of both auto-generated content and manual annotations. Recommended but not required.
+- **git** — this repo is the durability layer, giving history of both auto-generated content and manual annotations. The vault, tooling, and docs are tracked; credentials, `.mcp.json`, and `vault/_cache/` are gitignored (see `.gitignore` and `README.md`).
 - **No CI/CD** for this product itself; refresh is interactive.
