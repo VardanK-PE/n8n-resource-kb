@@ -4,7 +4,7 @@ instance: v1
 resource_id: "15sOF5RlRQ_CX6RM6iO_-kib6_JpNfOlq9JSUvjILwrU"
 current_name: "N8N_ElavonCardType"
 aliases: ["N8N_ElavonCardType"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

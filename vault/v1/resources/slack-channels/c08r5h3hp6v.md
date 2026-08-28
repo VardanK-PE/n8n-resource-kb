@@ -4,7 +4,7 @@ instance: v1
 resource_id: "C08R5H3HP6V"
 current_name: "corksy-event-logs"
 aliases: ["corksy-event-logs"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

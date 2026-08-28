@@ -4,7 +4,7 @@ instance: v1
 resource_id: "C09SG9L3ZGW"
 current_name: "ops-automation-alert"
 aliases: ["C09SG9L3ZGW","ops-automation-alert"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

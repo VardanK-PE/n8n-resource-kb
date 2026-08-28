@@ -4,7 +4,7 @@ instance: v1
 resource_id: "1IqpXV6R46OaRRitTb7ZvuWa6ZJntKyIMagJQ6aerpj0"
 current_name: "Hearth - Elavon Whitelist Merchants (Aug 2025)"
 aliases: ["Hearth - Elavon Whitelist Merchants (Aug 2025)"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

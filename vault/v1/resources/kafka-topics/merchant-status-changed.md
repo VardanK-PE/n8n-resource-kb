@@ -4,7 +4,7 @@ instance: v1
 resource_id: "merchant_status_changed"
 current_name: "merchant_status_changed"
 aliases: ["merchant_status_changed"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

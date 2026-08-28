@@ -4,7 +4,7 @@ instance: v1
 resource_id: "C06HAPHNNEM"
 current_name: "wishtender-internal"
 aliases: ["wishtender-internal"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

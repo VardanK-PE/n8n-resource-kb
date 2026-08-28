@@ -4,7 +4,7 @@ instance: v1
 resource_id: "1aoWq5oVLnV58G6uMm3k8OlY6na1EMM5VmnSq__YI_v4"
 current_name: "PE Residuals Financial Tracker"
 aliases: ["PE Residuals Financial Tracker"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
@@ -18,8 +18,8 @@ auto_generated_at: 2026-08-19T19:25:44Z
 
 ## Used by
 
-- [[../../workflows/financial-tracker|Financial Tracker]] — op `?`, tab `General` — node "Get row(s) in sheet1" (id `54764ec8-6dcf-4ebb-941e-31f6f44cb4dd`)
 - [[../../workflows/financial-tracker|Financial Tracker]] — op `appendOrUpdate`, tab `General` — node "Append or update row in sheet" (id `1b7d4a13-8b8f-43d9-bd92-31bfd1b181c2`)
+- [[../../workflows/financial-tracker|Financial Tracker]] — op `?`, tab `General` — node "Get row(s) in sheet1" (id `54764ec8-6dcf-4ebb-941e-31f6f44cb4dd`)
 - [[../../workflows/financial-tracker|Financial Tracker]] — op `update`, tab `General` — node "Update row in sheet" (id `4fe37fe0-29e3-415d-b393-398a108e56fd`)
 
 <!-- auto:end -->

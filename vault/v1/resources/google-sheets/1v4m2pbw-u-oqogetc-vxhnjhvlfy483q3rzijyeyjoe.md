@@ -4,7 +4,7 @@ instance: v1
 resource_id: "1v4m2pBw-U_oqogEtc-VXHNJhVlfY483Q3rZIJyEYJOE"
 current_name: "pe_receipt"
 aliases: ["pe_receipt"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

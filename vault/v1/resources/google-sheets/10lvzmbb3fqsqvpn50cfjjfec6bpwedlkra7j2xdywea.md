@@ -4,7 +4,7 @@ instance: v1
 resource_id: "10LvzmBB3FqSQVPN50cfJjFEC6BPwEDlkRA7j2xDYWeA"
 current_name: "ST Statements Analysis 2024-08-15"
 aliases: ["ST Statements Analysis 2024-08-15"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

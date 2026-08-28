@@ -4,7 +4,7 @@ instance: v1
 resource_id: "C09B9GX9RF1"
 current_name: "hearth-dispute-alerts"
 aliases: ["hearth-dispute-alerts"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
@@ -17,7 +17,7 @@ auto_generated_at: 2026-06-01T22:51:45Z
 
 ## Used by
 
-- [[../../workflows/elavon-disputes-send-hearth-notifications|Elavon Disputes - Send Hearth Notifications]] — node "Send a message4" (id `decd8075-b490-4df8-bf5d-792063efe196`)
+- [[../../workflows/elavon-disputes-send-hearth-notifications|Elavon Disputes - Send Hearth Notifications]] — node "Send a message6" (id `0629a3ac-21ff-460c-b209-44fce49e6544`)
 
 <!-- auto:end -->
 

@@ -4,7 +4,7 @@ instance: v1
 resource_id: "CSjokKL6yO9ScGCu"
 current_name: "ShiftAget PG Access API Key"
 aliases: ["ShiftAget PG Access API Key"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

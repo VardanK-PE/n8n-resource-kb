@@ -6,7 +6,7 @@ status: inactive
 last_modified: 2026-06-12T14:34:30.758Z
 tags: []
 fingerprint: "e48afa010962707d5c2652e967f504f76e1e66932167aaa0e4f08a950fc3dc1a"
-auto_generated_at: 2026-08-19T19:13:32Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
@@ -204,14 +204,14 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 ### Sub-workflows (Execute Workflow calls)
 
-- [[payengineai-bot-v1-1-feb-26-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Read Emails1" (id `11f7549b-1d2e-4d7a-978f-6b4b1a37b298`)
-- [[payengineai-bot-v1-1-feb-26-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Call Onboarding Correspondence Aging Report Tool" (id `310cc45c-3df1-488a-a764-cd7f2d62c6d4`)
-- [[payengineai-bot-v1-1-feb-26-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Execute Workflow1" (id `43b8ed31-72b1-4302-9ca0-35a8264ecb78`)
+- [[payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Read Emails1" (id `11f7549b-1d2e-4d7a-978f-6b4b1a37b298`)
+- [[payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Call Onboarding Correspondence Aging Report Tool" (id `310cc45c-3df1-488a-a764-cd7f2d62c6d4`)
+- [[payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Execute Workflow1" (id `43b8ed31-72b1-4302-9ca0-35a8264ecb78`)
 - [[onboarding-correspondence-aging|Onboarding Correspondence Aging]] (n8n_id `DjgdzbbtR7fJ4oWX`) — node "Run Correspondence Aging Report" (id `5143dd76-b493-494f-8294-6705adab3692`)
-- [[payengineai-bot-v1-1-feb-26-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Call PayEngineBot" (id `62637110-e235-42aa-9a03-430217a54e6a`)
+- [[payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Call PayEngineBot" (id `62637110-e235-42aa-9a03-430217a54e6a`)
 - [[slack-create-a-base-message|Slack - Create a base message]] (n8n_id `VQPaemuwy6FdMa9L`) — node "Call 'Slack - Create a base message'" (id `6b63778a-2f8a-4ca2-86d1-8b97843b8e67`)
 - [[slack-create-a-base-message|Slack - Create a base message]] (n8n_id `VQPaemuwy6FdMa9L`) — node "Call 'Slack - Create a base message'1" (id `73043feb-a0f5-4053-b837-d4046e9c35d0`)
-- [[payengineai-bot-v1-1-feb-26-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Create Draft In Merchants Inbox1" (id `89bff1a0-36a7-4bc8-b9c3-fc33d0f578f9`)
+- [[payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Create Draft In Merchants Inbox1" (id `89bff1a0-36a7-4bc8-b9c3-fc33d0f578f9`)
 - [[elavon-ach-exemption-form-generator|Elavon ACH Exemption Form Generator]] (n8n_id `c4rexPHrWGfGDBUP`) — node "Elavon ECS/ACH Max Check Size Generator" (id `b9c2a6b3-cdcf-4c47-b873-3c4ac5037e24`)
 
 ## Used by (workflows)

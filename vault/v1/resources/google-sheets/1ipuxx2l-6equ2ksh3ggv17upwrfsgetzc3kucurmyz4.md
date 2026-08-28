@@ -4,7 +4,7 @@ instance: v1
 resource_id: "1iPUxX2L-6equ2ksh3GGv17upwrfSGEtzC3kucUrmyZ4"
 current_name: "Canadian Merchants - failed transactions"
 aliases: ["Canadian Merchants - failed transactions"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

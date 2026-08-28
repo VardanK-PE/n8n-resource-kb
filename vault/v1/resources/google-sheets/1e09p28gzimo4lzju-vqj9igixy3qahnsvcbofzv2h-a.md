@@ -4,7 +4,7 @@ instance: v1
 resource_id: "1e09P28gzIMO4lzjU-VQJ9iGIxy3QaHNsvcbOfzV2H_A"
 current_name: "SuperMove Datastore"
 aliases: ["SuperMove Datastore"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
@@ -18,9 +18,9 @@ auto_generated_at: 2026-08-19T19:25:44Z
 
 ## Used by
 
-- [[../../workflows/send-supermove-statements|Send Supermove Statements]] — op `?`, tab `Statements Data` — node "Get row(s) in sheet" (id `25b40ce6-7f8a-45d6-b139-7388f9c0adcf`)
 - [[../../workflows/send-supermove-statements|Send Supermove Statements]] — op `appendOrUpdate`, tab `Statements Data` — node "Append or update row in sheet" (id `2be98359-6ffb-4750-9914-3dafd4aaefe9`)
 - [[../../workflows/send-supermove-statements|Send Supermove Statements]] — op `appendOrUpdate`, tab `Statements Data` — node "Append or update row in sheet1" (id `27445fbd-492a-418d-9f1d-f61dffe40e1d`)
+- [[../../workflows/send-supermove-statements|Send Supermove Statements]] — op `?`, tab `Statements Data` — node "Get row(s) in sheet" (id `25b40ce6-7f8a-45d6-b139-7388f9c0adcf`)
 
 <!-- auto:end -->
 

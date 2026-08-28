@@ -4,7 +4,7 @@ instance: v1
 resource_id: "1hXh00hKHzsKiwUPGAyf-BljqVRVJtY0m88gx4h9zbrI"
 current_name: "N8N Quick Book Logs"
 aliases: ["N8N Quick Book Logs"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

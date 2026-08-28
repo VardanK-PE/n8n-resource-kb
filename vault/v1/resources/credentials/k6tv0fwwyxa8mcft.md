@@ -4,7 +4,7 @@ instance: v1
 resource_id: "k6tV0FwwyXa8mcFt"
 current_name: "N8N 1Pass Connect Server Auth"
 aliases: ["N8N 1Pass Connect Server Auth"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

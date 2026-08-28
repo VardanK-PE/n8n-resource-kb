@@ -4,7 +4,7 @@ instance: v1
 resource_id: "auth-next.servicetitan.io"
 current_name: "auth-next.servicetitan.io"
 aliases: ["auth-next.servicetitan.io"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
@@ -17,7 +17,7 @@ auto_generated_at: 2026-08-19T19:25:44Z
 
 ## Used by
 
-- [[../../workflows/develotech|Develotech ServiceTitan]] — `POST https://auth-next.servicetitan.io/connect/token` — node "Obtain Access Token (NEXT env)" (id `e4592cd7-8b87-460c-8d29-2c42b630624f`)
+- [[../../workflows/develotech-servicetitan|Develotech ServiceTitan]] — `POST https://auth-next.servicetitan.io/connect/token` — node "Obtain Access Token (NEXT env)" (id `e4592cd7-8b87-460c-8d29-2c42b630624f`)
 
 <!-- auto:end -->
 

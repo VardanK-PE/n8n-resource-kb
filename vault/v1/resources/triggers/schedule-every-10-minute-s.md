@@ -4,7 +4,7 @@ instance: v1
 resource_id: "schedule:every 10 minute(s)"
 current_name: "schedule — every 10 minute(s)"
 aliases: ["schedule — every 10 minute(s)"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

@@ -4,7 +4,7 @@ instance: v1
 resource_id: "postgres/JC4f45um3UjQ28Gc"
 current_name: "postgres (via PF Prod Device Management Replica)"
 aliases: ["postgres (via PF Prod Device Management Replica)"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

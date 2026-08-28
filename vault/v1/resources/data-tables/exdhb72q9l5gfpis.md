@@ -4,7 +4,7 @@ instance: v1
 resource_id: "ExDhB72Q9l5GfPiS"
 current_name: "PAX - Terminal Details"
 aliases: ["PAX - Terminal Details"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

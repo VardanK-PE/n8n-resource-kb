@@ -4,7 +4,7 @@ instance: v1
 resource_id: "logs.us-east-1.amazonaws.com"
 current_name: "logs.us-east-1.amazonaws.com"
 aliases: ["logs.us-east-1.amazonaws.com"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

@@ -4,7 +4,7 @@ instance: v1
 resource_id: "1p0WzyFJTzvL0gEdpAlToMIJb6k8wBAxQ"
 current_name: "Generated Reports"
 aliases: ["Generated Reports"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

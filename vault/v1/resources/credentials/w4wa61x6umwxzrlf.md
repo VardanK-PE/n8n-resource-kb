@@ -4,7 +4,7 @@ instance: v1
 resource_id: "w4wa61x6UmWXzrlF"
 current_name: "Elavon Disputes API (Sandbox)"
 aliases: ["Elavon Disputes API (Sandbox)"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

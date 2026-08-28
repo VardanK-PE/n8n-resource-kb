@@ -2,11 +2,11 @@
 n8n_id: "QbFajy9S4G2FxoCb"
 instance: v1
 name: "[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)"
-status: inactive
+status: archived
 last_modified: 2026-01-16T01:52:20.595Z
 tags: []
 fingerprint: "fdba6fb86f8db9863cff4dfeae6c63d81f4cc95fecb04738abe962371a7443f7"
-auto_generated_at: 2026-08-19T19:13:32Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
@@ -15,7 +15,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 ## Summary
 
-- **Status:** inactive
+- **Status:** archived
 - **n8n ID:** `QbFajy9S4G2FxoCb`
 - **Nodes:** 12
 - **Last modified:** 2026-01-16T01:52:20.595Z

@@ -4,7 +4,7 @@ instance: v1
 resource_id: "1gQr78vvR-bot-qJk1R4X9Ub0W7g7MyJb"
 current_name: "Merchant Processing Statements"
 aliases: ["Merchant Processing Statements"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
