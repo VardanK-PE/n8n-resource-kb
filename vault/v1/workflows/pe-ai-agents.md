@@ -3,10 +3,10 @@ n8n_id: "8fQ3h68w8VAanRCJ"
 instance: v1
 name: "PE AI Agents"
 status: active
-last_modified: 2026-02-09T21:30:27.069Z
+last_modified: 2026-08-27T18:43:42.163Z
 tags: []
-fingerprint: "d5fb941e6994868b7c5fb29933d9c373509aa90921121b7e5c3abafee7d807a9"
-auto_generated_at: 2026-06-01T22:51:45Z
+fingerprint: "38252a1c3a9f5b0f27aecb0aad5790fbd091218345ea179c59a32f46501149c5"
+auto_generated_at: 2026-08-28T21:13:05Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-06-01T22:51:45Z
 - **Status:** active
 - **n8n ID:** `8fQ3h68w8VAanRCJ`
 - **Nodes:** 31
-- **Last modified:** 2026-02-09T21:30:27.069Z
+- **Last modified:** 2026-08-27T18:43:42.163Z
 
 ## Triggers
 
@@ -33,7 +33,7 @@ auto_generated_at: 2026-06-01T22:51:45Z
 - [[../resources/credentials/oucdlrjl56jcwuca|PE Merchants Gmail Account (merchants@platformfactory.io)]] (`gmailOAuth2`, id `OUcDLrjl56jcWUCa`) — node "Create Email Drafts" (id `14e9bd85-18bd-4b24-949d-3dd0af153223`)
 - [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack2" (id `2cb420b3-4f67-47f1-8def-fadc303c1b77`)
 - [[../resources/credentials/oucdlrjl56jcwuca|PE Merchants Gmail Account (merchants@platformfactory.io)]] (`gmailOAuth2`, id `OUcDLrjl56jcWUCa`) — node "Create a draft in Gmail" (id `323e41cf-5c37-45c2-a783-5237da4907ca`)
-- [[../resources/credentials/godp5gdyjaspv2fj|Anthropic (spartak@platformfactory.io)]] (`anthropicApi`, id `Godp5GdYJAspV2fj`) — node "Anthropic Chat Model" (id `44cad096-a038-42a3-a6ea-7811cb5b523c`)
+- [[../resources/credentials/godp5gdyjaspv2fj|Anthropic (spartak@platformfactory.io) n8n 2026]] (`anthropicApi`, id `Godp5GdYJAspV2fj`) — node "Anthropic Chat Model" (id `44cad096-a038-42a3-a6ea-7811cb5b523c`)
 - [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Upload a file1" (id `50e22646-6b94-4c79-862c-bdeb60597631`)
 - [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Create a document in Google Docs" (id `56ada100-1b89-43bc-9dab-93badb042ccc`)
 - [[../resources/credentials/bcxreaoevqmwbtnu|PE Sandbox-Live (Overlay Access)]] (`postgres`, id `BCXReaoEvQMwbTNU`) — node "Agents Status Maintenance Tool" (id `63943f2f-32e7-4568-8058-29e9f3e56e03`)
@@ -55,7 +55,7 @@ auto_generated_at: 2026-06-01T22:51:45Z
 
 ### LLM models
 
-- [[../resources/llm-models/anthropic-claude-sonnet-4-5-20250929|anthropic / claude-sonnet-4-5-20250929]] — node "Anthropic Chat Model" (id `44cad096-a038-42a3-a6ea-7811cb5b523c`)
+- [[../resources/llm-models/anthropic-claude-sonnet-5|anthropic / claude-sonnet-5]] — node "Anthropic Chat Model" (id `44cad096-a038-42a3-a6ea-7811cb5b523c`)
 
 ### Slack channels
 

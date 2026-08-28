@@ -3,10 +3,10 @@ n8n_id: "CGjiDoLZSquAGct0"
 instance: v1
 name: "ECS Enrollment Response Processor"
 status: active
-last_modified: 2025-09-29T15:48:56.947Z
+last_modified: 2026-08-27T18:33:02.053Z
 tags: []
-fingerprint: "269b0adc13e5403daa8a742cd3f7394ece2d864719c83239d28cdb6ca8bd4ec4"
-auto_generated_at: 2026-06-01T22:51:45Z
+fingerprint: "752589b55288eb86b5682a821affc28e885a69e69b0c657255f22db5d9882c10"
+auto_generated_at: 2026-08-28T21:13:05Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-06-01T22:51:45Z
 - **Status:** active
 - **n8n ID:** `CGjiDoLZSquAGct0`
 - **Nodes:** 18
-- **Last modified:** 2025-09-29T15:48:56.947Z
+- **Last modified:** 2026-08-27T18:33:02.053Z
 
 ## Triggers
 
@@ -29,15 +29,15 @@ auto_generated_at: 2026-06-01T22:51:45Z
 
 ### Credentials
 
-- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Get Sent Docs1" (id `18473c2d-7e19-48be-a2b1-cdd2cb6cbdb9`)
-- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Get Sent Docs" (id `a5ae38a0-5eeb-4cef-ae80-eb61f4512dea`)
-- [[../resources/credentials/1jtiaqogn0rcfpc1|Anthropic account]] (`anthropicApi`, id `1jtIAQOGn0RcFpc1`) — node "Anthropic Chat Model" (id `becc271a-1fb0-46f1-8f1e-d82ab296e1ec`)
+- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Get Sent Docs1" (id `18473c2d-7e19-48be-a2b1-cdd2cb6cbdb9`)
+- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Get Sent Docs" (id `a5ae38a0-5eeb-4cef-ae80-eb61f4512dea`)
+- [[../resources/credentials/1jtiaqogn0rcfpc1|Anthropic account (n8n api key)]] (`anthropicApi`, id `1jtIAQOGn0RcFpc1`) — node "Anthropic Chat Model" (id `becc271a-1fb0-46f1-8f1e-d82ab296e1ec`)
 - [[../resources/credentials/oucdlrjl56jcwuca|PE Merchants Gmail Account (merchants@platformfactory.io)]] (`gmailOAuth2`, id `OUcDLrjl56jcWUCa`) — node "Get many messages1" (id `cefa0b21-0870-4444-b181-0150700d4ef8`)
 - [[../resources/credentials/oucdlrjl56jcwuca|PE Merchants Gmail Account (merchants@platformfactory.io)]] (`gmailOAuth2`, id `OUcDLrjl56jcWUCa`) — node "Receipt Confirmation" (id `f3a17385-210c-4da3-b9f3-819c8c8cfbd6`)
 
 ### LLM models
 
-- [[../resources/llm-models/anthropic-claude-sonnet-4-20250514|anthropic / claude-sonnet-4-20250514]] — node "Anthropic Chat Model" (id `becc271a-1fb0-46f1-8f1e-d82ab296e1ec`)
+- [[../resources/llm-models/anthropic-claude-sonnet-5|anthropic / claude-sonnet-5]] — node "Anthropic Chat Model" (id `becc271a-1fb0-46f1-8f1e-d82ab296e1ec`)
 
 ### Google Sheets
 

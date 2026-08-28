@@ -3,10 +3,10 @@ n8n_id: "aHkdQU78RVrDYoRI"
 instance: v1
 name: "ShiftAgent AI Related"
 status: active
-last_modified: 2026-07-01T14:45:40.110Z
+last_modified: 2026-08-27T18:44:17.460Z
 tags: []
-fingerprint: "6132b27408722f7021adc09e60c56be3d586a341c9d7055920b2bb4f3481c403"
-auto_generated_at: 2026-08-19T19:13:32Z
+fingerprint: "5994f0accd35ee6236f9d672a39153975671123df6052a3849b3f2138e2ee005"
+auto_generated_at: 2026-08-28T21:13:05Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - **Status:** active
 - **n8n ID:** `aHkdQU78RVrDYoRI`
 - **Nodes:** 39
-- **Last modified:** 2026-07-01T14:45:40.110Z
+- **Last modified:** 2026-08-27T18:44:17.460Z
 
 ## Triggers
 
@@ -70,8 +70,8 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 ### LLM models
 
-- [[../resources/llm-models/anthropic-claude-sonnet-4-5-20250929|anthropic / claude-sonnet-4-5-20250929]] — node "Anthropic Chat Model" (id `04f843b5-ac85-48b2-bed2-30d19934d27c`)
-- [[../resources/llm-models/anthropic-claude-sonnet-4-6|anthropic / claude-sonnet-4-6]] — node "Anthropic Chat Model1" (id `9ce64ca1-6e52-443d-b53f-8f305b6f500c`)
+- [[../resources/llm-models/anthropic-claude-sonnet-5|anthropic / claude-sonnet-5]] — node "Anthropic Chat Model" (id `04f843b5-ac85-48b2-bed2-30d19934d27c`)
+- [[../resources/llm-models/anthropic-claude-sonnet-5|anthropic / claude-sonnet-5]] — node "Anthropic Chat Model1" (id `9ce64ca1-6e52-443d-b53f-8f305b6f500c`)
 
 ## Used by (workflows)
 

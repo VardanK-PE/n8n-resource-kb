@@ -3,10 +3,10 @@ n8n_id: "omlYEtChOOFF02N0"
 instance: v1
 name: "Dispute - Automatic report generation"
 status: active
-last_modified: 2026-05-08T18:15:41.679Z
+last_modified: 2026-08-27T18:44:37.196Z
 tags: []
-fingerprint: "608534a11306c90de7a72a97dfa776b2f34c9bfac4a98cad57da6381eedcc8e2"
-auto_generated_at: 2026-06-01T22:51:45Z
+fingerprint: "be2ac23e645fcbc9be657824292e951c76282fdeafe42016aed7fb90469302b7"
+auto_generated_at: 2026-08-28T21:13:05Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-06-01T22:51:45Z
 - **Status:** active
 - **n8n ID:** `omlYEtChOOFF02N0`
 - **Nodes:** 18
-- **Last modified:** 2026-05-08T18:15:41.679Z
+- **Last modified:** 2026-08-27T18:44:37.196Z
 
 ## Triggers
 
@@ -29,7 +29,7 @@ auto_generated_at: 2026-06-01T22:51:45Z
 
 ### Credentials
 
-- [[../resources/credentials/1jtiaqogn0rcfpc1|Anthropic account]] (`anthropicApi`, id `1jtIAQOGn0RcFpc1`) — node "Anthropic Chat Model" (id `00324bca-ce99-4787-81c1-e505edb079d0`)
+- [[../resources/credentials/1jtiaqogn0rcfpc1|Anthropic account (n8n api key)]] (`anthropicApi`, id `1jtIAQOGn0RcFpc1`) — node "Anthropic Chat Model" (id `00324bca-ce99-4787-81c1-e505edb079d0`)
 - [[../resources/credentials/fj6zpoz0wgka4qq9|OpsInternalBot]] (`slackApi`, id `Fj6zPoZ0Wgka4qq9`) — node "Send a message1" (id `22a6ea85-4f3e-4979-88ba-805203d50045`)
 - [[../resources/credentials/fj6zpoz0wgka4qq9|OpsInternalBot]] (`slackApi`, id `Fj6zPoZ0Wgka4qq9`) — node "Send a message3" (id `24e67cda-045d-4748-bdc9-929377160316`)
 - [[../resources/credentials/fj6zpoz0wgka4qq9|OpsInternalBot]] (`slackApi`, id `Fj6zPoZ0Wgka4qq9`) — node "Send a message2" (id `25620f88-7a69-47d8-87cf-f1ea500559af`)
@@ -38,7 +38,7 @@ auto_generated_at: 2026-06-01T22:51:45Z
 
 ### LLM models
 
-- [[../resources/llm-models/anthropic-claude-sonnet-4-6|anthropic / claude-sonnet-4-6]] — node "Anthropic Chat Model" (id `00324bca-ce99-4787-81c1-e505edb079d0`)
+- [[../resources/llm-models/anthropic-claude-sonnet-5|anthropic / claude-sonnet-5]] — node "Anthropic Chat Model" (id `00324bca-ce99-4787-81c1-e505edb079d0`)
 
 ### Google Sheets
 

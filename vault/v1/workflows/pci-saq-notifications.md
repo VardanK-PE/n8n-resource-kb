@@ -3,10 +3,10 @@ n8n_id: "vGETi2yfirGyOg4o"
 instance: v1
 name: "PCI SAQ Notifications"
 status: active
-last_modified: 2026-08-14T18:23:27.297Z
+last_modified: 2026-08-19T19:48:51.910Z
 tags: []
-fingerprint: "23a72163cfaf15aca8652123a8ab376e2206b5cca3b085b320dd8e5b22d8159a"
-auto_generated_at: 2026-08-19T19:13:32Z
+fingerprint: "3c910ab281e373b97404a7a2bd5ae453fd25af3429555d10de0f65fd76fa9e8a"
+auto_generated_at: 2026-08-28T21:13:05Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - **Status:** active
 - **n8n ID:** `vGETi2yfirGyOg4o`
 - **Nodes:** 106
-- **Last modified:** 2026-08-14T18:23:27.297Z
+- **Last modified:** 2026-08-19T19:48:51.910Z
 
 ## Triggers
 
@@ -80,7 +80,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 ### Slack channels
 
-- [[../resources/slack-channels/c09mqbcgm0a|pci-saq-scribe-webapp]] (id `C09MQBCGM0A`) — op `channel` — node "Send a message6" (id `12eb491e-1af6-40f9-80db-9917c068687d`)
+- [[../resources/slack-channels/pci-notifications|pci-notifications]] (id `pci-notifications`) — op `channel` — node "Send a message6" (id `12eb491e-1af6-40f9-80db-9917c068687d`)
 - *(dynamic channel)* — op `channel` — node "Send a message4" (id `ae746090-ff9c-49ce-8945-015cab71a876`)
 
 ### Sub-workflows (Execute Workflow calls)

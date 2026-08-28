@@ -3,10 +3,10 @@ n8n_id: "0yjTSaTSRLaCOgvH"
 instance: v1
 name: "PayEngineAI Bot (v1.2) - Jun 12 2026"
 status: active
-last_modified: 2026-06-15T18:45:47.673Z
+last_modified: 2026-08-27T18:47:41.259Z
 tags: []
-fingerprint: "fce41df1ed274438dbe2e4dc309b69d0c876d8127ae498206e2eebcc57fca59b"
-auto_generated_at: 2026-08-19T19:13:32Z
+fingerprint: "9a3e0ba64f7baa68a0a1edc0bf536ffb87392ee3e3e7e3b48cc8019ea908fd1b"
+auto_generated_at: 2026-08-28T21:13:05Z
 ---
 
 <!-- auto:start -->
@@ -17,8 +17,8 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 - **Status:** active
 - **n8n ID:** `0yjTSaTSRLaCOgvH`
-- **Nodes:** 212
-- **Last modified:** 2026-06-15T18:45:47.673Z
+- **Nodes:** 208
+- **Last modified:** 2026-08-27T18:47:41.259Z
 
 ## Triggers
 
@@ -59,7 +59,6 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Upload a file1" (id `42836858-544e-4508-a153-7d35bbf67b33`)
 - [[../resources/credentials/bdw1qodl0v7mywj6|Postgres Production]] (`postgres`, id `BDw1qoDl0V7mYwj6`) — node "Merchant/Partner Details Lookup from PE DB" (id `434f16f6-3416-4fab-9bf3-185ab6d58d20`)
 - [[../resources/credentials/6mtsxoj0epbt8oqw|OpenAi N8N Account 20241221]] (`openAiApi`, id `6MTsXoj0epBT8Oqw`) — node "OpenAI Chat Model3" (id `44f10172-5a18-4d69-b899-4a1b64f79c77`)
-- [[../resources/credentials/6mtsxoj0epbt8oqw|OpenAi N8N Account 20241221]] (`openAiApi`, id `6MTsXoj0epBT8Oqw`) — node "OpenAI Chat Model2" (id `46a1d473-d82f-46d3-8eee-2af9d99b16c5`)
 - [[../resources/credentials/bdw1qodl0v7mywj6|Postgres Production]] (`postgres`, id `BDw1qoDl0V7mYwj6`) — node "Partner Account Lookup" (id `4900bbb9-a4a7-45ef-9f6a-72973a469193`)
 - [[../resources/credentials/reyaj1uaergdkbhn|Hearth Gmail Account]] (`gmailOAuth2`, id `ReYAj1UAergdKBHN`) — node "Hearth1" (id `4b57bd0c-c0ae-42cc-89bf-9669e4200520`)
 - [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Google Sheets6" (id `4d4e0d6f-cf10-4867-92f9-bd939ea1b657`)
@@ -110,13 +109,10 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - [[../resources/credentials/w2zoksnllwt306s9|Forte Production Account]] (`httpBasicAuth`, id `w2zokSnlLwt306s9`) — node "Forte Rejected Reason Lookup" (id `cc83a563-1ae6-4ef4-821d-aea24e55853d`)
 - [[../resources/credentials/zdgu54lbylgkgro9|VAPI Bearer Auth]] (`httpBearerAuth`, id `Zdgu54LbylGKGRO9`) — node "Forte Rejected Reason Lookup" (id `cc83a563-1ae6-4ef4-821d-aea24e55853d`)
 - [[../resources/credentials/cde3nulqqlnaaarl|Supermove Gmail Account]] (`gmailOAuth2`, id `cdE3NULqqLnAaaRL`) — node "Create Draft In Supermove Inbox" (id `cd7f6610-7c95-4d28-b402-5529a43676d4`)
-- [[../resources/credentials/1jtiaqogn0rcfpc1|Anthropic account (n8n api key)]] (`anthropicApi`, id `1jtIAQOGn0RcFpc1`) — node "Anthropic Chat Model2" (id `cf536bf1-bb38-4216-bcaa-d99c5e44676a`)
-- [[../resources/credentials/1jtiaqogn0rcfpc1|Anthropic account (n8n api key)]] (`anthropicApi`, id `1jtIAQOGn0RcFpc1`) — node "Anthropic Chat Model" (id `cfd54e90-c8fc-4661-b70d-28e33abb4a5e`)
 - [[../resources/credentials/reyaj1uaergdkbhn|Hearth Gmail Account]] (`gmailOAuth2`, id `ReYAj1UAergdKBHN`) — node "Create Draft In Heart Inbox1" (id `d0247b67-d990-47d6-b96c-6e484d88db47`)
 - [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Google Sheets3" (id `d131c158-c7cf-4936-9294-6dee29d2e8a6`)
 - [[../resources/credentials/reyaj1uaergdkbhn|Hearth Gmail Account]] (`gmailOAuth2`, id `ReYAj1UAergdKBHN`) — node "Add label to message" (id `d276ac08-8c57-4fa2-8938-7bd6067e6f82`)
 - [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack11" (id `d7fcadfe-ba25-4df1-b291-c5a52bb1b909`)
-- [[../resources/credentials/1jtiaqogn0rcfpc1|Anthropic account (n8n api key)]] (`anthropicApi`, id `1jtIAQOGn0RcFpc1`) — node "Anthropic Chat Model4" (id `e1c1436f-3e20-4fe9-b2fc-604fc451f0d3`)
 - [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Get Partner Specific Instructions" (id `e6e01ec6-02fc-45e2-90ba-8cae7f40d3f8`)
 - [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack2" (id `ea51e664-ffad-4d59-ac5b-2e9e021bb36c`)
 - [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack3" (id `f1c02116-2993-4828-8849-4bbdabdac02c`)
@@ -139,18 +135,14 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 ### LLM models
 
-- [[../resources/llm-models/anthropic-claude-sonnet-4-5-20250929|anthropic / claude-sonnet-4-5-20250929]] — node "Anthropic Chat Model1" (id `259a75f8-3afc-4f1f-9b4c-5439bb202ab0`)
+- [[../resources/llm-models/anthropic-claude-sonnet-5|anthropic / claude-sonnet-5]] — node "Anthropic Chat Model1" (id `259a75f8-3afc-4f1f-9b4c-5439bb202ab0`)
 - [[../resources/llm-models/anthropic-claude-sonnet-4-20250514|anthropic / claude-sonnet-4-20250514]] — node "Anthropic Chat Model5" (id `2632de6e-fb3f-444d-b514-23337335e0ee`)
 - [[../resources/llm-models/openai-gpt-5|openai / gpt-5]] — node "OpenAI Chat Model3" (id `44f10172-5a18-4d69-b899-4a1b64f79c77`)
-- [[../resources/llm-models/openai-gpt-5|openai / gpt-5]] — node "OpenAI Chat Model2" (id `46a1d473-d82f-46d3-8eee-2af9d99b16c5`)
-- [[../resources/llm-models/anthropic-claude-sonnet-4-5-20250929|anthropic / claude-sonnet-4-5-20250929]] — node "Anthropic (Spartak@gmail.com)" (id `7a763d1f-ce85-44b4-8aa3-108cab5d0b85`)
-- [[../resources/llm-models/anthropic-claude-sonnet-4-5-20250929|anthropic / claude-sonnet-4-5-20250929]] — node "Anthropic (spartak@platformfactory.io)" (id `7a872924-2d67-44bb-bd5c-08e5a90daf7a`)
+- [[../resources/llm-models/anthropic-claude-sonnet-5|anthropic / claude-sonnet-5]] — node "Anthropic (Spartak@gmail.com)" (id `7a763d1f-ce85-44b4-8aa3-108cab5d0b85`)
+- [[../resources/llm-models/anthropic-claude-sonnet-5|anthropic / claude-sonnet-5]] — node "Anthropic (spartak@platformfactory.io)" (id `7a872924-2d67-44bb-bd5c-08e5a90daf7a`)
 - [[../resources/llm-models/openai-unspecified|openai / ?]] — node "OpenAI Assistant" (id `8934007c-de07-4ffb-b89f-283383e335fa`)
 - [[../resources/llm-models/openai-o3-pro|openai / o3-pro]] — node "OpenAI Chat Model1" (id `8bc36137-d0b3-4dca-966d-51f5c7bc295a`)
 - [[../resources/llm-models/openai-gpt-4|openai / gpt-4]] — node "OpenAI Chat Model" (id `990d91d3-a569-402d-afa1-50e7032fb468`)
-- [[../resources/llm-models/anthropic-claude-sonnet-4-20250514|anthropic / claude-sonnet-4-20250514]] — node "Anthropic Chat Model2" (id `cf536bf1-bb38-4216-bcaa-d99c5e44676a`)
-- [[../resources/llm-models/anthropic-claude-sonnet-4-20250514|anthropic / claude-sonnet-4-20250514]] — node "Anthropic Chat Model" (id `cfd54e90-c8fc-4661-b70d-28e33abb4a5e`)
-- [[../resources/llm-models/anthropic-claude-sonnet-4-20250514|anthropic / claude-sonnet-4-20250514]] — node "Anthropic Chat Model4" (id `e1c1436f-3e20-4fe9-b2fc-604fc451f0d3`)
 
 ### Custom / community nodes
 
@@ -208,28 +200,23 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 ### Sub-workflows (Execute Workflow calls)
 
-- [[payengineai-bot-v1-1-feb-26-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Read Emails1" (id `086d0da1-9831-4cd4-9d3c-f5164afe01b0`)
+- [[payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Read Emails1" (id `086d0da1-9831-4cd4-9d3c-f5164afe01b0`)
 - [[slack-create-a-base-message|Slack - Create a base message]] (n8n_id `VQPaemuwy6FdMa9L`) — node "Call 'Slack - Create a base message'" (id `0f9ab653-22cd-47d6-9f7a-44278179ba4b`)
 - [[onboarding-correspondence-aging|Onboarding Correspondence Aging]] (n8n_id `DjgdzbbtR7fJ4oWX`) — node "Run Correspondence Aging Report" (id `25568675-6936-4e80-bb49-e1b3c65db470`)
 - [[slack-create-a-base-message|Slack - Create a base message]] (n8n_id `VQPaemuwy6FdMa9L`) — node "Call 'Slack - Create a base message'1" (id `4c2efbe1-352b-4624-935a-d6764c31e920`)
-- [[payengineai-bot-v1-1-feb-26-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Call PayEngineBot" (id `56bc2196-99c3-4223-9ca3-9ab970fac434`)
-- [[payengineai-bot-v1-1-feb-26-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Create Draft In Merchants Inbox1" (id `ad52b28d-1dcd-4a9b-b35f-aa24fe185c1b`)
+- [[payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Call PayEngineBot" (id `56bc2196-99c3-4223-9ca3-9ab970fac434`)
+- [[payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Create Draft In Merchants Inbox1" (id `ad52b28d-1dcd-4a9b-b35f-aa24fe185c1b`)
 - [[elavon-ach-exemption-form-generator|Elavon ACH Exemption Form Generator]] (n8n_id `c4rexPHrWGfGDBUP`) — node "Elavon ECS/ACH Max Check Size Generator" (id `ce996276-c9a4-4a86-a434-3cde348aa3bc`)
-- [[payengineai-bot-v1-1-feb-26-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Call Onboarding Correspondence Aging Report Tool" (id `e64d7759-24d4-429f-b13a-b2434c194f30`)
-- [[payengineai-bot-v1-1-feb-26-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Execute Workflow1" (id `f1a4b9c6-4f86-435f-b0e3-bf602f97e8aa`)
+- [[payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Call Onboarding Correspondence Aging Report Tool" (id `e64d7759-24d4-429f-b13a-b2434c194f30`)
+- [[payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] (n8n_id `0yjTSaTSRLaCOgvH`) — node "Execute Workflow1" (id `f1a4b9c6-4f86-435f-b0e3-bf602f97e8aa`)
 
 ## Used by (workflows)
 
-- [[payengineai-bot-v1-1-feb-26-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] — node "Call Onboarding Correspondence Aging Report Tool" (id `e64d7759-24d4-429f-b13a-b2434c194f30`)
-- [[payengineai-bot-v1-1-feb-26-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] — node "Call PayEngineBot" (id `56bc2196-99c3-4223-9ca3-9ab970fac434`)
-- [[payengineai-bot-v1-1-feb-26-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] — node "Create Draft In Merchants Inbox1" (id `ad52b28d-1dcd-4a9b-b35f-aa24fe185c1b`)
-- [[payengineai-bot-v1-1-feb-26-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] — node "Execute Workflow1" (id `f1a4b9c6-4f86-435f-b0e3-bf602f97e8aa`)
-- [[payengineai-bot-v1-1-feb-26-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] — node "Read Emails1" (id `086d0da1-9831-4cd4-9d3c-f5164afe01b0`)
-- [[payengineai-bot-v1-1-feb-26-2026-saot95eapiyc8s56|PayEngineAI Bot (v1.1) - Feb 26 2026]] — node "Call Onboarding Correspondence Aging Report Tool" (id `310cc45c-3df1-488a-a764-cd7f2d62c6d4`)
-- [[payengineai-bot-v1-1-feb-26-2026-saot95eapiyc8s56|PayEngineAI Bot (v1.1) - Feb 26 2026]] — node "Call PayEngineBot" (id `62637110-e235-42aa-9a03-430217a54e6a`)
-- [[payengineai-bot-v1-1-feb-26-2026-saot95eapiyc8s56|PayEngineAI Bot (v1.1) - Feb 26 2026]] — node "Create Draft In Merchants Inbox1" (id `89bff1a0-36a7-4bc8-b9c3-fc33d0f578f9`)
-- [[payengineai-bot-v1-1-feb-26-2026-saot95eapiyc8s56|PayEngineAI Bot (v1.1) - Feb 26 2026]] — node "Execute Workflow1" (id `43b8ed31-72b1-4302-9ca0-35a8264ecb78`)
-- [[payengineai-bot-v1-1-feb-26-2026-saot95eapiyc8s56|PayEngineAI Bot (v1.1) - Feb 26 2026]] — node "Read Emails1" (id `11f7549b-1d2e-4d7a-978f-6b4b1a37b298`)
+- [[payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] — node "Call Onboarding Correspondence Aging Report Tool" (id `e64d7759-24d4-429f-b13a-b2434c194f30`)
+- [[payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] — node "Call PayEngineBot" (id `56bc2196-99c3-4223-9ca3-9ab970fac434`)
+- [[payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] — node "Create Draft In Merchants Inbox1" (id `ad52b28d-1dcd-4a9b-b35f-aa24fe185c1b`)
+- [[payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] — node "Execute Workflow1" (id `f1a4b9c6-4f86-435f-b0e3-bf602f97e8aa`)
+- [[payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] — node "Read Emails1" (id `086d0da1-9831-4cd4-9d3c-f5164afe01b0`)
 
 <!-- auto:end -->
 

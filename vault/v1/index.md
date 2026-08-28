@@ -1,25 +1,25 @@
 ---
 type: index
 instance: v1
-auto_generated_at: 2026-08-19T19:29:47Z
+auto_generated_at: 2026-08-28T21:18:07Z
 ---
 
 <!-- auto:start -->
 
-# n8n Vault
+# n8n Vault — v1 (Old instance)
 
 ## About
 
-This vault is a Claude-driven, Obsidian-native knowledge base derived from a live n8n instance. Every workflow has a note under `workflows/`; every credential, service, database, trigger, LLM model, HTTP host, env var, custom node — and any other discovered category — has a note under `resources/<type>/` with reverse-lookup links to the workflows that use it. Dated changelog notes record what changed on each refresh.
+This subtree is a Claude-driven, Obsidian-native knowledge base derived from the **v1 (Old)** n8n instance. Every workflow has a note under `workflows/`; every credential, service, database, trigger, LLM model, HTTP host, env var, custom node — and any other discovered category — has a note under `resources/<type>/` with reverse-lookup links to the workflows that use it. Dated changelog notes record what changed on each refresh.
 
-See `../CLAUDE.md` (repo root) for the intent → runbook map and the manual / auto block contract that protects hand-written annotations across refreshes.
+See `../../CLAUDE.md` (repo root) for the intent → runbook map and the manual / auto block contract that protects hand-written annotations across refreshes. `../index.md` is the cross-instance router.
 
 ## Sections
 
 Browse these folders via the file-explorer sidebar — Obsidian has no built-in way to link to a folder (both `[[wiki]]` and `[md](folder/)` links auto-create blank notes on click), so paths here are shown as code only.
 
 - `workflows/` — 243 notes; one per n8n workflow
-- **Resources** — `vault/resources/<type>/`, alphabetical (new categories surface automatically as the taxonomy grows):
+- **Resources** — `resources/<type>/`, alphabetical (new categories surface automatically as the taxonomy grows):
   - `resources/credentials/` — 64
   - `resources/custom-nodes/` — 11
   - `resources/data-tables/` — 24
@@ -28,27 +28,26 @@ Browse these folders via the file-explorer sidebar — Obsidian has no built-in 
   - `resources/github-repos/` — 2
   - `resources/google-docs/` — 3
   - `resources/google-drive/` — 28
-  - `resources/google-sheets/` — 74
+  - `resources/google-sheets/` — 75
   - `resources/http-urls/` — 46
   - `resources/kafka-topics/` — 4
-  - `resources/llm-models/` — 17
+  - `resources/llm-models/` — 18
   - `resources/mcp-servers/` — 2
   - `resources/s3-buckets/` — 1
-  - `resources/services/` — 0
-  - `resources/slack-channels/` — 52
+  - `resources/slack-channels/` — 55
   - `resources/triggers/` — 154
-- `changelogs/` — 1 notes; one per refresh-day that produced semantic change
+- `changelogs/` — 2 notes; one per refresh-day that produced semantic change
 
 ## How to find things
 
 - **Reverse lookup** ("what uses X?") — open the resource note; the auto block lists every `(workflow, node)` pair touching it.
 - **Forward lookup** ("what does this workflow touch?") — open the workflow note; the auto block lists every resource it depends on.
 - **What changed today?** — open the most recent file under `changelogs/`.
-- **Refresh the vault** — ask Claude; the runbook at `../agent-os/standards/sync/refresh-procedure.md` drives the sync.
+- **Refresh the vault** — ask Claude to sync `v1`; the runbook at `../../agent-os/standards/sync/refresh-procedure.md` drives the sync.
 
 ## Last refreshed
 
-2026-08-19T19:29:47Z
+2026-08-28T21:18:07Z
 
 <!-- auto:end -->
 
