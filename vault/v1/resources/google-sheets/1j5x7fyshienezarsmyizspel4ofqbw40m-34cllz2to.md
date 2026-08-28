@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1J5x7FyshieNEZArSMyIZsPEl4oFQbw40m-34cLlZ2to"
 current_name: "PAX Management"
 aliases: ["PAX Management"]

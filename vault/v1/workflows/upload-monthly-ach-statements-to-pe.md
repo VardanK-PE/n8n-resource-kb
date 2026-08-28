@@ -1,5 +1,6 @@
 ---
 n8n_id: "QfCAULmE6RbrUzgY"
+instance: v1
 name: "Upload monthly ACH statements to PE"
 status: inactive
 last_modified: 2026-07-10T15:32:02.179Z

@@ -1,5 +1,6 @@
 ---
 n8n_id: "MWVMCbgzsdPIr6Rg"
+instance: v1
 name: "Elavon Loss Prevention Emails AI"
 status: inactive
 last_modified: 2025-08-30T23:19:51.174Z

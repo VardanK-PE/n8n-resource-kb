@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "CyOCsclDlC2yBMPM"
 current_name: "Freshdesk PESupport"
 aliases: ["Freshdesk PESupport"]

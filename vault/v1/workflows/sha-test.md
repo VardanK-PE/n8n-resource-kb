@@ -1,5 +1,6 @@
 ---
 n8n_id: "RY13bvJTLUphpJ1K"
+instance: v1
 name: "Sha Test"
 status: inactive
 last_modified: 2024-06-09T02:25:16.749Z

@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "15sOF5RlRQ_CX6RM6iO_-kib6_JpNfOlq9JSUvjILwrU"
 current_name: "N8N_ElavonCardType"
 aliases: ["N8N_ElavonCardType"]

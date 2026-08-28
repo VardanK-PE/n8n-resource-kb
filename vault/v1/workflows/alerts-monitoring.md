@@ -1,5 +1,6 @@
 ---
 n8n_id: "1n9bQ5pCEIL0oC2m"
+instance: v1
 name: "Alerts Monitoring"
 status: inactive
 last_modified: 2025-10-03T18:02:41.524Z

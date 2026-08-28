@@ -1,5 +1,6 @@
 ---
 n8n_id: "G6j6pFnZrXgLQkOP"
+instance: v1
 name: "QuickbooksAccountClassigfication"
 status: active
 last_modified: 2024-10-25T17:19:01.989Z

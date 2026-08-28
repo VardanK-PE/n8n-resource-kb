@@ -1,5 +1,6 @@
 ---
 n8n_id: "CmcIqdaZ986kB61s"
+instance: v1
 name: "Dispute - Case Handler"
 status: inactive
 last_modified: 2026-04-21T17:06:40.192Z

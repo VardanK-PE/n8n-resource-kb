@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "1jtIAQOGn0RcFpc1"
 current_name: "Anthropic account"
 aliases: ["Anthropic account"]

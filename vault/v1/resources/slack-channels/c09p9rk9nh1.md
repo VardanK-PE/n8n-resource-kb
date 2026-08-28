@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C09P9RK9NH1"
 current_name: "vnp-merchant-alerts"
 aliases: ["vnp-merchant-alerts"]

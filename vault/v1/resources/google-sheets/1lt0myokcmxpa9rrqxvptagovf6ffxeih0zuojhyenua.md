@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1Lt0MyOkCMXpA9RRQXVptAgoVF6ffXEIh0ZUOjHyENUA"
 current_name: "PE Payments Intelligence Overlay"
 aliases: ["PE Payments Intelligence Overlay"]

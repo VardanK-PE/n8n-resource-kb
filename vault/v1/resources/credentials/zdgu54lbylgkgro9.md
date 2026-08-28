@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "Zdgu54LbylGKGRO9"
 current_name: "VAPI Bearer Auth"
 aliases: ["VAPI Bearer Auth"]

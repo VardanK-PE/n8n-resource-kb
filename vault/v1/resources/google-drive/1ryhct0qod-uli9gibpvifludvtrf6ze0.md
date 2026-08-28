@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "1RYHct0QOD-ULi9GiBPviFlUDVTRF6zE0"
 current_name: "DISPUTES_AUTOMATION_SCREENSHOTS"
 aliases: ["DISPUTES_AUTOMATION_SCREENSHOTS"]

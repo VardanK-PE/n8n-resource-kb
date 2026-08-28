@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "1gQr78vvR-bot-qJk1R4X9Ub0W7g7MyJb"
 current_name: "Merchant Processing Statements"
 aliases: ["Merchant Processing Statements"]

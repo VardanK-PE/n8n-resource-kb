@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1Sur9UDLwhhc7ijSQevDKTYSOKp8SEzlpZ9Tzv-E2NnU"
 current_name: "Opus terminal data - Temporary"
 aliases: ["Opus terminal data - Temporary"]

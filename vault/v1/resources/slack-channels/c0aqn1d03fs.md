@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C0AQN1D03FS"
 current_name: "flex-payengine-ai-alerts"
 aliases: ["flex-payengine-ai-alerts"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "NSSjohLXsIkmjKue"
+instance: v1
 name: "Residuals Generator V6 (Backup) (latest 2026-06-01)"
 status: inactive
 last_modified: 2026-07-15T18:32:44.241Z

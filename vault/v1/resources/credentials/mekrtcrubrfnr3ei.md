@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "MeKRTCrUBRfnR3Ei"
 current_name: "PE Atlassian Cloud account"
 aliases: ["PE Atlassian Cloud account"]

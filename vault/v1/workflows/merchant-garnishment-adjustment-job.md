@@ -1,5 +1,6 @@
 ---
 n8n_id: "lkb4rXtsJfBygB5C"
+instance: v1
 name: "Merchant Garnishment/Adjustment Job"
 status: inactive
 last_modified: 2025-08-13T17:29:39.224Z

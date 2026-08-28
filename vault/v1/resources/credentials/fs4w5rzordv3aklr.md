@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "fs4w5RZOrDV3aKLr"
 current_name: "OpenAi account"
 aliases: ["OpenAi account"]

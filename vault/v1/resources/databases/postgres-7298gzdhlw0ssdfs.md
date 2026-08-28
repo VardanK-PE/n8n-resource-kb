@@ -1,5 +1,6 @@
 ---
 type: database
+instance: v1
 resource_id: "postgres/7298gzDHlw0sSdFs"
 current_name: "postgres (via Postgres Staging Sandbox)"
 aliases: ["postgres (via Postgres Staging Sandbox)"]

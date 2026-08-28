@@ -1,5 +1,6 @@
 ---
 n8n_id: "JkeR16lXouUHHtZn"
+instance: v1
 name: "PE MCP Server"
 status: active
 last_modified: 2026-02-02T16:59:28.228Z

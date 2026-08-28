@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C089VQUNM1N"
 current_name: "merchant-adjustment-alerts"
 aliases: ["merchant-adjustment-alerts"]

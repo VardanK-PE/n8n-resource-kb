@@ -1,5 +1,6 @@
 ---
 type: s3-bucket
+instance: v1
 resource_id: "partner-residuals-prod"
 current_name: "partner-residuals-prod"
 aliases: ["partner-residuals-prod"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "nethTCkaMDFvPGvO"
+instance: v1
 name: "PCI Compliance Manager Automation"
 status: active
 last_modified: 2026-08-03T19:47:22.165Z

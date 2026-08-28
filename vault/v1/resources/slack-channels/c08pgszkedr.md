@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C08PGSZKEDR"
 current_name: "st-payment-failures-sandbox"
 aliases: ["st-payment-failures-sandbox"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "YKGSCT0yXJiuOyvB"
+instance: v1
 name: "MyKaarma Weekly Merchant Exports"
 status: inactive
 last_modified: 2025-12-18T17:35:40.266Z

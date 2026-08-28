@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "v1UAWPENaoQnxu0I"
 current_name: "PE PROD PGP Key"
 aliases: ["PE PROD PGP Key"]

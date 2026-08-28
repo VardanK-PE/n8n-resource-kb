@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "ofBbh6yYak1p8FHf"
 current_name: "ShaTestn8n"
 aliases: ["ShaTestn8n"]

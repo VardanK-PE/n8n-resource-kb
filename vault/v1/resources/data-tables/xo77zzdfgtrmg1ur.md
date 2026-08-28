@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "Xo77ZZdFGtrmG1Ur"
 current_name: "Merchant Fee Schedules"
 aliases: ["Merchant Fee Schedules"]

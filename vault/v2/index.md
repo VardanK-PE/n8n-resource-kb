@@ -1,7 +1,7 @@
 ---
 type: index
 instance: v2
-auto_generated_at: 2026-08-29T00:00:00Z
+auto_generated_at: 2026-08-28T20:46:45Z
 ---
 
 <!-- auto:start -->
@@ -12,13 +12,15 @@ auto_generated_at: 2026-08-29T00:00:00Z
 
 This subtree mirrors the **New n8n instance** (alias `v2`). It is a Claude-driven, Obsidian-native knowledge base derived from that live instance: one note per workflow under `workflows/`, one note per unique resource under `resources/<type>/`, and dated changelogs under `changelogs/`.
 
-It has not been synced yet — run the refresh procedure for `v2` to populate it. See `../../CLAUDE.md` (repo root) for the intent → runbook map and the manual / auto block contract.
+See `../../CLAUDE.md` (repo root) for the intent → runbook map and the manual / auto block contract.
 
 ## Sections
 
-- `workflows/` — 0 notes; one per n8n workflow
-- **Resources** — `resources/<type>/` (categories surface as the taxonomy grows)
-- `changelogs/` — 0 notes; one per refresh-day that produced semantic change
+- `workflows/` — 2 notes; one per n8n workflow
+- **Resources** — `resources/<type>/` (categories surface as the taxonomy grows):
+  - `resources/credentials/` — 1
+  - `resources/http-urls/` — 1
+- `changelogs/` — 1 notes; one per refresh-day that produced semantic change
 
 ## How to find things
 
@@ -28,7 +30,7 @@ It has not been synced yet — run the refresh procedure for `v2` to populate it
 
 ## Last refreshed
 
-_never — pending first sync_
+2026-08-28T20:46:45Z
 
 <!-- auto:end -->
 

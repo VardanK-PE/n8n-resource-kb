@@ -1,5 +1,6 @@
 ---
 n8n_id: "AHut96GVGmZfIXWw"
+instance: v1
 name: "Elavon CISCO CRES Message Extractor"
 status: active
 last_modified: 2026-08-18T05:15:47.860Z

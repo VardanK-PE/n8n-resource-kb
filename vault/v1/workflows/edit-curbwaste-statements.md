@@ -1,5 +1,6 @@
 ---
 n8n_id: "HSEk0Ep12O8S2waU"
+instance: v1
 name: "Edit Curbwaste statements"
 status: inactive
 last_modified: 2026-07-13T18:50:30.768Z

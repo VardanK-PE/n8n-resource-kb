@@ -1,5 +1,6 @@
 ---
 n8n_id: "ynZxXnClUUPirig4"
+instance: v1
 name: "Hearth Merchant Capabilities Status"
 status: active
 last_modified: 2026-05-08T16:10:26.194Z

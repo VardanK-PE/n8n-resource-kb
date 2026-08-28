@@ -1,5 +1,6 @@
 ---
 n8n_id: "t3T8GKb2fouLu6QV"
+instance: v1
 name: "Budibase test"
 status: inactive
 last_modified: 2025-08-14T12:42:09.311Z

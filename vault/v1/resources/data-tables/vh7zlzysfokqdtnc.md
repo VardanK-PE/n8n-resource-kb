@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "vh7zLzySfoKQDtnc"
 current_name: "PciSaqLogins"
 aliases: ["PciSaqLogins"]

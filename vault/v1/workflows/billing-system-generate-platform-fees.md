@@ -1,5 +1,6 @@
 ---
 n8n_id: "EwkLygWj3EmYzk3t"
+instance: v1
 name: "Billing System - Generate Platform Fees"
 status: inactive
 last_modified: 2026-06-24T19:22:55.502Z

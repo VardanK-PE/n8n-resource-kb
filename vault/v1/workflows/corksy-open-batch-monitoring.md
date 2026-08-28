@@ -1,5 +1,6 @@
 ---
 n8n_id: "llmWN5owWFDM40az"
+instance: v1
 name: "Corksy open batch monitoring"
 status: active
 last_modified: 2026-07-13T18:51:44.329Z

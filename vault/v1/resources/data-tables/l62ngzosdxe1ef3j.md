@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "l62nGzOSDXe1eF3J"
 current_name: "Merchants activity status"
 aliases: ["Merchants activity status"]

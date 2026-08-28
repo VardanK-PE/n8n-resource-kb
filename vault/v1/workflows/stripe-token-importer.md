@@ -1,5 +1,6 @@
 ---
 n8n_id: "MvyvwKEhjRBkaiNH"
+instance: v1
 name: "Stripe Token Importer"
 status: active
 last_modified: 2025-11-25T01:54:57.824Z

@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C08NYF47MUP"
 current_name: "st-payment-failures-prod"
 aliases: ["st-payment-failures-prod"]

@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "1HkDK4lbXXyibzYb"
 current_name: "Slack account (PEBot)"
 aliases: ["Slack account","Slack account (PEBot)"]

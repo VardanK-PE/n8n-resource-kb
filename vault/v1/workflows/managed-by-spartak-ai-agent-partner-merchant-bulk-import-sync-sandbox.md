@@ -1,5 +1,6 @@
 ---
 n8n_id: "Mf9JkMvLriRuZw9D"
+instance: v1
 name: "[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)"
 status: inactive
 last_modified: 2026-05-11T04:26:42.418Z

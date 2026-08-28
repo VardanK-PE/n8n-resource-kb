@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "api.vapi.ai"
 current_name: "api.vapi.ai"
 aliases: ["api.vapi.ai"]

@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C09BGKG55UJ"
 current_name: "alive-ai"
 aliases: ["alive-ai"]

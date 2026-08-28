@@ -1,5 +1,6 @@
 ---
 type: database
+instance: v1
 resource_id: "postgres/BCXReaoEvQMwbTNU"
 current_name: "postgres (via PE Sandbox-Live (Overlay Access))"
 aliases: ["postgres (via PE Sandbox-Live (Overlay Access))"]

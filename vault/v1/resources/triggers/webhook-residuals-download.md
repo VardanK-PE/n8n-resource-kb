@@ -1,5 +1,6 @@
 ---
 type: trigger
+instance: v1
 resource_id: "webhook:residuals-download"
 current_name: "webhook — residuals-download"
 aliases: ["webhook — residuals-download"]

@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "cdn3.iconfinder.com"
 current_name: "cdn3.iconfinder.com"
 aliases: ["cdn3.iconfinder.com"]

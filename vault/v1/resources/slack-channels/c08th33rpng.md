@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C08TH33RPNG"
 current_name: "hearth-onboarding-alerts"
 aliases: ["hearth-onboarding-alerts"]

@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "xvXjTKYQxpBm4zQg"
 current_name: "Browserless (http://pf-prod-ecs-task-container-browserless:3000)"
 aliases: ["Browserless (http://pf-prod-ecs-task-container-browserless:3000)"]

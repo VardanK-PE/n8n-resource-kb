@@ -1,5 +1,6 @@
 ---
 type: kafka-topic
+instance: v1
 resource_id: "partner-residuals"
 current_name: "partner-residuals"
 aliases: ["partner-residuals"]

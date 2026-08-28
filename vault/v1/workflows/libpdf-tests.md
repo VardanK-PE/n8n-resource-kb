@@ -1,5 +1,6 @@
 ---
 n8n_id: "N4iezdhLQyIoPxNb"
+instance: v1
 name: "LibPDF Tests"
 status: inactive
 last_modified: 2025-08-30T13:12:28.221Z

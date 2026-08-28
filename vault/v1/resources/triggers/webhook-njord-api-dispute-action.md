@@ -1,5 +1,6 @@
 ---
 type: trigger
+instance: v1
 resource_id: "webhook:njord/api/dispute-action"
 current_name: "webhook — njord/api/dispute-action"
 aliases: ["webhook — njord/api/dispute-action"]

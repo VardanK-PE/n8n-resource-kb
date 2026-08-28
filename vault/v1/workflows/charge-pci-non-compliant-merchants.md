@@ -1,5 +1,6 @@
 ---
 n8n_id: "KcGFKiEV1MczcbS8"
+instance: v1
 name: "Charge PCI non compliant merchants"
 status: inactive
 last_modified: 2026-08-14T19:33:34.539Z

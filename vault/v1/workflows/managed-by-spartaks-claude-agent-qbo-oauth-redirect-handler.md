@@ -1,5 +1,6 @@
 ---
 n8n_id: "AbsVNmGTrklKFBHz"
+instance: v1
 name: "[Managed by Spartaks Claude Agent] QBO OAuth Redirect Handler"
 status: active
 last_modified: 2026-01-22T19:08:52.690Z

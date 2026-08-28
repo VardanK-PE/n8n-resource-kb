@@ -1,5 +1,6 @@
 ---
 type: trigger
+instance: v1
 resource_id: "webhook:partner-merchant-sandbox-test"
 current_name: "webhook — partner-merchant-sandbox-test"
 aliases: ["webhook — partner-merchant-sandbox-test"]

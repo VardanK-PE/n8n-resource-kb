@@ -1,5 +1,6 @@
 ---
 n8n_id: "Zr3vF0LVpsPrzHVY"
+instance: v1
 name: "Send Email: Simple Text"
 status: inactive
 last_modified: 2025-11-10T16:50:28.486Z

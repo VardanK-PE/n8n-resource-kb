@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1YJaXpTBLALFg3Vl85hcQqfx-mBZStwor3oLKqBKy19A"
 current_name: "Elavon Disputes - Datastore"
 aliases: ["Elavon Disputes - Datastore"]

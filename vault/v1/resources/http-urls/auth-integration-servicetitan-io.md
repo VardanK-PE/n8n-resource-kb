@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "auth-integration.servicetitan.io"
 current_name: "auth-integration.servicetitan.io"
 aliases: ["auth-integration.servicetitan.io"]

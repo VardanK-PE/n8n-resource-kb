@@ -1,5 +1,6 @@
 ---
 type: trigger
+instance: v1
 resource_id: "webhook:qbo-oauth-callback"
 current_name: "webhook — qbo-oauth-callback"
 aliases: ["webhook — qbo-oauth-callback"]

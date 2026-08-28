@@ -1,5 +1,6 @@
 ---
 n8n_id: "0UmMSBevXhNQuBgD"
+instance: v1
 name: "Billing - Check transaction status"
 status: inactive
 last_modified: 2026-04-13T18:58:30.507Z

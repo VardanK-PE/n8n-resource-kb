@@ -1,5 +1,6 @@
 ---
 n8n_id: "haux7wgQdkCwNqP6"
+instance: v1
 name: "Elavon Disputes Reporting"
 status: inactive
 last_modified: 2026-03-16T17:47:17.408Z

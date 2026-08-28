@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C09MQBCGM0A"
 current_name: "pci-saq-scribe-webapp"
 aliases: ["pci-saq-scribe-webapp"]

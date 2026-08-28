@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1IG4gDKEbZb3I-9uWYrqZY9SthJqlTA2p7z6dPi2WPt4"
 current_name: "ElavonSettlementFileAnalyzer"
 aliases: ["ElavonSettlementFileAnalyzer"]

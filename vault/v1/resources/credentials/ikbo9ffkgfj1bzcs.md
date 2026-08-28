@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "IKBO9fFKgfj1BzcS"
 current_name: "AWS SDK Wrapper Credentials PE PROD"
 aliases: ["AWS SDK Wrapper Credentials PE PROD"]

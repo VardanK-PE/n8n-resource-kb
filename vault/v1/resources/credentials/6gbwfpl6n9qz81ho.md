@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "6GBwfPL6n9QZ81ho"
 current_name: "Postgres Sandbox-Live"
 aliases: ["Postgres Sandbox-Live","Postgres account 2"]

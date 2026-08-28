@@ -1,5 +1,6 @@
 ---
 n8n_id: "yrTbLLNUN76aNqmV"
+instance: v1
 name: "Check PCI/ACH Transaction Status"
 status: inactive
 last_modified: 2026-04-14T18:35:11.459Z

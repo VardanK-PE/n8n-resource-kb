@@ -1,5 +1,6 @@
 ---
 n8n_id: "JAOzKmgMjlHDsdCi"
+instance: v1
 name: "Spartak Tests"
 status: inactive
 last_modified: 2025-12-14T22:39:55.397Z

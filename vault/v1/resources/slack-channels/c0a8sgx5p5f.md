@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C0A8SGX5P5F"
 current_name: "hitch-alerts"
 aliases: ["hitch-alerts"]

@@ -1,5 +1,6 @@
 ---
 type: custom-node
+instance: v1
 resource_id: "n8n-nodes-browserless"
 current_name: "n8n-nodes-browserless"
 aliases: ["n8n-nodes-browserless"]

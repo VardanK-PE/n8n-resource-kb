@@ -1,5 +1,6 @@
 ---
 n8n_id: "gJfB9BKQfkmsXvyt"
+instance: v1
 name: "Billing System - Get merchant platform fees"
 status: inactive
 last_modified: 2026-05-27T22:12:13.700Z

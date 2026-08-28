@@ -1,5 +1,6 @@
 ---
 n8n_id: "RKkoUMcRx8u4DkgU"
+instance: v1
 name: "One-off Capture API Call for Corksy"
 status: inactive
 last_modified: 2025-08-07T17:20:25.468Z

@@ -1,5 +1,6 @@
 ---
 n8n_id: "3m6DrdMDwD63ztuT"
+instance: v1
 name: "Gitbook Docs Converter"
 status: inactive
 last_modified: 2025-05-10T16:54:14.913Z

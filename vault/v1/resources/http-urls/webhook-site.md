@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "webhook.site"
 current_name: "webhook.site"
 aliases: ["webhook.site"]

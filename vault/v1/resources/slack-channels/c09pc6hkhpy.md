@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C09PC6HKHPY"
 current_name: "payengine-ai-alerts"
 aliases: ["payengine-ai-alerts"]

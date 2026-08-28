@@ -1,5 +1,6 @@
 ---
 n8n_id: "vGETi2yfirGyOg4o"
+instance: v1
 name: "PCI SAQ Notifications"
 status: active
 last_modified: 2026-08-14T18:23:27.297Z

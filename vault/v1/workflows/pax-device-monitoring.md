@@ -1,5 +1,6 @@
 ---
 n8n_id: "Q9j3wpVGvegSl4Sy"
+instance: v1
 name: "PAX Device Monitoring"
 status: active
 last_modified: 2026-07-10T13:45:14.136Z

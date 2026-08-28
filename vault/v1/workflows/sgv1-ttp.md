@@ -1,5 +1,6 @@
 ---
 n8n_id: "sKQuQS8JhtyGGc4b"
+instance: v1
 name: "SGv1 TTP"
 status: active
 last_modified: 2024-12-14T22:09:21.443Z

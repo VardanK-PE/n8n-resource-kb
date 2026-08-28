@@ -1,5 +1,6 @@
 ---
 n8n_id: "T0yGFQaEQnHpmPdt"
+instance: v1
 name: "PAX Portal API Request"
 status: inactive
 last_modified: 2026-05-27T16:02:45.340Z

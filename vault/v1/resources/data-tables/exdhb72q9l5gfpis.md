@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "ExDhB72Q9l5GfPiS"
 current_name: "PAX - Terminal Details"
 aliases: ["PAX - Terminal Details"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "VEpBuJNtK176eCyn"
+instance: v1
 name: "Resolve Original Transaction"
 status: inactive
 last_modified: 2025-11-05T13:58:38.914Z

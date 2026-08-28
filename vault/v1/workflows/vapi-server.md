@@ -1,5 +1,6 @@
 ---
 n8n_id: "YCgzvAdfFwGvRidX"
+instance: v1
 name: "VAPI Server"
 status: active
 last_modified: 2025-08-28T21:16:40.876Z

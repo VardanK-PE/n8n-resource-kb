@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1IJGpwSJ4vtBtPUJItdGWNqz30k50dWNQWn14HAGJNFU"
 current_name: "202501_Test Partner"
 aliases: ["202501_Test Partner"]

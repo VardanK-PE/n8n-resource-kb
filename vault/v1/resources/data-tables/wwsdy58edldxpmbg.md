@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "WwsDy58edldXpmbg"
 current_name: "PaxPortalBearerToken"
 aliases: ["PaxPortalAccessToken","PaxPortalBearerToken"]

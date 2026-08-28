@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "1EInFusCRzH3z8GC0fRa4r4hpGeFolnnzklJEPoc5_n8"
 current_name: "PE Payments Intelligence Overlay "
 aliases: ["PE Payments Intelligence Overlay "]

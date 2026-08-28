@@ -1,5 +1,6 @@
 ---
 n8n_id: "N06RNEENoFCIGFUs"
+instance: v1
 name: "RSS Subscribtions"
 status: active
 last_modified: 2025-11-11T23:08:59.665Z

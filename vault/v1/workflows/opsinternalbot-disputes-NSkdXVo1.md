@@ -1,5 +1,6 @@
 ---
 n8n_id: "NSkdXVo1cjKZO7SG"
+instance: v1
 name: "OpsInternalBot - Disputes"
 status: inactive
 last_modified: 2026-05-08T18:06:49.753Z

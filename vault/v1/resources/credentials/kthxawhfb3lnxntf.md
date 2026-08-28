@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "kTHXAWhfb3lnXntf"
 current_name: "AWS account 2"
 aliases: ["AWS account 2"]

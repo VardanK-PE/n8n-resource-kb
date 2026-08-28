@@ -1,5 +1,6 @@
 ---
 type: custom-node
+instance: v1
 resource_id: "n8n-nodes-aws-sdk-v3"
 current_name: "n8n-nodes-aws-sdk-v3"
 aliases: ["n8n-nodes-aws-sdk-v3"]

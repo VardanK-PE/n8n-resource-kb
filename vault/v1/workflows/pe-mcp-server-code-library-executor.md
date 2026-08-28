@@ -1,5 +1,6 @@
 ---
 n8n_id: "0vil2rHs6k3EOv6J"
+instance: v1
 name: "PE MCP Server: Code Library Executor"
 status: inactive
 last_modified: 2025-12-21T16:08:05.565Z

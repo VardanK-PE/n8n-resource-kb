@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1dco4C8_hld9FSgshrDleBFMx3rKJYka0jOLkf1-clAg"
 current_name: "DocuSign - Envelope Registry"
 aliases: ["DocuSign - Envelope Registry"]

@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "KwMbpbZr2L8wThSj"
 current_name: "Token Auth - PE Token validation by JobID"
 aliases: ["Token Auth - PE Token validation by JobID"]

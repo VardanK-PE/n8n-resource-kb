@@ -1,5 +1,6 @@
 ---
 n8n_id: "AkPU4SjqKbuNu4Pb"
+instance: v1
 name: "Wishtender Duplicate Balance Changes Alert"
 status: active
 last_modified: 2024-10-25T17:19:56.527Z

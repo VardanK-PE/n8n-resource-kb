@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "staging-sandbox.payengine.dev"
 current_name: "staging-sandbox.payengine.dev"
 aliases: ["staging-sandbox.payengine.dev"]

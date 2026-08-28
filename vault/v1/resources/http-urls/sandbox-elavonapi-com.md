@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "sandbox.elavonapi.com"
 current_name: "sandbox.elavonapi.com"
 aliases: ["sandbox.elavonapi.com"]

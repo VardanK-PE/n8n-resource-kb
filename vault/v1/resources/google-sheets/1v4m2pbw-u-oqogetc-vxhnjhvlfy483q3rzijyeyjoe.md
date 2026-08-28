@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1v4m2pBw-U_oqogEtc-VXHNJhVlfY483Q3rZIJyEYJOE"
 current_name: "pe_receipt"
 aliases: ["pe_receipt"]

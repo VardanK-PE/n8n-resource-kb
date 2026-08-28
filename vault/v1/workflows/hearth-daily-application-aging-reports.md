@@ -1,5 +1,6 @@
 ---
 n8n_id: "hSN8aYP7o7OYfGPY"
+instance: v1
 name: "Hearth - Daily Application Aging Reports"
 status: inactive
 last_modified: 2025-11-16T08:49:19.233Z

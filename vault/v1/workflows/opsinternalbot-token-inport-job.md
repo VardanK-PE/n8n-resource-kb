@@ -1,5 +1,6 @@
 ---
 n8n_id: "1jDrShgq2CNgU8z9"
+instance: v1
 name: "OpsInternalBot - Token Inport Job"
 status: inactive
 last_modified: 2026-05-13T11:55:26.991Z

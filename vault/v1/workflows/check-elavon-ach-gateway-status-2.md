@@ -1,5 +1,6 @@
 ---
 n8n_id: "WaRNwwXwbHcPmYTk"
+instance: v1
 name: "Check Elavon ACH gateway status 2"
 status: inactive
 last_modified: 2026-04-15T19:12:52.748Z

@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "1p0WzyFJTzvL0gEdpAlToMIJb6k8wBAxQ"
 current_name: "Generated Reports"
 aliases: ["Generated Reports"]

@@ -1,5 +1,6 @@
 ---
 type: custom-node
+instance: v1
 resource_id: "n8n-nodes-doc-fill"
 current_name: "n8n-nodes-doc-fill"
 aliases: ["n8n-nodes-doc-fill"]

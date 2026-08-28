@@ -1,5 +1,6 @@
 ---
 n8n_id: "OszFdkYQqIOX3AID"
+instance: v1
 name: "Workflow backup POC"
 status: inactive
 last_modified: 2025-09-19T15:23:56.825Z

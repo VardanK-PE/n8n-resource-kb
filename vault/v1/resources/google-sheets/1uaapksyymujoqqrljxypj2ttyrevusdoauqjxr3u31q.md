@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1UAAPKSyymUjoQqRLjXYpJ2tTyREvuSDOaUqJXR3u31Q"
 current_name: "N8N Authentication"
 aliases: ["N8N Authentication"]

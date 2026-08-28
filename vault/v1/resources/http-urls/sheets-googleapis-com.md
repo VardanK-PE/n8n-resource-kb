@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "sheets.googleapis.com"
 current_name: "sheets.googleapis.com"
 aliases: ["sheets.googleapis.com"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "CLtY9Ihkm5vAGNVX"
+instance: v1
 name: "Njord API"
 status: active
 last_modified: 2026-08-17T18:27:39.615Z

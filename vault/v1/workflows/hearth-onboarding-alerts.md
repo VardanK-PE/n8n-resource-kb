@@ -1,5 +1,6 @@
 ---
 n8n_id: "NnibaCNcbHCTnsqh"
+instance: v1
 name: "Hearth - onboarding alerts"
 status: active
 last_modified: 2025-07-03T18:02:56.761Z

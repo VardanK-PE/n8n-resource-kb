@@ -1,5 +1,6 @@
 ---
 n8n_id: "9M8mejP6A4QaBqY5"
+instance: v1
 name: "Generate Merchant Report"
 status: active
 last_modified: 2026-06-12T20:34:35.371Z

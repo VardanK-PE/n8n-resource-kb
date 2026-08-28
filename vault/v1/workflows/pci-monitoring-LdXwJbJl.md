@@ -1,5 +1,6 @@
 ---
 n8n_id: "LdXwJbJlLzW635Qq"
+instance: v1
 name: "PCI Monitoring"
 status: active
 last_modified: 2026-06-26T17:58:21.739Z

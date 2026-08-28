@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1ZgTZnBheCvtp-hfhBrlt62HuWW4Z7fzpSnZjYyq8Vjc"
 current_name: "PE Merchant Email AI Assistant"
 aliases: ["PE Merchant Email AI Assistant"]

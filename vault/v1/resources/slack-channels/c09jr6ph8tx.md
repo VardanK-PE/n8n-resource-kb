@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C09JR6PH8TX"
 current_name: "n8n-sandbox-of-doom"
 aliases: ["n8n-sandbox-of-doom"]

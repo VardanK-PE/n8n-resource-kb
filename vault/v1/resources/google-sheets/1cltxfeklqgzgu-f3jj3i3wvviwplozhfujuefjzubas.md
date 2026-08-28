@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1cltxFEklqGZgu-F3jJ3i3wvvIwPLOzHFUjUefJZuBas"
 current_name: "Elavon dispute reporting"
 aliases: ["Elavon dispute reporting"]

@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "ROOckQldV1dglJTd"
 current_name: "VNP Partner API Basic Auth Headr"
 aliases: ["VNP Partner API Basic Auth Headr"]

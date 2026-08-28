@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "WMTlps73Qf1Sk3aM"
 current_name: "PE Master JWT Secret"
 aliases: ["PE Master JWT Secret"]

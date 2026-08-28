@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1kXKJXQxQ8xYYmtb1mAbdeZPHKrUXamIklwLeqpfwRwM"
 current_name: "Elavon BI (mids) snapshots"
 aliases: ["Elavon BI (mids) snapshots"]

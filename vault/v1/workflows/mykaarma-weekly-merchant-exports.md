@@ -1,5 +1,6 @@
 ---
 n8n_id: "CRVEpRZuvZVprFiL"
+instance: v1
 name: "MyKaarma Weekly Merchant Exports"
 status: inactive
 last_modified: 2025-12-12T18:39:01.276Z

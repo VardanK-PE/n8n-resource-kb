@@ -1,5 +1,6 @@
 ---
 n8n_id: "9uBpKb17o91NRF7H"
+instance: v1
 name: "My Sub-Workflow 1"
 status: inactive
 last_modified: 2025-06-24T16:29:03.308Z

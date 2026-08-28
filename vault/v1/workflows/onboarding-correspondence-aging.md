@@ -1,5 +1,6 @@
 ---
 n8n_id: "DjgdzbbtR7fJ4oWX"
+instance: v1
 name: "Onboarding Correspondence Aging"
 status: active
 last_modified: 2026-04-21T18:51:53.023Z

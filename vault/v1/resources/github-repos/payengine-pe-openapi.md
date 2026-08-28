@@ -1,5 +1,6 @@
 ---
 type: github-repo
+instance: v1
 resource_id: "payengine/pe-openapi"
 current_name: "payengine/pe-openapi"
 aliases: ["payengine/pe-openapi"]

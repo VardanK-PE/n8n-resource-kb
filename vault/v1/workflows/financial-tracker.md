@@ -1,5 +1,6 @@
 ---
 n8n_id: "NySfya8Y5Fgrf5kj"
+instance: v1
 name: "Financial Tracker"
 status: inactive
 last_modified: 2025-09-16T14:38:39.836Z

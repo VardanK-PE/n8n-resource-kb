@@ -1,5 +1,6 @@
 ---
 type: database
+instance: v1
 resource_id: "postgres/6GBwfPL6n9QZ81ho"
 current_name: "postgres (via Postgres Sandbox-Live)"
 aliases: ["postgres (via Postgres Sandbox-Live)","postgres (via Postgres account 2)"]

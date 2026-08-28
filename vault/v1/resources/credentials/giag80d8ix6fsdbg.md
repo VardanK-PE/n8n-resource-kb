@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "GiaG80d8IX6fsDBG"
 current_name: "N8N QB MCP Server Header Auth Token"
 aliases: ["N8N QB MCP Server Header Auth Token"]

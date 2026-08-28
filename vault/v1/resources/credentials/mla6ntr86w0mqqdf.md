@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "mLa6NtR86w0mqQDF"
 current_name: "PE AWS Account (Prod)"
 aliases: ["PE AWS Account (Prod)"]

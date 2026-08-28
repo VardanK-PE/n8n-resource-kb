@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "na4.docusign.net"
 current_name: "na4.docusign.net"
 aliases: ["na4.docusign.net"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "du7j1kACkcXyYnvY"
+instance: v1
 name: "Send Supermove Statements"
 status: active
 last_modified: 2026-07-10T10:24:20.124Z

@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "FTns17VQYzC0ci8m"
 current_name: "Intrastructure Monitoring - API Calls"
 aliases: ["Intrastructure Monitoring - API Calls"]

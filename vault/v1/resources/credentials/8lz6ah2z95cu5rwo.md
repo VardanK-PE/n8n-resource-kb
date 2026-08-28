@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "8Lz6ah2z95CU5rwO"
 current_name: "QuickBooks Online account"
 aliases: ["QuickBooks Online account"]

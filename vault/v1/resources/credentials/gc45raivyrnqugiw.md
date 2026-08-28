@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "gc45RaIvyrNqUgiw"
 current_name: "PE Automations Servie Account 2"
 aliases: ["PE Automations Servie Account 2"]

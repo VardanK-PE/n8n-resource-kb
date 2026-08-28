@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C06HAPHNNEM"
 current_name: "wishtender-internal"
 aliases: ["wishtender-internal"]

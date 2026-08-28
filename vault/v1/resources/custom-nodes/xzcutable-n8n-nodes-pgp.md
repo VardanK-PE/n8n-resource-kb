@@ -1,5 +1,6 @@
 ---
 type: custom-node
+instance: v1
 resource_id: "@xzcutable/n8n-nodes-pgp"
 current_name: "@xzcutable/n8n-nodes-pgp"
 aliases: ["@xzcutable/n8n-nodes-pgp"]

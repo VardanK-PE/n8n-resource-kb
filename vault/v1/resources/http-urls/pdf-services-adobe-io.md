@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "pdf-services.adobe.io"
 current_name: "pdf-services.adobe.io"
 aliases: ["pdf-services.adobe.io"]

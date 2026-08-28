@@ -1,5 +1,6 @@
 ---
 n8n_id: "YhBEB2syTygYFXO8"
+instance: v1
 name: "Calculate Chargeback Composite Key"
 status: inactive
 last_modified: 2025-11-25T19:31:33.989Z

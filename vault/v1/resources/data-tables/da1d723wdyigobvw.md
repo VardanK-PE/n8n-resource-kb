@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "DA1d723WDyIGoBVW"
 current_name: "Dispute - Merchant Responses"
 aliases: ["Dispute - Merchant Responses"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "OuFH5B78Am4UXsgs"
+instance: v1
 name: "Test 777"
 status: inactive
 last_modified: 2025-08-05T13:10:29.923Z

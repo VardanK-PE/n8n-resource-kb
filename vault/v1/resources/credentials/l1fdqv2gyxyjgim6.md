@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "l1fDQv2GYxYjgim6"
 current_name: "PE Staging Sandbox"
 aliases: ["PE Staging Sandbox"]

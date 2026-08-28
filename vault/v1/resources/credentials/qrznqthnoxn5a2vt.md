@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "QrznQthNoxN5a2vt"
 current_name: "Docuseal Auth"
 aliases: ["Docuseal Auth"]

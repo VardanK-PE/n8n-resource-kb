@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "EyFLJ97T1YO74iGu"
 current_name: "Corksy - Open Batch transactions"
 aliases: ["Corksy - Open Batch transactions"]

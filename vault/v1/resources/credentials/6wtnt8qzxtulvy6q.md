@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "6WTnT8qZXtulvY6q"
 current_name: "SerpAPI account"
 aliases: ["SerpAPI account"]

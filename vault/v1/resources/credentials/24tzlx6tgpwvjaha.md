@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "24TzLX6TGPWvJAha"
 current_name: "PE (SANDBOX) Master Bearer Token"
 aliases: ["PE (SANDBOX) Master Bearer Token"]

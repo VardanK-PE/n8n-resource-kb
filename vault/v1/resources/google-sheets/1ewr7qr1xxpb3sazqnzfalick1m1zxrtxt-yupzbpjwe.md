@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1ewr7qr1xxpb3SAzQnZfAlICk1m1Zxrtxt_yupzBPjwE"
 current_name: "VNP ISV Datastore"
 aliases: ["VNP ISV Datastore"]

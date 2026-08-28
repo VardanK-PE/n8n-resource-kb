@@ -1,5 +1,6 @@
 ---
 n8n_id: "8H0XdRETMCwVl3p8"
+instance: v1
 name: "Dispute - Update Console"
 status: inactive
 last_modified: 2026-02-09T17:52:27.640Z

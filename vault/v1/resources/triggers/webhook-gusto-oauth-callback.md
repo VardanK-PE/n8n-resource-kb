@@ -1,5 +1,6 @@
 ---
 type: trigger
+instance: v1
 resource_id: "webhook:gusto-oauth-callback"
 current_name: "webhook — gusto-oauth-callback"
 aliases: ["webhook — gusto-oauth-callback"]

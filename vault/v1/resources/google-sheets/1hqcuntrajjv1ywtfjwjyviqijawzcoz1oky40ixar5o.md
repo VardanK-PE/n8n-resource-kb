@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1hQCUnTRajjv1ywtfJwJyVIqIJAwZCOZ1Oky40ixAR5o"
 current_name: "transactions_to_skip_20251029_143022.csv"
 aliases: ["transactions_to_skip_20251029_143022.csv"]

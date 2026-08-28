@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "1U9MGwcdwZXTfVm73-qxXuv7DcPep3S1c"
 current_name: "Unsigned"
 aliases: ["Unsigned"]

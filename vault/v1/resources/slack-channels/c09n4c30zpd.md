@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C09N4C30ZPD"
 current_name: "pax-device-monitoring"
 aliases: ["pax-device-monitoring"]

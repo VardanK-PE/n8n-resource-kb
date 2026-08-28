@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "pcicompliancemanager.com"
 current_name: "pcicompliancemanager.com"
 aliases: ["pcicompliancemanager.com"]

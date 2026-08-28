@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "vJyOBgaEh30bQnA6"
 current_name: "n8nio-pg"
 aliases: ["n8nio-pg"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "YDpIqa2VhcsiSbEm"
+instance: v1
 name: "MCP Server Test"
 status: inactive
 last_modified: 2025-11-20T22:22:03.466Z

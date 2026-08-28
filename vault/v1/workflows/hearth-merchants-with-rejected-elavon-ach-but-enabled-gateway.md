@@ -1,5 +1,6 @@
 ---
 n8n_id: "mKFnZtwtcehhGGBx"
+instance: v1
 name: "Hearth - Merchants with rejected Elavon ACH but enabled Gateway"
 status: inactive
 last_modified: 2026-07-24T19:13:33.496Z

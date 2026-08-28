@@ -1,5 +1,6 @@
 ---
 n8n_id: "rWsv8W7dqcspvcaz"
+instance: v1
 name: "Hearth - Merchant Max Transaction Limit Email Alerts"
 status: active
 last_modified: 2026-01-12T20:00:24.324Z

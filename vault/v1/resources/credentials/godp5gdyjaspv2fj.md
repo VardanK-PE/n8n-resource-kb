@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "Godp5GdYJAspV2fj"
 current_name: "Anthropic (spartak@platformfactory.io)"
 aliases: ["Anthropic (spartak@platformfactory.io)"]

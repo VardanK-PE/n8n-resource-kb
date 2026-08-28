@@ -1,5 +1,6 @@
 ---
 n8n_id: "1DtbETjoUehasEAG"
+instance: v1
 name: "Auto-email Elavon to change the merchant email"
 status: active
 last_modified: 2025-11-19T16:21:17.764Z

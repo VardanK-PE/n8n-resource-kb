@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C06D19A0DDJ"
 current_name: "shalav-n8n"
 aliases: ["shalav-n8n"]

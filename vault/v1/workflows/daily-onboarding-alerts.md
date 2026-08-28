@@ -1,5 +1,6 @@
 ---
 n8n_id: "WZ3gVX06CoEoAmzr"
+instance: v1
 name: "Daily Onboarding Alerts"
 status: active
 last_modified: 2024-10-25T17:19:11.739Z

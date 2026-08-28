@@ -1,5 +1,6 @@
 ---
 n8n_id: "YjWQewLm3lVchUAO"
+instance: v1
 name: "Alive AI"
 status: inactive
 last_modified: 2025-08-22T07:05:23.458Z

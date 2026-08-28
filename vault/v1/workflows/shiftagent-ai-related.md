@@ -1,5 +1,6 @@
 ---
 n8n_id: "aHkdQU78RVrDYoRI"
+instance: v1
 name: "ShiftAgent AI Related"
 status: active
 last_modified: 2026-07-01T14:45:40.110Z

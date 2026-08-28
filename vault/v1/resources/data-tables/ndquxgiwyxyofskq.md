@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "ndqUxgIWYXYoFSkq"
 current_name: "Transaction Alerts - Hitch"
 aliases: ["Transaction Alerts - Hitch"]

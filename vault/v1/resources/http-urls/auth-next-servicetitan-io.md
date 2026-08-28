@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "auth-next.servicetitan.io"
 current_name: "auth-next.servicetitan.io"
 aliases: ["auth-next.servicetitan.io"]

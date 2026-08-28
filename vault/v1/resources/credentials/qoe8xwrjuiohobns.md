@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "qoE8xwrJUiOHObns"
 current_name: "EasyPost Prod Account"
 aliases: ["EasyPost Prod Account"]

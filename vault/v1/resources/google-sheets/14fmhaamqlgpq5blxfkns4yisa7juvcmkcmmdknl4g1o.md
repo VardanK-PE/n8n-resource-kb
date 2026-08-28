@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "14fmhaamQlGPQ5BLxfKNS4yISA7jUvcMkCmmDKNL4g1o"
 current_name: "PayEngineAIBotLogs"
 aliases: ["PayEngineAIBotLogs"]

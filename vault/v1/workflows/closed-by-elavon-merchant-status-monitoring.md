@@ -1,5 +1,6 @@
 ---
 n8n_id: "jWRuCkZC6fXG9Sp4"
+instance: v1
 name: "Closed By Elavon: Merchant status monitoring"
 status: inactive
 last_modified: 2025-11-16T15:03:41.086Z

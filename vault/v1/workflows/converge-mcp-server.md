@@ -1,5 +1,6 @@
 ---
 n8n_id: "wyv0NsWkA7UX7sUC"
+instance: v1
 name: "Converge MCP Server"
 status: active
 last_modified: 2025-11-06T14:16:49.313Z

@@ -1,5 +1,6 @@
 ---
 type: trigger
+instance: v1
 resource_id: "webhook:bb72c65b-b8df-4550-93de-59bf1ac89c34"
 current_name: "webhook — bb72c65b-b8df-4550-93de-59bf1ac89c34"
 aliases: ["webhook — bb72c65b-b8df-4550-93de-59bf1ac89c34"]

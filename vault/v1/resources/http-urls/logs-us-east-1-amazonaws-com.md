@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "logs.us-east-1.amazonaws.com"
 current_name: "logs.us-east-1.amazonaws.com"
 aliases: ["logs.us-east-1.amazonaws.com"]

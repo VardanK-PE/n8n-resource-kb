@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "ReYAj1UAergdKBHN"
 current_name: "Hearth Gmail Account"
 aliases: ["Hearth Gmail Account"]

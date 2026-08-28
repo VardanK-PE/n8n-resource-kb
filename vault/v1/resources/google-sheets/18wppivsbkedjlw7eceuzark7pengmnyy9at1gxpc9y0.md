@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "18wPpIvsBkEdjLw7ECEUZaRK7pENGmnyY9at1GxPc9y0"
 current_name: "PE Docs Revamp Project"
 aliases: ["PE Docs Revamp Project"]

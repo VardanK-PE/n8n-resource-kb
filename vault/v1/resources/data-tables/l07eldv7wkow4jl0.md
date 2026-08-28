@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "L07eldV7wKow4jl0"
 current_name: "Forte Next Day Funding Emails"
 aliases: ["Forte Next Day Funding Emails"]

@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C09CKMCU3E3"
 current_name: "pci-releated-alert"
 aliases: ["pci-releated-alert"]

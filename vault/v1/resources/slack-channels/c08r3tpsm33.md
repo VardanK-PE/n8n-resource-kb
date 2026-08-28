@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C08R3TPSM33"
 current_name: "st-prod-event-logs"
 aliases: ["st-prod-event-logs"]

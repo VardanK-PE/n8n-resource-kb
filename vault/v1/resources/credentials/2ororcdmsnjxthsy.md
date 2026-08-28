@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "2orOrcdMsnJXThSY"
 current_name: "Postgres ST Prod Sierra DB Replica"
 aliases: ["Postgres ST Prod Sierra DB Replica"]

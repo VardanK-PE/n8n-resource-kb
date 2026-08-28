@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "slack.com"
 current_name: "slack.com"
 aliases: ["slack.com"]

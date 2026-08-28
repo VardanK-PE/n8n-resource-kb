@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "w4wa61x6UmWXzrlF"
 current_name: "Elavon Disputes API (Sandbox)"
 aliases: ["Elavon Disputes API (Sandbox)"]

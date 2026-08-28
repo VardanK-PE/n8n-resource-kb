@@ -1,5 +1,6 @@
 ---
 n8n_id: "1GngUg26uDoLxlom"
+instance: v1
 name: "PCI generate invoices for already charged merchants"
 status: inactive
 last_modified: 2026-08-14T19:27:02.017Z

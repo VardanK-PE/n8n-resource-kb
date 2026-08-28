@@ -1,5 +1,6 @@
 ---
 n8n_id: "kbTzKL7Gh8pcYRFO"
+instance: v1
 name: "Supermove onboarding alerts"
 status: active
 last_modified: 2024-11-27T21:48:34.400Z

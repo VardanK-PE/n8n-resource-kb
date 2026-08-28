@@ -1,5 +1,6 @@
 ---
 n8n_id: "TaXStskv6zSvLi6V"
+instance: v1
 name: "My workflow 7"
 status: inactive
 last_modified: 2026-06-18T15:50:40.034Z

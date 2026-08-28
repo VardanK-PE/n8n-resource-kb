@@ -1,5 +1,6 @@
 ---
 n8n_id: "VwGVEgcKjbaXKgU7"
+instance: v1
 name: "Hearth Merchant CC and ACH limits (Daily update)"
 status: active
 last_modified: 2025-10-31T19:33:21.898Z

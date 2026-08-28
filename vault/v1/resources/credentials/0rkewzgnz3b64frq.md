@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "0rkEwZgnz3b64fRq"
 current_name: "Mailgun N8N Key"
 aliases: ["Mailgun N8N Key"]

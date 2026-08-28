@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "servicetitan-api-prod-dev-portal.management.azure-api.net"
 current_name: "servicetitan-api-prod-dev-portal.management.azure-api.net"
 aliases: ["servicetitan-api-prod-dev-portal.management.azure-api.net"]

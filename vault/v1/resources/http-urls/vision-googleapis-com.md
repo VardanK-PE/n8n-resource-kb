@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "vision.googleapis.com"
 current_name: "vision.googleapis.com"
 aliases: ["vision.googleapis.com"]

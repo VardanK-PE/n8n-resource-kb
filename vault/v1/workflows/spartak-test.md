@@ -1,5 +1,6 @@
 ---
 n8n_id: "C2X7wKhle2NPMidm"
+instance: v1
 name: "Spartak Test"
 status: inactive
 last_modified: 2024-04-25T18:30:30.946Z

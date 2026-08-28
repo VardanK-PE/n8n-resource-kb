@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "payengine.atlassian.net"
 current_name: "payengine.atlassian.net"
 aliases: ["payengine.atlassian.net"]

@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "AzztRn2QdajzLrFm"
 current_name: "PE Staging Master JWT Auth account"
 aliases: ["PE Staging Master JWT Auth account"]

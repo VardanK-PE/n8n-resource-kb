@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "1wkK6FxRsDnnvqIBrufDNqiViQjexnbx7BL8TJq1bk8Q"
 current_name: "Merchant Transactions Report - Template"
 aliases: ["Merchant Transactions Report - Template"]

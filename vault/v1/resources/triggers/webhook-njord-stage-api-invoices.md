@@ -1,5 +1,6 @@
 ---
 type: trigger
+instance: v1
 resource_id: "webhook:njord/stage/api/invoices"
 current_name: "webhook — njord/stage/api/invoices"
 aliases: ["webhook — njord/stage/api/invoices"]

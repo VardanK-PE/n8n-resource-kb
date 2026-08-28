@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "12sbGqKcBLSrOqy3ukSgjW1G-gJ-_8zswVsaDajwGCwo"
 current_name: "Hearth Merchants - CC and ACH limits"
 aliases: ["Hearth Merchants - CC and ACH limits"]

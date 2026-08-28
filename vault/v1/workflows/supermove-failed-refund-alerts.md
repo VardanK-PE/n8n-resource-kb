@@ -1,5 +1,6 @@
 ---
 n8n_id: "pY3AYD2FHkRWCY4w"
+instance: v1
 name: "Supermove Failed Refund Alerts"
 status: inactive
 last_modified: 2024-06-29T00:30:55.143Z

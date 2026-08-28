@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1IqpXV6R46OaRRitTb7ZvuWa6ZJntKyIMagJQ6aerpj0"
 current_name: "Hearth - Elavon Whitelist Merchants (Aug 2025)"
 aliases: ["Hearth - Elavon Whitelist Merchants (Aug 2025)"]

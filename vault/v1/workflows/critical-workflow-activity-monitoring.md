@@ -1,5 +1,6 @@
 ---
 n8n_id: "YvKojPnHEEmamM0A"
+instance: v1
 name: "Critical Workflow Activity Monitoring"
 status: active
 last_modified: 2025-12-19T17:10:00.472Z

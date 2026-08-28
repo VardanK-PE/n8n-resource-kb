@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "1RM2cWL05uI_VoqaGIkfpyNF1cfNgV8GB"
 current_name: "VNP ISV Data"
 aliases: ["VNP ISV Data"]

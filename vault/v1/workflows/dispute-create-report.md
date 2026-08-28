@@ -1,5 +1,6 @@
 ---
 n8n_id: "IM3wk08pLLTXawd2"
+instance: v1
 name: "Dispute - Create Report"
 status: inactive
 last_modified: 2026-06-24T18:43:52.419Z

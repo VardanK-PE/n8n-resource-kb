@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "cY32sQxfiF41jYwm"
 current_name: "Prod: PayEngine sftp (for direct connection)"
 aliases: ["Prod: PayEngine sftp (for direct connection)"]

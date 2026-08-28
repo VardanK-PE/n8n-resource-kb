@@ -1,5 +1,6 @@
 ---
 n8n_id: "LC1RSavjzfiaIBVf"
+instance: v1
 name: "PCI Monitoring"
 status: inactive
 last_modified: 2025-12-20T19:55:25.753Z

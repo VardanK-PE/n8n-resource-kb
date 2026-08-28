@@ -1,5 +1,6 @@
 ---
 n8n_id: "4ugBRdDoboJ4Uq3e"
+instance: v1
 name: "PAX Terminal Details Sync"
 status: inactive
 last_modified: 2026-07-10T13:43:04.122Z

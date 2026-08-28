@@ -1,5 +1,6 @@
 ---
 n8n_id: "114H81oKKk4EXteM"
+instance: v1
 name: "Email - Get emails by filter"
 status: inactive
 last_modified: 2025-12-22T16:55:21.363Z

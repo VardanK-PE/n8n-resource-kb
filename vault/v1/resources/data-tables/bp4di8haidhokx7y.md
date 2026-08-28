@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "BP4Di8haiDhOKX7Y"
 current_name: "Dispute - Elavon Attachments"
 aliases: ["Dispute - Elavon Attachments","Dispute - Orphaned Email Attachments"]

@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1e09P28gzIMO4lzjU-VQJ9iGIxy3QaHNsvcbOfzV2H_A"
 current_name: "SuperMove Datastore"
 aliases: ["SuperMove Datastore"]

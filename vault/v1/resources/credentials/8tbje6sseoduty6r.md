@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "8tbje6SSeODUtY6r"
 current_name: "Lexis Nexis [PROD]"
 aliases: ["Lexis Nexis [PROD]"]

@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1jRWnOJq_y2vWyJzn8_btqTmjDm8ntLZEKDvlFkIkStM"
 current_name: "Pre-Arbitration Cases"
 aliases: ["Pre-Arbitration Cases"]

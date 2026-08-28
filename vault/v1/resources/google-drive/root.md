@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "root"
 current_name: "/ (Root folder)"
 aliases: ["/ (Root folder)"]

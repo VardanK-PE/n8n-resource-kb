@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "dynamic-host"
 current_name: "dynamic-host"
 aliases: ["dynamic-host"]

@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C06C4LCJADV"
 current_name: "payengine-ai-tests"
 aliases: ["payengine-ai-tests"]

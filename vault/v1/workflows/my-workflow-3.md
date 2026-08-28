@@ -1,5 +1,6 @@
 ---
 n8n_id: "xXRFRVgdiTc06Rvm"
+instance: v1
 name: "My workflow 3"
 status: inactive
 last_modified: 2025-08-30T14:08:16.314Z

@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "wsonline.seisint.com"
 current_name: "wsonline.seisint.com"
 aliases: ["wsonline.seisint.com"]

@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "victorious-field-02b1c0e1e.3.azurestaticapps.net"
 current_name: "victorious-field-02b1c0e1e.3.azurestaticapps.net"
 aliases: ["victorious-field-02b1c0e1e.3.azurestaticapps.net"]

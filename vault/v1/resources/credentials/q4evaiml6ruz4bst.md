@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "q4eVAiML6rUZ4bSt"
 current_name: "migrations@payengine.co email"
 aliases: ["migrations@payengine.co email"]

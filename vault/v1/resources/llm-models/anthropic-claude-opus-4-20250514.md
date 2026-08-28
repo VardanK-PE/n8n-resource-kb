@@ -1,5 +1,6 @@
 ---
 type: llm-model
+instance: v1
 resource_id: "anthropic/claude-opus-4-20250514"
 current_name: "anthropic / claude-opus-4-20250514"
 aliases: ["anthropic / claude-opus-4-20250514"]

@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "148WEdqfS59VGHkv7da3wkU61HMHSKlEkgYCY2VIEgbM"
 current_name: "Yumna Testing"
 aliases: ["Yumna Testing"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "IEzAJUkv41KuLjCB"
+instance: v1
 name: "Forte Gateway Auto-submitter V2"
 status: active
 last_modified: 2026-08-18T18:29:24.358Z

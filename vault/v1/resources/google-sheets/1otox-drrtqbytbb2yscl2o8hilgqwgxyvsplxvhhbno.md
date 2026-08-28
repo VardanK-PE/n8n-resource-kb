@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1otox_DRRtQBYTBb2YsCl2O8hilGqWGxYVSPLxVHHbno"
 current_name: "Hearth ACH Enrollment Merchant"
 aliases: ["Hearth ACH Enrollment Merchant"]

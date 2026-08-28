@@ -1,5 +1,6 @@
 ---
 type: trigger
+instance: v1
 resource_id: "schedule:every 24 hour(s)"
 current_name: "schedule — every 24 hour(s)"
 aliases: ["schedule — every 24 hour(s)"]

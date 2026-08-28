@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1NFlgutFRYOdvz8Gc7IhsHxOeYWUaoXe4a29goxqMR2w"
 current_name: "PCI Form Fields"
 aliases: ["PCI Form Fields"]

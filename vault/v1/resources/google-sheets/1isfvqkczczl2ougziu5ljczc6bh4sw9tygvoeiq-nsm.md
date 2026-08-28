@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1iSfvqkczczL2OuGziu5LjcZC6bH4sw9TyGvoeiq-nsM"
 current_name: "Partner Platform Monthly Invoicing"
 aliases: ["Partner Platform Monthly Invoicing"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "OpUQfwveuLHARiR5"
+instance: v1
 name: "Residuals Downloader"
 status: active
 last_modified: 2026-07-30T17:14:52.122Z

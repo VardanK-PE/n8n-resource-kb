@@ -1,5 +1,6 @@
 ---
 n8n_id: "E66SPMxJDH28QBxI"
+instance: v1
 name: "Disable Elavon ACH gateway for a given merchant"
 status: inactive
 last_modified: 2026-06-16T17:59:54.905Z

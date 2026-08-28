@@ -1,5 +1,6 @@
 ---
 n8n_id: "esPJ6uwgFODvFnyt"
+instance: v1
 name: "Billing System - Generate Invoices for Billing Period"
 status: inactive
 last_modified: 2026-06-30T10:02:50.798Z

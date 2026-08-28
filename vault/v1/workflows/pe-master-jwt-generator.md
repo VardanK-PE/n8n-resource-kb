@@ -1,5 +1,6 @@
 ---
 n8n_id: "wPVryk5tt2miLmOV"
+instance: v1
 name: "PE Master JWT Generator"
 status: inactive
 last_modified: 2026-01-16T17:23:41.164Z

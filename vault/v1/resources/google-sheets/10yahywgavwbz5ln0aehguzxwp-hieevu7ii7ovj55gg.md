@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "10yAHYWgAvWBz5ln0aEhGuzxwP_HIeeVu7iI7ovJ55gg"
 current_name: "CISCO_MERCHANT_CREDENTIALS"
 aliases: ["CISCO_MERCHANT_CREDENTIALS"]

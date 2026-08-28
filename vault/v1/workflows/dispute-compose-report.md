@@ -1,5 +1,6 @@
 ---
 n8n_id: "NWv022t59k7EtTFo"
+instance: v1
 name: "Dispute - Compose report"
 status: inactive
 last_modified: 2026-05-27T19:47:02.585Z

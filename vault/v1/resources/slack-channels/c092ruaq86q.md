@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C092RUAQ86Q"
 current_name: "disputes-automation"
 aliases: ["disputes-automation"]

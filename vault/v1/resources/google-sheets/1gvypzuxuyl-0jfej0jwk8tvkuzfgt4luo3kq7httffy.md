@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1GVyPZUXUYl-0jfeJ0JwK8TVKUzFgT4LUo3Kq7HttffY"
 current_name: "Daily Reports - Merchant Transactions"
 aliases: ["Daily Reports - Merchant Transactions"]

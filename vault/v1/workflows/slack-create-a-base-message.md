@@ -1,5 +1,6 @@
 ---
 n8n_id: "VQPaemuwy6FdMa9L"
+instance: v1
 name: "Slack - Create a base message"
 status: inactive
 last_modified: 2025-11-09T10:51:05.362Z

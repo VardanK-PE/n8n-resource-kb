@@ -1,5 +1,6 @@
 ---
 n8n_id: "pXpjChtEfW79WnTw"
+instance: v1
 name: "PE MCP Server - Backup 2026-01-06"
 status: inactive
 last_modified: 2026-01-06T20:43:27.926Z

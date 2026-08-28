@@ -1,5 +1,6 @@
 ---
 n8n_id: "rFnI8ZlZh8Bj0qo7"
+instance: v1
 name: "Elavon_SFTP_Alerts"
 status: inactive
 last_modified: 2024-10-25T17:13:47.307Z

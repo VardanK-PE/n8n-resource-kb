@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1P7oKrK096R-2G9IKoLeHdD8BAegP4zz--QvSLVBWptw"
 current_name: "Hearth PayEngine Reports for Hearth"
 aliases: ["Hearth PayEngine Reports for Hearth"]

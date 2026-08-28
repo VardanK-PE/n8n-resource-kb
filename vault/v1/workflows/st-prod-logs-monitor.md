@@ -1,5 +1,6 @@
 ---
 n8n_id: "9OAYYzOeS4BoqQ5q"
+instance: v1
 name: "ST Prod Logs Monitor"
 status: inactive
 last_modified: 2025-09-25T14:38:22.074Z

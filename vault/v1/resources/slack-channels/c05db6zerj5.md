@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C05DB6ZERJ5"
 current_name: "accounts-receivable"
 aliases: ["accounts-receivable"]

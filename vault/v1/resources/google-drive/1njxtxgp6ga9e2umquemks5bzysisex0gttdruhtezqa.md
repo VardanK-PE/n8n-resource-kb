@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "1NjXTXGP6Ga9E2UmQUEMKS5bZYSiSEx0GTtDRuHTEZQA"
 current_name: "Virtual Merchant Account Manager AI Promp"
 aliases: ["Virtual Merchant Account Manager AI Promp"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "WOh7XTA5yAW7zqPI"
+instance: v1
 name: "[BACKUP 20251224_2141] Residuals Downloader"
 status: inactive
 last_modified: 2025-12-25T05:41:20.281Z

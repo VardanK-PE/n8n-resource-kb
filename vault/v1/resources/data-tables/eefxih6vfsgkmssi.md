@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "EEFXIH6vFSgKmssi"
 current_name: "EEFXIH6vFSgKmssi"
 aliases: ["EEFXIH6vFSgKmssi","Elavon - MIDs"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "IHhwbvnk001UVC3A"
+instance: v1
 name: "Slack Lists Manager"
 status: inactive
 last_modified: 2025-09-30T02:54:13.298Z

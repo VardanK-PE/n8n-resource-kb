@@ -1,5 +1,6 @@
 ---
 n8n_id: "WR8vDuKrjudhUa71"
+instance: v1
 name: "On Error Workflow"
 status: inactive
 last_modified: 2024-11-30T02:36:33.847Z

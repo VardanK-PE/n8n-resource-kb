@@ -1,5 +1,6 @@
 ---
 n8n_id: "UHVH2fElpy3vcD4t"
+instance: v1
 name: "Pre-Arbitration cases with transaction info"
 status: inactive
 last_modified: 2026-01-15T18:33:10.259Z

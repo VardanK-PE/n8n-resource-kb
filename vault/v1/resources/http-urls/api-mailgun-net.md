@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "api.mailgun.net"
 current_name: "api.mailgun.net"
 aliases: ["api.mailgun.net"]

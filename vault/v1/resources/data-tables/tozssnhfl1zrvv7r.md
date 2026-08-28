@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "tOzssNhfl1ZRvV7R"
 current_name: "Elavon - ICQual Fees"
 aliases: ["Elavon - ICQual Fees"]
