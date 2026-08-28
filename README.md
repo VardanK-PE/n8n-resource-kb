@@ -23,19 +23,21 @@ Each note has an **auto-generated block** (rewritten on every refresh) and a **m
 
 ```
 vault/                    The knowledge base (open this in Obsidian)
-  index.md                Entry point: section overview, counts, navigation
-  workflows/              One note per n8n workflow (~200)
-  resources/<type>/       One note per unique resource, 17 types
+  index.md                Router across instances → links to each v<N>/index.md
+  v1/  v2/                One isolated subtree per n8n instance (Old / New):
+    index.md              Entry point: section overview, counts, navigation
+    workflows/            One note per n8n workflow in this instance
+    resources/<type>/     One note per unique resource, 17 types
                           (credentials, services, databases, triggers,
                            llm-models, http-urls, env-vars, custom-nodes, …)
-  changelogs/YYYY-MM-DD.md  What changed on each refresh day
-  _templates/             Reference templates Claude follows (not live notes)
-  _cache/                 Fetched workflow JSON — gitignored, regenerable
+    changelogs/YYYY-MM-DD.md  What changed on each refresh day
+    _cache/               Fetched workflow JSON — gitignored, regenerable
+  _templates/             Shared reference templates Claude follows (not live notes)
 
 agent-os/                 Product docs, standards (the runbooks), current spec
 scripts/
-  n8n-api.sh              n8n REST API helper
-  render-vault.sh         Vault rendering helper
+  n8n-api.sh              n8n REST API helper — first arg is the instance alias (v1|v2)
+  render-vault.sh         Vault rendering helper — takes --instance v1|v2
   jq/*.jq                 Extraction programs that drive every workflow read
 
 CLAUDE.md                 Project router: maps user intent → the right runbook
@@ -44,13 +46,13 @@ CLAUDE.md                 Project router: maps user intent → the right runbook
 ## Setup
 
 1. **Clone** and open the folder in Claude Code.
-2. **Credentials** — copy the example env file and fill in your n8n details:
+2. **Credentials** — copy the example env file and fill in both instances' n8n details:
    ```bash
    cp .env.example .env
-   # edit .env: set N8N_API_URL and N8N_API_KEY
+   # edit .env: set N8N_API_URL_V1/N8N_API_KEY_V1 (Old) and N8N_API_URL_V2/N8N_API_KEY_V2 (New)
    ```
-   `.env` is gitignored and never committed.
-3. **Browse the vault** — open the `vault/` directory as an Obsidian vault, or just read the markdown directly. Start at `vault/index.md`.
+   The credentials file is gitignored and never committed. Claude reaches the API only through `scripts/n8n-api.sh <v1|v2> …`, which keeps keys out of the command line.
+3. **Browse the vault** — open the `vault/` directory as an Obsidian vault, or just read the markdown directly. Start at `vault/index.md` (the cross-instance router), then dive into `vault/v1/` or `vault/v2/`.
 
 ## Usage
 
@@ -69,4 +71,4 @@ Claude routes each intent to the corresponding runbook in `agent-os/standards/`.
 
 **Tracked:** the vault (notes, changelogs, templates, shared `.obsidian/` config), `agent-os/` docs and standards, `scripts/`, and `CLAUDE.md`.
 
-**Ignored** (see `.gitignore`): the credentials file, `.mcp.json`, `vault/_cache/` (regenerable workflow JSON), Obsidian per-user workspace state, per-machine Claude settings, and `.DS_Store`.
+**Ignored** (see `.gitignore`): the credentials file, `.mcp.json`, each instance's `vault/*/_cache/` (regenerable workflow JSON), Obsidian per-user workspace state, per-machine Claude settings, and `.DS_Store`.

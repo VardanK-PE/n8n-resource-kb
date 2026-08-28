@@ -14,7 +14,7 @@ This standard defines how the refresh procedure converts each n8n node into one 
 | `http-url` | `resources/http-urls/` (host-grouped) |
 | `env-var` | `resources/env-vars/` |
 | `custom-node` | `resources/custom-nodes/` |
-| `workflow` | `vault/workflows/` (workflows are first-class resources) |
+| `workflow` | `workflows/` (workflows are first-class resources; note dirs are all under `vault/<instance>/`) |
 
 ## v1 node-type → resource extraction rules
 

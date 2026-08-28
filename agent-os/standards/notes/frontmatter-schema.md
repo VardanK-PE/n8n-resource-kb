@@ -2,13 +2,18 @@
 
 Every note in the vault has YAML frontmatter. The schema differs by note type but obeys a common rule: **refresh-owned keys are off-limits to manual editing**.
 
-Refresh-owned keys (any note type): `n8n_id`, `fingerprint`, `last_modified`, `status`, `auto_generated_at`, `type`.
+Refresh-owned keys (any note type): `n8n_id`, `fingerprint`, `last_modified`, `status`, `auto_generated_at`, `type`, `instance`.
 
-## Workflow notes — `vault/workflows/<workflow-name>.md`
+## Instance (all instance-scoped notes)
+
+The vault tracks two n8n instances, each in its own subtree (`vault/v1/`, `vault/v2/`). Every workflow, resource, changelog, and per-instance index note carries `instance: v1 | v2` in its frontmatter. It is refresh-owned and always equals the note's subtree — redundant with the path, but it lets reverse-lookups and queries filter by instance without parsing paths. The only note without an `instance` key is the top-level router index (`vault/index.md`, `type: index-router`), which spans instances.
+
+## Workflow notes — `vault/<instance>/workflows/<workflow-name>.md`
 
 ```yaml
 ---
-n8n_id: "abc123def456"          # n8n workflow ID (string)
+n8n_id: "abc123def456"          # n8n workflow ID (string, unique WITHIN an instance)
+instance: v1                    # v1 | v2 — which n8n instance this note mirrors
 name: "Sync HubSpot to Sheets"  # human name from n8n
 status: active                  # active | inactive | deleted
 last_modified: 2026-06-01T14:32:11Z  # ISO 8601 UTC, from n8n
@@ -24,14 +29,15 @@ Notes:
 - `status: deleted` means the workflow disappeared from n8n. The note is preserved (so manual annotations survive); reverse-lookups should treat deleted workflows as historical.
 - `tags` is the union of n8n's `tags` field and any tags the user has added manually. Refresh replaces only the n8n-sourced subset; do not remove tags the user added.
 
-## Resource notes — `vault/resources/<type>/<name>.md`
+## Resource notes — `vault/<instance>/resources/<type>/<name>.md`
 
-Common shape:
+Resource notes live at `vault/<instance>/resources/<type>/<name>.md`. Common shape:
 
 ```yaml
 ---
 type: credential                # one of the resource categories below
-name: "hubspot-prod"            # canonical resource identifier
+instance: v1                    # v1 | v2 — which n8n instance this resource belongs to
+name: "hubspot-prod"            # canonical resource identifier (unique within the instance)
 auto_generated_at: 2026-06-01T17:07:00Z
 ---
 ```
@@ -49,11 +55,14 @@ Type-specific additional keys:
 | `env-var` | `resources/env-vars/` | none beyond common |
 | `custom-node` | `resources/custom-nodes/` | `package` (npm package name), `version` (when known) |
 
-## Changelog notes — `vault/changelogs/YYYY-MM-DD.md`
+## Changelog notes — `vault/<instance>/changelogs/YYYY-MM-DD.md`
+
+Changelogs live at `vault/<instance>/changelogs/YYYY-MM-DD.md` — one series per instance.
 
 ```yaml
 ---
 date: 2026-06-01
+instance: v1                    # v1 | v2 — which instance this refresh covered
 workflows_added: 2
 workflows_modified: 5
 workflows_removed: 0
@@ -66,20 +75,32 @@ auto_generated_at: 2026-06-01T17:07:00Z
 
 Changelogs have **no manual block**. They are immutable historical records — manual notes about a change belong on the workflow or resource note, not the changelog.
 
-## Index note — `vault/index.md`
+## Per-instance index note — `vault/<instance>/index.md`
 
 ```yaml
 ---
 type: index
+instance: v1                    # v1 | v2 — which instance this subtree mirrors
 auto_generated_at: 2026-06-02T00:03:00Z
 ---
 ```
 
-The index is the vault's front door: a single orientation note that surfaces section counts and wikilinks down into `workflows/`, every `resources/<type>/`, and `changelogs/`. There is exactly one canonical path (`vault/index.md`), so no `name` or slug field is needed.
+Each instance subtree has its own front door: an orientation note that surfaces section counts and wikilinks down into that instance's `workflows/`, every `resources/<type>/`, and `changelogs/`. There is exactly one canonical path per instance (`vault/<instance>/index.md`), so no `name` or slug field is needed.
 
-Unlike workflow and resource notes, the index has no `n8n_id`, `fingerprint`, `last_modified`, or `status` — it reflects **vault state**, not n8n state. The only refresh-owned keys are `type: index` (literal string) and `auto_generated_at`.
+Unlike workflow and resource notes, the index has no `n8n_id`, `fingerprint`, `last_modified`, or `status` — it reflects **vault state**, not n8n state. The refresh-owned keys are `type: index` (literal string), `instance`, and `auto_generated_at`.
 
 Unlike changelogs, the index **does** carry a manual block. The auto block holds machine-generated counts and links; the manual block is for hand-written orientation prose the maintainer wants visible on the front page (project context, runbook pointers, on-call notes, etc.). The standard auto / manual contract from `notes/auto-manual-blocks.md` applies.
+
+## Router index — `vault/index.md`
+
+```yaml
+---
+type: index-router
+auto_generated_at: 2026-06-02T00:03:00Z
+---
+```
+
+The top-level `vault/index.md` is the cross-instance router: it lists the instances and links to each per-instance `index.md`. It is **not** instance-scoped, so it carries no `instance` key. Refresh never regenerates it from n8n state (it has no counts to sync); it is hand-maintained, with the standard auto / manual block contract. `_templates/` also lives at the vault root and is instance-agnostic.
 
 ## Filename conventions
 

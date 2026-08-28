@@ -23,7 +23,7 @@ sync:
     summary: Runbook for "what uses X?" intents. Reads resource notes via plain file I/O; never modifies them.
   - id: sync/changelog-format
     file: sync/changelog-format.md
-    summary: Required structure for vault/changelogs/YYYY-MM-DD.md notes, including taxonomy-gap entries.
+    summary: Required structure for vault/<instance>/changelogs/YYYY-MM-DD.md notes, including taxonomy-gap entries.
   - id: sync/large-workflow-handling
     file: sync/large-workflow-handling.md
-    summary: How to work with hundred-KB-scale workflow JSON without blowing context — cache to vault/_cache/, extract via scripts/jq/*.jq, never Read raw JSON.
+    summary: How to work with hundred-KB-scale workflow JSON without blowing context — cache per instance to vault/<instance>/_cache/, extract via scripts/jq/*.jq, never Read raw JSON.

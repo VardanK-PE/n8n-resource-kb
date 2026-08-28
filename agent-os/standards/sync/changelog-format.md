@@ -1,12 +1,13 @@
 # Standard: Changelog Format
 
-Each refresh that produces meaningful change writes one file: `vault/changelogs/YYYY-MM-DD.md` (UTC date). Multiple refreshes on the same day append to the same file.
+Each refresh that produces meaningful change writes one file **in the refreshed instance's subtree**: `vault/<instance>/changelogs/YYYY-MM-DD.md` (UTC date), where `<instance>` is `v1` or `v2`. Multiple refreshes of the same instance on the same day append to the same file. The two instances keep independent changelog series.
 
 ## File structure
 
 ```markdown
 ---
 date: 2026-06-01
+instance: v1
 workflows_added: 2
 workflows_modified: 5
 workflows_removed: 0
@@ -16,7 +17,7 @@ taxonomy_gaps: 1
 auto_generated_at: 2026-06-01T17:07:00Z
 ---
 
-# Changelog — 2026-06-01
+# Changelog — 2026-06-01 (v1)
 
 ## Run at 17:07 UTC
 
@@ -79,7 +80,7 @@ Avoid raw JSON diffs — those are forensic data for Phase 2's full-snapshot fea
 
 ## Multiple runs same day
 
-If `vault/changelogs/<today>.md` already exists, append a new `## Run at HH:MM UTC` section. Update the frontmatter counts (`workflows_added`, etc.) to reflect the **cumulative** totals across all runs that day. Do not overwrite the prior run's section.
+If `vault/<instance>/changelogs/<today>.md` already exists, append a new `## Run at HH:MM UTC` section. Update the frontmatter counts (`workflows_added`, etc.) to reflect the **cumulative** totals across all runs that day. Do not overwrite the prior run's section.
 
 ## No-change runs
 

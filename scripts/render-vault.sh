@@ -2,8 +2,12 @@
 # Render workflow + resource notes into vault/ from cached workflow JSON.
 #
 # Usage:
-#   scripts/render-vault.sh <workflow-id> [<workflow-id> ...]
-#   scripts/render-vault.sh --all
+#   scripts/render-vault.sh --instance <v1|v2> <workflow-id> [<workflow-id> ...]
+#   scripts/render-vault.sh --instance <v1|v2> --all
+#
+# --instance selects which instance subtree to render into (vault/<instance>/).
+# It is required — n8n IDs are only unique within an instance, so rendering into
+# the wrong subtree would silently corrupt the other instance's notes.
 #
 # Bash 3.2-compatible (no associative arrays). All data wrangling goes through jq.
 #
@@ -21,7 +25,19 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_ROOT"
 
-VAULT="vault"
+# --- Required instance selector (validated allowlist) ---
+if [ "${1:-}" != "--instance" ]; then
+  echo "usage: $0 --instance <v1|v2> [<workflow-id> ... | --all]" >&2
+  exit 2
+fi
+INSTANCE="${2:-}"
+case "$INSTANCE" in
+  v1|v2) ;;
+  *) echo "ERROR: unknown instance '${INSTANCE:-}' (allowed: v1, v2)." >&2; exit 2 ;;
+esac
+shift 2
+
+VAULT="vault/$INSTANCE"
 CACHE="$VAULT/_cache"
 NOW="$(date -u '+%Y-%m-%dT%H:%M:%SZ')"
 
@@ -396,6 +412,7 @@ while IFS= read -r ID; do
     cat <<EOF
 ---
 n8n_id: "$ID"
+instance: $INSTANCE
 name: "$NAME"
 status: $STATUS
 last_modified: $LAST_MOD
@@ -634,6 +651,7 @@ while IFS= read -r resource; do
     cat <<EOF
 ---
 type: $rtype
+instance: $INSTANCE
 resource_id: "$rid"
 current_name: $(printf '%s' "$rname" | jq -Rs .)
 aliases: $(printf '%s' "$resource" | jq -c '.aliases')
@@ -788,7 +806,7 @@ done < "$RESOURCES_JSONL"
 # ============================================================
 
 # For each unique target workflow id that received a callee usage, gather callers
-# and append them to the callee's workflow note (if one exists in vault/workflows/).
+# and append them to the callee's workflow note (if one exists in $VAULT/workflows/).
 
 jq -cs '
   map(select(.type == "workflow-callee"))
