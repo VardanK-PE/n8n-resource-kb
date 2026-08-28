@@ -148,15 +148,25 @@ Build `V = {n8n_id → frontmatter}`.
 
 ### Step 3 — Categorize each workflow
 
+**Run the categorizer** — do not hand-roll this comparison, and never key it on the fingerprint alone:
+
+```sh
+scripts/detect-changes.sh "$INST"   # one line per workflow: <CATEGORY>\t<id>\t<slug>\t<detail>
+```
+
 For every `id` in `N ∪ V`:
 
-| In n8n? | In vault? | Category |
-|---|---|---|
-| yes | no | **Added** — generate new note |
-| yes | yes, fingerprint matches | **Unchanged** — skip |
-| yes | yes, fingerprint differs | **Modified** — diff + edit auto block |
-| no | yes, status ≠ deleted | **Removed** — flip status, preserve note |
-| no | yes, status = deleted | (no-op) |
+| In n8n? | In vault? | Category | Action |
+|---|---|---|---|
+| yes | no | **Added** | generate new note |
+| yes | yes, fingerprint differs | **Modified** | re-render note (updates auto block); if the name also changed the slug migrates (see 4e) |
+| yes | yes, fingerprint matches but **name differs** | **Renamed** | re-render note → migrate slug (4e); log a *renamed* changelog entry |
+| yes | yes, fingerprint + name match but **status differs** | **Status-changed** | re-render note (updates `status`); log a *status change* entry |
+| yes | yes, fingerprint + name + status all match | **Unchanged** | skip |
+| no | yes, status ≠ deleted | **Removed** | flip `status: deleted`, preserve note |
+| no | yes, status = deleted | — | no-op |
+
+**Why a fingerprint-only check is wrong:** per `sync/fingerprint.md` the canonical hash deliberately excludes the workflow **name** and archived/active **status** (they are cosmetic to *logic*). A pure rename or an archive/unarchive therefore keeps the same fingerprint — `detect-changes.sh` catches these by comparing `name` and `status` separately (`RENAMED` / `STATUS_CHANGED`). Skipping this step silently leaves stale names, stale statuses, and stale slugs in the vault.
 
 ### Step 4 — Process each workflow
 
@@ -227,6 +237,24 @@ If the manual block is missing or malformed, substitute the empty stub.
 - **Existing note:** use the `Edit` tool. `old_string` is the current auto-block region (including the `<!-- auto:start -->` and `<!-- auto:end -->` markers) verbatim; `new_string` is the regenerated auto-block region with the same markers. Then issue a second `Edit` against the frontmatter block to update `fingerprint`, `last_modified`, `status`, `auto_generated_at`, and the n8n-sourced subset of `tags`.
 
 **Never use `Write` on an existing note** — it overwrites the whole file and would clobber the manual block.
+
+**Renderer reality:** `scripts/render-vault.sh` is **create-only** — it writes a note only if one doesn't already exist at the target slug, and never rewrites an existing auto block. So for **Modified / Renamed / Status-changed** notes the mechanical path is: capture the manual block (4e) → **delete the old note file** → `scripts/render-vault.sh --instance "$INST" "$ID"` (explicit id — bypasses the `--all` archived/backup name filter) → if the manual block was non-empty, splice it back into the freshly rendered note. Rendering by explicit id also recomputes the slug, so a rename lands at the new filename automatically.
+
+#### 4f-slug. Slug migration on rename (or legacy slug drift)
+
+When a workflow is **Renamed**, its slug changes, so the note must move to the new filename — an in-place `Edit` at the old path would leave a stale filename that resource/sub-workflow reverse-lookup links (which use the *current* slug) no longer resolve to. Delete the old-slug note and render by id (per the renderer-reality note above); git records it as a rename.
+
+The same drift can accumulate silently from older renders whose slug algorithm differed. To detect it, diff the renderer's computed map against the actual filenames:
+
+```sh
+# after a render pass has populated render-tmp:
+awk -F'\t' 'NR==FNR{c[$1]=$2; next}
+  { id=$1; slug=$2; if (id in c && c[id]!=slug) print id"\t"c[id]"\t"slug }' \
+  vault/$INST/_cache/render-tmp/id-slug.tsv \
+  <(for f in vault/$INST/workflows/*.md; do
+      id=$(awk -F\" '/^n8n_id:/{print $2;exit}' "$f"); echo "$id	$(basename "$f" .md)"; done)
+# any output = a note whose filename must be migrated to the current slug.
+```
 
 #### 4g. For "Removed" workflows
 

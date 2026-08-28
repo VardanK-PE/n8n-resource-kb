@@ -2,11 +2,11 @@
 n8n_id: "TaXStskv6zSvLi6V"
 instance: v1
 name: "My workflow 7"
-status: inactive
+status: archived
 last_modified: 2026-06-18T15:50:40.034Z
 tags: []
 fingerprint: "a46990b87d3e5a412b5cb8240c791b08ccba3fb3e2fa2e2927b37a04a2171425"
-auto_generated_at: 2026-08-19T19:13:32Z
+auto_generated_at: 2026-08-28T21:59:10Z
 ---
 
 <!-- auto:start -->
@@ -15,7 +15,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 ## Summary
 
-- **Status:** inactive
+- **Status:** archived
 - **n8n ID:** `TaXStskv6zSvLi6V`
 - **Nodes:** 4
 - **Last modified:** 2026-06-18T15:50:40.034Z

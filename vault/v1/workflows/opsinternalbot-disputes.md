@@ -2,11 +2,11 @@
 n8n_id: "yN8AkfJoZqN2ft9i"
 instance: v1
 name: "OpsInternalBot - Disputes"
-status: inactive
+status: archived
 last_modified: 2026-04-20T16:32:27.878Z
 tags: []
 fingerprint: "84bc5abb9e7b52aff08d4eafaaf74bd68f8dd99a22d172fc50033cc9b46ebd19"
-auto_generated_at: 2026-08-19T19:13:32Z
+auto_generated_at: 2026-08-28T21:59:10Z
 ---
 
 <!-- auto:start -->
@@ -15,7 +15,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 ## Summary
 
-- **Status:** inactive
+- **Status:** archived
 - **n8n ID:** `yN8AkfJoZqN2ft9i`
 - **Nodes:** 51
 - **Last modified:** 2026-04-20T16:32:27.878Z

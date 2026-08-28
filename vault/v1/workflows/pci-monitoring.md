@@ -2,11 +2,11 @@
 n8n_id: "LC1RSavjzfiaIBVf"
 instance: v1
 name: "PCI Monitoring"
-status: inactive
+status: archived
 last_modified: 2025-12-20T19:55:25.753Z
 tags: []
 fingerprint: "e69e965c79068962251aa9db0f55e8b6a07128de3fe9bf8c606b572f3710ee3c"
-auto_generated_at: 2026-08-19T19:13:32Z
+auto_generated_at: 2026-08-28T21:59:10Z
 ---
 
 <!-- auto:start -->
@@ -15,7 +15,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 ## Summary
 
-- **Status:** inactive
+- **Status:** archived
 - **n8n ID:** `LC1RSavjzfiaIBVf`
 - **Nodes:** 73
 - **Last modified:** 2025-12-20T19:55:25.753Z

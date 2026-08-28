@@ -74,7 +74,7 @@ Any of the following will produce a new fingerprint:
 - Moving nodes on the canvas
 - Adding / removing canvas annotations
 - Editing `notesInFlow`
-- Renaming the workflow itself (workflow name lives in frontmatter, not the fingerprint — so `name` changes update the note but don't emit a "logic changed" changelog entry; they emit a "renamed" entry instead)
+- Renaming the workflow itself (workflow name lives in frontmatter, not the fingerprint — so `name` changes update the note but don't emit a "logic changed" changelog entry; they emit a "renamed" entry instead). **Because the name is not hashed, a rename is invisible to a fingerprint-only comparison — it must be caught by comparing `name` separately.** `scripts/detect-changes.sh` does this (`RENAMED`); the refresh procedure Step 3 requires it. The same applies to archived/active `status`, also unhashed (`STATUS_CHANGED`).
 
 ## First-time generation
 
@@ -86,12 +86,7 @@ When a workflow has no existing note, refresh:
 
 ## On mismatch
 
-When the computed fingerprint differs from the stored fingerprint:
-
-1. Compute the diff between the prior auto block (preserved in memory) and the new one
-2. Patch the auto block via `mcp__obsidian__patch_note` (leaves the manual block untouched)
-3. Update `fingerprint` and `auto_generated_at` in frontmatter via `update_frontmatter`
-4. Append the change description to today's changelog per `sync/changelog-format.md`
+When the computed fingerprint differs from the stored fingerprint (or `detect-changes.sh` reports `RENAMED` / `STATUS_CHANGED`), follow `sync/refresh-procedure.md` Step 4: capture the manual block, regenerate the note (the renderer is create-only, so delete + re-render by id), migrate the slug if the name changed (4f-slug), update `fingerprint` / `status` / `auto_generated_at` in frontmatter, and append the change to today's changelog per `sync/changelog-format.md`. Use `Edit` (never `Write`) on any surviving note; do **not** use the `mcp__obsidian__*` tools (they point at a different vault — see `CLAUDE.md`).
 
 ## Why this exact algorithm
 

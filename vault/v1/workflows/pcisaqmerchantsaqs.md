@@ -2,11 +2,11 @@
 n8n_id: "bj6hOt5AptjLOaaK"
 instance: v1
 name: "PciSaqMerchantSaqs"
-status: inactive
+status: archived
 last_modified: 2025-10-19T13:47:48.058Z
 tags: []
 fingerprint: "921c0f04c3d163662054948d03fd56efca4e86a611ec8891572b654ad07dc38c"
-auto_generated_at: 2026-08-19T19:13:32Z
+auto_generated_at: 2026-08-28T21:59:10Z
 ---
 
 <!-- auto:start -->
@@ -15,7 +15,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 ## Summary
 
-- **Status:** inactive
+- **Status:** archived
 - **n8n ID:** `bj6hOt5AptjLOaaK`
 - **Nodes:** 0
 - **Last modified:** 2025-10-19T13:47:48.058Z
