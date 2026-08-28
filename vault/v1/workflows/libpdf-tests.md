@@ -2,11 +2,11 @@
 n8n_id: "N4iezdhLQyIoPxNb"
 instance: v1
 name: "LibPDF Tests"
-status: inactive
+status: archived
 last_modified: 2025-08-30T13:12:28.221Z
 tags: []
 fingerprint: "e0ee5bc49cafd8ff66b6fb7e1e31d21c3887a8d6efcd1079db4010b29082bbef"
-auto_generated_at: 2026-08-19T19:13:32Z
+auto_generated_at: 2026-08-28T21:59:10Z
 ---
 
 <!-- auto:start -->
@@ -15,7 +15,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 ## Summary
 
-- **Status:** inactive
+- **Status:** archived
 - **n8n ID:** `N4iezdhLQyIoPxNb`
 - **Nodes:** 2
 - **Last modified:** 2025-08-30T13:12:28.221Z

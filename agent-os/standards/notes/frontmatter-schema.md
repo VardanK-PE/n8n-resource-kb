@@ -15,7 +15,7 @@ The vault tracks two n8n instances, each in its own subtree (`vault/v1/`, `vault
 n8n_id: "abc123def456"          # n8n workflow ID (string, unique WITHIN an instance)
 instance: v1                    # v1 | v2 — which n8n instance this note mirrors
 name: "Sync HubSpot to Sheets"  # human name from n8n
-status: active                  # active | inactive | deleted
+status: active                  # active | inactive | archived | deleted
 last_modified: 2026-06-01T14:32:11Z  # ISO 8601 UTC, from n8n
 tags:                           # n8n tags + any optional user tags
   - production
@@ -26,6 +26,8 @@ auto_generated_at: 2026-06-01T17:07:00Z  # when refresh last wrote auto block
 ```
 
 Notes:
+- `status` precedence when the renderer writes it: `archived` (n8n `isArchived`) > `active` > `inactive`. `deleted` is set by refresh (not the renderer) when a workflow disappears from n8n.
+- `status: archived` mirrors n8n's archive flag — the workflow still exists but is archived. Neither `name` nor `status` is part of the fingerprint, so a rename or an archive/unarchive is caught by `scripts/detect-changes.sh`, not by the fingerprint (see `sync/fingerprint.md`).
 - `status: deleted` means the workflow disappeared from n8n. The note is preserved (so manual annotations survive); reverse-lookups should treat deleted workflows as historical.
 - `tags` is the union of n8n's `tags` field and any tags the user has added manually. Refresh replaces only the n8n-sourced subset; do not remove tags the user added.
 

@@ -2,11 +2,11 @@
 n8n_id: "XHmdKvSqP7myaPIo"
 instance: v1
 name: "Ops - Expiry"
-status: inactive
+status: archived
 last_modified: 2026-04-17T20:39:45.819Z
 tags: []
 fingerprint: "2615d7e7968092271272002792062e8efba4d6681b1652bc1f03913affcb111b"
-auto_generated_at: 2026-08-19T19:13:32Z
+auto_generated_at: 2026-08-28T21:59:10Z
 ---
 
 <!-- auto:start -->
@@ -15,7 +15,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 ## Summary
 
-- **Status:** inactive
+- **Status:** archived
 - **n8n ID:** `XHmdKvSqP7myaPIo`
 - **Nodes:** 34
 - **Last modified:** 2026-04-17T20:39:45.819Z

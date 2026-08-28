@@ -2,11 +2,11 @@
 n8n_id: "nRnqd6pG5n8065Ig"
 instance: v1
 name: "My workflow"
-status: inactive
+status: archived
 last_modified: 2025-07-02T10:05:58.930Z
 tags: []
 fingerprint: "21b99277625f03455cb402de3082695873d24e1cfdfb271f00eb428c6b86f3b0"
-auto_generated_at: 2026-08-19T19:13:32Z
+auto_generated_at: 2026-08-28T21:59:10Z
 ---
 
 <!-- auto:start -->
@@ -15,7 +15,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 ## Summary
 
-- **Status:** inactive
+- **Status:** archived
 - **n8n ID:** `nRnqd6pG5n8065Ig`
 - **Nodes:** 6
 - **Last modified:** 2025-07-02T10:05:58.930Z
