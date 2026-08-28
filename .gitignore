@@ -1,5 +1,9 @@
-# n8n REST API credentials — never commit
+# n8n REST API credentials — never commit. Covers .env plus editor swap files
+# (.env.swp) and per-env variants, while keeping the tracked .env.example.
 .env
+.env.*
+*.swp
+!.env.example
 
 # Legacy: an earlier plan considered using the n8n-mcp MCP server, which would
 # have lived in .mcp.json. We switched to direct REST API calls; if anyone
@@ -7,8 +11,9 @@
 .mcp.json
 
 # Per-refresh cache of full workflow JSON (potentially MBs per workflow).
-# Regenerated on every refresh; never the source of truth.
-vault/_cache/
+# Regenerated on every refresh; never the source of truth. One cache per
+# instance subtree (vault/v1/_cache/, vault/v2/_cache/, …).
+vault/*/_cache/
 
 # macOS noise
 .DS_Store

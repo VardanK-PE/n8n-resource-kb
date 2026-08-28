@@ -12,22 +12,24 @@ The full workflow JSON is fetched once, written to disk, and then processed excl
 
 ## Disk layout
 
+The cache is **per instance** — one under each instance subtree, where `<INST>` is the instance alias (`v1` | `v2`):
+
 ```
-vault/_cache/                      # gitignored
-├── list.json                       # most recent /api/v1/workflows result (paginated, concatenated)
+vault/<INST>/_cache/                 # gitignored (matched by vault/*/_cache/)
+├── list.jsonl                       # most recent /api/v1/workflows result (paginated, concatenated)
 └── workflows/
-    └── <n8n_id>.json              # one file per workflow, full JSON from /api/v1/workflows/<id>
+    └── <n8n_id>.json               # one file per workflow, full JSON from /api/v1/workflows/<id>
 ```
 
-The cache is the single source of in-memory data during a refresh. Subsequent steps (resource extraction, fingerprint, note construction) read from the cache, not from re-fetched API responses.
+The cache is the single source of in-memory data during a refresh. Subsequent steps (resource extraction, fingerprint, note construction) read from the cache, not from re-fetched API responses. Because n8n IDs are only unique within an instance, each instance keeps its own cache — never share one across instances.
 
-`vault/_cache/` is gitignored. It's a working scratch area — purgeable at any time without losing real state.
+`vault/<INST>/_cache/` is gitignored. It's a working scratch area — purgeable at any time without losing real state.
 
 ## Tool discipline (hard rules)
 
 1. **Never `cat` a workflow JSON file into the conversation.** Use `jq` to extract specific fields.
-2. **Never `Read` a file under `vault/_cache/workflows/`.** It exists for `jq`, not for Claude's context.
-3. **Don't pipe raw curl responses through `echo` / print.** Always redirect to disk: `curl … > vault/_cache/workflows/$ID.json` then drive from there.
+2. **Never `Read` a file under `vault/<INST>/_cache/workflows/`.** It exists for `jq`, not for Claude's context.
+3. **Don't pipe raw API responses through `echo` / print.** Always redirect to disk: `scripts/n8n-api.sh "$INST" "/api/v1/workflows/$ID" > vault/$INST/_cache/workflows/$ID.json` then drive from there.
 4. **Print only small summaries via `jq`.** When checking a workflow's shape, write a `jq` query that returns counts, names, or specific values — not the whole node.
 
 If you need to inspect a workflow during debugging, name the question first ("how many HTTP nodes?", "what credential does node X use?") and write the `jq` for that question. Never "open the file to look around."
@@ -61,31 +63,32 @@ Programs MUST:
 ## End-to-end pattern in the refresh procedure
 
 ```sh
-source .env  # or use the sibling-project fallback per refresh-procedure.md
+# All API calls go through the wrapper, which resolves this instance's auth from
+# .env (never `source .env` — the .env hook blocks it). First arg = alias.
+INST=v1    # or v2
 
-mkdir -p vault/_cache/workflows
+mkdir -p vault/$INST/_cache/workflows
 
 # Step 1: get the list (small response, OK to read into context if needed)
-curl -fsS -H "X-N8N-API-KEY: $N8N_API_KEY" "$N8N_API_URL/api/v1/workflows?limit=100" \
+scripts/n8n-api.sh "$INST" "/api/v1/workflows?limit=100" \
   | jq -c '.data[] | {id, name, active, updatedAt, tags}' \
-  > vault/_cache/list.jsonl
+  > vault/$INST/_cache/list.jsonl
 
 # For each workflow ID, fetch to disk
 while read -r row; do
   id=$(echo "$row" | jq -r .id)
-  curl -fsS -H "X-N8N-API-KEY: $N8N_API_KEY" \
-    "$N8N_API_URL/api/v1/workflows/$id" \
-    > vault/_cache/workflows/"$id".json
-done < vault/_cache/list.jsonl
+  scripts/n8n-api.sh "$INST" "/api/v1/workflows/$id" \
+    > vault/$INST/_cache/workflows/"$id".json
+done < vault/$INST/_cache/list.jsonl
 
 # Per-workflow extraction (raw JSON never leaves disk)
-jq -c -f scripts/jq/extract-http-urls.jq    < vault/_cache/workflows/$id.json
-jq -c -f scripts/jq/extract-credentials.jq  < vault/_cache/workflows/$id.json
-jq -c -f scripts/jq/extract-subworkflows.jq < vault/_cache/workflows/$id.json
+jq -c -f scripts/jq/extract-http-urls.jq    < vault/$INST/_cache/workflows/$id.json
+jq -c -f scripts/jq/extract-credentials.jq  < vault/$INST/_cache/workflows/$id.json
+jq -c -f scripts/jq/extract-subworkflows.jq < vault/$INST/_cache/workflows/$id.json
 # ...etc per resource category
 
 # Fingerprint
-jq -cS -f scripts/jq/canonical.jq < vault/_cache/workflows/$id.json \
+jq -cS -f scripts/jq/canonical.jq < vault/$INST/_cache/workflows/$id.json \
   | shasum -a 256 \
   | cut -d' ' -f1
 ```
@@ -99,7 +102,7 @@ If a node type appears that the existing scripts don't handle (taxonomy gap), th
 1. Use `jq` to extract just that one node's record from the cached JSON:
 
    ```sh
-   jq '.nodes[] | select(.id=="<id>")' < vault/_cache/workflows/$wf_id.json
+   jq '.nodes[] | select(.id=="<id>")' < vault/$INST/_cache/workflows/$wf_id.json
    ```
 
 2. Look at the node in isolation — it's small. Decide what to extract.
@@ -114,7 +117,7 @@ Never pull the whole workflow into context to "look around." Always slice to the
 Re-running refresh against an unchanged instance should:
 
 - Re-fetch the list (cheap)
-- Skip re-fetching each workflow whose `updatedAt` hasn't changed since the cached copy's `mtime` **AND** whose fingerprint matches the vault note. (Use `find vault/_cache/workflows/$id.json -newer …` or just compare `updatedAt` to the cached file's recorded value.)
+- Skip re-fetching each workflow whose `updatedAt` hasn't changed since the cached copy's `mtime` **AND** whose fingerprint matches the vault note. (Use `find vault/$INST/_cache/workflows/$id.json -newer …` or just compare `updatedAt` to the cached file's recorded value.)
 
 This avoids re-hitting the API for every refresh; it also avoids re-running every `jq` extraction. Fingerprint stability is what actually decides whether to write notes, but cached JSON skipping is what keeps the API + CPU footprint small.
 
@@ -123,8 +126,8 @@ This avoids re-hitting the API for every refresh; it also avoids re-running ever
 A rough budget per refresh, to know when to stop and design differently:
 
 - List response: 1–2 KB per workflow → maybe 200 KB for 100 workflows. OK to handle in context.
-- Per-workflow extracted summary (all `jq` outputs concatenated): ~2–10 KB. Multiplied by 100 workflows → 200 KB–1 MB. Still OK in **disk**; keep in `vault/_cache/extracted/<id>.json` if needed and merge incrementally.
-- Notes written to `vault/workflows/<slug>.md`: bounded by workflow content, not raw JSON. Typical 2–5 KB.
-- Raw JSON (NEVER in context): hundreds of KB per workflow × N workflows. Stays in `vault/_cache/workflows/`.
+- Per-workflow extracted summary (all `jq` outputs concatenated): ~2–10 KB. Multiplied by 100 workflows → 200 KB–1 MB. Still OK in **disk**; keep in `vault/$INST/_cache/extracted/<id>.json` if needed and merge incrementally.
+- Notes written to `vault/$INST/workflows/<slug>.md`: bounded by workflow content, not raw JSON. Typical 2–5 KB.
+- Raw JSON (NEVER in context): hundreds of KB per workflow × N workflows. Stays in `vault/$INST/_cache/workflows/`.
 
 If a single workflow's extracted summary itself approaches 50 KB, that's a sign the extraction is too verbose — tighten the `jq` to drop redundant fields.

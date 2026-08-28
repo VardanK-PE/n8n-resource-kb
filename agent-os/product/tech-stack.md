@@ -20,8 +20,8 @@ This product has no traditional frontend/backend split. It is a **knowledge base
 
 - **Claude Code** (this CLI) is the sync engine. There is no standalone service to deploy. Refresh runs on-demand when the user triggers it through Claude.
 - **Tooling used**:
-  - **n8n REST API** via `curl` + `jq` — the source of truth for n8n state. Auth from `.env` (`N8N_API_URL`, `N8N_API_KEY`). Endpoints: `GET /api/v1/workflows`, `GET /api/v1/workflows/{id}`.
-  - **`jq` programs under `scripts/jq/`** — every workflow-JSON extraction goes through these pre-written scripts rather than inline `jq`. Full workflow JSON is cached under `vault/_cache/workflows/<id>.json` (gitignored) and read only through `jq` projections, never loaded whole into context.
+  - **n8n REST API** via the `scripts/n8n-api.sh <instance> <endpoint>` wrapper (`curl` + `jq`) — the source of truth for n8n state, across **two instances** (`v1` Old, `v2` New). The alias is the wrapper's first arg; it resolves per-instance auth from `.env` (`N8N_API_URL_V1`/`N8N_API_KEY_V1`, `N8N_API_URL_V2`/`N8N_API_KEY_V2`) after validating it against an allowlist, so secrets never reach the agent's command line. Endpoints: `GET /api/v1/workflows`, `GET /api/v1/workflows/{id}`.
+  - **`jq` programs under `scripts/jq/`** — every workflow-JSON extraction goes through these pre-written scripts rather than inline `jq`. Full workflow JSON is cached per instance under `vault/<instance>/_cache/workflows/<id>.json` (gitignored) and read only through `jq` projections, never loaded whole into context.
   - **Plain file I/O** — `Read` for existing notes, `Write` for new notes, and `Edit` (exact-match against the auto block) for updates, so the manual-annotation block is never clobbered.
 - **Not used at runtime**: the `n8n-mcp` MCP server (unstable on this instance) and the `obsidian` MCP server (points at an unrelated vault). The n8n-focused skills (`n8n-mcp-tools-expert`, `n8n-node-configuration`, `n8n-workflow-patterns`, `n8n-expression-syntax`, `n8n-validation-expert`) remain useful as **reference docs** when investigating an unfamiliar node.
 
@@ -39,5 +39,5 @@ N/A — there is no database. The vault and the live n8n instance together hold 
 
 ## Other
 
-- **git** — this repo is the durability layer, giving history of both auto-generated content and manual annotations. The vault, tooling, and docs are tracked; credentials, `.mcp.json`, and `vault/_cache/` are gitignored (see `.gitignore` and `README.md`).
+- **git** — this repo is the durability layer, giving history of both auto-generated content and manual annotations. The vault, tooling, and docs are tracked; credentials, `.mcp.json`, and each instance's `vault/*/_cache/` are gitignored (see `.gitignore` and `README.md`).
 - **No CI/CD** for this product itself; refresh is interactive.
