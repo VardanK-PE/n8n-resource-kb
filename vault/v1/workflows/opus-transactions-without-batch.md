@@ -1,5 +1,6 @@
 ---
 n8n_id: "JVLCqZtCjjHDPThc"
+instance: v1
 name: "Opus - Transactions without batch"
 status: inactive
 last_modified: 2026-06-11T17:28:52.189Z

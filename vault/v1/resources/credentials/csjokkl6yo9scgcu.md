@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "CSjokKL6yO9ScGCu"
 current_name: "ShiftAget PG Access API Key"
 aliases: ["ShiftAget PG Access API Key"]

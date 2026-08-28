@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "JizHT82aEUvnKQEd"
 current_name: "Centrifugo HMAC Secret Key"
 aliases: ["Centrifugo HMAC Secret Key"]

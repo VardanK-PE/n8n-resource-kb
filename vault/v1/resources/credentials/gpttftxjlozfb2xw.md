@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "gPttFTXJLozFB2xW"
 current_name: "Test Master Bearer Auth"
 aliases: ["Test Master Bearer Auth"]

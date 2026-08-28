@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1-dYa-W5_BkEwMs5mn88deW3xz2DwdHUOige04rvZeOQ"
 current_name: "BrexTransactions"
 aliases: ["BrexTransactions"]

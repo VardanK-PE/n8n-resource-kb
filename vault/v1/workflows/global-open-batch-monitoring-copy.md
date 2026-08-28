@@ -1,5 +1,6 @@
 ---
 n8n_id: "ru4K4o5884D9AiEj"
+instance: v1
 name: "Global open batch monitoring copy"
 status: active
 last_modified: 2026-08-12T15:41:21.876Z

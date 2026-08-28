@@ -1,5 +1,6 @@
 ---
 n8n_id: "VzmhPP1YuR4bXS8K"
+instance: v1
 name: "Supermove: Transaction Alerts"
 status: active
 last_modified: 2025-11-11T17:46:37.488Z

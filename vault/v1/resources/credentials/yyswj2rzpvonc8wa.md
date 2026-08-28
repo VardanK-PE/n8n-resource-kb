@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "yysWJ2rZpvONC8WA"
 current_name: "Production / ST - Read Replica Auto Credential"
 aliases: ["Production / ST - Read Replica Auto Credential"]

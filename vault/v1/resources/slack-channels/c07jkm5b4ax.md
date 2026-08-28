@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C07JKM5B4AX"
 current_name: "supermove-onboarding-alerts"
 aliases: ["supermove-onboarding-alerts"]

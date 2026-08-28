@@ -1,5 +1,6 @@
 ---
 n8n_id: "lCngyFjfXKtEtC2I"
+instance: v1
 name: "ST Sandbox Logs Monitor"
 status: inactive
 last_modified: 2025-09-25T01:44:10.018Z

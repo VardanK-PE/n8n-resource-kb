@@ -1,5 +1,6 @@
 ---
 n8n_id: "6kyZcLGdSZF0T7Lz"
+instance: v1
 name: "Monthly Partner Platform Fee Generator"
 status: active
 last_modified: 2026-06-29T16:50:20.706Z

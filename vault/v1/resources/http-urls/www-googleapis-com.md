@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "www.googleapis.com"
 current_name: "www.googleapis.com"
 aliases: ["www.googleapis.com"]

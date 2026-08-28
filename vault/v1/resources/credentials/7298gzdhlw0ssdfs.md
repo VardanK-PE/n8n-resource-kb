@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "7298gzDHlw0sSdFs"
 current_name: "Postgres Staging Sandbox"
 aliases: ["Postgres Staging Sandbox"]

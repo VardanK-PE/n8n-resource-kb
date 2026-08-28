@@ -1,5 +1,6 @@
 ---
 type: kafka-topic
+instance: v1
 resource_id: "lexis_nexis_api_logs"
 current_name: "lexis_nexis_api_logs"
 aliases: ["lexis_nexis_api_logs"]

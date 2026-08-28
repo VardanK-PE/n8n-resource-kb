@@ -1,5 +1,6 @@
 ---
 n8n_id: "iKChJ9duWwAOzZHd"
+instance: v1
 name: "Roverpass Cardmix Analysis"
 status: inactive
 last_modified: 2025-01-26T00:44:53.700Z

@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1kiZ0YV1iIBvXnCjyEkHYu-XVQOATxwJU7ykPY70q4Gw"
 current_name: "Elavon BI Automation"
 aliases: ["Elavon BI Automation"]

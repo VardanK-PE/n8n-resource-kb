@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C09KJ1YDX4K"
 current_name: "hearth-onboarding-aging-report"
 aliases: ["hearth-onboarding-aging-report"]

@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C08R5H3HP6V"
 current_name: "corksy-event-logs"
 aliases: ["corksy-event-logs"]

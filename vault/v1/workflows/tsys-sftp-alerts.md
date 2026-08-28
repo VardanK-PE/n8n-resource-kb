@@ -1,5 +1,6 @@
 ---
 n8n_id: "sDWG4fBwq4dVRAq7"
+instance: v1
 name: "Tsys_SFTP_Alerts"
 status: active
 last_modified: 2024-10-25T17:19:08.074Z

@@ -1,5 +1,6 @@
 ---
 n8n_id: "5S8DHEGcnRUFSOfM"
+instance: v1
 name: "Heath Merchants - Forte Next Day Funding (NDF) Request Emails"
 status: inactive
 last_modified: 2026-03-09T17:49:55.361Z

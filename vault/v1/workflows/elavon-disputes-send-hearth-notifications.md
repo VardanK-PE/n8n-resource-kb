@@ -1,5 +1,6 @@
 ---
 n8n_id: "8YHh1wSkFjN6tExy"
+instance: v1
 name: "Elavon Disputes - Send Hearth Notifications"
 status: inactive
 last_modified: 2026-01-08T15:30:07.826Z

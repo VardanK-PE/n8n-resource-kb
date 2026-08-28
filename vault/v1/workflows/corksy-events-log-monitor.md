@@ -1,5 +1,6 @@
 ---
 n8n_id: "TPdOZheQOL2iuJ3H"
+instance: v1
 name: "Corksy Events Log Monitor"
 status: active
 last_modified: 2025-05-04T15:57:35.827Z

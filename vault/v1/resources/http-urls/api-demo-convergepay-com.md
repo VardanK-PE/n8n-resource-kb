@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "api.demo.convergepay.com"
 current_name: "api.demo.convergepay.com"
 aliases: ["api.demo.convergepay.com"]

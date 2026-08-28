@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "wwm73D114LETBUUS"
 current_name: "n8n-service-account Google Service Account account"
 aliases: ["n8n-service-account Google Service Account account"]

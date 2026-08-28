@@ -1,5 +1,6 @@
 ---
 n8n_id: "iIwj8usNfzTMAWlc"
+instance: v1
 name: "PAX: Duplicate Terminal ID detection"
 status: active
 last_modified: 2026-07-10T10:20:03.932Z

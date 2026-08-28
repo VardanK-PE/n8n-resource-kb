@@ -1,5 +1,6 @@
 ---
 n8n_id: "NVxfS5SmsjLAYKEx"
+instance: v1
 name: "PAX Device Monitoring (BK-2025-10-23)"
 status: inactive
 last_modified: 2025-10-23T19:24:10.576Z

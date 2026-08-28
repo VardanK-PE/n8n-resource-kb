@@ -1,5 +1,6 @@
 ---
 n8n_id: "KnfVEBen0SWqKIyS"
+instance: v1
 name: "Disputes Monitor V3"
 status: active
 last_modified: 2026-02-24T13:20:59.311Z

@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "sngFLPpruyGa2YMn"
 current_name: "Failed ACH Transactions"
 aliases: ["Failed ACH Transactions"]

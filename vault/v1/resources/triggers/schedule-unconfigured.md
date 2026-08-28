@@ -1,5 +1,6 @@
 ---
 type: trigger
+instance: v1
 resource_id: "schedule:unconfigured"
 current_name: "schedule — unconfigured"
 aliases: ["schedule — unconfigured"]

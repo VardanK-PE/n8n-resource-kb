@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "pYo8MvIJlVsR5Kld"
 current_name: "Generic Bearer JWT Credential"
 aliases: ["Generic Bearer JWT Credential"]

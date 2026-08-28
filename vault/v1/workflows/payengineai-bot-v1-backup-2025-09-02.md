@@ -1,5 +1,6 @@
 ---
 n8n_id: "L0vnaWVsQZMKsDqp"
+instance: v1
 name: "PayEngineAI Bot (v1) Backup 2025-09-02"
 status: inactive
 last_modified: 2025-09-03T01:50:15.246Z

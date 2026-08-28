@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "sCKw5qUZNboLaPwR"
 current_name: "Budibase DB Public account"
 aliases: ["Budibase DB Public account"]

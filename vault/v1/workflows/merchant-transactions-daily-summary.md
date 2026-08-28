@@ -1,5 +1,6 @@
 ---
 n8n_id: "MBqVe38zwY65TThs"
+instance: v1
 name: "Merchant Transactions Daily Summary"
 status: active
 last_modified: 2024-10-25T17:18:28.395Z

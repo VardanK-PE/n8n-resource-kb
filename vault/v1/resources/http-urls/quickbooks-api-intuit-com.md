@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "quickbooks.api.intuit.com"
 current_name: "quickbooks.api.intuit.com"
 aliases: ["quickbooks.api.intuit.com"]

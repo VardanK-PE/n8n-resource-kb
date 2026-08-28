@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "w2zokSnlLwt306s9"
 current_name: "Forte Production Account"
 aliases: ["Forte Production Account"]

@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "191sd9HdoHLL6QJ8SVnzWmhbP4J-LqlnTl73tUuifTJA"
 current_name: "processed_rover_sheet"
 aliases: ["processed_rover_sheet"]

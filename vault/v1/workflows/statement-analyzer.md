@@ -1,5 +1,6 @@
 ---
 n8n_id: "Nb9lIuQUHYbBrDdo"
+instance: v1
 name: "Statement Analyzer"
 status: active
 last_modified: 2026-03-16T15:28:26.843Z

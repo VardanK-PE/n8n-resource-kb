@@ -1,5 +1,6 @@
 ---
 n8n_id: "qhs9cyRiUjI4oPFx"
+instance: v1
 name: "Dispute - Report unhandled chargebacks"
 status: inactive
 last_modified: 2026-02-10T19:43:34.044Z

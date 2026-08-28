@@ -1,5 +1,6 @@
 ---
 n8n_id: "2ROy2xewAu0IgoBw"
+instance: v1
 name: "Locate failed transactions for Canadian merchant"
 status: inactive
 last_modified: 2026-04-14T18:37:17.591Z

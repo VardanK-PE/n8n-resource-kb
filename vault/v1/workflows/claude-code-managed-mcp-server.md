@@ -1,5 +1,6 @@
 ---
 n8n_id: "ghGZcuWFADxqOWbl"
+instance: v1
 name: "Claude Code Managed MCP Server"
 status: active
 last_modified: 2026-01-13T14:42:12.238Z

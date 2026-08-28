@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1iPUxX2L-6equ2ksh3GGv17upwrfSGEtzC3kucUrmyZ4"
 current_name: "Canadian Merchants - failed transactions"
 aliases: ["Canadian Merchants - failed transactions"]

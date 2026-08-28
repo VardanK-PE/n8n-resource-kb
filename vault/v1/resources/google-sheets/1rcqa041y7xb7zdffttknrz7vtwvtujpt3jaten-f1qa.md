@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1rcQa041Y7xB7ZDfftTKnrZ7VTwvTUJPT3JaTen-F1qA"
 current_name: "Maroo Test Sheet"
 aliases: ["Maroo Test Sheet"]

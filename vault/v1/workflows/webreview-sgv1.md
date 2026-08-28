@@ -1,5 +1,6 @@
 ---
 n8n_id: "Lyl6QUD6yIFN6320"
+instance: v1
 name: "WebReview SGv1"
 status: inactive
 last_modified: 2024-06-08T23:56:56.861Z

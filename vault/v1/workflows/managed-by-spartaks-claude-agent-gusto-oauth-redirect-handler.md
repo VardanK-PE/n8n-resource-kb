@@ -1,5 +1,6 @@
 ---
 n8n_id: "05KCXQ55Zyiy6GK8"
+instance: v1
 name: "[Managed by Spartaks Claude Agent] Gusto OAuth Redirect Handler"
 status: active
 last_modified: 2026-01-15T00:09:23.185Z

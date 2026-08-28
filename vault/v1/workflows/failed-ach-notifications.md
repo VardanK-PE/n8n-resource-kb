@@ -1,5 +1,6 @@
 ---
 n8n_id: "EiRNXVDZkus6lf1J"
+instance: v1
 name: "Failed ACH notifications"
 status: active
 last_modified: 2026-05-29T19:55:14.355Z

@@ -1,5 +1,6 @@
 ---
 n8n_id: "8XYZVBiwbibCE05D"
+instance: v1
 name: "🎄 Holiday Cheer Generator v2"
 status: inactive
 last_modified: 2025-12-25T05:37:49.927Z

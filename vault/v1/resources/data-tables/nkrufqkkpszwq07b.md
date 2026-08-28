@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "NkRUfQkkpsZWq07b"
 current_name: "Dispute - Awaiting Processor Response"
 aliases: ["Dispute - Awaiting Processor Response"]

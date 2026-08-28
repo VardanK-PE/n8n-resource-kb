@@ -1,5 +1,6 @@
 ---
 type: index
+instance: v1
 auto_generated_at: 2026-08-19T19:29:47Z
 ---
 

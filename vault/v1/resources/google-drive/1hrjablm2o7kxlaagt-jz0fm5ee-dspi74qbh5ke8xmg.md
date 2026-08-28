@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "1hrjAblm2O7kxLAAgT-JZ0fm5EE-DsPI74Qbh5Ke8Xmg"
 current_name: "PE Statement Analyzer Prompt"
 aliases: ["PE Statement Analyzer Prompt"]

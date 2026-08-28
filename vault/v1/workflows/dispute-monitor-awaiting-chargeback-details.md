@@ -1,5 +1,6 @@
 ---
 n8n_id: "CTTTMXZgE1E1owyB"
+instance: v1
 name: "Dispute - Monitor awaiting chargeback details"
 status: active
 last_modified: 2026-01-09T17:28:18.918Z

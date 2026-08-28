@@ -1,5 +1,6 @@
 ---
 n8n_id: "hjNxdCntNuRL1THI"
+instance: v1
 name: "Payrix > PE Adapter"
 status: active
 last_modified: 2024-10-25T17:20:06.200Z

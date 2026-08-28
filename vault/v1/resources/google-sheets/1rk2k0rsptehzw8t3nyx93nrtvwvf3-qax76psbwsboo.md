@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1rk2K0rsptEHzW8T3nYX93NRtVwvF3_qaX76pSbwsbOo"
 current_name: "Mailgun Logs"
 aliases: ["Mailgun Logs"]

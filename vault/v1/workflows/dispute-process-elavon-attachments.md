@@ -1,5 +1,6 @@
 ---
 n8n_id: "7Bxmbj0pKRQHzNC6"
+instance: v1
 name: "Dispute - Process Elavon attachments"
 status: inactive
 last_modified: 2026-06-26T17:15:20.165Z

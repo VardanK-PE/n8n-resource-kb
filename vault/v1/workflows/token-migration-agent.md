@@ -1,5 +1,6 @@
 ---
 n8n_id: "uMwamYPM4QPfs7SE"
+instance: v1
 name: "Token Migration Agent"
 status: active
 last_modified: 2026-04-27T14:52:24.874Z

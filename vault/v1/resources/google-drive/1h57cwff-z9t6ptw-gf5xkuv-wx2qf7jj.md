@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "1h57cwFF_z9T6pTw-gF5XKUV_Wx2Qf7Jj"
 current_name: "PCI SAQ Sign Document.jpg"
 aliases: ["PCI SAQ Sign Document.jpg"]

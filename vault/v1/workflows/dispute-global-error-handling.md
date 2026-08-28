@@ -1,5 +1,6 @@
 ---
 n8n_id: "KBN9sWK9juozY766"
+instance: v1
 name: "Dispute - Global error handling"
 status: inactive
 last_modified: 2025-12-22T20:29:34.195Z

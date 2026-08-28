@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1UM4SWqM37TusMRqTRrcB_1mh7J3bgmn9zb2hdAHIxZw"
 current_name: "Workflow Activity Monitoring"
 aliases: ["Workflow Activity Monitoring"]

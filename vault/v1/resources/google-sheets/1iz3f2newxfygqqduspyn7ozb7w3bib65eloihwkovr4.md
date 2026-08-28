@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1Iz3f2nEWXFYGqqdusPYN7OZB7W3biB65elOiHwkovR4"
 current_name: "decrypted-data_maroo"
 aliases: ["decrypted-data_maroo"]

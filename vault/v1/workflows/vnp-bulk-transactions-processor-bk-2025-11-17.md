@@ -1,5 +1,6 @@
 ---
 n8n_id: "75YuTt4Jprz6WHM8"
+instance: v1
 name: "VNP Bulk Transactions Processor BK 2025-11-17"
 status: inactive
 last_modified: 2025-11-17T16:15:04.657Z

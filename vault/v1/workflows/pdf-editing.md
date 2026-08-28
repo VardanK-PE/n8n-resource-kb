@@ -1,5 +1,6 @@
 ---
 n8n_id: "oEcjwRmH0M1QDAAI"
+instance: v1
 name: "PDF Editing"
 status: inactive
 last_modified: 2025-09-06T12:33:53.353Z

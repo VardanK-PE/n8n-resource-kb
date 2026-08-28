@@ -1,5 +1,6 @@
 ---
 type: trigger
+instance: v1
 resource_id: "schedule:daily at 9:15"
 current_name: "schedule — daily at 9:15"
 aliases: ["schedule — daily at 9:15"]

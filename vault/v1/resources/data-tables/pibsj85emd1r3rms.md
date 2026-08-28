@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "piBSJ85eMd1r3Rms"
 current_name: "StripeTokenImports"
 aliases: ["StripeTokenImports"]

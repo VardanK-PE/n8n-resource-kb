@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "OUcDLrjl56jcWUCa"
 current_name: "PE Merchants Gmail Account (merchants@platformfactory.io)"
 aliases: ["PE Merchants Gmail Account (merchants@platformfactory.io)"]

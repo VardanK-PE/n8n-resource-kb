@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1vtitcOiDsWv1IoWp7z-46tvurRemPdwYGO5Uy1EMKJY"
 current_name: "Alive AI"
 aliases: ["Alive AI"]

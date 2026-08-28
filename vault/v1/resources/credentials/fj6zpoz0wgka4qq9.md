@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "Fj6zPoZ0Wgka4qq9"
 current_name: "OpsInternalBot"
 aliases: ["OpsInternalBot"]

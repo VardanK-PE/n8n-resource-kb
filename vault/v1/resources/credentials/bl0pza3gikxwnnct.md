@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "bl0pza3GiKxWNNcT"
 current_name: "ReportGenerationRequestFormBasicAuth"
 aliases: ["ReportGenerationRequestFormBasicAuth"]

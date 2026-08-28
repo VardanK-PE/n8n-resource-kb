@@ -1,5 +1,6 @@
 ---
 n8n_id: "gJZszflg27CLAH0v"
+instance: v1
 name: "[Deprecated] Hearth - Transaction Alerts"
 status: inactive
 last_modified: 2025-11-21T15:55:05.285Z

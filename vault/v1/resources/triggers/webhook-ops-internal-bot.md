@@ -1,5 +1,6 @@
 ---
 type: trigger
+instance: v1
 resource_id: "webhook:ops-internal-bot"
 current_name: "webhook — ops-internal-bot"
 aliases: ["webhook — ops-internal-bot"]

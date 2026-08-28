@@ -1,5 +1,6 @@
 ---
 n8n_id: "YZtVohvbVAaUetMH"
+instance: v1
 name: "Hearth - Elavon Whitelist Merchants"
 status: inactive
 last_modified: 2025-09-09T14:50:34.664Z

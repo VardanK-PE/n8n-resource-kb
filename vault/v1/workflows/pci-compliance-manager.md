@@ -1,5 +1,6 @@
 ---
 n8n_id: "qe7aK1jVPOC81wIg"
+instance: v1
 name: "PCI Compliance Manager"
 status: inactive
 last_modified: 2025-09-16T19:20:03.613Z

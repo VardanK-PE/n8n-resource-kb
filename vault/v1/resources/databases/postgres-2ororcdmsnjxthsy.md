@@ -1,5 +1,6 @@
 ---
 type: database
+instance: v1
 resource_id: "postgres/2orOrcdMsnJXThSY"
 current_name: "postgres (via Postgres ST Prod Sierra DB Replica)"
 aliases: ["postgres (via Postgres ST Prod Sierra DB Replica)"]

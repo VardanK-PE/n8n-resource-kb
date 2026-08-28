@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "1xeZTXdaboAnUXz0UfJbUG_lUPfmrN4l4"
 current_name: "ElavonPCIComplianceManageAOCs"
 aliases: ["ElavonPCIComplianceManageAOCs"]

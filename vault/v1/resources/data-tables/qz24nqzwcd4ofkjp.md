@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "QZ24NQZwcd4OFkjP"
 current_name: "Disputes - MID overrides"
 aliases: ["Disputes - MID overrides"]

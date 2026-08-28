@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C09B9GX9RF1"
 current_name: "hearth-dispute-alerts"
 aliases: ["hearth-dispute-alerts"]

@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "api.ipify.org"
 current_name: "api.ipify.org"
 aliases: ["api.ipify.org"]

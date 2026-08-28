@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1CuM3JRFqqgrvH8XTgACSN-ImF4BVryzjwGRcZ7bi6lo"
 current_name: "Partner Residuals Terms"
 aliases: ["Partner Residuals Terms"]

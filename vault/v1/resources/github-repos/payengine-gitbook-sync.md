@@ -1,5 +1,6 @@
 ---
 type: github-repo
+instance: v1
 resource_id: "payengine/gitbook-sync"
 current_name: "payengine/gitbook-sync"
 aliases: ["payengine/gitbook-sync"]

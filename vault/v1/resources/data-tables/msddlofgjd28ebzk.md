@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "msDdLoFGJD28EBzK"
 current_name: "PDF Processor - Pending Jobs"
 aliases: ["PDF Processor - Pending Jobs"]

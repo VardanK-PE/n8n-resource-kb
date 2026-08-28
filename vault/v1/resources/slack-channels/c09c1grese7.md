@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C09C1GRESE7"
 current_name: "inbound-calls"
 aliases: ["inbound-calls"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "eF2KMTnYGmBJu9EA"
+instance: v1
 name: "Disable ACH Gateway - Main Logic"
 status: active
 last_modified: 2026-06-23T19:16:17.056Z

@@ -1,5 +1,6 @@
 ---
 n8n_id: "tcYnixnPq9S8UPQl"
+instance: v1
 name: "PE Payments Intelligence Overlay"
 status: active
 last_modified: 2025-10-15T13:07:28.967Z

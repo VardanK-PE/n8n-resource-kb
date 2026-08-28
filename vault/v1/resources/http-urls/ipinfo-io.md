@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "ipinfo.io"
 current_name: "ipinfo.io"
 aliases: ["ipinfo.io"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "wWBXsjy2ArhEslNz"
+instance: v1
 name: "Merchant list with transactions"
 status: inactive
 last_modified: 2025-09-12T08:29:21.191Z

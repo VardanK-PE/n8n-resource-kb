@@ -1,5 +1,6 @@
 ---
 n8n_id: "y7XoLOhnEzGYovtj"
+instance: v1
 name: "Gitbook Auth"
 status: active
 last_modified: 2025-10-14T22:17:48.018Z

@@ -1,5 +1,6 @@
 ---
 n8n_id: "QjGNbzyqbzyX52ia"
+instance: v1
 name: "Monthly Accounts Receivable Reports"
 status: active
 last_modified: 2025-07-10T14:55:39.940Z

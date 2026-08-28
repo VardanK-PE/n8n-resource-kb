@@ -1,5 +1,6 @@
 ---
 n8n_id: "z06gndFj1h0pcspx"
+instance: v1
 name: "Elavon MIDs to Data Tables sync"
 status: inactive
 last_modified: 2026-03-16T18:08:34.761Z

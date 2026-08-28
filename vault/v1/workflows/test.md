@@ -1,5 +1,6 @@
 ---
 n8n_id: "YHPjDSzgO50QPJrC"
+instance: v1
 name: "Test"
 status: inactive
 last_modified: 2025-06-24T16:23:25.085Z

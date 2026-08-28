@@ -1,5 +1,6 @@
 ---
 n8n_id: "zQrKaqapit7xko5v"
+instance: v1
 name: "Residuals Generator V7 (ACTIVE) (latest 2026-07-15)"
 status: inactive
 last_modified: 2026-07-15T18:35:53.816Z

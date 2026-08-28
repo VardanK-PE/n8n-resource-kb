@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "k6tV0FwwyXa8mcFt"
 current_name: "N8N 1Pass Connect Server Auth"
 aliases: ["N8N 1Pass Connect Server Auth"]

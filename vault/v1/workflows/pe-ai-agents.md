@@ -1,5 +1,6 @@
 ---
 n8n_id: "8fQ3h68w8VAanRCJ"
+instance: v1
 name: "PE AI Agents"
 status: active
 last_modified: 2026-02-09T21:30:27.069Z

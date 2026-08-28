@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "ops-automation-alert"
 current_name: "ops-automation-alert"
 aliases: ["ops-automation-alert"]

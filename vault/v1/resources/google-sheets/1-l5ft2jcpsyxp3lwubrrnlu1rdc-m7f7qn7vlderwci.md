@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1_l5Ft2jcPsyxP3LwUbrRNlu1RDC-M7F7qN7vLdErwcI"
 current_name: "PAPI Onboarding Data Logs"
 aliases: ["PAPI Onboarding Data Logs"]

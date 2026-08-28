@@ -1,5 +1,6 @@
 ---
 n8n_id: "n9qsyRtorwOwaW7c"
+instance: v1
 name: "Shell Tests"
 status: inactive
 last_modified: 2025-10-29T03:26:30.255Z

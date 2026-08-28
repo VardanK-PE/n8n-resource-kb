@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C09AJN9LE67"
 current_name: "merchant-status-scanner-ai"
 aliases: ["merchant-status-scanner-ai"]

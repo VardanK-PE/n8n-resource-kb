@@ -1,5 +1,6 @@
 ---
 type: mcp-server
+instance: v1
 resource_id: "https://3723f319a8c6.ngrok.app/mcp"
 current_name: "3723f319a8c6.ngrok.app"
 aliases: ["3723f319a8c6.ngrok.app"]

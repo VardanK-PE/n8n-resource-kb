@@ -1,5 +1,6 @@
 ---
 type: env-var
+instance: v1
 resource_id: "N8N_EDITOR_BASE_URL"
 current_name: "N8N_EDITOR_BASE_URL"
 aliases: ["N8N_EDITOR_BASE_URL"]

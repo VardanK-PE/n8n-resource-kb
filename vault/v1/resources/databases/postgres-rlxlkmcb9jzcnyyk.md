@@ -1,5 +1,6 @@
 ---
 type: database
+instance: v1
 resource_id: "postgres/rlXLkMcb9jzcnYYK"
 current_name: "postgres (via Postgres ST production read replica)"
 aliases: ["postgres (via Postgres ST production read replica)"]

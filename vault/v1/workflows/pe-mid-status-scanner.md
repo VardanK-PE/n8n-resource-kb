@@ -1,5 +1,6 @@
 ---
 n8n_id: "Mkm7iWi7eAmwGCTn"
+instance: v1
 name: "PE Mid Status Scanner"
 status: inactive
 last_modified: 2025-08-27T15:12:58.317Z

@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C09SWM8CM6H"
 current_name: "pe-statement-analyzer-alerts"
 aliases: ["pe-statement-analyzer-alerts"]

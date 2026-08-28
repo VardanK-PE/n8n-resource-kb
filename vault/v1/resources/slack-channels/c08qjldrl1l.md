@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C08QJLDRL1L"
 current_name: "st-sandbox-event-logs"
 aliases: ["st-sandbox-event-logs"]

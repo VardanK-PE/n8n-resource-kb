@@ -1,5 +1,6 @@
 ---
 type: trigger
+instance: v1
 resource_id: "webhook:njord/api/dashboard"
 current_name: "webhook — njord/api/dashboard"
 aliases: ["webhook — njord/api/dashboard"]

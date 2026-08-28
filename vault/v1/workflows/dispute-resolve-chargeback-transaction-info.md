@@ -1,5 +1,6 @@
 ---
 n8n_id: "c4k0seLSEFK7ZEO5"
+instance: v1
 name: "Dispute - Resolve Chargeback Transaction Info"
 status: inactive
 last_modified: 2026-01-16T15:53:26.234Z

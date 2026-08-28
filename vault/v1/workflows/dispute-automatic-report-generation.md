@@ -1,5 +1,6 @@
 ---
 n8n_id: "omlYEtChOOFF02N0"
+instance: v1
 name: "Dispute - Automatic report generation"
 status: active
 last_modified: 2026-05-08T18:15:41.679Z

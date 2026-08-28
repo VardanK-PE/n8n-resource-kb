@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1KycIaGn3jBWPYz6-N8gAr4-ysJKIelEbWxMpqXNSos4"
 current_name: "PayEngine_data_maroo_filled_v2"
 aliases: ["PayEngine_data_maroo_filled_v2"]

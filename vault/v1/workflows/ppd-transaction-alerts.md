@@ -1,5 +1,6 @@
 ---
 n8n_id: "4vhauPylbvMDJF06"
+instance: v1
 name: "PPD: Transaction Alerts"
 status: active
 last_modified: 2026-01-13T20:20:56.649Z

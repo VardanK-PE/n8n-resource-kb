@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C0AV2KQTQT1"
 current_name: "migrations-ai"
 aliases: ["migrations-ai"]

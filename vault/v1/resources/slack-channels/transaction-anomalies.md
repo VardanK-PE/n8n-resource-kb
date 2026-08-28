@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "transaction-anomalies"
 current_name: "transaction-anomalies"
 aliases: ["transaction-anomalies"]

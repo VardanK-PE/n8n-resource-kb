@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "E72ZxLRqrWEyxF18"
 current_name: "Elavon Basic Auth"
 aliases: ["Elavon Basic Auth"]

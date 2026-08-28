@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1cCD2Nb32MiYLeEld3VxSjP71pVOklBLtAZNimj9KI6c"
 current_name: "Test AI Sheet"
 aliases: ["Test AI Sheet"]

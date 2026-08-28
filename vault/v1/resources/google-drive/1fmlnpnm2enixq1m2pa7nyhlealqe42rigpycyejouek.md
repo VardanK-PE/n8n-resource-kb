@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "1FMlnpnM2ENIxQ1m2Pa7nYHlEALQE42rIgPYCYEjoUEk"
 current_name: "Test Context Stuff"
 aliases: ["Test Context Stuff"]

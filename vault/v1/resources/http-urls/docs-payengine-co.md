@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "docs.payengine.co"
 current_name: "docs.payengine.co"
 aliases: ["docs.payengine.co"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "QE4hVXVz1d6eNYyN"
+instance: v1
 name: "Disputes Monitor V1"
 status: inactive
 last_modified: 2025-06-24T16:28:40.161Z

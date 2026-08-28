@@ -1,5 +1,6 @@
 ---
 n8n_id: "vW224eaYGtanY6Je"
+instance: v1
 name: "Daily Onboarding Alerts copy SGv1"
 status: inactive
 last_modified: 2024-06-06T20:03:13.502Z

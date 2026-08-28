@@ -1,5 +1,6 @@
 ---
 n8n_id: "U3EyWwhZtcf2tMh5"
+instance: v1
 name: "Slack - Send notification"
 status: inactive
 last_modified: 2025-11-09T13:20:01.702Z

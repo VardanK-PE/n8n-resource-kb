@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "api.easypost.com"
 current_name: "api.easypost.com"
 aliases: ["api.easypost.com"]

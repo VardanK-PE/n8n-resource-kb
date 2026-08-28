@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "account.docusign.com"
 current_name: "account.docusign.com"
 aliases: ["account.docusign.com"]

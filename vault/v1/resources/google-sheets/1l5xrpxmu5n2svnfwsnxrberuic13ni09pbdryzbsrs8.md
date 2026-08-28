@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1L5XrPxmU5n2sVNfwsNxRBEruiC13ni09pBdRyzbSrs8"
 current_name: "Hearth PayEngine Reports for Elavon"
 aliases: ["Hearth PayEngine Reports for Elavon"]

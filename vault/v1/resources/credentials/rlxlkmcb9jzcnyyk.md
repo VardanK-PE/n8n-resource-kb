@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "rlXLkMcb9jzcnYYK"
 current_name: "Postgres ST production read replica"
 aliases: ["Postgres ST production read replica"]

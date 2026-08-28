@@ -1,5 +1,6 @@
 ---
 type: llm-model
+instance: v1
 resource_id: "openai/gpt-5-mini"
 current_name: "openai / gpt-5-mini"
 aliases: ["openai / gpt-5-mini"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "9UH9sK3CWbFRtVGg"
+instance: v1
 name: "Elavon BI Automation (Daily Monitor)"
 status: active
 last_modified: 2026-06-15T16:54:51.298Z

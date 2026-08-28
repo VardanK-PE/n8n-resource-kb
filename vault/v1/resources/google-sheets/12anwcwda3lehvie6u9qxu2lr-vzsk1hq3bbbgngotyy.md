@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "12anWCwdA3lEHVIe6u9qxu2lr_vZsK1hQ3BBBGNgOTyY"
 current_name: "PE Supermove Reports (shared)"
 aliases: ["PE Supermove Reports (shared)"]

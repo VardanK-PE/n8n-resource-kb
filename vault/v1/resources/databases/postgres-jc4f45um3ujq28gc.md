@@ -1,5 +1,6 @@
 ---
 type: database
+instance: v1
 resource_id: "postgres/JC4f45um3UjQ28Gc"
 current_name: "postgres (via PF Prod Device Management Replica)"
 aliases: ["postgres (via PF Prod Device Management Replica)"]

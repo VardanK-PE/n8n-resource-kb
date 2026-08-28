@@ -1,5 +1,6 @@
 ---
 n8n_id: "TWU7t9XCJ7sNEOl1"
+instance: v1
 name: "Code Red / Failed Transactions alert"
 status: inactive
 last_modified: 2026-04-13T17:43:16.025Z

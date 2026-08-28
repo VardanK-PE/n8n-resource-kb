@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "AP2SwoA41lboeUma"
 current_name: "PciSaqMerchantSaqSubmissions"
 aliases: ["PciSaqMerchantSaqSubmissions"]

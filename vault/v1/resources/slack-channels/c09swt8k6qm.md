@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C09SWT8K6QM"
 current_name: "corksy-payengine-alerts"
 aliases: ["corksy-payengine-alerts"]

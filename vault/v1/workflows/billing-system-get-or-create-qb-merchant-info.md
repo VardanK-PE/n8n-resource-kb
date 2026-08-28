@@ -1,5 +1,6 @@
 ---
 n8n_id: "jYTz952jPsD9jjWV"
+instance: v1
 name: "Billing System - Get Or Create QB merchant info"
 status: inactive
 last_modified: 2026-03-18T19:55:10.927Z

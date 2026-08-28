@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C06C06Y8TDH"
 current_name: "transaction-alerts"
 aliases: ["transaction-alerts"]

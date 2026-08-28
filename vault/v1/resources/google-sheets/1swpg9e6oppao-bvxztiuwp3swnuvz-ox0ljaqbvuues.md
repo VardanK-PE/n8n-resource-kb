@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1SwPG9E6OPPAO_BvXZTIuWp3SwnUvZ-OX0LJAQbvUues"
 current_name: "PE Hearth Reports (shared)"
 aliases: ["PE Hearth Reports (shared)"]

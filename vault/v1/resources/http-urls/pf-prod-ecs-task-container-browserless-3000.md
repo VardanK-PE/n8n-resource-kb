@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "pf-prod-ecs-task-container-browserless:3000"
 current_name: "pf-prod-ecs-task-container-browserless:3000"
 aliases: ["pf-prod-ecs-task-container-browserless:3000"]

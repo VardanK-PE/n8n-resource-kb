@@ -1,5 +1,6 @@
 ---
 n8n_id: "H9qPciXCz00KxAyF"
+instance: v1
 name: "Send Email: HTML"
 status: inactive
 last_modified: 2025-11-10T16:50:49.504Z

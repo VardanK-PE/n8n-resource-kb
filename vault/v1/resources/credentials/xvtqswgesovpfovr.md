@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "xVtQSWGesoVPFoVr"
 current_name: "GitHub account"
 aliases: ["GitHub account"]

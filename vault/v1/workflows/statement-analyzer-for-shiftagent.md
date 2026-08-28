@@ -1,5 +1,6 @@
 ---
 n8n_id: "j6YUK5QH6hEcT00a"
+instance: v1
 name: "Statement Analyzer (for ShiftAgent)"
 status: inactive
 last_modified: 2026-03-16T15:28:52.150Z

@@ -1,5 +1,6 @@
 ---
 n8n_id: "7KYfIAaMHwIubEgZ"
+instance: v1
 name: "[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync"
 status: inactive
 last_modified: 2026-01-16T01:19:29.214Z

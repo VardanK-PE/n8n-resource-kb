@@ -1,5 +1,6 @@
 ---
 n8n_id: "e93RsgQXI8GlYNLa"
+instance: v1
 name: "Elavon SFTP Daily Dump/Analyzer V6"
 status: active
 last_modified: 2024-10-25T17:18:00.369Z

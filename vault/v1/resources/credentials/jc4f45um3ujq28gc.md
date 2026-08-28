@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "JC4f45um3UjQ28Gc"
 current_name: "PF Prod Device Management Replica"
 aliases: ["PF Prod Device Management Replica"]

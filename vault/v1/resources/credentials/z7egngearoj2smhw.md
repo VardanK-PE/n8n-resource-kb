@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "Z7eGNGEAroj2SMhw"
 current_name: "PE Master Bearer Token"
 aliases: ["PE Master Bearer Token"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "kYETAiiluoWDyZHO"
+instance: v1
 name: "Develotech ServiceTitan"
 status: inactive
 last_modified: 2026-06-04T21:16:48.830Z

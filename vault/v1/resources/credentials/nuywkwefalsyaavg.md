@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "NuyWkwefAlSyAaVg"
 current_name: "Support slack"
 aliases: ["Support slack"]

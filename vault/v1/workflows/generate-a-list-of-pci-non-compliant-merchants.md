@@ -1,5 +1,6 @@
 ---
 n8n_id: "62BRoOJ3o0VRHCnh"
+instance: v1
 name: "Generate a list of PCI non compliant merchants"
 status: active
 last_modified: 2026-06-30T13:04:27.366Z

@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "api.docuseal.com"
 current_name: "api.docuseal.com"
 aliases: ["api.docuseal.com"]

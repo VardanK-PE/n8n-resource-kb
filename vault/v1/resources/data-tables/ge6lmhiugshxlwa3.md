@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "GE6LmHiUGSHxLWA3"
 current_name: "Dispute - Shared Preferences"
 aliases: ["Dispute - Shared Preferences"]

@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C0997KKU3TR"
 current_name: "merchant-emails-assistant-ai"
 aliases: ["merchant-emails-assistant-ai"]

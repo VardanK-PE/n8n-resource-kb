@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "67fEjoTk4A3tGZ6Y"
 current_name: "Kafka account"
 aliases: ["Kafka account"]

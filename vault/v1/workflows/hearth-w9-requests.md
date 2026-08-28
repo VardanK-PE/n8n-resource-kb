@@ -1,5 +1,6 @@
 ---
 n8n_id: "b0uBiVZv2sahzDbt"
+instance: v1
 name: "Hearth W9 Requests"
 status: inactive
 last_modified: 2025-11-21T17:35:19.860Z

@@ -1,5 +1,6 @@
 ---
 n8n_id: "2CFKEpFtHI2Xuvx5"
+instance: v1
 name: "Savings Analysis"
 status: inactive
 last_modified: 2025-11-19T03:34:47.694Z

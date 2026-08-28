@@ -1,5 +1,6 @@
 ---
 n8n_id: "lIx8xi5OLPJpca1w"
+instance: v1
 name: "[BACKUP 20251224_2139] 🎄 Holiday Cheer Generator v2"
 status: inactive
 last_modified: 2025-12-25T05:39:35.199Z

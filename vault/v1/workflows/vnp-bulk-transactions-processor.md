@@ -1,5 +1,6 @@
 ---
 n8n_id: "s0YYCt4gSCOJCbAl"
+instance: v1
 name: "VNP Bulk Transactions Processor"
 status: active
 last_modified: 2026-01-12T21:09:27.244Z

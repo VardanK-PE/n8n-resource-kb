@@ -1,5 +1,6 @@
 ---
 n8n_id: "HkjjRt4gR01DJ4tH"
+instance: v1
 name: "Dispute - Send details to processor"
 status: inactive
 last_modified: 2026-01-05T19:55:15.162Z

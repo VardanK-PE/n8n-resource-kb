@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C09JMTE0M18"
 current_name: "pe-alert-tests-internal"
 aliases: ["pe-alert-tests-internal"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "f9rOEDsZRv4toFvu"
+instance: v1
 name: "PAPI Cloudwatch Logs Monitor(Prod)"
 status: active
 last_modified: 2025-06-06T17:33:00.445Z

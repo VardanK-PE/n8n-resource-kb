@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "1BCPCQsqJqnOJK8PUZxMe8uNzrT5NTy6o"
 current_name: "PCI_SAQ_A_ECOM_TEMPLATE.pdf"
 aliases: ["PCI_SAQ_A_ECOM_TEMPLATE.pdf"]

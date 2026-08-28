@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1Zzrcj4NrCxa5DtO_3QF97r16uQ6IAcsre7q8Rxdf354"
 current_name: "bin-list-data"
 aliases: ["bin-list-data"]

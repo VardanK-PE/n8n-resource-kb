@@ -1,5 +1,6 @@
 ---
 n8n_id: "oTAgUSqxBxQkuAjR"
+instance: v1
 name: "OpsInternalBot - Main"
 status: active
 last_modified: 2026-04-20T16:32:45.322Z

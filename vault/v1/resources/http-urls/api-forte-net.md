@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "api.forte.net"
 current_name: "api.forte.net"
 aliases: ["api.forte.net"]

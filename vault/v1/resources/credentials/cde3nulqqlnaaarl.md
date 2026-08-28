@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "cdE3NULqqLnAaaRL"
 current_name: "Supermove Gmail Account"
 aliases: ["Supermove Gmail Account"]

@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1kMYRBqFYUx3a8407NqtQLiSJtCwA-Ies6Vb0QaPROA8"
 current_name: "Active Hearth merchants"
 aliases: ["Active Hearth merchants"]

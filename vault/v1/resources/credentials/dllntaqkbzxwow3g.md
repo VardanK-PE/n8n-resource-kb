@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "DlLnTAQkBzxwow3G"
 current_name: "Browserless Credentials account"
 aliases: ["Browserless Credentials account"]

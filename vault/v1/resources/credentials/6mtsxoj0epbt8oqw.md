@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "6MTsXoj0epBT8Oqw"
 current_name: "OpenAi N8N Account 20241221"
 aliases: ["OpenAi N8N Account 20241221"]

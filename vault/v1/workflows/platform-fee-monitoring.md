@@ -1,5 +1,6 @@
 ---
 n8n_id: "jXP8bYpE3EX9hm9L"
+instance: v1
 name: "Platform Fee monitoring"
 status: inactive
 last_modified: 2026-04-30T19:45:44.538Z

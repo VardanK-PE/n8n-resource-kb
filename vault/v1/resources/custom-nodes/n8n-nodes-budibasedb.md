@@ -1,5 +1,6 @@
 ---
 type: custom-node
+instance: v1
 resource_id: "n8n-nodes-budibasedb"
 current_name: "n8n-nodes-budibasedb"
 aliases: ["n8n-nodes-budibasedb"]

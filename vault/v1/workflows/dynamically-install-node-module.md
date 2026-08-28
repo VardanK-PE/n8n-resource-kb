@@ -1,5 +1,6 @@
 ---
 n8n_id: "dpAjjUYr9xU9Bu62"
+instance: v1
 name: "Dynamically Install Node Module"
 status: inactive
 last_modified: 2025-08-30T14:17:24.226Z

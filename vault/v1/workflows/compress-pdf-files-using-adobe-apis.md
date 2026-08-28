@@ -1,5 +1,6 @@
 ---
 n8n_id: "bgtif3xylCNUFTdG"
+instance: v1
 name: "Compress PDF files using Adobe APIs"
 status: active
 last_modified: 2026-01-02T11:21:23.324Z

@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1zO4x3RefhbQZiHIPfI6GO8UPPiKIfjPnS8bOOG1c-jk"
 current_name: "Merchant Details"
 aliases: ["Merchant Details"]

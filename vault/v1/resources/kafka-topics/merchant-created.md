@@ -1,5 +1,6 @@
 ---
 type: kafka-topic
+instance: v1
 resource_id: "merchant_created"
 current_name: "merchant_created"
 aliases: ["merchant_created"]

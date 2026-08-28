@@ -1,5 +1,6 @@
 ---
 n8n_id: "3iWyLrdJlm1RBMsx"
+instance: v1
 name: "PE Support Automation AI"
 status: inactive
 last_modified: 2025-09-07T21:13:17.776Z

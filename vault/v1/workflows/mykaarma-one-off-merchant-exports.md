@@ -1,5 +1,6 @@
 ---
 n8n_id: "JowA2QmvBt4uIYrH"
+instance: v1
 name: "MyKaarma One-Off Merchant Exports"
 status: inactive
 last_modified: 2025-01-10T19:48:05.618Z

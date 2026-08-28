@@ -1,5 +1,6 @@
 ---
 n8n_id: "CGjiDoLZSquAGct0"
+instance: v1
 name: "ECS Enrollment Response Processor"
 status: active
 last_modified: 2025-09-29T15:48:56.947Z

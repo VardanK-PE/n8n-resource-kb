@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "14QrgiJz_M12fo3Ic_rwd1CYTDK-SwKw_"
 current_name: "DocuSign - Files Archive"
 aliases: ["DocuSign - Files Archive"]

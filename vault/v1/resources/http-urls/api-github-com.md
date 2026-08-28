@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "api.github.com"
 current_name: "api.github.com"
 aliases: ["api.github.com"]

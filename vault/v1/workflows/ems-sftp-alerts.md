@@ -1,5 +1,6 @@
 ---
 n8n_id: "iHredV3ioIIhaVfv"
+instance: v1
 name: "EMS_SFTP_Alerts"
 status: active
 last_modified: 2024-10-25T17:18:07.028Z

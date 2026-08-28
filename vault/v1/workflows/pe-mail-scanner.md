@@ -1,5 +1,6 @@
 ---
 n8n_id: "gKC9jXoIFrlbC7vM"
+instance: v1
 name: "PE Mail Scanner"
 status: active
 last_modified: 2024-12-21T22:34:06.246Z

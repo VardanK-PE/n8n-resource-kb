@@ -1,5 +1,6 @@
 ---
 n8n_id: "jJq7apxtmeis8y7Y"
+instance: v1
 name: "Email - Get email thread"
 status: inactive
 last_modified: 2026-01-01T19:15:32.738Z

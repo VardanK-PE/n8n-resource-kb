@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "17BppPBTv5QGJkqGCdDyCTUDPn5H4XoiWzRGYUAgusw0"
 current_name: "PCI non compliant merchants"
 aliases: ["PCI non compliant merchants"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "GkK1uh8fpTkIK2MW"
+instance: v1
 name: "ST Prod Batch Settlements Monitor"
 status: active
 last_modified: 2025-06-26T13:03:48.850Z

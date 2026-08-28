@@ -1,5 +1,6 @@
 ---
 n8n_id: "BnWxRDUX9Mj3FK3r"
+instance: v1
 name: "Mailgun Logs Sync"
 status: active
 last_modified: 2025-10-20T23:15:00.843Z

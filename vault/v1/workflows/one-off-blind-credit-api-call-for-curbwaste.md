@@ -1,5 +1,6 @@
 ---
 n8n_id: "cljhfmQgAj1hOjkU"
+instance: v1
 name: "One-off Blind Credit API Call for Curbwaste"
 status: inactive
 last_modified: 2025-04-15T19:18:03.003Z

@@ -1,5 +1,6 @@
 ---
 n8n_id: "pY05hGyMJwslcwoH"
+instance: v1
 name: "PAX Portal Access Token Manager"
 status: inactive
 last_modified: 2026-07-10T10:18:19.914Z

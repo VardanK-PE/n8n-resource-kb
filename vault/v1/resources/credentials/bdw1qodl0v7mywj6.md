@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "BDw1qoDl0V7mYwj6"
 current_name: "Postgres Production"
 aliases: ["Postgres Production","Postgres account"]

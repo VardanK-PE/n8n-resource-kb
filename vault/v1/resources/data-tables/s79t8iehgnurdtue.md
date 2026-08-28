@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "s79T8iEHGNuRDtuE"
 current_name: "Elavon - Disable ACH Gateway Queue"
 aliases: ["Elavon - Disable ACH Gateway Queue"]

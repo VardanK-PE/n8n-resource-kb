@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "wd21lrwTpmzLSU2h"
 current_name: "StatementAnalysis"
 aliases: ["StatementAnalysis"]

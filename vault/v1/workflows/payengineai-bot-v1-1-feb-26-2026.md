@@ -1,5 +1,6 @@
 ---
 n8n_id: "0yjTSaTSRLaCOgvH"
+instance: v1
 name: "PayEngineAI Bot (v1.2) - Jun 12 2026"
 status: active
 last_modified: 2026-06-15T18:45:47.673Z

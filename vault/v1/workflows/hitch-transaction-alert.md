@@ -1,5 +1,6 @@
 ---
 n8n_id: "XnkG5r6iy9Vrkie8"
+instance: v1
 name: "Hitch: Transaction Alert"
 status: active
 last_modified: 2026-01-29T15:38:21.733Z

@@ -1,5 +1,6 @@
 ---
 type: llm-model
+instance: v1
 resource_id: "openai/unspecified"
 current_name: "openai / unspecified"
 aliases: ["openai / unspecified"]

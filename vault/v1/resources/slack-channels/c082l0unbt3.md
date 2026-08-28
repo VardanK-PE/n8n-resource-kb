@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C082L0UNBT3"
 current_name: "mail-scanner"
 aliases: ["mail-scanner"]

@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "centrifugo.payengine.dev"
 current_name: "centrifugo.payengine.dev"
 aliases: ["centrifugo.payengine.dev"]

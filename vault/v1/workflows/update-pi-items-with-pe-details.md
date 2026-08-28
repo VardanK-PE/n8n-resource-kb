@@ -1,5 +1,6 @@
 ---
 n8n_id: "GXtdNPhHxKiailuk"
+instance: v1
 name: "Update PI items with PE Details"
 status: inactive
 last_modified: 2025-11-25T17:48:45.602Z

@@ -1,5 +1,6 @@
 ---
 n8n_id: "fXD6hhW4XnII0Bhx"
+instance: v1
 name: "Residuals Generator V6 - Webhook Wrapper"
 status: active
 last_modified: 2026-01-30T22:24:10.551Z

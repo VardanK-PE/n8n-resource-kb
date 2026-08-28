@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1hXh00hKHzsKiwUPGAyf-BljqVRVJtY0m88gx4h9zbrI"
 current_name: "N8N Quick Book Logs"
 aliases: ["N8N Quick Book Logs"]

@@ -1,5 +1,6 @@
 ---
 n8n_id: "H3nvlfITfMACzqlz"
+instance: v1
 name: "Merchants Email"
 status: inactive
 last_modified: 2025-08-08T16:14:36.693Z

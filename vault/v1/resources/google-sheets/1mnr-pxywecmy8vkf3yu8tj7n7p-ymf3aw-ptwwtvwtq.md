@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1mnR_pxYweCmY8Vkf3Yu8tJ7N7p-yMf3aw-pTWWTVwTQ"
 current_name: "Test Spreadsheet"
 aliases: ["Test Spreadsheet"]

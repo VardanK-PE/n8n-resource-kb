@@ -1,5 +1,6 @@
 ---
 n8n_id: "vwmig5DqkHOd5Y0g"
+instance: v1
 name: "Residuals Generator V5 (Yumna Dev) (latest 2025-01-31)"
 status: inactive
 last_modified: 2025-02-26T15:41:52.239Z

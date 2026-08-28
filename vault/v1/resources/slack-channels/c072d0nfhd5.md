@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C072D0NFHD5"
 current_name: "supermove-transaction-alerts"
 aliases: ["supermove-transaction-alerts"]

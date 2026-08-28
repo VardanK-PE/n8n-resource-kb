@@ -1,5 +1,6 @@
 ---
 type: database
+instance: v1
 resource_id: "postgres/BDw1qoDl0V7mYwj6"
 current_name: "postgres (via Postgres Production)"
 aliases: ["postgres (via Postgres Production)","postgres (via Postgres account)"]

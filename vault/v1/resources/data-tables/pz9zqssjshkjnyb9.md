@@ -1,5 +1,6 @@
 ---
 type: data-table
+instance: v1
 resource_id: "pz9ZQssJShkJNYb9"
 current_name: "pz9ZQssJShkJNYb9"
 aliases: ["Billing - Invoices","pz9ZQssJShkJNYb9"]

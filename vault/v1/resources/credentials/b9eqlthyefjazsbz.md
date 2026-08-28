@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "B9eqlthYefJAzSbz"
 current_name: "Google Sheets account"
 aliases: ["Google Sheets account","Google Sheets account (Main One Used)"]

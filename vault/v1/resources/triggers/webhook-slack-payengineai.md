@@ -1,5 +1,6 @@
 ---
 type: trigger
+instance: v1
 resource_id: "webhook:slack-payengineai"
 current_name: "webhook — slack-payengineai"
 aliases: ["webhook — slack-payengineai"]

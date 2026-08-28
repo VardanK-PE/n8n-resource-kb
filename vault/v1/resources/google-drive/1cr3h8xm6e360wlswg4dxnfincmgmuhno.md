@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "1cr3h8XM6E360wlswg4DXNfINcMgMuHNo"
 current_name: "PCI Non Compliant Merchants Invoices"
 aliases: ["PCI Non Compliant Merchants Invoices"]

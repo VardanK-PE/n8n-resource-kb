@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "1z5AibIPOB0B3p2HKX4GoNUCOcFQRr0aB1U_n9aU4qQ8"
 current_name: "Curbwaste merchants on Tiered plan"
 aliases: ["Curbwaste merchants on Tiered plan"]

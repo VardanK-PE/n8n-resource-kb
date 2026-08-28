@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "DeJOzqGfjQ7QOncJ"
 current_name: "PGP key (jeffery@platformfactory.io)"
 aliases: ["PGP key (jeffery@platformfactory.io)"]

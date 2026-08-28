@@ -1,5 +1,6 @@
 ---
 n8n_id: "JcKp0Ehz4s4QirJd"
+instance: v1
 name: "[Deprecated] Chargebacks: Response expiration monitoring"
 status: inactive
 last_modified: 2026-06-16T16:02:34.160Z

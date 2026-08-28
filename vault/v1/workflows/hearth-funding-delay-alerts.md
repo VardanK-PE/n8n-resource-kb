@@ -1,5 +1,6 @@
 ---
 n8n_id: "SKUc7koYq0qLDt2Y"
+instance: v1
 name: "Hearth - Funding Delay Alerts"
 status: active
 last_modified: 2025-11-21T16:32:32.521Z

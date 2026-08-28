@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C08ETNJK6FR"
 current_name: "hearth-payengine"
 aliases: ["hearth-payengine"]

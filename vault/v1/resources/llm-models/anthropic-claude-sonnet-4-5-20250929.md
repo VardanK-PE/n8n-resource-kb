@@ -1,5 +1,6 @@
 ---
 type: llm-model
+instance: v1
 resource_id: "anthropic/claude-sonnet-4-5-20250929"
 current_name: "anthropic / claude-sonnet-4-5-20250929"
 aliases: ["anthropic / claude-sonnet-4-5-20250929"]

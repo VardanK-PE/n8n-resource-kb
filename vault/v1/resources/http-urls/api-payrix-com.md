@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "api.payrix.com"
 current_name: "api.payrix.com"
 aliases: ["api.payrix.com"]

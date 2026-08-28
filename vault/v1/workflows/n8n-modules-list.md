@@ -1,5 +1,6 @@
 ---
 n8n_id: "U87GXdSjlfjsefqa"
+instance: v1
 name: "N8N Modules List"
 status: inactive
 last_modified: 2025-08-30T13:58:21.737Z

@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "jZNf5gj6Ezv9MvMJ"
 current_name: "VNP PE SFTP"
 aliases: ["VNP PE SFTP"]

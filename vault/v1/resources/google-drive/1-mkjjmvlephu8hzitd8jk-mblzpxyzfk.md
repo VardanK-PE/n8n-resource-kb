@@ -1,5 +1,6 @@
 ---
 type: google-drive
+instance: v1
 resource_id: "1-MKJJmVLEPhu8HziTD8jk-mblZpXYzFK"
 current_name: "ELAVON_US"
 aliases: ["ELAVON_US"]

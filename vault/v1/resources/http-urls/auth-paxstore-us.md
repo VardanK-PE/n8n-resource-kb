@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "auth.paxstore.us"
 current_name: "auth.paxstore.us"
 aliases: ["auth.paxstore.us"]

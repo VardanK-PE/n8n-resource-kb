@@ -1,5 +1,6 @@
 ---
 type: slack-channel
+instance: v1
 resource_id: "C08TFUF32E6"
 current_name: "hearth-payout-delays"
 aliases: ["hearth-payout-delays"]

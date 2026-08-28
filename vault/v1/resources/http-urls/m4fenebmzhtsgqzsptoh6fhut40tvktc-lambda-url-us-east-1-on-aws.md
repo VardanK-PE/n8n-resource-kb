@@ -1,5 +1,6 @@
 ---
 type: http-url
+instance: v1
 resource_id: "m4fenebmzhtsgqzsptoh6fhut40tvktc.lambda-url.us-east-1.on.aws"
 current_name: "m4fenebmzhtsgqzsptoh6fhut40tvktc.lambda-url.us-east-1.on.aws"
 aliases: ["m4fenebmzhtsgqzsptoh6fhut40tvktc.lambda-url.us-east-1.on.aws"]

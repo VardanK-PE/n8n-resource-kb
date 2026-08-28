@@ -1,5 +1,6 @@
 ---
 type: google-sheets
+instance: v1
 resource_id: "14UEF1AEUTtfl-q1ZqNWQ-2-XGgUFbREN-rIren0B1dw"
 current_name: "Hearth - Merchants marked for ACH rejection with active ACH on gateway"
 aliases: ["Hearth - Merchants marked for ACH rejection with active ACH on gateway"]

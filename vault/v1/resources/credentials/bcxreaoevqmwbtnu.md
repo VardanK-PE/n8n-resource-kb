@@ -1,5 +1,6 @@
 ---
 type: credential
+instance: v1
 resource_id: "BCXReaoEvQMwbTNU"
 current_name: "PE Sandbox-Live (Overlay Access)"
 aliases: ["PE Sandbox-Live (Overlay Access)"]
