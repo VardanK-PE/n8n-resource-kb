@@ -3,10 +3,10 @@ n8n_id: "IEzAJUkv41KuLjCB"
 instance: v1
 name: "Forte Gateway Auto-submitter V2"
 status: active
-last_modified: 2026-08-18T18:29:24.358Z
+last_modified: 2026-08-27T19:53:32.105Z
 tags: []
-fingerprint: "9c38228d108edb6f659c583cf7d928fe50427ab60f0772ea315887b1b428d861"
-auto_generated_at: 2026-08-19T19:13:32Z
+fingerprint: "1a0b74f7c9105e316098ee579f0975056b7dda6754b2ec1b29c3064585855413"
+auto_generated_at: 2026-08-28T21:13:05Z
 ---
 
 <!-- auto:start -->
@@ -17,8 +17,8 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 - **Status:** active
 - **n8n ID:** `IEzAJUkv41KuLjCB`
-- **Nodes:** 81
-- **Last modified:** 2026-08-18T18:29:24.358Z
+- **Nodes:** 89
+- **Last modified:** 2026-08-27T19:53:32.105Z
 
 ## Triggers
 
@@ -50,6 +50,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - [[../resources/credentials/bdw1qodl0v7mywj6|Postgres Production]] (`postgres`, id `BDw1qoDl0V7mYwj6`) — node "Execute a SQL query2" (id `4f27c1fa-e3bc-4cd0-9495-878cae09d943`)
 - [[../resources/credentials/z7egngearoj2smhw|PE Master Bearer Token]] (`httpBearerAuth`, id `Z7eGNGEAroj2SMhw`) — node "Get Merchant Details3" (id `4f6d6aa7-6a2e-4f68-9990-71c4be85c948`)
 - [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Send a message11" (id `514c4fa9-407e-47c1-915e-ef698d0c175f`)
+- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Get row(s) in sheet" (id `516a7436-b2d4-4522-889c-012fe234ac4d`)
 - [[../resources/credentials/z7egngearoj2smhw|PE Master Bearer Token]] (`httpBearerAuth`, id `Z7eGNGEAroj2SMhw`) — node "Get Merchant Details4" (id `51cc12ae-31f2-4f25-99e5-31f1dd5f0c65`)
 - [[../resources/credentials/w2zoksnllwt306s9|Forte Production Account]] (`httpBasicAuth`, id `w2zokSnlLwt306s9`) — node "Forte Get Merchant Details" (id `53968add-7d21-4a6c-a811-eea2be8ba12d`)
 - [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "LogAutosubmission" (id `5b62a171-09f8-46b8-8ef9-468e866e6882`)
@@ -57,6 +58,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - [[../resources/credentials/z7egngearoj2smhw|PE Master Bearer Token]] (`httpBearerAuth`, id `Z7eGNGEAroj2SMhw`) — node "Get Merchant Details2" (id `674c2f65-d25c-4c8b-ba78-4554bba40438`)
 - [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Send a message13" (id `695d5097-e0c9-4f93-a3c7-1424a2a14f73`)
 - [[../resources/credentials/z7egngearoj2smhw|PE Master Bearer Token]] (`httpBearerAuth`, id `Z7eGNGEAroj2SMhw`) — node "PE Merchant merchant-onboarding-api-logs1" (id `6b96fb98-2dd3-4455-96d6-b27b0dc1807a`)
+- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Send a message15" (id `72e5fd40-ef31-446e-8421-b29d296a38c6`)
 - [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Send a message1" (id `72ff26e5-9b1b-49cf-9a71-148863b15f5e`)
 - [[../resources/credentials/w2zoksnllwt306s9|Forte Production Account]] (`httpBasicAuth`, id `w2zokSnlLwt306s9`) — node "Forte Get Merchant Status" (id `8768fb3e-fb1f-4fb6-8b32-da5b73ce7a3f`)
 - [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Send a message5" (id `8971ddd4-104d-41e5-a801-41290cef6388`)
@@ -66,6 +68,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Send a message10" (id `cbc57496-fa21-4557-acf5-38f6ef974278`)
 - [[../resources/credentials/z7egngearoj2smhw|PE Master Bearer Token]] (`httpBearerAuth`, id `Z7eGNGEAroj2SMhw`) — node "Add Forte Processor" (id `cf081004-c8b1-4ed6-8cc7-c44bab0be129`)
 - [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Send a message2" (id `cf3cc099-6c29-4faf-b27b-38d2ee314557`)
+- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Send a message16" (id `e5cc07dc-52e6-4d68-baea-acbe906bbb66`)
 - [[../resources/credentials/z7egngearoj2smhw|PE Master Bearer Token]] (`httpBearerAuth`, id `Z7eGNGEAroj2SMhw`) — node "Get Merchant Details1" (id `e7c25618-7861-46d7-8cb8-69d218ddb623`)
 - [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Send a message9" (id `ebb8f53d-fe16-470c-a8fc-2706ab381f3a`)
 - [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Append row in sheet" (id `eca1fec9-cfe0-4498-b7ff-cea6460b0a7d`)
@@ -101,11 +104,13 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - [[../resources/custom-nodes/n8n-nodes-document-generator|n8n-nodes-document-generator]] — type `n8n-nodes-document-generator.documentGenerator` — node "DocumentGenerator2" (id `3fa62a88-0c41-4af5-a518-4d3c6eaa6790`)
 - [[../resources/custom-nodes/n8n-nodes-document-generator|n8n-nodes-document-generator]] — type `n8n-nodes-document-generator.documentGenerator` — node "DocumentGenerator" (id `ab42dc47-7374-4bc9-b698-3d9170f6c22f`)
 - [[../resources/custom-nodes/n8n-nodes-document-generator|n8n-nodes-document-generator]] — type `n8n-nodes-document-generator.documentGenerator` — node "DocumentGenerator1" (id `b8281abe-041d-45bd-80b8-bac736869a35`)
+- [[../resources/custom-nodes/n8n-nodes-document-generator|n8n-nodes-document-generator]] — type `n8n-nodes-document-generator.documentGenerator` — node "DocumentGenerator5" (id `d85b7215-2632-434f-b400-299c48ca3056`)
 - [[../resources/custom-nodes/n8n-nodes-document-generator|n8n-nodes-document-generator]] — type `n8n-nodes-document-generator.documentGenerator` — node "DocumentGenerator3" (id `f4f30ad0-ed8b-4350-a7fb-69c8ae68fd08`)
 
 ### Google Sheets
 
 - [[../resources/google-sheets/1zgtznbhecvtp-hfhbrlt62huww4z7fzpsnzjyyq8vjc|PE Merchant Email AI Assistant]] (id `1ZgTZnBheCvtp-hfhBrlt62HuWW4Z7fzpSnZjYyq8Vjc`) — op `appendOrUpdate`, tab `ActiveHearthApplications` — node "Append or update row in sheet" (id `13e84b18-b860-4ec4-915f-c91f58184801`)
+- [[../resources/google-sheets/1muzy-keyh2c-ny4c2q-ulao5xf43kgr-k-4057zwoai|AI Automation - Ops Alert]] (id `1muzy-kEYH2C-nY4C2q-ulAo5Xf43kgr_K-4057ZwoAI`) — op `?`, tab `ECS - not in app` — node "Get row(s) in sheet" (id `516a7436-b2d4-4522-889c-012fe234ac4d`)
 - [[../resources/google-sheets/1zgtznbhecvtp-hfhbrlt62huww4z7fzpsnzjyyq8vjc|PE Merchant Email AI Assistant]] (id `1ZgTZnBheCvtp-hfhBrlt62HuWW4Z7fzpSnZjYyq8Vjc`) — op `append`, tab `AutosubmissionLog` — node "LogAutosubmission" (id `5b62a171-09f8-46b8-8ef9-468e866e6882`)
 - [[../resources/google-sheets/1kiz0yv1iibvxncjyekhyu-xvqoatxwju7ykpy70q4gw|Elavon BI Automation]] (id `1kiZ0YV1iIBvXnCjyEkHYu-XVQOATxwJU7ykPY70q4Gw`) — op `append`, tab `forteGatewayCreationLogs` — node "Append row in sheet" (id `eca1fec9-cfe0-4498-b7ff-cea6460b0a7d`)
 
@@ -120,10 +125,12 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - [[../resources/slack-channels/c09c901een4|hearth-alerts-internal]] (id `C09C901EEN4`) — op `channel` — node "Send a message11" (id `514c4fa9-407e-47c1-915e-ef698d0c175f`)
 - *(dynamic channel)* — op `channel` — node "Send a message12" (id `5f7eaca2-0278-4bc2-9b4c-b2072f2bf0df`)
 - [[../resources/slack-channels/ops-automation-alert|ops-automation-alert]] (id `ops-automation-alert`) — op `channel` — node "Send a message13" (id `695d5097-e0c9-4f93-a3c7-1424a2a14f73`)
-- [[../resources/slack-channels/c09c901een4|hearth-alerts-internal]] (id `C09C901EEN4`) — op `channel` — node "Send a message1" (id `72ff26e5-9b1b-49cf-9a71-148863b15f5e`)
+- [[../resources/slack-channels/ops-automation-alert|ops-automation-alert]] (id `ops-automation-alert`) — op `channel` — node "Send a message15" (id `72e5fd40-ef31-446e-8421-b29d296a38c6`)
+- [[../resources/slack-channels/ops-automation-alert|ops-automation-alert]] (id `ops-automation-alert`) — op `channel` — node "Send a message1" (id `72ff26e5-9b1b-49cf-9a71-148863b15f5e`)
 - *(dynamic channel)* — op `channel` — node "Send a message5" (id `8971ddd4-104d-41e5-a801-41290cef6388`)
 - *(dynamic channel)* — op `channel` — node "Send a message10" (id `cbc57496-fa21-4557-acf5-38f6ef974278`)
 - *(dynamic channel)* — op `channel` — node "Send a message2" (id `cf3cc099-6c29-4faf-b27b-38d2ee314557`)
+- *(dynamic channel)* — op `channel` — node "Send a message16" (id `e5cc07dc-52e6-4d68-baea-acbe906bbb66`)
 - [[../resources/slack-channels/ops-automation-alert|ops-automation-alert]] (id `ops-automation-alert`) — op `channel` — node "Send a message9" (id `ebb8f53d-fe16-470c-a8fc-2706ab381f3a`)
 - *(dynamic channel)* — op `channel` — node "Send a message14" (id `f4cfd48d-c4c6-4556-8e57-0f522b391507`)
 

@@ -3,10 +3,10 @@ n8n_id: "nethTCkaMDFvPGvO"
 instance: v1
 name: "PCI Compliance Manager Automation"
 status: active
-last_modified: 2026-08-03T19:47:22.165Z
+last_modified: 2026-08-25T19:33:25.600Z
 tags: []
-fingerprint: "7669a602d377b0afa07180087329329dadaeff90dbba786afa4356ac162f18d5"
-auto_generated_at: 2026-08-19T19:13:32Z
+fingerprint: "dff9e6ba87462cdd5ccd40c497c823917e39721efae51894fad2c253daa8c58c"
+auto_generated_at: 2026-08-28T21:13:05Z
 ---
 
 <!-- auto:start -->
@@ -17,8 +17,8 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 - **Status:** active
 - **n8n ID:** `nethTCkaMDFvPGvO`
-- **Nodes:** 96
-- **Last modified:** 2026-08-03T19:47:22.165Z
+- **Nodes:** 100
+- **Last modified:** 2026-08-25T19:33:25.600Z
 
 ## Triggers
 

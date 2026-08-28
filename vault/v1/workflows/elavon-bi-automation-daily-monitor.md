@@ -3,10 +3,10 @@ n8n_id: "9UH9sK3CWbFRtVGg"
 instance: v1
 name: "Elavon BI Automation (Daily Monitor)"
 status: active
-last_modified: 2026-06-15T16:54:51.298Z
+last_modified: 2026-08-27T18:38:18.296Z
 tags: []
-fingerprint: "8723115f002feebcd8ba670eab1dc65ab2c1e2fea88448f430b386ad15b60aae"
-auto_generated_at: 2026-08-19T19:13:32Z
+fingerprint: "8c879d60967f02111601be0ff587532d28748399c8de38638d4d1db16cee0705"
+auto_generated_at: 2026-08-28T21:13:05Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - **Status:** active
 - **n8n ID:** `9UH9sK3CWbFRtVGg`
 - **Nodes:** 101
-- **Last modified:** 2026-06-15T16:54:51.298Z
+- **Last modified:** 2026-08-27T18:38:18.296Z
 
 ## Triggers
 
@@ -67,10 +67,10 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 ### LLM models
 
-- [[../resources/llm-models/anthropic-claude-sonnet-4-20250514|anthropic / claude-sonnet-4-20250514]] — node "Anthropic Chat Model1" (id `0c8eadda-d4c6-4c27-8af6-55b76c8f0e66`)
-- [[../resources/llm-models/anthropic-claude-sonnet-4-20250514|anthropic / claude-sonnet-4-20250514]] — node "Anthropic Chat Model" (id `11efca59-4e37-451f-b4c4-f32115334fb7`)
-- [[../resources/llm-models/anthropic-claude-sonnet-4-20250514|anthropic / claude-sonnet-4-20250514]] — node "Anthropic Chat Model2" (id `5276bf07-71e7-4e94-aefc-f009efff09ef`)
-- [[../resources/llm-models/anthropic-claude-sonnet-4-20250514|anthropic / claude-sonnet-4-20250514]] — node "Anthropic Chat Model3" (id `ba96437e-4b99-4c12-91db-42b96bf69b91`)
+- [[../resources/llm-models/anthropic-claude-sonnet-5|anthropic / claude-sonnet-5]] — node "Anthropic Chat Model1" (id `0c8eadda-d4c6-4c27-8af6-55b76c8f0e66`)
+- [[../resources/llm-models/anthropic-claude-sonnet-5|anthropic / claude-sonnet-5]] — node "Anthropic Chat Model" (id `11efca59-4e37-451f-b4c4-f32115334fb7`)
+- [[../resources/llm-models/anthropic-claude-sonnet-5|anthropic / claude-sonnet-5]] — node "Anthropic Chat Model2" (id `5276bf07-71e7-4e94-aefc-f009efff09ef`)
+- [[../resources/llm-models/anthropic-claude-sonnet-5|anthropic / claude-sonnet-5]] — node "Anthropic Chat Model3" (id `ba96437e-4b99-4c12-91db-42b96bf69b91`)
 
 ### Custom / community nodes
 

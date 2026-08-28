@@ -3,10 +3,10 @@ n8n_id: "SKUc7koYq0qLDt2Y"
 instance: v1
 name: "Hearth - Funding Delay Alerts"
 status: active
-last_modified: 2025-11-21T16:32:32.521Z
+last_modified: 2026-08-27T18:47:00.215Z
 tags: []
-fingerprint: "80e828b61601f05bb90aee13393f104d63cd959ee96f2c53ac8f27b9c707f853"
-auto_generated_at: 2026-06-01T22:51:45Z
+fingerprint: "c78a38fb0fff386c7adb88097df4f3d46bdcd5ae69c01bf9c8640745d5f13f1a"
+auto_generated_at: 2026-08-28T21:13:05Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-06-01T22:51:45Z
 - **Status:** active
 - **n8n ID:** `SKUc7koYq0qLDt2Y`
 - **Nodes:** 40
-- **Last modified:** 2025-11-21T16:32:32.521Z
+- **Last modified:** 2026-08-27T18:47:00.215Z
 
 ## Triggers
 
@@ -45,9 +45,9 @@ auto_generated_at: 2026-06-01T22:51:45Z
 - [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Get row(s) in sheet1" (id `8404a5d2-d8eb-479b-8938-e4ef5da51c66`)
 - [[../resources/credentials/nuywkwefalsyaavg|Support slack]] (`slackApi`, id `NuyWkwefAlSyAaVg`) — node "Send a message in Slack" (id `95e86f55-ac6b-41d8-aa32-8ac57bc769ab`)
 - [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Update row in sheet" (id `9935bf08-d707-4a4e-8d62-15ad4ec7d0e7`)
-- [[../resources/credentials/godp5gdyjaspv2fj|Anthropic (spartak@platformfactory.io)]] (`anthropicApi`, id `Godp5GdYJAspV2fj`) — node "Anthropic Chat Model" (id `9b106ec3-d667-4fab-9e5e-6d645d5f4a31`)
+- [[../resources/credentials/godp5gdyjaspv2fj|Anthropic (spartak@platformfactory.io) n8n 2026]] (`anthropicApi`, id `Godp5GdYJAspV2fj`) — node "Anthropic Chat Model" (id `9b106ec3-d667-4fab-9e5e-6d645d5f4a31`)
 - [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Update row in sheet in Google Sheets" (id `a1d9078f-146b-4143-86a0-29fa377979cb`)
-- [[../resources/credentials/godp5gdyjaspv2fj|Anthropic (spartak@platformfactory.io)]] (`anthropicApi`, id `Godp5GdYJAspV2fj`) — node "Anthropic Chat Model1" (id `e38d296e-6761-4a95-a23d-604d4e87f9f9`)
+- [[../resources/credentials/godp5gdyjaspv2fj|Anthropic (spartak@platformfactory.io) n8n 2026]] (`anthropicApi`, id `Godp5GdYJAspV2fj`) — node "Anthropic Chat Model1" (id `e38d296e-6761-4a95-a23d-604d4e87f9f9`)
 - [[../resources/credentials/oucdlrjl56jcwuca|PE Merchants Gmail Account (merchants@platformfactory.io)]] (`gmailOAuth2`, id `OUcDLrjl56jcWUCa`) — node "Get many messages1" (id `ff8df974-5a20-42dc-9d01-ad44ab79772c`)
 
 ### Databases
@@ -56,8 +56,8 @@ auto_generated_at: 2026-06-01T22:51:45Z
 
 ### LLM models
 
-- [[../resources/llm-models/anthropic-claude-sonnet-4-5-20250929|anthropic / claude-sonnet-4-5-20250929]] — node "Anthropic Chat Model" (id `9b106ec3-d667-4fab-9e5e-6d645d5f4a31`)
-- [[../resources/llm-models/anthropic-claude-sonnet-4-5-20250929|anthropic / claude-sonnet-4-5-20250929]] — node "Anthropic Chat Model1" (id `e38d296e-6761-4a95-a23d-604d4e87f9f9`)
+- [[../resources/llm-models/anthropic-claude-sonnet-5|anthropic / claude-sonnet-5]] — node "Anthropic Chat Model" (id `9b106ec3-d667-4fab-9e5e-6d645d5f4a31`)
+- [[../resources/llm-models/anthropic-claude-sonnet-5|anthropic / claude-sonnet-5]] — node "Anthropic Chat Model1" (id `e38d296e-6761-4a95-a23d-604d4e87f9f9`)
 
 ### Custom / community nodes
 

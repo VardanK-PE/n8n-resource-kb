@@ -3,10 +3,10 @@ n8n_id: "tcYnixnPq9S8UPQl"
 instance: v1
 name: "PE Payments Intelligence Overlay"
 status: active
-last_modified: 2025-10-15T13:07:28.967Z
+last_modified: 2026-08-27T18:34:34.786Z
 tags: []
-fingerprint: "183a707cd019bbf824c909f21a3dde3dcc840d092f3590e7c0129a6fbdb01c36"
-auto_generated_at: 2026-06-01T22:51:45Z
+fingerprint: "767d946d48b38776c81d4bd2f2b9ceaae0b3d194d0a9c9046b1296be6da42344"
+auto_generated_at: 2026-08-28T21:13:05Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-06-01T22:51:45Z
 - **Status:** active
 - **n8n ID:** `tcYnixnPq9S8UPQl`
 - **Nodes:** 41
-- **Last modified:** 2025-10-15T13:07:28.967Z
+- **Last modified:** 2026-08-27T18:34:34.786Z
 
 ## Triggers
 
@@ -33,14 +33,14 @@ auto_generated_at: 2026-06-01T22:51:45Z
 
 ### Credentials
 
-- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Add or Append Context Store Item" (id `3d45d40e-2be5-48b1-ae29-226f83016bd7`)
-- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Instructions for JavaScript Execution Tool" (id `909bfeca-5705-4082-8449-92a920a42fa3`)
-- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Get a document in Google Docs" (id `a2640b76-e556-4282-9ad9-15987f71514a`)
-- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Instructions for Using Browser JavaScript Execution Tool2" (id `c045bdf0-42c3-46c6-b9f1-83fd6181c5c4`)
-- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Get Context Store Item" (id `c418fba1-1d34-4d12-8e03-b0f0214f6bc8`)
-- [[../resources/credentials/1jtiaqogn0rcfpc1|Anthropic account]] (`anthropicApi`, id `1jtIAQOGn0RcFpc1`) — node "Anthropic Chat Model" (id `cbbd76c1-2c30-4a17-801c-889ac74615c4`)
+- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Add or Append Context Store Item" (id `3d45d40e-2be5-48b1-ae29-226f83016bd7`)
+- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Instructions for JavaScript Execution Tool" (id `909bfeca-5705-4082-8449-92a920a42fa3`)
+- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Get a document in Google Docs" (id `a2640b76-e556-4282-9ad9-15987f71514a`)
+- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Instructions for Using Browser JavaScript Execution Tool2" (id `c045bdf0-42c3-46c6-b9f1-83fd6181c5c4`)
+- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Get Context Store Item" (id `c418fba1-1d34-4d12-8e03-b0f0214f6bc8`)
+- [[../resources/credentials/1jtiaqogn0rcfpc1|Anthropic account (n8n api key)]] (`anthropicApi`, id `1jtIAQOGn0RcFpc1`) — node "Anthropic Chat Model" (id `cbbd76c1-2c30-4a17-801c-889ac74615c4`)
 - [[../resources/credentials/jizht82aeuvnkqed|Centrifugo HMAC Secret Key]] (`jwtAuth`, id `JizHT82aEUvnKQEd`) — node "JWT" (id `d3215dec-5f82-4915-8eaf-eb00807243f0`)
-- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Agent Context Store Items List" (id `ee2a83ac-916a-4623-a1cc-fdc358c3f152`)
+- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Agent Context Store Items List" (id `ee2a83ac-916a-4623-a1cc-fdc358c3f152`)
 
 ### HTTP URLs
 
@@ -51,7 +51,7 @@ auto_generated_at: 2026-06-01T22:51:45Z
 
 ### LLM models
 
-- [[../resources/llm-models/anthropic-claude-sonnet-4-20250514|anthropic / claude-sonnet-4-20250514]] — node "Anthropic Chat Model" (id `cbbd76c1-2c30-4a17-801c-889ac74615c4`)
+- [[../resources/llm-models/anthropic-claude-sonnet-5|anthropic / claude-sonnet-5]] — node "Anthropic Chat Model" (id `cbbd76c1-2c30-4a17-801c-889ac74615c4`)
 
 ### Google Sheets
 
