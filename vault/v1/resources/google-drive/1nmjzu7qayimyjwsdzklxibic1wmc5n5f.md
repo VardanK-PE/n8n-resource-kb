@@ -4,7 +4,7 @@ instance: v1
 resource_id: "1nMjZu7qayIMyjWsdzKLxiBiC1WMC5n5F"
 current_name: "PCI-DSS-v4_0_1-SAQ-A-r1_16.pascal.v6.pdf"
 aliases: ["PCI-DSS-v4_0_1-SAQ-A-r1_16.pascal.v6.pdf"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

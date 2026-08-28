@@ -4,7 +4,7 @@ instance: v1
 resource_id: "schedule:every 1 second(s)"
 current_name: "schedule — every 1 second(s)"
 aliases: ["schedule — every 1 second(s)"]
-auto_generated_at: 2026-08-19T19:29:04Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-08-19T19:29:04Z
 
 ## Used by
 
-- [[../../workflows/develotech|Develotech ServiceTitan]] — node "Schedule Trigger" (id `f9691b74-7bae-468b-8a8b-2dc5b487501a`)
+- [[../../workflows/develotech-servicetitan|Develotech ServiceTitan]] — node "Schedule Trigger" (id `f9691b74-7bae-468b-8a8b-2dc5b487501a`)
 
 <!-- auto:end -->
 

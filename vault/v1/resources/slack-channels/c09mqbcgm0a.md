@@ -4,7 +4,7 @@ instance: v1
 resource_id: "C09MQBCGM0A"
 current_name: "pci-saq-scribe-webapp"
 aliases: ["pci-saq-scribe-webapp"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
@@ -17,7 +17,6 @@ auto_generated_at: 2026-06-01T22:51:45Z
 
 ## Used by
 
-- [[../../workflows/pci-saq-notifications|PCI SAQ Notifications]] — node "Send a message6" (id `12eb491e-1af6-40f9-80db-9917c068687d`)
 - [[../../workflows/pci-saq-webapp|PCI SAQ Webapp]] — node "Invalid Key Request" (id `c3bc9632-2ea5-450b-b58c-92576e029c86`)
 - [[../../workflows/pci-saq-webapp|PCI SAQ Webapp]] — node "Report the merchant did not respond to signature request1" (id `5844859a-c439-450e-a4ed-8bab5a1a337e`)
 - [[../../workflows/pci-saq-webapp|PCI SAQ Webapp]] — node "Report the merchant did not respond to signature request2" (id `f75aebae-2262-4fad-93f2-c70d57f01e64`)

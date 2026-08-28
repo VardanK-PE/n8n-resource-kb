@@ -4,7 +4,7 @@ instance: v1
 resource_id: "n8n-sandbox-of-doom"
 current_name: "n8n-sandbox-of-doom"
 aliases: ["n8n-sandbox-of-doom"]
-auto_generated_at: 2026-08-28T21:13:05Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

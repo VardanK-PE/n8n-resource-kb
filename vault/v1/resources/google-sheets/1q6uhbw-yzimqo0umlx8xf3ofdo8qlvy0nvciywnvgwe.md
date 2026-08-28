@@ -4,7 +4,7 @@ instance: v1
 resource_id: "1Q6uHbW_YZImQO0uMLx8xF3OFdo8qlvY0nVciyWNVGwE"
 current_name: "INVOICES / DEVICES / RESERVE FUNDING"
 aliases: ["INVOICES / DEVICES / RESERVE FUNDING"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

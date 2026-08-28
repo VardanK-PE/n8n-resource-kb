@@ -4,7 +4,7 @@ instance: v1
 resource_id: "WMTlps73Qf1Sk3aM"
 current_name: "PE Master JWT Secret"
 aliases: ["PE Master JWT Secret"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
@@ -29,10 +29,10 @@ auto_generated_at: 2026-08-19T19:25:44Z
 - [[../../workflows/njord-api|Njord API]] — node "Get Merchant Disputes - PROD" (id `350b0dec-432c-4415-9fa4-557182222577`)
 - [[../../workflows/njord-api|Njord API]] — node "Get Merchants - PROD" (id `46249afd-7718-45ef-a0f4-ee3b8d21d948`)
 - [[../../workflows/njord-api|Njord API]] — node "Post Dispute Action - PROD" (id `95b21b95-37be-4059-9f05-d179840802db`)
-- [[../../workflows/pax-device-monitoring-backup-2025-10-25|PAX Device Monitoring backup 2025-10-25]] — node "JWT" (id `9d641b77-a66f-4221-8365-570d61d0d1ea`)
-- [[../../workflows/pax-device-monitoring-bk-2025-10-23-|PAX Device Monitoring (BK-2025-10-23)]] — node "JWT" (id `b31e1fce-e096-4286-be24-9cafb37beae1`)
-- [[../../workflows/pax-device-monitoring-bk-2025-10-23-|PAX Device Monitoring (BK-2025-10-23)]] — node "JWT1" (id `8272fd8e-2c81-4513-bfb1-a2b8d2749520`)
 - [[../../workflows/pax-device-monitoring|PAX Device Monitoring]] — node "JWT" (id `d1100447-ec2b-4bbd-b0c3-1cc77d52d95f`)
+- [[../../workflows/pax-device-monitoring-backup-2025-10-25|PAX Device Monitoring backup 2025-10-25]] — node "JWT" (id `9d641b77-a66f-4221-8365-570d61d0d1ea`)
+- [[../../workflows/pax-device-monitoring-bk-2025-10-23|PAX Device Monitoring (BK-2025-10-23)]] — node "JWT" (id `b31e1fce-e096-4286-be24-9cafb37beae1`)
+- [[../../workflows/pax-device-monitoring-bk-2025-10-23|PAX Device Monitoring (BK-2025-10-23)]] — node "JWT1" (id `8272fd8e-2c81-4513-bfb1-a2b8d2749520`)
 - [[../../workflows/pax-portal-access-token-manager|PAX Portal Access Token Manager]] — node "JWT" (id `de53c702-3d56-4b94-9811-ade4de59a2fc`)
 - [[../../workflows/pci-saq-webapp|PCI SAQ Webapp]] — node "Decode JWT" (id `fc937e41-567d-4303-9f0a-592e00c45018`)
 - [[../../workflows/pci-saq-webapp|PCI SAQ Webapp]] — node "JWT" (id `37bbfd67-6c77-4f73-9c35-e2bb172e354c`)

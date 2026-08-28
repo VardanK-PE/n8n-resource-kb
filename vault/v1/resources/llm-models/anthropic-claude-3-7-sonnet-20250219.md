@@ -4,7 +4,7 @@ instance: v1
 resource_id: "anthropic/claude-3-7-sonnet-20250219"
 current_name: "anthropic / claude-3-7-sonnet-20250219"
 aliases: ["anthropic / claude-3-7-sonnet-20250219"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

@@ -4,7 +4,7 @@ instance: v1
 resource_id: "schedule:daily at 6:00, daily at 11:00, daily at 15:00, daily at 17:00"
 current_name: "schedule — daily at 6:00, daily at 11:00, daily at 15:00, daily at 17:00"
 aliases: ["schedule — daily at 6:00, daily at 11:00, daily at 15:00, daily at 17:00"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

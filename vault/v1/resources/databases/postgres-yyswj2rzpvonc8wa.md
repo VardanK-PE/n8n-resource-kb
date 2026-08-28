@@ -4,7 +4,7 @@ instance: v1
 resource_id: "postgres/yysWJ2rZpvONC8WA"
 current_name: "postgres (via Production / ST - Read Replica Auto Credential)"
 aliases: ["postgres (via Production / ST - Read Replica Auto Credential)"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
@@ -30,11 +30,11 @@ auto_generated_at: 2026-08-19T19:25:44Z
 - [[../../workflows/billing-system-get-merchant-platform-fees|Billing System - Get merchant platform fees]] — op `executeQuery` — node "Get Tokens2" (id `56fe67eb-e381-474b-b83c-ac069badce27`)
 - [[../../workflows/billing-system-get-merchant-platform-fees|Billing System - Get merchant platform fees]] — op `executeQuery` — node "Get Tokens3" (id `b198c6ca-1aad-4496-b4da-d85890c099c2`)
 - [[../../workflows/billing-system-get-merchant-platform-fees|Billing System - Get merchant platform fees]] — op `executeQuery` — node "Get Tokens4" (id `e86b07e9-cdf5-4d7f-920b-b28160f37c7d`)
+- [[../../workflows/billing-system-get-merchant-platform-fees|Billing System - Get merchant platform fees]] — op `executeQuery` — node "Get Transaction Count" (id `e0fb6d94-6994-43fa-a67c-f636f6d12632`)
 - [[../../workflows/billing-system-get-merchant-platform-fees|Billing System - Get merchant platform fees]] — op `executeQuery` — node "Get Transaction Count Android Softpos" (id `d957e442-96cb-424e-b653-4e6867d68db6`)
 - [[../../workflows/billing-system-get-merchant-platform-fees|Billing System - Get merchant platform fees]] — op `executeQuery` — node "Get Transaction Count Android Softpos1" (id `47fabc3a-533d-43dc-a7f3-e2a2760ace65`)
 - [[../../workflows/billing-system-get-merchant-platform-fees|Billing System - Get merchant platform fees]] — op `executeQuery` — node "Get Transaction Count iOS Softpos" (id `41bce9a8-a8d8-44d1-bf38-b7fbbb5b846a`)
 - [[../../workflows/billing-system-get-merchant-platform-fees|Billing System - Get merchant platform fees]] — op `executeQuery` — node "Get Transaction Count iOS Softpos1" (id `a9e10d5b-7922-41d4-8b41-737c0efa1404`)
-- [[../../workflows/billing-system-get-merchant-platform-fees|Billing System - Get merchant platform fees]] — op `executeQuery` — node "Get Transaction Count" (id `e0fb6d94-6994-43fa-a67c-f636f6d12632`)
 - [[../../workflows/billing-system-get-merchant-platform-fees|Billing System - Get merchant platform fees]] — op `executeQuery` — node "Get Transaction Count1" (id `24c42a32-9ccc-4b1c-a29f-61d9021555ad`)
 - [[../../workflows/billing-system-get-merchant-platform-fees|Billing System - Get merchant platform fees]] — op `executeQuery` — node "Get Transaction Count2" (id `21824331-aa8b-427d-9bc8-a040e9e3d4ed`)
 - [[../../workflows/billing-system-get-merchant-platform-fees|Billing System - Get merchant platform fees]] — op `executeQuery` — node "Merchant Applications Count" (id `e95379c4-be52-413d-842b-da34f8139d31`)
@@ -54,9 +54,9 @@ auto_generated_at: 2026-08-19T19:25:44Z
 - [[../../workflows/monthly-merchant-direct-billing|Monthly Merchant Direct Billing]] — op `executeQuery` — node "Get Tokens2" (id `50a59d4e-6ac3-4d2d-9fc3-953f01c0b432`)
 - [[../../workflows/monthly-merchant-direct-billing|Monthly Merchant Direct Billing]] — op `executeQuery` — node "Get Tokens3" (id `42ba9b75-510f-4917-b7bc-e3400377c422`)
 - [[../../workflows/monthly-merchant-direct-billing|Monthly Merchant Direct Billing]] — op `executeQuery` — node "Get Tokens4" (id `1d064a74-4554-4cca-bab1-4d157583ce9f`)
+- [[../../workflows/monthly-merchant-direct-billing|Monthly Merchant Direct Billing]] — op `executeQuery` — node "Get Transaction Count" (id `4097587a-c503-44b0-94a9-eba1ec95f843`)
 - [[../../workflows/monthly-merchant-direct-billing|Monthly Merchant Direct Billing]] — op `executeQuery` — node "Get Transaction Count Android Softpos" (id `8b02c6b1-a2cd-43e6-ba59-730e33341070`)
 - [[../../workflows/monthly-merchant-direct-billing|Monthly Merchant Direct Billing]] — op `executeQuery` — node "Get Transaction Count iOS Softpos" (id `d6610ddc-8cd4-4917-afc3-e5ef6aa4b61b`)
-- [[../../workflows/monthly-merchant-direct-billing|Monthly Merchant Direct Billing]] — op `executeQuery` — node "Get Transaction Count" (id `4097587a-c503-44b0-94a9-eba1ec95f843`)
 - [[../../workflows/monthly-merchant-direct-billing|Monthly Merchant Direct Billing]] — op `executeQuery` — node "Get Transaction Count2" (id `c1f4894c-3f38-458e-8abe-e111f9e51c1e`)
 - [[../../workflows/monthly-merchant-direct-billing|Monthly Merchant Direct Billing]] — op `executeQuery` — node "Merchant Applications Count" (id `4b6174f3-76f8-4a89-9273-fef91de840fc`)
 - [[../../workflows/monthly-merchant-direct-billing|Monthly Merchant Direct Billing]] — op `executeQuery` — node "Merchant Applications Count1" (id `693648b5-fa6e-45c1-9c16-04468095427a`)
@@ -71,9 +71,9 @@ auto_generated_at: 2026-08-19T19:25:44Z
 - [[../../workflows/monthly-partner-platform-fee-generator|Monthly Partner Platform Fee Generator]] — op `executeQuery` — node "Get Tokens3" (id `d945d63d-91d8-4aa0-936e-2e70c4121222`)
 - [[../../workflows/monthly-partner-platform-fee-generator|Monthly Partner Platform Fee Generator]] — op `executeQuery` — node "Get Tokens4" (id `2d539c4a-2f23-4683-ae83-6b80f78c3f30`)
 - [[../../workflows/monthly-partner-platform-fee-generator|Monthly Partner Platform Fee Generator]] — op `executeQuery` — node "Get Tokens5" (id `dd917649-c6d2-467c-bc8f-0c54c4e74db9`)
+- [[../../workflows/monthly-partner-platform-fee-generator|Monthly Partner Platform Fee Generator]] — op `executeQuery` — node "Get Transaction Count" (id `33ca3096-e7de-4de3-a70e-8aea3eb5922f`)
 - [[../../workflows/monthly-partner-platform-fee-generator|Monthly Partner Platform Fee Generator]] — op `executeQuery` — node "Get Transaction Count Android Softpos" (id `6b8a61ff-2770-450d-95b3-8dbf89cc3d89`)
 - [[../../workflows/monthly-partner-platform-fee-generator|Monthly Partner Platform Fee Generator]] — op `executeQuery` — node "Get Transaction Count iOS Softpos" (id `30191c7a-a592-4291-9026-b5b1d8ba1843`)
-- [[../../workflows/monthly-partner-platform-fee-generator|Monthly Partner Platform Fee Generator]] — op `executeQuery` — node "Get Transaction Count" (id `33ca3096-e7de-4de3-a70e-8aea3eb5922f`)
 - [[../../workflows/monthly-partner-platform-fee-generator|Monthly Partner Platform Fee Generator]] — op `executeQuery` — node "Get Transaction Count2" (id `1952b656-32ad-4f32-b97c-660acefc8022`)
 - [[../../workflows/monthly-partner-platform-fee-generator|Monthly Partner Platform Fee Generator]] — op `executeQuery` — node "Merchant Applications Count" (id `3ba8df70-0597-4913-b287-1c92bce52c18`)
 - [[../../workflows/monthly-partner-platform-fee-generator|Monthly Partner Platform Fee Generator]] — op `executeQuery` — node "Merchant Applications Count1" (id `b15d8fd8-9281-47e1-ae65-d016370cddb3`)

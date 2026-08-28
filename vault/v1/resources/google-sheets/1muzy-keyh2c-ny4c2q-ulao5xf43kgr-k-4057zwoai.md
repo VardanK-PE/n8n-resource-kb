@@ -4,7 +4,7 @@ instance: v1
 resource_id: "1muzy-kEYH2C-nY4C2q-ulAo5Xf43kgr_K-4057ZwoAI"
 current_name: "AI Automation - Ops Alert"
 aliases: ["AI Automation - Ops Alert"]
-auto_generated_at: 2026-08-28T21:13:05Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

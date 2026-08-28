@@ -4,7 +4,7 @@ instance: v1
 resource_id: "api.easypost.com"
 current_name: "api.easypost.com"
 aliases: ["api.easypost.com"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

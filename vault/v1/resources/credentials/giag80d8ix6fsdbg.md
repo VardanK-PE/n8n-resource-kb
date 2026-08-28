@@ -4,7 +4,7 @@ instance: v1
 resource_id: "GiaG80d8IX6fsDBG"
 current_name: "N8N QB MCP Server Header Auth Token"
 aliases: ["N8N QB MCP Server Header Auth Token"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
@@ -17,8 +17,8 @@ auto_generated_at: 2026-08-19T19:25:44Z
 
 ## Used by
 
-- [[../../workflows/pe-mcp-server-backup-2026-01-06|PE MCP Server - Backup 2026-01-06]] — node "MCP Server Trigger" (id `b38b4be7-1a54-4b39-855f-70705c92b171`)
 - [[../../workflows/pe-mcp-server|PE MCP Server]] — node "MCP Server Trigger" (id `b38b4be7-1a54-4b39-855f-70705c92b171`)
+- [[../../workflows/pe-mcp-server-backup-2026-01-06|PE MCP Server - Backup 2026-01-06]] — node "MCP Server Trigger" (id `b38b4be7-1a54-4b39-855f-70705c92b171`)
 
 <!-- auto:end -->
 

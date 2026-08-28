@@ -4,7 +4,7 @@ instance: v1
 resource_id: "14QrgiJz_M12fo3Ic_rwd1CYTDK-SwKw_"
 current_name: "DocuSign - Files Archive"
 aliases: ["DocuSign - Files Archive"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

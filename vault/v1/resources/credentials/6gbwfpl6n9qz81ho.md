@@ -4,7 +4,7 @@ instance: v1
 resource_id: "6GBwfPL6n9QZ81ho"
 current_name: "Postgres Sandbox-Live"
 aliases: ["Postgres Sandbox-Live","Postgres account 2"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

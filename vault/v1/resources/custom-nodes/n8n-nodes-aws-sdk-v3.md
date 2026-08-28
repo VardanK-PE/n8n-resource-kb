@@ -4,7 +4,7 @@ instance: v1
 resource_id: "n8n-nodes-aws-sdk-v3"
 current_name: "n8n-nodes-aws-sdk-v3"
 aliases: ["n8n-nodes-aws-sdk-v3"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

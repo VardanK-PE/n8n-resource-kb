@@ -4,7 +4,7 @@ instance: v1
 resource_id: "tOzssNhfl1ZRvV7R"
 current_name: "Elavon - ICQual Fees"
 aliases: ["Elavon - ICQual Fees"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
@@ -13,7 +13,6 @@ auto_generated_at: 2026-08-19T19:25:44Z
 
 - **Resource id (canonical):** `tOzssNhfl1ZRvV7R`
 - **Current name:** Elavon - ICQual Fees
-- **Path:** `None`
 - **Table ID:** `tOzssNhfl1ZRvV7R`
 
 ## Used by

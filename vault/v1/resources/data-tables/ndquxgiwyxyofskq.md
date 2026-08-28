@@ -4,7 +4,7 @@ instance: v1
 resource_id: "ndqUxgIWYXYoFSkq"
 current_name: "Transaction Alerts - Hitch"
 aliases: ["Transaction Alerts - Hitch"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

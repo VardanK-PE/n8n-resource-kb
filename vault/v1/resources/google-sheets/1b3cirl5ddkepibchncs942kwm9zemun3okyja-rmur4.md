@@ -4,7 +4,7 @@ instance: v1
 resource_id: "1B3cIrL5ddKePiBCHNCs942KwM9zEmUn3okYja_rmUR4"
 current_name: "1B3cIrL5ddKePiBCHNCs942KwM9zEmUn3okYja_rmUR4"
 aliases: ["1B3cIrL5ddKePiBCHNCs942KwM9zEmUn3okYja_rmUR4"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
@@ -17,8 +17,8 @@ auto_generated_at: 2026-08-19T19:25:44Z
 
 ## Used by
 
-- [[../../workflows/-managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox-|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — op `read`, tab `Merchants` — node "Read Merchants Sheet" (id `read-merchants`)
-- [[../../workflows/-managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox-|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — op `update`, tab `Merchants` — node "Update Sheet: Success" (id `update-success`)
+- [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — op `read`, tab `Merchants` — node "Read Merchants Sheet" (id `read-merchants`)
+- [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — op `update`, tab `Merchants` — node "Update Merchants Row" (id `update-merchants-row-v2`)
 - [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — op `append`, tab `Sync Log` — node "Debug: After Activate" (id `debug-after-activate`)
 - [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — op `append`, tab `Sync Log` — node "Debug: After Create" (id `debug-after-create`)
 - [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — op `append`, tab `Sync Log` — node "Debug: After Filter" (id `debug-after-filter`)
@@ -28,8 +28,8 @@ auto_generated_at: 2026-08-19T19:25:44Z
 - [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — op `append`, tab `Sync Log` — node "Debug: After Update" (id `debug-after-update`)
 - [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — op `append`, tab `Sync Log` — node "Debug: Log After Read" (id `debug-log-after-read`)
 - [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — op `append`, tab `Sync Log` — node "Log Success" (id `update-success`)
-- [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — op `read`, tab `Merchants` — node "Read Merchants Sheet" (id `read-merchants`)
-- [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — op `update`, tab `Merchants` — node "Update Merchants Row" (id `update-merchants-row-v2`)
+- [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox-QbFajy9S|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — op `read`, tab `Merchants` — node "Read Merchants Sheet" (id `read-merchants`)
+- [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox-QbFajy9S|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — op `update`, tab `Merchants` — node "Update Sheet: Success" (id `update-success`)
 
 <!-- auto:end -->
 

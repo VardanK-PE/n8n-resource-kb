@@ -4,7 +4,7 @@ instance: v1
 resource_id: "1NUktqZ7LgVs5qtevSnVm_7kpI70iD_TxysJxdKgiNUg"
 current_name: "Interchange_Categories_US_Elavon_Partner_Merchants_April_2026"
 aliases: ["Interchange_Categories_US_Elavon_Partner_Merchants_April_2026"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

@@ -69,7 +69,7 @@ auto_generated_at: 2026-08-28T21:13:05Z
 
 ## Used by (workflows)
 
-*(populated in the resource-aggregation pass after all workflows are rendered)*
+- [[elavon-on-pi-daily-monitor-completion|Elavon: On PI Daily Monitor Completion]] — node "Send Hearth notifications" (id `e63f6782-154c-4a9c-9d47-ecdf014a2fd2`)
 
 <!-- auto:end -->
 

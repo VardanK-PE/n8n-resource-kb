@@ -4,7 +4,7 @@ instance: v1
 resource_id: "anthropic/claude-haiku-4-5-20251001"
 current_name: "anthropic / claude-haiku-4-5-20251001"
 aliases: ["anthropic / claude-haiku-4-5-20251001"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

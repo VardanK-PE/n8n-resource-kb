@@ -4,7 +4,7 @@ instance: v1
 resource_id: "webhook:partner-merchant-sync-sandbox"
 current_name: "webhook — partner-merchant-sync-sandbox"
 aliases: ["webhook — partner-merchant-sync-sandbox"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

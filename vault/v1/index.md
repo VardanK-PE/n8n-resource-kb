@@ -1,7 +1,7 @@
 ---
 type: index
 instance: v1
-auto_generated_at: 2026-08-28T21:18:07Z
+auto_generated_at: 2026-08-28T21:35:46Z
 ---
 
 <!-- auto:start -->
@@ -22,7 +22,7 @@ Browse these folders via the file-explorer sidebar — Obsidian has no built-in 
 - **Resources** — `resources/<type>/`, alphabetical (new categories surface automatically as the taxonomy grows):
   - `resources/credentials/` — 64
   - `resources/custom-nodes/` — 11
-  - `resources/data-tables/` — 24
+  - `resources/data-tables/` — 23
   - `resources/databases/` — 8
   - `resources/env-vars/` — 1
   - `resources/github-repos/` — 2
@@ -34,8 +34,8 @@ Browse these folders via the file-explorer sidebar — Obsidian has no built-in 
   - `resources/llm-models/` — 18
   - `resources/mcp-servers/` — 2
   - `resources/s3-buckets/` — 1
-  - `resources/slack-channels/` — 55
-  - `resources/triggers/` — 154
+  - `resources/slack-channels/` — 54
+  - `resources/triggers/` — 153
 - `changelogs/` — 2 notes; one per refresh-day that produced semantic change
 
 ## How to find things
@@ -47,7 +47,7 @@ Browse these folders via the file-explorer sidebar — Obsidian has no built-in 
 
 ## Last refreshed
 
-2026-08-28T21:18:07Z
+2026-08-28T21:35:46Z
 
 <!-- auto:end -->
 

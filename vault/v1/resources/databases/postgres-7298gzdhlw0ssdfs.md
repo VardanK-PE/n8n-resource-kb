@@ -4,7 +4,7 @@ instance: v1
 resource_id: "postgres/7298gzDHlw0sSdFs"
 current_name: "postgres (via Postgres Staging Sandbox)"
 aliases: ["postgres (via Postgres Staging Sandbox)"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

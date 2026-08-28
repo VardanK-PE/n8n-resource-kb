@@ -4,7 +4,7 @@ instance: v1
 resource_id: "schedule:every 1 month(s) on day 6"
 current_name: "schedule — every 1 month(s) on day 6"
 aliases: ["schedule — every 1 month(s) on day 6"]
-auto_generated_at: 2026-08-19T19:29:04Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

@@ -4,7 +4,7 @@ instance: v1
 resource_id: "1IJGpwSJ4vtBtPUJItdGWNqz30k50dWNQWn14HAGJNFU"
 current_name: "202501_Test Partner"
 aliases: ["202501_Test Partner"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

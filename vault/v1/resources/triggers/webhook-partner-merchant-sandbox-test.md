@@ -4,7 +4,7 @@ instance: v1
 resource_id: "webhook:partner-merchant-sandbox-test"
 current_name: "webhook — partner-merchant-sandbox-test"
 aliases: ["webhook — partner-merchant-sandbox-test"]
-auto_generated_at: 2026-08-19T19:29:04Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-08-19T19:29:04Z
 
 ## Used by
 
-- [[../../workflows/-managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox-|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — node "Webhook Trigger" (id `webhook-trigger`)
+- [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox-QbFajy9S|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — node "Webhook Trigger" (id `webhook-trigger`)
 
 <!-- auto:end -->
 

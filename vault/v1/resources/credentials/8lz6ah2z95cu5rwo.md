@@ -4,7 +4,7 @@ instance: v1
 resource_id: "8Lz6ah2z95CU5rwO"
 current_name: "QuickBooks Online account"
 aliases: ["QuickBooks Online account"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
@@ -39,12 +39,12 @@ auto_generated_at: 2026-08-19T19:25:44Z
 - [[../../workflows/pci-generate-invoices-for-already-charged-merchants|PCI generate invoices for already charged merchants]] — node "Create QB Invoice1" (id `b5383c22-9c43-4c3c-ac65-ccf9fbadf806`)
 - [[../../workflows/pci-generate-invoices-for-already-charged-merchants|PCI generate invoices for already charged merchants]] — node "Delete an invoice" (id `abd0ca83-fb34-403c-84ba-2255cdce8bfa`)
 - [[../../workflows/pci-generate-invoices-for-already-charged-merchants|PCI generate invoices for already charged merchants]] — node "FindCustomer" (id `986aabec-ccae-41d2-98db-eafe192e9818`)
-- [[../../workflows/pe-mcp-server-backup-2026-01-06|PE MCP Server - Backup 2026-01-06]] — node "Get many invoices in QuickBooks Online" (id `933fcd89-94e4-47c6-a96a-07bd78f0dc83`)
-- [[../../workflows/pe-mcp-server-backup-2026-01-06|PE MCP Server - Backup 2026-01-06]] — node "HTTP Request" (id `ebbd9b38-69a7-4d66-930e-e62409dbcbdd`)
-- [[../../workflows/pe-mcp-server-backup-2026-01-06|PE MCP Server - Backup 2026-01-06]] — node "QBO API HTTP Request" (id `019cd99d-cd96-4629-98d8-340629b8adfe`)
 - [[../../workflows/pe-mcp-server|PE MCP Server]] — node "Get many invoices in QuickBooks Online" (id `933fcd89-94e4-47c6-a96a-07bd78f0dc83`)
 - [[../../workflows/pe-mcp-server|PE MCP Server]] — node "HTTP Request" (id `ebbd9b38-69a7-4d66-930e-e62409dbcbdd`)
 - [[../../workflows/pe-mcp-server|PE MCP Server]] — node "QBO API HTTP Request" (id `019cd99d-cd96-4629-98d8-340629b8adfe`)
+- [[../../workflows/pe-mcp-server-backup-2026-01-06|PE MCP Server - Backup 2026-01-06]] — node "Get many invoices in QuickBooks Online" (id `933fcd89-94e4-47c6-a96a-07bd78f0dc83`)
+- [[../../workflows/pe-mcp-server-backup-2026-01-06|PE MCP Server - Backup 2026-01-06]] — node "HTTP Request" (id `ebbd9b38-69a7-4d66-930e-e62409dbcbdd`)
+- [[../../workflows/pe-mcp-server-backup-2026-01-06|PE MCP Server - Backup 2026-01-06]] — node "QBO API HTTP Request" (id `019cd99d-cd96-4629-98d8-340629b8adfe`)
 
 <!-- auto:end -->
 

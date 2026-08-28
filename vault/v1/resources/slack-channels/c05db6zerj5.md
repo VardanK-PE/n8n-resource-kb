@@ -4,7 +4,7 @@ instance: v1
 resource_id: "C05DB6ZERJ5"
 current_name: "accounts-receivable"
 aliases: ["accounts-receivable"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

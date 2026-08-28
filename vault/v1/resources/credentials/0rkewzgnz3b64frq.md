@@ -4,7 +4,7 @@ instance: v1
 resource_id: "0rkEwZgnz3b64fRq"
 current_name: "Mailgun N8N Key"
 aliases: ["Mailgun N8N Key"]
-auto_generated_at: 2026-06-01T22:51:45Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

@@ -4,7 +4,7 @@ instance: v1
 resource_id: "staging-sandbox.payengine.dev"
 current_name: "staging-sandbox.payengine.dev"
 aliases: ["staging-sandbox.payengine.dev"]
-auto_generated_at: 2026-08-19T19:25:44Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->

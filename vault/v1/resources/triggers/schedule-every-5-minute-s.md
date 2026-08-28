@@ -4,7 +4,7 @@ instance: v1
 resource_id: "schedule:every 5 minute(s)"
 current_name: "schedule — every 5 minute(s)"
 aliases: ["schedule — every 5 minute(s)"]
-auto_generated_at: 2026-08-19T19:29:04Z
+auto_generated_at: 2026-08-28T21:31:11Z
 ---
 
 <!-- auto:start -->
@@ -18,9 +18,9 @@ auto_generated_at: 2026-08-19T19:29:04Z
 
 ## Used by
 
-- [[../../workflows/-managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox-|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — node "Schedule (5 min)" (id `schedule-trigger`)
-- [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — node "Schedule (5 min)" (id `schedule-trigger`)
 - [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync]] — node "Schedule (5 min)" (id `schedule-trigger`)
+- [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — node "Schedule (5 min)" (id `schedule-trigger`)
+- [[../../workflows/managed-by-spartak-ai-agent-partner-merchant-bulk-import-sync-sandbox-QbFajy9S|[Managed by Spartak AI Agent] Partner Merchant Bulk Import Sync (SANDBOX)]] — node "Schedule (5 min)" (id `schedule-trigger`)
 
 <!-- auto:end -->
 
