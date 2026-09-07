@@ -3,10 +3,10 @@ n8n_id: "IEzAJUkv41KuLjCB"
 instance: v1
 name: "Forte Gateway Auto-submitter V2"
 status: active
-last_modified: 2026-08-27T19:53:32.105Z
+last_modified: 2026-08-31T19:35:53.905Z
 tags: []
-fingerprint: "1a0b74f7c9105e316098ee579f0975056b7dda6754b2ec1b29c3064585855413"
-auto_generated_at: 2026-08-28T21:13:05Z
+fingerprint: "e61fc85235d9045702582b8fcd1583dfb1d6714edcfefa44897da359612c219a"
+auto_generated_at: 2026-09-07T19:04:01Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-08-28T21:13:05Z
 - **Status:** active
 - **n8n ID:** `IEzAJUkv41KuLjCB`
 - **Nodes:** 89
-- **Last modified:** 2026-08-27T19:53:32.105Z
+- **Last modified:** 2026-08-31T19:35:53.905Z
 
 ## Triggers
 
@@ -88,7 +88,7 @@ auto_generated_at: 2026-08-28T21:13:05Z
 - [[../resources/http-urls/console-payengine-co|console.payengine.co]] — `GET https://console.payengine.co/api/master/merchants/{{ $json.id }}/processor` — node "Get Merchant Processor" (id `95fb6210-cb92-4cc2-bc7a-bf5a99482083`)
 - [[../resources/http-urls/console-payengine-co|console.payengine.co]] — `PATCH https://console.payengine.co/api/v2/merchant/{{ $json.merchant_id }}/status` — node "Update Merchant Status (Submitted For Underwriting)" (id `c0159c52-641f-4e23-82ec-56b7012adc7c`)
 - [[../resources/http-urls/console-payengine-co|console.payengine.co]] — `POST https://console.payengine.co/api/master/merchants/{{ $json.data.id }}/processor` — node "Add Forte Processor" (id `cf081004-c8b1-4ed6-8cc7-c44bab0be129`)
-- [[../resources/http-urls/console-payengine-co|console.payengine.co]] — `GET https://console.payengine.co/api/master/merchants?page=1&status=submitted_to_pe&sub_status=a&q=&size=100` — node "Get Merchant Details1" (id `e7c25618-7861-46d7-8cb8-69d218ddb623`)
+- [[../resources/http-urls/console-payengine-co|console.payengine.co]] — `GET https://console.payengine.co/api/master/merchants?page=1&status=submitted_to_pe&sub_status=a&account=4c971cc5-4664-4286-8a98-e9e327c768d3&q=&size=100` — node "Get Merchant Details1" (id `e7c25618-7861-46d7-8cb8-69d218ddb623`)
 
 ### Databases
 

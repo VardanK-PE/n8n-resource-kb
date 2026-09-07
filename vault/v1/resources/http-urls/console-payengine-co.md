@@ -4,7 +4,7 @@ instance: v1
 resource_id: "console.payengine.co"
 current_name: "console.payengine.co"
 aliases: ["console.payengine.co"]
-auto_generated_at: 2026-08-28T21:31:11Z
+auto_generated_at: 2026-09-07T19:06:36Z
 ---
 
 <!-- auto:start -->
@@ -24,6 +24,7 @@ auto_generated_at: 2026-08-28T21:31:11Z
 - [[../../workflows/edit-curbwaste-statements|Edit Curbwaste statements]] — `POST https://console.payengine.co/api/merchant/{{ $('Entry Point').item.json.id }}/statements/{{$json.id}}/view` — node "Resolve Statement File URL" (id `ff7311a9-55af-40db-b513-fb69828b8fcd`)
 - [[../../workflows/edit-curbwaste-statements|Edit Curbwaste statements]] — `GET https://console.payengine.co/api/merchant/{{ $json.id }}/statements?page=1` — node "HTTP Request" (id `a8f7f9fe-dc1c-4f22-9f11-932e7954a198`)
 - [[../../workflows/edit-curbwaste-statements|Edit Curbwaste statements]] — `POST https://console.payengine.co/api/merchant/{{ $json.mid }}/statements` — node "PROD Upload Statement" (id `9c7313df-0c22-4afd-a2f6-c9be3804af54`)
+- [[../../workflows/elavon-bi-edit-merchant-application-and-send-cco-enrollment|Elavon BI - Edit merchant application and send (CCO Enrollment)]] — `GET https://console.payengine.co/api/merchant/{{ $json.merchant_id }}/download-signed-document` — node "HTTP Request" (id `e673fe53-920d-4baa-a0c5-c01f32d4ce3d`)
 - [[../../workflows/forte-gateway-auto-submitter-v2|Forte Gateway Auto-submitter V2]] — `GET https://console.payengine.co/api/master/merchant-onboarding-api-logs/{{ $('Filter4').item.json.pe_merchant_id }}` — node "PE Merchant merchant-onboarding-api-logs" (id `31b23758-51e8-4be6-8141-ae437eb922df`)
 - [[../../workflows/forte-gateway-auto-submitter-v2|Forte Gateway Auto-submitter V2]] — `GET https://console.payengine.co/api/master/merchant-onboarding-api-logs/{{ $json.pe_merchant_id }}` — node "PE Merchant merchant-onboarding-api-logs1" (id `6b96fb98-2dd3-4455-96d6-b27b0dc1807a`)
 - [[../../workflows/forte-gateway-auto-submitter-v2|Forte Gateway Auto-submitter V2]] — `GET https://console.payengine.co/api/master/merchants` — node "Get Merchant Details2" (id `674c2f65-d25c-4c8b-ba78-4554bba40438`)
@@ -32,7 +33,7 @@ auto_generated_at: 2026-08-28T21:31:11Z
 - [[../../workflows/forte-gateway-auto-submitter-v2|Forte Gateway Auto-submitter V2]] — `POST https://console.payengine.co/api/master/merchants/{{ $('Filter4').item.json.pe_merchant_id }}/gateway` — node "Update Merchant Status (Submitted For Underwriting)1" (id `20e3c6ed-6105-4193-b4c5-a33f775e0538`)
 - [[../../workflows/forte-gateway-auto-submitter-v2|Forte Gateway Auto-submitter V2]] — `POST https://console.payengine.co/api/master/merchants/{{ $json.data.id }}/processor` — node "Add Forte Processor" (id `cf081004-c8b1-4ed6-8cc7-c44bab0be129`)
 - [[../../workflows/forte-gateway-auto-submitter-v2|Forte Gateway Auto-submitter V2]] — `GET https://console.payengine.co/api/master/merchants/{{ $json.id }}/processor` — node "Get Merchant Processor" (id `95fb6210-cb92-4cc2-bc7a-bf5a99482083`)
-- [[../../workflows/forte-gateway-auto-submitter-v2|Forte Gateway Auto-submitter V2]] — `GET https://console.payengine.co/api/master/merchants?page=1&status=submitted_to_pe&sub_status=a&q=&size=100` — node "Get Merchant Details1" (id `e7c25618-7861-46d7-8cb8-69d218ddb623`)
+- [[../../workflows/forte-gateway-auto-submitter-v2|Forte Gateway Auto-submitter V2]] — `GET https://console.payengine.co/api/master/merchants?page=1&status=submitted_to_pe&sub_status=a&account=4c971cc5-4664-4286-8a98-e9e327c768d3&q=&size=100` — node "Get Merchant Details1" (id `e7c25618-7861-46d7-8cb8-69d218ddb623`)
 - [[../../workflows/forte-gateway-auto-submitter-v2|Forte Gateway Auto-submitter V2]] — `PATCH https://console.payengine.co/api/v2/merchant/{{ $json.merchant_id }}/status` — node "Update Merchant Status (Submitted For Underwriting)" (id `c0159c52-641f-4e23-82ec-56b7012adc7c`)
 - [[../../workflows/forte-gateway-autosubmitter|Forte Gateway Autosubmitter]] — `GET https://console.payengine.co/api/master/merchant-onboarding-api-logs/{{ $('Filter4').item.json.pe_merchant_id }}` — node "PE Merchant merchant-onboarding-api-logs" (id `fd521c4d-2f94-412c-ab4a-38ad1104da5a`)
 - [[../../workflows/forte-gateway-autosubmitter|Forte Gateway Autosubmitter]] — `GET https://console.payengine.co/api/master/merchant-onboarding-api-logs/{{ $json.pe_merchant_id }}` — node "PE Merchant merchant-onboarding-api-logs1" (id `4a490fef-56b5-4f56-b545-e73129e71ed9`)
@@ -61,7 +62,6 @@ auto_generated_at: 2026-08-28T21:31:11Z
 - [[../../workflows/maroo-merchants-upload-in-pe|Maroo - Merchants Upload In PE]] — `POST https://console.payengine.co/api/merchant` — node "Create PE Merchant" (id `fbb588ef-8e59-49de-9e67-30d145bad946`)
 - [[../../workflows/merchant-garnishment-adjustment-job|Merchant Garnishment/Adjustment Job]] — `POST https://console.payengine.co/api/payment/ach-credit` — node "HTTP Request" (id `2231892c-46d4-4712-bb8a-aea66a1a6322`)
 - [[../../workflows/monthly-ach-reports|Monthly ACH Reports]] — `POST https://console.payengine.co/api/payment/ach` — node "Perform the Charge" (id `15d8a51a-bede-4ee2-a406-7e23295b1476`)
-- [[../../workflows/monthly-ach-reports-bk-2025-0924|Monthly ACH Reports - bk 2025-0924]] — `POST https://console.payengine.co/api/payment/ach` — node "Perform the Charge" (id `0e0604a7-8d59-4b27-aab1-4f1c0c56f77d`)
 - [[../../workflows/one-off-blind-credit-api-call-for-curbwaste|One-off Blind Credit API Call for Curbwaste]] — `POST https://console.payengine.co/api/payment/credit` — node "HTTP Request" (id `bb6e65b7-f098-4da0-b78a-8bc86c474f82`)
 - [[../../workflows/one-off-capture-api-call-for-corksy|One-off Capture API Call for Corksy]] — `POST https://console.payengine.co/api/payment/void` — node "HTTP Request" (id `537497bc-71ed-4a6b-8b76-f4a0134bdb30`)
 - [[../../workflows/opsinternalbot-token-inport-job|OpsInternalBot - Token Inport Job]] — `POST https://console.payengine.co/api/payment/sale` — node "HTTP Request1" (id `c3d2bced-385d-489b-979e-4fda302f4264`)
@@ -84,8 +84,6 @@ auto_generated_at: 2026-08-28T21:31:11Z
 - [[../../workflows/send-supermove-statements|Send Supermove Statements]] — `POST https://console.payengine.co/api/merchant/{{ $('Workflow Entry').item.json['Merchant ID'] }}/statements/{{$json.id}}/view` — node "Resolve Statement File URL" (id `dec57477-1d74-4932-b66e-d9069bf09d1c`)
 - [[../../workflows/send-supermove-statements|Send Supermove Statements]] — `GET https://console.payengine.co/api/merchant/{{ $json['Merchant ID'] }}/statements?page=1` — node "HTTP Request" (id `032ffaf0-f583-4376-bafe-daa7054f282d`)
 - [[../../workflows/vnp-bulk-transactions-processor|VNP Bulk Transactions Processor]] — `POST https://console.payengine.co/api/payment/sale` — node "Test Transaction" (id `584330b0-e801-49f4-a8b8-99b9caf761f8`)
-- [[../../workflows/vnp-bulk-transactions-processor-bk-2025-11-17|VNP Bulk Transactions Processor BK 2025-11-17]] — `POST https://console.payengine.co/api/payment/sale` — node "Prod Transaction" (id `2dec6fcf-960c-45a1-84db-728f1060b19e`)
-- [[../../workflows/vnp-bulk-transactions-processor-bk-2025-11-17|VNP Bulk Transactions Processor BK 2025-11-17]] — `POST https://console.payengine.co/api/payment/sale` — node "Test Transaction" (id `dfd29563-9af2-484e-b93e-82167268f722`)
 - [[../../workflows/vnp-bulk-transactions-processor-perform-sale-with-tokenization|VNP Bulk Transactions Processor: Perform Sale with Tokenization]] — `POST https://console.payengine.co/api/payment/sale` — node "Prod Transaction" (id `87ec4c01-b17d-4b67-9f65-fbcb98923d78`)
 - [[../../workflows/vnp-bulk-transactions-processor-perform-sale-with-tokenization|VNP Bulk Transactions Processor: Perform Sale with Tokenization]] — `POST https://console.payengine.co/api/payment/sale` — node "Prod Transaction1" (id `b3bd326a-c50a-4d49-9528-b05defb7bfcd`)
 - [[../../workflows/vnp-bulk-transactions-processor-perform-sale-with-tokenization-single-shot|VNP Bulk Transactions Processor: Perform Sale with Tokenization (Single Shot)]] — `POST https://console.payengine.co/api/payment/sale` — node "Prod Transaction" (id `d4f73964-d3bf-4381-8ef7-fc334223811f`)

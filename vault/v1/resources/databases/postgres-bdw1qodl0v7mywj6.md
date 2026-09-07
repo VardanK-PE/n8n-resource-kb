@@ -4,7 +4,7 @@ instance: v1
 resource_id: "postgres/BDw1qoDl0V7mYwj6"
 current_name: "postgres (via Postgres Production)"
 aliases: ["postgres (via Postgres Production)","postgres (via Postgres account)"]
-auto_generated_at: 2026-08-28T21:31:11Z
+auto_generated_at: 2026-09-07T19:06:36Z
 ---
 
 <!-- auto:start -->
@@ -40,7 +40,6 @@ auto_generated_at: 2026-08-28T21:31:11Z
 - [[../../workflows/corksy-open-batch-monitoring|Corksy open batch monitoring]] — op `executeQuery` — node "Original - Query Open Batch transactions" (id `8334b83f-a5a3-49de-90c9-91c0177e123e`)
 - [[../../workflows/corksy-open-batch-monitoring|Corksy open batch monitoring]] — op `executeQuery` — node "Query Open Batch transactions" (id `d66b4d9a-099a-41c5-865b-c0e7214a7ea6`)
 - [[../../workflows/daily-onboarding-alerts|Daily Onboarding Alerts]] — op `executeQuery` — node "Pending Applications" (id `91b6aa5a-8aa7-400e-8976-a67492060cec`)
-- [[../../workflows/daily-onboarding-alerts-copy-sgv1|Daily Onboarding Alerts copy SGv1]] — op `executeQuery` — node "Pending Applications" (id `724dddb4-cf1a-4c08-93dd-4765d8a0b505`)
 - [[../../workflows/deprecated-chargebacks-response-expiration-monitoring|[Deprecated] Chargebacks: Response expiration monitoring]] — op `executeQuery` — node "Request refund transactions in ACD or AMR states" (id `9b5dde13-3c17-425e-8259-3d31dde7bbb1`)
 - [[../../workflows/deprecated-hearth-transaction-alerts|[Deprecated] Hearth - Transaction Alerts]] — op `executeQuery` — node "Postgres" (id `100756ca-ec42-4c11-bdbf-32b305fdaaf3`)
 - [[../../workflows/deprecated-hearth-transaction-alerts|[Deprecated] Hearth - Transaction Alerts]] — op `executeQuery` — node "Postgres1" (id `98d31742-a7b9-4da7-9fab-9f2cf3107c1f`)
@@ -66,14 +65,11 @@ auto_generated_at: 2026-08-28T21:31:11Z
 - [[../../workflows/edit-curbwaste-statements|Edit Curbwaste statements]] — op `executeQuery` — node "Execute a SQL query" (id `446490ad-fc5c-4869-be1d-947338d3c00d`)
 - [[../../workflows/elavon-ach-enrollment-project|Elavon ACH Enrollment Project]] — op `executeQuery` — node "Execute a SQL query" (id `0531aa18-a4e0-444e-8dfc-b7a4f4292631`)
 - [[../../workflows/elavon-ach-enrollment-project|Elavon ACH Enrollment Project]] — op `executeQuery` — node "Get merchant data" (id `17481b93-3548-416d-aded-69bf847965b5`)
-- [[../../workflows/elavon-ach-enrollment-project-backup-mar-6-2026|Elavon ACH Enrollment Project - Backup Mar 6, 2026]] — op `executeQuery` — node "Execute a SQL query" (id `94eb2e16-d1b3-4e6f-8273-3efebc8f8f6c`)
-- [[../../workflows/elavon-ach-enrollment-project-backup-mar-6-2026|Elavon ACH Enrollment Project - Backup Mar 6, 2026]] — op `executeQuery` — node "Execute a SQL query1" (id `c882eaba-0b1a-48f6-9818-908d423684be`)
-- [[../../workflows/elavon-ach-enrollment-project-backup-mar-6-2026|Elavon ACH Enrollment Project - Backup Mar 6, 2026]] — op `executeQuery` — node "Execute a SQL query2" (id `74d43165-2c9b-47f4-9f1e-f6c5347a5a3e`)
-- [[../../workflows/elavon-ach-enrollment-project-backup-mar-6-2026|Elavon ACH Enrollment Project - Backup Mar 6, 2026]] — op `executeQuery` — node "Get merchant data" (id `e6751ef1-387a-407c-ac49-6294ee602ff0`)
-- [[../../workflows/elavon-ach-enrollment-project-backup-mar-6-2026|Elavon ACH Enrollment Project - Backup Mar 6, 2026]] — op `executeQuery` — node "Get merchant data1" (id `34cdcf30-f899-403e-99ca-61eaaac6400b`)
 - [[../../workflows/elavon-bi-automation-daily-monitor|Elavon BI Automation (Daily Monitor)]] — op `executeQuery` — node "Postgres" (id `bb07eb71-870d-4b49-9e78-4c7a8b3754cf`)
 - [[../../workflows/elavon-bi-automation-daily-monitor|Elavon BI Automation (Daily Monitor)]] — op `executeQuery` — node "Postgres1" (id `6c712e16-a07c-43f1-a2d8-300b2f9e74f1`)
 - [[../../workflows/elavon-bi-automation-daily-monitor|Elavon BI Automation (Daily Monitor)]] — op `executeQuery` — node "Postgres2" (id `fd1a3498-d6fc-4904-815b-0c44092ada9e`)
+- [[../../workflows/elavon-bi-cco-enrollment-monitor|Elavon BI - CCO Enrollment Monitor]] — op `executeQuery` — node "Find eligible" (id `11110000-0000-4000-8000-000000000006`)
+- [[../../workflows/elavon-bi-edit-merchant-application-and-send-cco-enrollment|Elavon BI - Edit merchant application and send (CCO Enrollment)]] — op `executeQuery` — node "Eligibility + merchant data" (id `5a942ad4-bff0-4009-bba8-e31f87423879`)
 - [[../../workflows/elavon-dispute|Elavon Dispute]] — op `executeQuery` — node "Fuzzy match on original transaction" (id `44ee5d9b-74e0-416e-9a0c-0641fd4133ec`)
 - [[../../workflows/elavon-dispute|Elavon Dispute]] — op `executeQuery` — node "Fuzzy match on original transaction2" (id `188c3549-c7e8-486d-af92-3986ef124861`)
 - [[../../workflows/elavon-dispute|Elavon Dispute]] — op `executeQuery` — node "Fuzzy match on original transaction3" (id `64d8cd23-6eaa-40f2-9995-7a287238d39c`)
@@ -137,10 +133,6 @@ auto_generated_at: 2026-08-28T21:31:11Z
 - [[../../workflows/forte-gateway-autosubmitter|Forte Gateway Autosubmitter]] — op `executeQuery` — node "Execute a SQL query4" (id `dc05b888-45dd-4903-b5d5-a76373864375`)
 - [[../../workflows/generate-a-list-of-pci-non-compliant-merchants|Generate a list of PCI non compliant merchants]] — op `executeQuery` — node "Execute a SQL query" (id `f4e6fdd1-a1a2-481f-affa-bf6748754874`)
 - [[../../workflows/generate-merchant-report|Generate Merchant Report]] — op `executeQuery` — node "Execute a SQL query" (id `62b39a2d-9bdf-4d4b-9030-995555859ddc`)
-- [[../../workflows/global-open-batch-monitoring-copy|Global open batch monitoring copy]] — op `executeQuery` — node "Original - Query Open Batch transactions" (id `ff777a6a-2dd1-4845-bf92-88e66fb60a17`)
-- [[../../workflows/global-open-batch-monitoring-copy|Global open batch monitoring copy]] — op `executeQuery` — node "Query Open Batch transactions" (id `59f40857-a20f-480e-bb1f-d6617a96a8c8`)
-- [[../../workflows/global-open-batch-monitoring-copy|Global open batch monitoring copy]] — op `executeQuery` — node "Query Open Batch transactions1" (id `c4bc3ad6-5cc4-4b32-89b1-afb76a26b1f3`)
-- [[../../workflows/global-open-batch-monitoring-copy|Global open batch monitoring copy]] — op `executeQuery` — node "Query Open Batch transactions2" (id `640f0661-b5b2-4bee-b2b8-93f6658acc44`)
 - [[../../workflows/hearth-elavon-whitelist-merchants|Hearth - Elavon Whitelist Merchants]] — op `executeQuery` — node "Get merchant data" (id `16d23c69-8fdf-4500-bae0-d891dc44346f`)
 - [[../../workflows/hearth-funding-delay-alerts|Hearth - Funding Delay Alerts]] — op `executeQuery` — node "Postgres" (id `5dee16a3-1b6a-46fa-8334-d6d87a8d139e`)
 - [[../../workflows/hearth-merchant-capabilities-status|Hearth Merchant Capabilities Status]] — op `executeQuery` — node "Execute a SQL query" (id `8aa4bfbf-7236-4f67-b38c-676f995d7ee8`)
@@ -185,19 +177,9 @@ auto_generated_at: 2026-08-28T21:31:11Z
 - [[../../workflows/monthly-ach-reports|Monthly ACH Reports]] — op `executeQuery` — node "Postgres3" (id `ae0f9ac6-77d4-40fa-a8f4-0363a664dcc2`)
 - [[../../workflows/monthly-ach-reports|Monthly ACH Reports]] — op `executeQuery` — node "Postgres4" (id `f29b33be-972f-4d34-9f12-0cef20f0d539`)
 - [[../../workflows/monthly-ach-reports|Monthly ACH Reports]] — op `executeQuery` — node "Postgres5" (id `2baef4e6-b3cb-40d1-902b-d6763ed11879`)
-- [[../../workflows/monthly-ach-reports-bk-2025-0924|Monthly ACH Reports - bk 2025-0924]] — op `executeQuery` — node "DB Fee Schedules" (id `a0270a23-3974-4bf6-a43e-95974bccbca7`)
-- [[../../workflows/monthly-ach-reports-bk-2025-0924|Monthly ACH Reports - bk 2025-0924]] — op `executeQuery` — node "DB Fee Schedules1" (id `18703f56-f6ab-4a4b-a4e1-89e14040bede`)
-- [[../../workflows/monthly-ach-reports-bk-2025-0924|Monthly ACH Reports - bk 2025-0924]] — op `executeQuery` — node "Get ACH Transactions" (id `1cd8a13c-8385-4171-899a-0e821a06b3bc`)
-- [[../../workflows/monthly-ach-reports-bk-2025-0924|Monthly ACH Reports - bk 2025-0924]] — op `executeQuery` — node "Get ACH Transactions1" (id `1a14c8f1-61a1-4b42-803d-d22b82d678cd`)
-- [[../../workflows/monthly-ach-reports-bk-2025-0924|Monthly ACH Reports - bk 2025-0924]] — op `executeQuery` — node "Postgres" (id `aba6dec0-c3c9-4457-b147-6cc0028a797e`)
-- [[../../workflows/monthly-ach-reports-bk-2025-0924|Monthly ACH Reports - bk 2025-0924]] — op `executeQuery` — node "Postgres1" (id `8904a3f1-92c0-45c9-8e50-b8bbc87a933c`)
-- [[../../workflows/monthly-ach-reports-bk-2025-0924|Monthly ACH Reports - bk 2025-0924]] — op `executeQuery` — node "Postgres2" (id `edff16cf-cf13-473b-90ec-24c7745064a4`)
-- [[../../workflows/monthly-ach-reports-bk-2025-0924|Monthly ACH Reports - bk 2025-0924]] — op `executeQuery` — node "Postgres3" (id `c14498a0-9549-4958-925b-e9ac4694bae8`)
-- [[../../workflows/monthly-ach-reports-bk-2025-0924|Monthly ACH Reports - bk 2025-0924]] — op `executeQuery` — node "Postgres4" (id `c653363a-af49-458e-98ef-f4e3a5562a23`)
 - [[../../workflows/monthly-merchant-direct-billing|Monthly Merchant Direct Billing]] — op `executeQuery` — node "Get Transaction Count1" (id `7ff52f75-8d20-44cf-a4ac-e81a6ba91789`)
 - [[../../workflows/monthly-partner-platform-fee-generator|Monthly Partner Platform Fee Generator]] — op `executeQuery` — node "Get Transaction Count1" (id `97d838c3-866e-4f20-bdba-898cfa52ba85`)
 - [[../../workflows/my-workflow-4|My workflow 4]] — op `executeQuery` — node "Execute a SQL query" (id `f942d0e8-4e8f-4cda-9f14-5c74ad39c468`)
-- [[../../workflows/my-workflow-5|My workflow 5]] — op `executeQuery` — node "Execute a SQL query" (id `e16fbe48-ac60-4b99-87f5-8f9184436889`)
 - [[../../workflows/mykaarma-one-off-merchant-exports|MyKaarma One-Off Merchant Exports]] — op `executeQuery` — node "Postgres" (id `6d6889a4-a16a-4594-8446-6fcc82a1f3c6`)
 - [[../../workflows/mykaarma-weekly-merchant-exports|MyKaarma Weekly Merchant Exports]] — op `executeQuery` — node "Postgres" (id `8237846b-12bc-42e1-a6b3-d3dde6e77db4`)
 - [[../../workflows/mykaarma-weekly-merchant-exports-YKGSCT0y|MyKaarma Weekly Merchant Exports]] — op `executeQuery` — node "Postgres" (id `8237846b-12bc-42e1-a6b3-d3dde6e77db4`)
@@ -215,13 +197,6 @@ auto_generated_at: 2026-08-28T21:31:11Z
 - [[../../workflows/njord-api|Njord API]] — op `executeQuery` — node "Merchant Name PROD" (id `a3f5d972-b992-4e36-a197-6fe9641ae3df`)
 - [[../../workflows/onboarding-correspondence-aging|Onboarding Correspondence Aging]] — op `executeQuery` — node "Execute a SQL query" (id `dc82c0e2-2db9-4189-ae3b-d01d9a578926`)
 - [[../../workflows/onboarding-correspondence-aging|Onboarding Correspondence Aging]] — op `executeQuery` — node "Execute a SQL query1" (id `7defc07f-9a36-4f7f-baae-6bc84137098d`)
-- [[../../workflows/ops-expiry|Ops - Expiry]] — op `executeQuery` — node "Request refund transactions in ACD or AMR states" (id `e2859804-afdf-4ef0-bdb1-9f8ce1c7ccdb`)
-- [[../../workflows/opsinternalbot-disputes|OpsInternalBot - Disputes]] — op `executeQuery` — node "Execute a SQL query" (id `b639b563-13d6-4237-ad05-40f5c9a8c228`)
-- [[../../workflows/opsinternalbot-disputes-backup-original|OpsInternalBot - Disputes [Backup original]]] — op `executeQuery` — node "Execute a SQL query" (id `b1612ee6-17cd-48e3-94a8-b0d1fc4dce56`)
-- [[../../workflows/opsinternalbot-disputes-backup-original|OpsInternalBot - Disputes [Backup original]]] — op `executeQuery` — node "Execute a SQL query1" (id `b47d8026-46eb-41c5-a398-482dfa8d6c5e`)
-- [[../../workflows/opsinternalbot-disputes-backup-original|OpsInternalBot - Disputes [Backup original]]] — op `executeQuery` — node "Get transactions for period of time" (id `03383050-1f67-4bc2-9ce8-0a51cc95523c`)
-- [[../../workflows/opsinternalbot-disputes-backup-original|OpsInternalBot - Disputes [Backup original]]] — op `executeQuery` — node "Get transactions for period of time1" (id `dec5636c-acaf-44f6-a39d-0f2ae469d632`)
-- [[../../workflows/opsinternalbot-disputes-v2|OpsInternalBot - Disputes v2]] — op `executeQuery` — node "Get transactions for period of time" (id `cc1c5960-cb06-4219-8913-f9a69d1f6e99`)
 - [[../../workflows/opsinternalbot-token-inport-job|OpsInternalBot - Token Inport Job]] — op `executeQuery` — node "Request Tokens cards" (id `ffdbe18e-cb0f-4f39-9715-31e0070c4b22`)
 - [[../../workflows/opus-transactions-without-batch|Opus - Transactions without batch]] — op `executeQuery` — node "Execute a SQL query" (id `c9974f9d-ab8c-49fc-9e22-7d0aed4d7648`)
 - [[../../workflows/opus-transactions-without-batch|Opus - Transactions without batch]] — op `executeQuery` — node "Execute a SQL query1" (id `f1a05545-0760-4fe9-9ebc-d42709eabeee`)
@@ -240,36 +215,12 @@ auto_generated_at: 2026-08-28T21:31:11Z
 - [[../../workflows/payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] — op `executeQuery` — node "Partner Account Lookup" (id `4900bbb9-a4a7-45ef-9f6a-72973a469193`)
 - [[../../workflows/payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] — op `executeQuery` — node "Postgres" (id `352db74f-376e-4bf7-9ef6-641d4c0351b2`)
 - [[../../workflows/payengineai-bot-v1-2-jun-12-2026|PayEngineAI Bot (v1.2) - Jun 12 2026]] — op `executeQuery` — node "Postgres1" (id `64c8a548-44c2-4fe7-b97f-3dee6298d590`)
-- [[../../workflows/payengineai-bot-v1-backup-2025-08-30|PayEngineAI Bot (v1) Backup 2025-08-30]] — op `executeQuery` — node "Merchant/Partner Details Lookup" (id `0245d163-1918-4494-b579-319e375f12a4`)
-- [[../../workflows/payengineai-bot-v1-backup-2025-08-30|PayEngineAI Bot (v1) Backup 2025-08-30]] — op `executeQuery` — node "Partner Account Lookup" (id `9c9e0e25-c0fb-465a-a43a-8b4e52ab7c04`)
-- [[../../workflows/payengineai-bot-v1-backup-2025-08-30|PayEngineAI Bot (v1) Backup 2025-08-30]] — op `executeQuery` — node "Postgres" (id `dd02e1e4-fe7f-4b65-ac7e-eefacfeb839e`)
-- [[../../workflows/payengineai-bot-v1-backup-2025-08-30|PayEngineAI Bot (v1) Backup 2025-08-30]] — op `executeQuery` — node "Postgres1" (id `9906b823-dba8-4d90-99ab-716b90694524`)
-- [[../../workflows/payengineai-bot-v1-backup-2025-09-02|PayEngineAI Bot (v1) Backup 2025-09-02]] — op `executeQuery` — node "Merchant/Partner Details Lookup" (id `9b05e62a-294a-419f-b38d-227eada3b7dd`)
-- [[../../workflows/payengineai-bot-v1-backup-2025-09-02|PayEngineAI Bot (v1) Backup 2025-09-02]] — op `executeQuery` — node "Partner Account Lookup" (id `bd4708ba-1444-4aec-82c4-c8bddda1b2a0`)
-- [[../../workflows/payengineai-bot-v1-backup-2025-09-02|PayEngineAI Bot (v1) Backup 2025-09-02]] — op `executeQuery` — node "Postgres" (id `39b28e36-2c8c-4868-8f9c-96931ff8e547`)
-- [[../../workflows/payengineai-bot-v1-backup-2025-09-02|PayEngineAI Bot (v1) Backup 2025-09-02]] — op `executeQuery` — node "Postgres1" (id `9d0628c0-c104-4bc5-8398-6a5b269c3080`)
-- [[../../workflows/payengineai-bot-v1-backup-2025-09-06|PayEngineAI Bot (v1) Backup 2025-09-06]] — op `executeQuery` — node "Merchant/Partner Details Lookup" (id `40af0e2d-7519-4065-93a0-a8f28a772c43`)
-- [[../../workflows/payengineai-bot-v1-backup-2025-09-06|PayEngineAI Bot (v1) Backup 2025-09-06]] — op `executeQuery` — node "Partner Account Lookup" (id `d838a61e-0bb8-407a-85a5-e4df90c636c7`)
-- [[../../workflows/payengineai-bot-v1-backup-2025-09-06|PayEngineAI Bot (v1) Backup 2025-09-06]] — op `executeQuery` — node "Postgres" (id `d269a363-e5eb-465c-89a8-6f4d2a837add`)
-- [[../../workflows/payengineai-bot-v1-backup-2025-09-06|PayEngineAI Bot (v1) Backup 2025-09-06]] — op `executeQuery` — node "Postgres1" (id `86f73f70-4e8d-4040-8d76-c114506132c4`)
-- [[../../workflows/payengineai-bot-v1-bk-2025-09-04|PayEngineAI Bot (v1) BK 2025-09-04]] — op `executeQuery` — node "Merchant/Partner Details Lookup" (id `d30d7ea8-8ba3-40d7-965d-faab3661d0ad`)
-- [[../../workflows/payengineai-bot-v1-bk-2025-09-04|PayEngineAI Bot (v1) BK 2025-09-04]] — op `executeQuery` — node "Partner Account Lookup" (id `3ee76dfc-a6fc-428c-963a-e0709d6678c0`)
-- [[../../workflows/payengineai-bot-v1-bk-2025-09-04|PayEngineAI Bot (v1) BK 2025-09-04]] — op `executeQuery` — node "Postgres" (id `63d521d2-10f8-4f9e-9901-b2b1c5cbccf2`)
-- [[../../workflows/payengineai-bot-v1-bk-2025-09-04|PayEngineAI Bot (v1) BK 2025-09-04]] — op `executeQuery` — node "Postgres1" (id `e3c12a65-7cc5-4f2f-8e4f-04a3e0d1a59a`)
-- [[../../workflows/payengineai-bot-v1-bk-2025-09-20|PayEngineAI Bot (v1) BK-2025-09-20]] — op `executeQuery` — node "Merchant/Partner Details Lookup from PE DB" (id `6e5d07ca-dc96-419c-b142-a6c9d98bc476`)
-- [[../../workflows/payengineai-bot-v1-bk-2025-09-20|PayEngineAI Bot (v1) BK-2025-09-20]] — op `executeQuery` — node "Partner Account Lookup" (id `40af9063-5a53-4ffc-a082-c0bbcce675ec`)
-- [[../../workflows/payengineai-bot-v1-bk-2025-09-20|PayEngineAI Bot (v1) BK-2025-09-20]] — op `executeQuery` — node "Postgres" (id `04ff8b39-9fd0-463e-9c0a-a458e626bd4e`)
-- [[../../workflows/payengineai-bot-v1-bk-2025-09-20|PayEngineAI Bot (v1) BK-2025-09-20]] — op `executeQuery` — node "Postgres1" (id `c85213ec-bab4-49af-8c8c-7d552ef9ff9a`)
 - [[../../workflows/payrix-pe-adapter|Payrix > PE Adapter]] — op `executeQuery` — node "Lookup PE MID" (id `59ccd8cc-7e28-48d6-9668-b42b0d7f285f`)
-- [[../../workflows/payrix-pe-adapter-bk2024-04-08|Payrix > PE Adapter bk2024-04-08]] — op `executeQuery` — node "Lookup PE MID" (id `d35a6524-60b4-4caf-aa20-57fe709450eb`)
 - [[../../workflows/pci-compliance-manager|PCI Compliance Manager]] — op `executeQuery` — node "Execute a SQL query" (id `f2ff7ba5-6fde-418c-b669-afaa7fec1a7b`)
 - [[../../workflows/pci-compliance-manager|PCI Compliance Manager]] — op `executeQuery` — node "Get Merchant Data" (id `9927eaa0-c119-4f21-8ae9-b97c9e9e5b36`)
 - [[../../workflows/pci-compliance-manager|PCI Compliance Manager]] — op `executeQuery` — node "Get Merchant Data1" (id `21d044b9-0c15-4005-a2b5-764c0927a567`)
 - [[../../workflows/pci-compliance-manager-automation|PCI Compliance Manager Automation]] — op `executeQuery` — node "Execute a SQL query" (id `163c4052-bf60-4ba7-91ad-eb814c2fec62`)
 - [[../../workflows/pci-generate-invoices-for-already-charged-merchants|PCI generate invoices for already charged merchants]] — op `executeQuery` — node "Merchant Details" (id `5d059abf-7049-46cb-9665-2013966d2605`)
-- [[../../workflows/pci-monitoring|PCI Monitoring]] — op `executeQuery` — node "Execute a SQL query3" (id `3c55c356-7e5e-4dbb-b3b5-4c1ef2fa7e21`)
-- [[../../workflows/pci-monitoring|PCI Monitoring]] — op `executeQuery` — node "Execute a SQL query4" (id `6fbec902-da84-4b99-b439-46c3fd610d7d`)
-- [[../../workflows/pci-monitoring|PCI Monitoring]] — op `executeQuery` — node "Execute a SQL query5" (id `a37c0b0f-cf5e-4104-b01c-074000ef7cc8`)
 - [[../../workflows/pci-monitoring-LdXwJbJl|PCI Monitoring]] — op `executeQuery` — node "Execute a SQL query3" (id `3c55c356-7e5e-4dbb-b3b5-4c1ef2fa7e21`)
 - [[../../workflows/pci-monitoring-LdXwJbJl|PCI Monitoring]] — op `executeQuery` — node "Execute a SQL query4" (id `6fbec902-da84-4b99-b439-46c3fd610d7d`)
 - [[../../workflows/pci-monitoring-LdXwJbJl|PCI Monitoring]] — op `executeQuery` — node "Execute a SQL query5" (id `a37c0b0f-cf5e-4104-b01c-074000ef7cc8`)
@@ -292,18 +243,6 @@ auto_generated_at: 2026-08-28T21:31:11Z
 - [[../../workflows/residuals-generator-v5-yumna-dev-latest-2025-01-31|Residuals Generator V5 (Yumna Dev) (latest 2025-01-31)]] — op `executeQuery` — node "AutoL2Data1" (id `657551a2-2a7b-4e63-b33d-896c6c228783`)
 - [[../../workflows/residuals-generator-v5-yumna-dev-latest-2025-01-31|Residuals Generator V5 (Yumna Dev) (latest 2025-01-31)]] — op `executeQuery` — node "AutoL2Data2" (id `a39e54de-4a55-4a70-8539-0b251f01041e`)
 - [[../../workflows/residuals-generator-v5-yumna-dev-latest-2025-01-31|Residuals Generator V5 (Yumna Dev) (latest 2025-01-31)]] — op `executeQuery` — node "Postgres" (id `10b2eac8-2c15-4186-afe9-834125fd9866`)
-- [[../../workflows/residuals-generator-v6-archived-latest-2025-08-01-copy|Residuals Generator V6 (Archived) (latest 2025-08-01) copy]] — op `executeQuery` — node "AutoL2Data" (id `617dcfdf-f8ad-4401-b751-9bcbf5c218d6`)
-- [[../../workflows/residuals-generator-v6-archived-latest-2025-08-01-copy|Residuals Generator V6 (Archived) (latest 2025-08-01) copy]] — op `executeQuery` — node "AutoL2Data1" (id `f1dd852c-391b-428e-9b5e-46e041a1fb14`)
-- [[../../workflows/residuals-generator-v6-archived-latest-2025-08-01-copy|Residuals Generator V6 (Archived) (latest 2025-08-01) copy]] — op `executeQuery` — node "AutoL2Data2" (id `9079cc8e-84e6-4afa-bfa5-ea231e10e62e`)
-- [[../../workflows/residuals-generator-v6-archived-latest-2025-08-01-copy|Residuals Generator V6 (Archived) (latest 2025-08-01) copy]] — op `executeQuery` — node "Get PE Account Details" (id `80e3adff-2528-4f84-ad13-26dd0e1dbeec`)
-- [[../../workflows/residuals-generator-v6-backup-latest-2026-06-01|Residuals Generator V6 (Backup) (latest 2026-06-01)]] — op `executeQuery` — node "AutoL2Data" (id `799adc8c-b656-4400-a231-517db55e42dd`)
-- [[../../workflows/residuals-generator-v6-backup-latest-2026-06-01|Residuals Generator V6 (Backup) (latest 2026-06-01)]] — op `executeQuery` — node "AutoL2Data1" (id `dac88872-eab9-424e-82b4-f79ffee4dd27`)
-- [[../../workflows/residuals-generator-v6-backup-latest-2026-06-01|Residuals Generator V6 (Backup) (latest 2026-06-01)]] — op `executeQuery` — node "AutoL2Data2" (id `bd4345d4-7269-4668-8c3c-cab866ef1774`)
-- [[../../workflows/residuals-generator-v6-backup-latest-2026-06-01|Residuals Generator V6 (Backup) (latest 2026-06-01)]] — op `executeQuery` — node "Get PE Account Details" (id `9b0432b0-8b31-4337-aa87-d356abd33247`)
-- [[../../workflows/residuals-generator-v6-bk-2025-09-23|Residuals Generator V6 (bk 2025-09-23)]] — op `executeQuery` — node "AutoL2Data" (id `acd43692-3062-45cc-8b64-f94bd6e81006`)
-- [[../../workflows/residuals-generator-v6-bk-2025-09-23|Residuals Generator V6 (bk 2025-09-23)]] — op `executeQuery` — node "AutoL2Data1" (id `b4fc275c-edcd-46ec-9704-85222fbb00b9`)
-- [[../../workflows/residuals-generator-v6-bk-2025-09-23|Residuals Generator V6 (bk 2025-09-23)]] — op `executeQuery` — node "AutoL2Data2" (id `891c803d-5236-4fac-a5d4-e9a25cb22575`)
-- [[../../workflows/residuals-generator-v6-bk-2025-09-23|Residuals Generator V6 (bk 2025-09-23)]] — op `executeQuery` — node "Get PE Account Details" (id `bc5be881-171c-4667-8b1a-d8bd33796cee`)
 - [[../../workflows/residuals-generator-v7-active-latest-2026-07-15|Residuals Generator V7 (ACTIVE) (latest 2026-07-15)]] — op `executeQuery` — node "AutoL2Data" (id `a5b5681e-9fa9-468a-aee3-2348abe337ae`)
 - [[../../workflows/residuals-generator-v7-active-latest-2026-07-15|Residuals Generator V7 (ACTIVE) (latest 2026-07-15)]] — op `executeQuery` — node "AutoL2Data1" (id `2c78f685-7794-420c-a79c-3c89a7aa9e5f`)
 - [[../../workflows/residuals-generator-v7-active-latest-2026-07-15|Residuals Generator V7 (ACTIVE) (latest 2026-07-15)]] — op `executeQuery` — node "AutoL2Data2" (id `c95fc720-4ff0-470c-b670-654a9f38488b`)
@@ -333,6 +272,214 @@ auto_generated_at: 2026-08-28T21:31:11Z
 
 <!-- manual:start -->
 
-<!-- Add owner, criticality, runbook URL, rotation cadence, etc. -->
+## Partner / merchant feature flags: `account_settings` and `merchant_setting`
+
+Owner `pf_v2_db_prod`; `readonly` has `SELECT` on `account_settings`.
+
+**In PayEngine terms an "account" IS a partner** — a merchant's `account_id` is its
+`partner_id`. Feature flags therefore live at two levels with the same key/value shape:
+
+| Table | Key column | Scope |
+|---|---|---|
+| `account_settings` | (`account_id`, `key`) PK | **partner** level |
+| `merchant_setting` | (`merchant_id`, `key`) | **merchant** level override |
+
+```sql
+create table public.account_settings (
+    account_id varchar(255) not null references public.account on delete cascade,
+    created_at timestamptz  not null default CURRENT_TIMESTAMP,
+    updated_at timestamptz  not null default CURRENT_TIMESTAMP,
+    key        varchar(100) not null,
+    value      text,
+    primary key (account_id, key)
+);
+create index account_settings_key_index on public.account_settings (key);
+```
+
+### `enable_cco_form` is partner-only — do NOT add a merchant override
+
+Measured 2026-09-02:
+
+| | rows |
+|---|---|
+| `merchant_setting` total | 66,712 |
+| `merchant_setting` with key `enable_cco_form` | **0** |
+| `account_settings` with key `enable_cco_form` | 30 (28 `no`, 2 `yes`) |
+| `merchant_setting` rows using the `partner_level` sentinel | 2,681 |
+
+The override convention below is genuinely used for other keys (2,681 sentinel rows), but
+**never** for `enable_cco_form`. Joining `merchant_setting` for this key adds a JOIN that
+can never match. Read `account_settings` directly for the CCO gate.
+
+### Resolution convention (merchant overrides partner)
+
+`Residuals Generator V7 (ACTIVE)` establishes the house pattern: the merchant setting wins
+**unless** its value is the literal `'partner_level'`, in which case fall back to the
+account setting, and default to `'no'` when neither row exists.
+
+```sql
+LEFT OUTER JOIN merchant_setting  ms  ON ms.merchant_id = m.id        AND ms.key  = '<key>'
+LEFT OUTER JOIN account_settings  acs ON acs.account_id = m.account_id AND acs.key = '<key>'
+...
+CASE
+    WHEN ms.value IS NOT NULL AND ms.value <> 'partner_level' THEN ms.value
+    WHEN acs.value IS NOT NULL THEN acs.value
+    ELSE 'no'
+END
+```
+
+Reuse that shape rather than reading `account_settings` alone, or a merchant-level
+override will be silently ignored.
+
+### Known keys
+
+- `enable_cco_form` — values `'yes'` / `'no'`. Gates the Commercial Card Optimization
+  enrollment form. This is guard 2 for the CCO workflow.
+- `auto_l2_enabled` — used by the Residuals Generators (same resolution pattern).
+
+### Also useful here
+
+`merchant_processor_detail.processor_merchant_id` is the Elavon **MID**, joined via
+`merchant.id`. This is the *only* reliable bridge from a PayEngine merchant UUID to the MID.
+
+**Correction (2026-09-07):** an earlier version of this note claimed
+`merchant.processor_merchant_id` "also carries it directly". It does not — that column is
+**null for all 91 CCO-eligible merchants**, which understated MID availability and briefly
+made the CCO workflow look unusable. Always go through `merchant_processor_detail`, and
+filter it:
+
+```sql
+SELECT mpd.processor_merchant_id
+  FROM merchant_processor_detail mpd
+ WHERE mpd.merchant_id = m.id
+   AND mpd.processor_id = 'elavon'          -- else you may get a Forte/TSYS id
+   AND mpd.processor_merchant_id ~ '^[0-9]+$'  -- else gateway ids like 'org_440947'
+ LIMIT 1
+```
+
+Both filters matter. `processor_id` is needed because a merchant can be boarded on several
+processors (elavon 4773, forte 2913, stripe 857, tsys 332, ems 72, adyen 10, till 1), and
+the numeric-only test excludes non-Elavon gateway identifiers.
+
+**MID is not a unique key.** One MID (`8046096999`) maps to two different merchants, and
+[[../data-tables/eefxih6vfsgkmssi|Elavon - MIDs]] carries no PayEngine UUID at all — which
+is why [[../data-tables/7gmbnwaqh8zntima|Elavon - CCO Enrollments]] is keyed on
+`merchant_id` rather than on the MID.
+
+## `fee_schedules` — pricing model is structured, don't parse text
+
+`merchant.feeschedule_id` → `fee_schedules.id`, and `fee_schedules.schedule_data` is JSONB.
+451 rows, 323 with data (measured 2026-09-02). Top-level keys:
+
+```
+achPricing, auto_generate_contract_text, billingCycle, cardCharges, country,
+debitPricing, defaultAuthorizationFee, discountRatePerItem, ebtPricing,
+exhibit_A_text, fees, funding, is_contract_text_same_for_exhibit_A, isDefault,
+isEnabled, name, pricingCategory, pricingMethod, surcharge
+```
+
+`fees[]` elements: `amount, frequency, name, quantity, startMonth, type`.
+
+**`schedule_data->>'pricingMethod'` is a clean enum** — this is the authoritative pricing
+model, so never regex the fee-schedule name or free text for it:
+
+| pricingMethod | Count |
+|---|---|
+| `TIERED_PRICING` | 140 |
+| **`INTERCHANGE_PLUS`** | 134 |
+| `FLAT_RATE` | 46 |
+| `SURCHARGE` | 2 |
+| `DUAL_PRICING` | 1 |
+
+`pricingCategory`: `RETAIL` 322, `MOTO` 1.
+
+Note the contrast with the `Merchant Fee Schedules` data table
+([[../data-tables/xo77zzdfgtrmg1ur]]), which stores only the free-text schedule string —
+applying `Platform Fee monitoring`'s regex to it leaves 48 of 94 rows unparsed. Prefer this
+column.
+
+## CCO enrollment guards (as designed 2026-09-02)
+
+Evaluate in this order — there are ~30 partners against 2537 merchants, so the partner gate
+short-circuits the most work:
+
+1. **Partner gate:** `account_settings.key = 'enable_cco_form'` AND `lower(value) = 'yes'`.
+   Read partner-level only — see above, there is no merchant override for this key.
+   Only **2 of 30** partners are enabled (`PayEngine Live Partner`
+   `3cab79a6-31bd-43e6-9a0c-e5870b18fa38`, `Curbwaste`
+   `3fc7c27f-c5a6-41db-84cb-f09c4b7164d7`), which is why this gate goes first.
+2. **Pricing gate:** `schedule_data->>'pricingMethod'` = `'INTERCHANGE_PLUS'`. Grounded in
+   the CCO document itself, whose page 22 states that switching to "flat, fixed or tiered
+   pricing will automatically terminate this Commercial Card Optimization Enrollment".
+3. **Commodity lookup:** `MCC` → commodity code table
+   ([[../data-tables/kepdpgqsjwflp5lz|Elavon - MCC Commodity Codes]]). Fails closed for
+   MCC 5812 / 7011, which the guide does not cover.
+
+   **Superseded 2026-09-07 — the MCC now comes from Postgres, not the data table.**
+   See "MCC lives in `merchant.data`" below.
+
+## MCC lives in `merchant.data`, and it is *not* Elavon's MCC
+
+```
+merchant.data -> 'business_type' ->> 'mcc_sic'
+```
+
+Populated for 10,218 of 22,163 merchants. There is no `mcc` column anywhere on `merchant`
+or `merchant_processor_detail`; `merchant_processor_detail.application_data` holds only
+DocuSign signing fields. `business_type` is an object with keys `business_category`,
+`country`, `industry_value`, `mcc_custom_id`, `mcc_sic`, `sub_type`, `tax_classification`,
+`type`.
+
+**Three shapes occur and only the first is directly usable:**
+
+| value | handling |
+|---|---|
+| `"4900"` | fine |
+| `"0742"` | zero-padded — the commodity guide stores these **unpadded** (`742`), so leading zeros must be stripped or the lookup silently misses |
+| `"5999J"` | non-numeric — must be rejected, never coerced |
+
+Length distribution: 4 chars ×10186, 3 chars ×3, 5 chars ×29.
+
+### It disagrees with Elavon for ~11% of merchants
+
+Joining all 3,063 numeric Elavon MIDs in Postgres against the 2,537 rows in
+[[../data-tables/eefxih6vfsgkmssi|Elavon - MIDs]] (measured 2026-09-07):
+
+```
+agree                                 2046
+disagree, explained by staleness       142   (merchant edited after that row synced)
+disagree, genuine                      271   (~11%)
+```
+
+Of 413 total disagreements, **0** happened to resolve to the same commodity code, 381
+resolved to a different one, and 32 had a Postgres MCC absent from the guide while **every**
+Elavon MCC was present. The differences run systematically generic → specific
+(`1520 GENERAL CONTRACTORS` → `1711 HEAT PLUMBING A/C` / `1761 ROOFING`), i.e. Postgres
+holds what the merchant *applied* with and Elavon holds what underwriting *assigned*.
+
+**Why Postgres is nonetheless the source for CCO:** across the 91 CCO-eligible merchants the
+two sources agreed **13/13 with zero disagreements**, and `Elavon - MIDs` was ~6 months
+stale (`Last_Sync` 2025-11-11 .. 2026-03-14) and missing 2 eligible merchants outright —
+including the only one with a downloadable signed document. The divergence lives entirely in
+merchants that cannot be enrolled anyway. **Revisit this if the eligible set widens**, since
+a wrong commodity code on a signed Elavon form is not a recoverable error.
+
+### Funnel as measured 2026-09-02
+
+| Stage | Count |
+|---|---|
+| Partners with `enable_cco_form` set | 30 |
+| Partners enabled (`yes`) | **2** |
+| Merchants under those 2 partners | 557 |
+| …of which `INTERCHANGE_PLUS` | **91** |
+
+Pricing breakdown for those 557: `TIERED_PRICING` 266, `FLAT_RATE` 102,
+`INTERCHANGE_PLUS` 91, **no fee schedule at all 89**, `SURCHARGE` 7, `DUAL_PRICING` 2.
+
+Two things to design for: 89 merchants have `feeschedule_id` resolving to no
+`fee_schedules` row, so the pricing gate must treat a missing schedule as a **fail**, not a
+pass (an `INNER JOIN` does this naturally; a `LEFT JOIN` with a NULL check does not). And
+the gates are highly selective — 91 of 2537 merchants overall — so the partner gate first
+avoids ~78% of the pricing lookups immediately.
 
 <!-- manual:end -->

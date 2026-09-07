@@ -3,11 +3,11 @@ n8n_id: "e93RsgQXI8GlYNLa"
 instance: v1
 name: "Elavon SFTP Daily Dump/Analyzer V6"
 status: active
-last_modified: 2024-10-25T17:18:00.369Z
+last_modified: 2026-09-02T19:16:39.106Z
 tags:
   - "daily reports"
-fingerprint: "c8776a0df2d665d72f6c2d8704fb8b1003e9ace0f9bbbc050f14398e138757a9"
-auto_generated_at: 2026-06-01T22:51:45Z
+fingerprint: "52cd2899aef8451afa06bf7ba1bc43d847b59d9ba48f9b2a83f7f177aa2f4b2b"
+auto_generated_at: 2026-09-07T19:04:01Z
 ---
 
 <!-- auto:start -->
@@ -18,8 +18,8 @@ auto_generated_at: 2026-06-01T22:51:45Z
 
 - **Status:** active
 - **n8n ID:** `e93RsgQXI8GlYNLa`
-- **Nodes:** 42
-- **Last modified:** 2024-10-25T17:18:00.369Z
+- **Nodes:** 43
+- **Last modified:** 2026-09-02T19:16:39.106Z
 
 ## Triggers
 
@@ -30,26 +30,27 @@ auto_generated_at: 2026-06-01T22:51:45Z
 ### Credentials
 
 - [[../resources/credentials/bdw1qodl0v7mywj6|Postgres Production]] (`postgres`, id `BDw1qoDl0V7mYwj6`) — node "Postgres2" (id `091b5bc2-d832-46d0-b5b3-af50c5cbc4b5`)
-- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Google Sheets2" (id `14065604-8ba3-4a0a-a8b3-1b52f42e222f`)
-- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Google Sheets5" (id `32eceb8a-009e-400f-841d-f98ede7a0cfa`)
-- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack1" (id `3dbb3b84-753c-468d-9ad1-e148f6d671c2`)
+- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Google Sheets2" (id `14065604-8ba3-4a0a-a8b3-1b52f42e222f`)
+- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Google Sheets5" (id `32eceb8a-009e-400f-841d-f98ede7a0cfa`)
+- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack1" (id `3dbb3b84-753c-468d-9ad1-e148f6d671c2`)
 - [[../resources/credentials/bdw1qodl0v7mywj6|Postgres Production]] (`postgres`, id `BDw1qoDl0V7mYwj6`) — node "Postgres5" (id `406f67b0-ee5b-4999-97ea-550ae41c8218`)
-- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack5" (id `583187ef-0a6f-43d9-8e6a-d11e017add5b`)
-- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Google Sheets1" (id `5beb5bf8-c80f-460c-8f3d-6000a14db8e3`)
+- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack5" (id `583187ef-0a6f-43d9-8e6a-d11e017add5b`)
+- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Google Sheets1" (id `5beb5bf8-c80f-460c-8f3d-6000a14db8e3`)
 - [[../resources/credentials/bdw1qodl0v7mywj6|Postgres Production]] (`postgres`, id `BDw1qoDl0V7mYwj6`) — node "Postgres3" (id `5d2903fb-c67c-4e63-a088-d854de28285e`)
-- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack2" (id `64ca0b76-ecae-42b6-ae3e-e423b2f70128`)
+- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack2" (id `64ca0b76-ecae-42b6-ae3e-e423b2f70128`)
 - [[../resources/credentials/bdw1qodl0v7mywj6|Postgres Production]] (`postgres`, id `BDw1qoDl0V7mYwj6`) — node "Postgres1" (id `68b0dab7-b075-4ae2-8de7-a6f45bd01a71`)
-- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Google Sheets" (id `8d82d727-5e10-4777-952e-c5dc81548394`)
+- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Google Sheets" (id `8d82d727-5e10-4777-952e-c5dc81548394`)
 - [[../resources/credentials/bdw1qodl0v7mywj6|Postgres Production]] (`postgres`, id `BDw1qoDl0V7mYwj6`) — node "Postgres" (id `97cd81ac-a694-40fa-a3f4-04c7a42f7d11`)
-- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack4" (id `b6799591-8945-4f3d-81d4-b814935d3493`)
-- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Google Sheets4" (id `bd3258f8-221b-4824-b305-09ea6c68e53f`)
-- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Google Sheets3" (id `d3761b51-948e-48c9-a311-f393c483bb4e`)
+- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack4" (id `b6799591-8945-4f3d-81d4-b814935d3493`)
+- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Google Sheets4" (id `bd3258f8-221b-4824-b305-09ea6c68e53f`)
+- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Google Sheets3" (id `d3761b51-948e-48c9-a311-f393c483bb4e`)
+- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Upload a file" (id `d85e2dd1-d456-4785-9c0a-3776bf3aaafd`)
 - [[../resources/credentials/bdw1qodl0v7mywj6|Postgres Production]] (`postgres`, id `BDw1qoDl0V7mYwj6`) — node "Postgres6" (id `dac66a28-f2ce-4a11-9853-d3ec68af433f`)
-- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack3" (id `e3f2e171-d41f-42c9-9ddb-f52a58ee9a6e`)
+- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack3" (id `e3f2e171-d41f-42c9-9ddb-f52a58ee9a6e`)
 - [[../resources/credentials/bdw1qodl0v7mywj6|Postgres Production]] (`postgres`, id `BDw1qoDl0V7mYwj6`) — node "Postgres4" (id `e4935f09-4016-4c14-84c1-beabbb03cbe5`)
-- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Google Sheets7" (id `f5cfcb38-fb76-4076-b6c6-07da8934f516`)
-- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack6" (id `fe9ee333-dc6b-462e-9d27-a018bce8e89e`)
-- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack" (id `ff873c11-3346-43b7-9431-0873c6c14e7b`)
+- [[../resources/credentials/b9eqlthyefjazsbz|Google Sheets account (Main One Used)]] (`googleApi`, id `B9eqlthYefJAzSbz`) — node "Google Sheets7" (id `f5cfcb38-fb76-4076-b6c6-07da8934f516`)
+- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack6" (id `fe9ee333-dc6b-462e-9d27-a018bce8e89e`)
+- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack" (id `ff873c11-3346-43b7-9431-0873c6c14e7b`)
 
 ### HTTP URLs
 

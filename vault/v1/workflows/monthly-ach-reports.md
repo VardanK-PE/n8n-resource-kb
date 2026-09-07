@@ -3,10 +3,10 @@ n8n_id: "J24a0qIXslRvAe5m"
 instance: v1
 name: "Monthly ACH Reports"
 status: active
-last_modified: 2026-08-27T18:33:37.826Z
+last_modified: 2026-09-01T17:22:11.253Z
 tags: []
-fingerprint: "4a192f0e689fa8b587777eed936df9e1ee03d7f1c1922523c254ed1f187e0599"
-auto_generated_at: 2026-08-28T21:13:05Z
+fingerprint: "ddbe166769fc37911844d0d08e12a43a9024775b9357163388973420b4f72282"
+auto_generated_at: 2026-09-07T19:04:01Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-08-28T21:13:05Z
 - **Status:** active
 - **n8n ID:** `J24a0qIXslRvAe5m`
 - **Nodes:** 195
-- **Last modified:** 2026-08-27T18:33:37.826Z
+- **Last modified:** 2026-09-01T17:22:11.253Z
 
 ## Triggers
 

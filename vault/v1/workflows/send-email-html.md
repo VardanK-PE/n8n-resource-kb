@@ -59,6 +59,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - [[auto-email-elavon-to-change-the-merchant-email|Auto-email Elavon to change the merchant email]] — node "Call 'Send Email'" (id `c9cd9161-98f4-4473-ad5f-a044f5e93bcd`)
 - [[dispute-process-elavon-attachments|Dispute - Process Elavon attachments]] — node "Call 'Send Email'" (id `246581ca-9fba-4f13-95ad-20bbba563757`)
 - [[dispute-send-details-to-processor|Dispute - Send details to processor]] — node "Call 'Send Email: HTML'" (id `32d9eda0-dac1-4143-a797-d25c1bbffd92`)
+- [[elavon-bi-cco-enrollment-monitor|Elavon BI - CCO Enrollment Monitor]] — node "Send CCO email" (id `11110000-0000-4000-8000-00000000000c`)
 - [[elavon-dispute|Elavon Dispute]] — node "Call 'Send Email'" (id `058b9d38-d986-4039-95a4-51db8cf9c3a6`)
 - [[failed-ach-notifications|Failed ACH notifications]] — node "Call 'Send Email'" (id `193b21d1-a19e-4ba8-a07a-372287b8b351`)
 - [[heath-merchants-forte-next-day-funding-ndf-request-emails|Heath Merchants - Forte Next Day Funding (NDF) Request Emails]] — node "Call 'Send Email: HTML'" (id `136b1c8b-a363-4778-bed3-77dd755dba3b`)

@@ -3,10 +3,10 @@ n8n_id: "6kyZcLGdSZF0T7Lz"
 instance: v1
 name: "Monthly Partner Platform Fee Generator"
 status: active
-last_modified: 2026-06-29T16:50:20.706Z
+last_modified: 2026-09-04T18:54:19.387Z
 tags: []
-fingerprint: "040b563dbbb50dbf49587e57ba77044555ae4204961d4d32c404e7578d55c025"
-auto_generated_at: 2026-08-19T19:13:32Z
+fingerprint: "61f1c43465cc37ed61c586ac61dc57a2a974ca1c813e080b0cc81a663ec6d141"
+auto_generated_at: 2026-09-07T19:04:01Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - **Status:** active
 - **n8n ID:** `6kyZcLGdSZF0T7Lz`
 - **Nodes:** 49
-- **Last modified:** 2026-06-29T16:50:20.706Z
+- **Last modified:** 2026-09-04T18:54:19.387Z
 
 ## Triggers
 
