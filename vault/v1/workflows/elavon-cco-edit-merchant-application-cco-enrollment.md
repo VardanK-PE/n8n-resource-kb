@@ -1,24 +1,24 @@
 ---
 n8n_id: "Q16AhMTvfmtLzuI6"
 instance: v1
-name: "Elavon BI - Edit merchant application and send (CCO Enrollment)"
+name: "Elavon CCO - Edit merchant application (CCO Enrollment)"
 status: inactive
-last_modified: 2026-09-07T17:53:22.068Z
+last_modified: 2026-09-08T17:39:22.075Z
 tags: []
 fingerprint: "a24487a2a60d2eae9c418133fec2a980193f35d472f2b8d2b7bf1f972d16ccb5"
-auto_generated_at: 2026-09-07T19:04:01Z
+auto_generated_at: 2026-09-08T19:06:15Z
 ---
 
 <!-- auto:start -->
 
-# Elavon BI - Edit merchant application and send (CCO Enrollment)
+# Elavon CCO - Edit merchant application (CCO Enrollment)
 
 ## Summary
 
 - **Status:** inactive
 - **n8n ID:** `Q16AhMTvfmtLzuI6`
 - **Nodes:** 10
-- **Last modified:** 2026-09-07T17:53:22.068Z
+- **Last modified:** 2026-09-08T17:39:22.075Z
 
 ## Triggers
 
@@ -46,7 +46,7 @@ auto_generated_at: 2026-09-07T19:04:01Z
 
 ## Used by (workflows)
 
-- [[elavon-bi-cco-enrollment-monitor|Elavon BI - CCO Enrollment Monitor]] — node "Build CCO PDF" (id `11110000-0000-4000-8000-00000000000b`)
+- [[elavon-cco-enrollment-monitor|Elavon CCO - Enrollment Monitor]] — node "Build CCO PDF" (id `11110000-0000-4000-8000-00000000000b`)
 
 <!-- auto:end -->
 
@@ -58,7 +58,7 @@ Given a PayEngine `merchant_id`, checks CCO eligibility, resolves the four value
 needs, downloads the merchant's signed agreement, fills the Commercial Card Optimization
 pages and returns **just those 3 pages** as a PDF binary (555 kB in → 156 kB out).
 
-Called by [[elavon-bi-cco-enrollment-monitor]]. **Reverse-migrated from v2 to v1 on
+Called by [[elavon-cco-enrollment-monitor]]. **Reverse-migrated from v2 to v1 on
 2026-08-31** (v2 id `7kB7kmRDMjt8K1hc`) because v2 blocks `require('child_process')`, which
 the PDF extraction needs — see the PDF constraints below. Migrating back meant clamping
 typeVersions down to the 1.123.18 ceilings: `set` 3.4, `httpRequest` 4.3, `code` 2.

@@ -17,11 +17,11 @@ auto_generated_at: 2026-09-07T19:04:01Z
 
 ## Used by
 
-- [[../../workflows/elavon-bi-cco-enrollment-monitor|Elavon BI - CCO Enrollment Monitor]] — node "Claim merchant" (id `11110000-0000-4000-8000-00000000000a`)
-- [[../../workflows/elavon-bi-cco-enrollment-monitor|Elavon BI - CCO Enrollment Monitor]] — node "Get existing records" (id `11110000-0000-4000-8000-000000000004`)
-- [[../../workflows/elavon-bi-cco-enrollment-monitor|Elavon BI - CCO Enrollment Monitor]] — node "Mark failed" (id `11110000-0000-4000-8000-00000000000f`)
-- [[../../workflows/elavon-bi-cco-enrollment-monitor|Elavon BI - CCO Enrollment Monitor]] — node "Record outcome" (id `11110000-0000-4000-8000-000000000012`)
-- [[../../workflows/elavon-bi-cco-enrollment-monitor|Elavon BI - CCO Enrollment Monitor]] — node "Write baseline" (id `11110000-0000-4000-8000-000000000009`)
+- [[../../workflows/elavon-cco-enrollment-monitor|Elavon CCO - Enrollment Monitor]] — node "Claim merchant" (id `11110000-0000-4000-8000-00000000000a`)
+- [[../../workflows/elavon-cco-enrollment-monitor|Elavon CCO - Enrollment Monitor]] — node "Get existing records" (id `11110000-0000-4000-8000-000000000004`)
+- [[../../workflows/elavon-cco-enrollment-monitor|Elavon CCO - Enrollment Monitor]] — node "Mark failed" (id `11110000-0000-4000-8000-00000000000f`)
+- [[../../workflows/elavon-cco-enrollment-monitor|Elavon CCO - Enrollment Monitor]] — node "Record outcome" (id `11110000-0000-4000-8000-000000000012`)
+- [[../../workflows/elavon-cco-enrollment-monitor|Elavon CCO - Enrollment Monitor]] — node "Write baseline" (id `11110000-0000-4000-8000-000000000009`)
 
 <!-- auto:end -->
 
@@ -29,7 +29,7 @@ auto_generated_at: 2026-09-07T19:04:01Z
 
 ## Role: the "have we sent this merchant's CCO form" ledger
 
-Created 2026-09-07 for [[../../workflows/elavon-bi-cco-enrollment-monitor]]. **This table is
+Created 2026-09-07 for [[../../workflows/elavon-cco-enrollment-monitor]]. **This table is
 the idempotency guarantee** — it is the only thing preventing a merchant's enrollment form
 from being submitted to Elavon twice.
 
@@ -60,18 +60,24 @@ collapses into one `LEFT JOIN … IS NULL` — but needs a schema change and Ops
 |---|---|---|
 | `baseline` | Seeded by the one-time backfill; nothing was sent | no |
 | `processing` | Claimed, in flight. A stuck row means a crash mid-run | no |
-| `simulated` | Dry run (`email_mode: simulate`); nothing was sent | **yes** |
-| `sent` | Handed off — see `delivery_mode` for how | no |
+| `simulated` | `delivery_mode: fill` — the form was filled but never submitted | **yes** |
+| `sent` | Submitted to Elavon and a confirmation page was seen | no |
 | `failed` | Transient; retried while `attempt_count < max_attempts` | **yes** |
 | `skipped` | Permanent; needs a data fix first | no |
 
 `status` deliberately **does not name the delivery mechanism** — that lives in
-`delivery_mode` (`draft` | `auto` | `simulate`). Turning on automatic sending therefore
-needs no schema change and no migration of existing rows.
+`delivery_mode` (`fill` | `submit` | `submit-failed`). Enrollment moved from email to
+Elavon's Qualtrics form on 2026-09-08 and this vocabulary did not have to change, which was
+the point of separating the two.
 
-Note the honest limit of `sent`: with a Gmail *draft*, "a human actually sent it" is not
-observable from n8n, so `sent` means "this workflow completed its handoff".
-`delivery_mode = draft` is what tells you the difference.
+`sent` is trustworthy here in a way it was not under the email design: the submitter clicks
+Submit, then requires a confirmation page before returning `submitted: true`. If the form is
+still displayed, or no confirmation text is found, it throws and the row is recorded
+`failed` — never `sent`. The evidence is the full-page screenshot posted to Slack.
+
+What we still cannot see is Elavon's side. Qualtrics returns nothing machine-readable to us
+beyond the confirmation page, so `sent` means "submitted and acknowledged by the form", not
+"accepted by Elavon".
 
 ## Snapshot columns are intentional
 

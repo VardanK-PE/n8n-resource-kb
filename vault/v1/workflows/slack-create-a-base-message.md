@@ -54,7 +54,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - [[dispute-monitor-missed-notifications|Dispute - Monitor missed notifications]] — node "Call 'Slack - Create a base message'" (id `5e56b956-b6e7-4e7d-9a18-5d007e4d6d80`)
 - [[dispute-send-details-to-processor|Dispute - Send details to processor]] — node "Create a base message1" (id `3a471b15-f3d8-4f5e-9541-2c9a605fbc4d`)
 - [[elavon-ach-enrollment-project|Elavon ACH Enrollment Project]] — node "Create Base Messages (approved forms)" (id `ac6f692e-a122-49e4-b352-8553d99fd34c`)
-- [[elavon-bi-cco-enrollment-monitor|Elavon BI - CCO Enrollment Monitor]] — node "Post Slack base message" (id `11110000-0000-4000-8000-000000000013`)
+- [[elavon-cco-enrollment-monitor|Elavon CCO - Enrollment Monitor]] — node "Post Slack base message" (id `11110000-0000-4000-8000-000000000013`)
 - [[elavon-dispute|Elavon Dispute]] — node "Create a base message" (id `0bccb684-4934-4a1c-a05d-79304bd2a8fc`)
 - [[elavon-disputes-reporting|Elavon Disputes Reporting]] — node "Call 'Slack - Create a base message'" (id `b01b3634-96c5-4f7e-a03f-013165495d04`)
 - [[failed-ach-notifications|Failed ACH notifications]] — node "Call 'Slack - Create a base message'" (id `70084f49-a6b7-4586-9546-869b91e731a1`)

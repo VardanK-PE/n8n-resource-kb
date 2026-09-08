@@ -26,7 +26,7 @@ auto_generated_at: 2026-09-07T19:06:36Z
 - [[../../workflows/edit-curbwaste-statements|Edit Curbwaste statements]] — node "HTTP Request" (id `a8f7f9fe-dc1c-4f22-9f11-932e7954a198`)
 - [[../../workflows/edit-curbwaste-statements|Edit Curbwaste statements]] — node "PROD Upload Statement" (id `9c7313df-0c22-4afd-a2f6-c9be3804af54`)
 - [[../../workflows/edit-curbwaste-statements|Edit Curbwaste statements]] — node "Resolve Statement File URL" (id `ff7311a9-55af-40db-b513-fb69828b8fcd`)
-- [[../../workflows/elavon-bi-edit-merchant-application-and-send-cco-enrollment|Elavon BI - Edit merchant application and send (CCO Enrollment)]] — node "HTTP Request" (id `e673fe53-920d-4baa-a0c5-c01f32d4ce3d`)
+- [[../../workflows/elavon-cco-edit-merchant-application-cco-enrollment|Elavon CCO - Edit merchant application (CCO Enrollment)]] — node "HTTP Request" (id `e673fe53-920d-4baa-a0c5-c01f32d4ce3d`)
 - [[../../workflows/elavon-dispute|Elavon Dispute]] — node "PROD Update Transaction" (id `459be85d-ddc5-4bc9-ab41-2c654f1c275e`)
 - [[../../workflows/forte-gateway-auto-submitter-v2|Forte Gateway Auto-submitter V2]] — node "Add Forte Processor" (id `cf081004-c8b1-4ed6-8cc7-c44bab0be129`)
 - [[../../workflows/forte-gateway-auto-submitter-v2|Forte Gateway Auto-submitter V2]] — node "Get Merchant Details1" (id `e7c25618-7861-46d7-8cb8-69d218ddb623`)

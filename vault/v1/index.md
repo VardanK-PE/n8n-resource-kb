@@ -1,7 +1,7 @@
 ---
 type: index
 instance: v1
-auto_generated_at: 2026-09-07T19:20:00Z
+auto_generated_at: 2026-09-08T19:10:04Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ See `../../CLAUDE.md` (repo root) for the intent → runbook map and the manual 
 
 Browse these folders via the file-explorer sidebar — Obsidian has no built-in way to link to a folder (both `[[wiki]]` and `[md](folder/)` links auto-create blank notes on click), so paths here are shown as code only.
 
-- `workflows/` — 246 notes; one per n8n workflow
+- `workflows/` — 248 notes; one per n8n workflow
 - **Resources** — `resources/<type>/`, alphabetical (new categories surface automatically as the taxonomy grows):
   - `resources/credentials/` — 64
   - `resources/custom-nodes/` — 11
@@ -36,7 +36,7 @@ Browse these folders via the file-explorer sidebar — Obsidian has no built-in 
   - `resources/s3-buckets/` — 1
   - `resources/slack-channels/` — 54
   - `resources/triggers/` — 154
-- `changelogs/` — 3 notes; one per refresh-day that produced semantic change
+- `changelogs/` — 4 notes; one per refresh-day that produced semantic change
 
 ## How to find things
 
@@ -47,7 +47,7 @@ Browse these folders via the file-explorer sidebar — Obsidian has no built-in 
 
 ## Last refreshed
 
-2026-09-07T19:20:00Z
+2026-09-08T19:10:04Z
 
 <!-- auto:end -->
 

@@ -35,8 +35,8 @@ Keyed on `MID` (Elavon's 10-digit processor merchant id, stored as **number**). 
 **94 distinct MCCs**.
 
 > [!warning] No longer used by the CCO enrollment workflow (changed 2026-09-07)
-> `Elavon BI - Edit merchant application and send (CCO Enrollment)`
-> ([[../../workflows/elavon-bi-edit-merchant-application-and-send-cco-enrollment]]) used to
+> `Elavon CCO - Edit merchant application (CCO Enrollment)`
+> ([[../../workflows/elavon-cco-edit-merchant-application-cco-enrollment]]) used to
 > resolve both `MCC` and `DBA` from this table. It now takes **both from Postgres**, and its
 > `Get Elavon MCC` node was deleted. This table is still used by
 > `Elavon MIDs to Data Tables sync` and `Njord API` — see the auto block.

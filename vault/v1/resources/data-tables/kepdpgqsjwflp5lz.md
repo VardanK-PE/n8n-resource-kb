@@ -18,8 +18,8 @@ auto_generated_at: 2026-09-07T19:04:01Z
 
 ## Used by
 
-- [[../../workflows/elavon-bi-edit-merchant-application-and-send-cco-enrollment|Elavon BI - Edit merchant application and send (CCO Enrollment)]] — node "Get commodity code" (id `a8c0446d-145b-4403-a7cc-ba035790ac48`)
-- [[../../workflows/elavon-load-mcc-commodity-codes|Elavon - Load MCC Commodity Codes]] — node "Upsert commodity code" (id `6adbb171-d868-46e1-ab1b-cea5ee41dc7b`)
+- [[../../workflows/elavon-cco-edit-merchant-application-cco-enrollment|Elavon CCO - Edit merchant application (CCO Enrollment)]] — node "Get commodity code" (id `a8c0446d-145b-4403-a7cc-ba035790ac48`)
+- [[../../workflows/elavon-cco-load-mcc-commodity-codes|Elavon CCO - Load MCC Commodity Codes]] — node "Upsert commodity code" (id `6adbb171-d868-46e1-ab1b-cea5ee41dc7b`)
 
 <!-- auto:end -->
 
