@@ -3,10 +3,10 @@ n8n_id: "pY05hGyMJwslcwoH"
 instance: v1
 name: "PAX Portal Access Token Manager"
 status: inactive
-last_modified: 2026-07-10T10:18:19.914Z
+last_modified: 2026-09-08T17:33:51.890Z
 tags: []
-fingerprint: "40c21cbdb84c08b55cbe689f639a725fb38d727113e88f1f1cf7495b99dee8b9"
-auto_generated_at: 2026-08-19T19:13:32Z
+fingerprint: "7182d3e0058686e87f8961e59146f7c50a87cccc1a73ef574b7371d1815c23f6"
+auto_generated_at: 2026-09-08T19:08:03Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - **Status:** inactive
 - **n8n ID:** `pY05hGyMJwslcwoH`
 - **Nodes:** 31
-- **Last modified:** 2026-07-10T10:18:19.914Z
+- **Last modified:** 2026-09-08T17:33:51.890Z
 
 ## Triggers
 
@@ -61,9 +61,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 ## Used by (workflows)
 
 - [[pax-device-monitoring|PAX Device Monitoring]] — node "Access Token" (id `7689206b-f7a6-4fca-80e8-496e440bb4df`)
-- [[pax-device-monitoring-backup-2025-10-25|PAX Device Monitoring backup 2025-10-25]] — node "Access Token" (id `9a9ceab8-2d9d-428c-bb67-c4abf404c56d`)
-- [[pax-device-monitoring-backup-2025-10-25|PAX Device Monitoring backup 2025-10-25]] — node "Access Token1" (id `c54a71c2-aeeb-462c-b7ed-16f089288289`)
-- [[pax-portal-api-request|PAX Portal API Request]] — node "Access Token1" (id `7b7e813b-3212-4a6b-a8ba-38db77c4804d`)
+- [[pax-device-monitoring|PAX Device Monitoring]] — node "Check Access Token" (id `1a0d60f4-ea55-4b9e-8ad5-ba98f52fc2bd`)
 
 <!-- auto:end -->
 

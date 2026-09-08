@@ -3,10 +3,10 @@ n8n_id: "WZ3gVX06CoEoAmzr"
 instance: v1
 name: "Daily Onboarding Alerts"
 status: active
-last_modified: 2024-10-25T17:19:11.739Z
+last_modified: 2026-09-02T18:42:58.067Z
 tags: []
-fingerprint: "4e508dad407127980af2effff7e0205ce267131724de0609250cb743fd989cca"
-auto_generated_at: 2026-06-01T22:51:45Z
+fingerprint: "8d3da3a3814f8c6e13e1cc7a988dc71baeccd08f3dcfe5de61ce93be0a4b6942"
+auto_generated_at: 2026-09-07T19:04:01Z
 ---
 
 <!-- auto:start -->
@@ -17,8 +17,8 @@ auto_generated_at: 2026-06-01T22:51:45Z
 
 - **Status:** active
 - **n8n ID:** `WZ3gVX06CoEoAmzr`
-- **Nodes:** 10
-- **Last modified:** 2024-10-25T17:19:11.739Z
+- **Nodes:** 11
+- **Last modified:** 2026-09-02T18:42:58.067Z
 
 ## Triggers
 
@@ -28,9 +28,10 @@ auto_generated_at: 2026-06-01T22:51:45Z
 
 ### Credentials
 
-- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack Message with Pending Applications" (id `4a218d88-d712-483b-97b9-fc9b5cc6ecb1`)
-- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack Message with Applications Pending Additional Info" (id `8141d433-fdeb-4602-98bd-903f10827538`)
+- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack Message with Pending Applications" (id `4a218d88-d712-483b-97b9-fc9b5cc6ecb1`)
+- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Slack Message with Applications Pending Additional Info" (id `8141d433-fdeb-4602-98bd-903f10827538`)
 - [[../resources/credentials/bdw1qodl0v7mywj6|Postgres Production]] (`postgres`, id `BDw1qoDl0V7mYwj6`) — node "Pending Applications" (id `91b6aa5a-8aa7-400e-8976-a67492060cec`)
+- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Upload a file" (id `f07b60d2-ede3-4b74-866d-18978ad495a2`)
 
 ### Databases
 

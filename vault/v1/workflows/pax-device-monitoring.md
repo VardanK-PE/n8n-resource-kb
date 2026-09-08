@@ -3,10 +3,10 @@ n8n_id: "Q9j3wpVGvegSl4Sy"
 instance: v1
 name: "PAX Device Monitoring"
 status: active
-last_modified: 2026-07-10T13:45:14.136Z
+last_modified: 2026-09-08T17:51:38.162Z
 tags: []
-fingerprint: "f0a7e2f5ac8434180d8f248e45a0cd3dc3b323caae826a339a631d2f2ac5d04d"
-auto_generated_at: 2026-08-19T19:13:32Z
+fingerprint: "a5f1f3b8c92c88d976c0127269a86404c7822e6f55d7a920f59b0df7473c329e"
+auto_generated_at: 2026-09-08T19:08:03Z
 ---
 
 <!-- auto:start -->
@@ -17,12 +17,13 @@ auto_generated_at: 2026-08-19T19:13:32Z
 
 - **Status:** active
 - **n8n ID:** `Q9j3wpVGvegSl4Sy`
-- **Nodes:** 59
-- **Last modified:** 2026-07-10T13:45:14.136Z
+- **Nodes:** 65
+- **Last modified:** 2026-09-08T17:51:38.162Z
 
 ## Triggers
 
 - **error** — node "Error Trigger" (id `2f17adea-31a3-45fe-b4ea-0bbbcb624c1f`)
+- **schedule** — node "Token Health Schedule" (id `377be590-de47-4705-986c-1629699fb7cc`) — `every 1 hour(s) at :20`
 - **schedule** — node "Schedule Trigger" (id `5e5afcd0-577b-4863-9340-b13e214587ca`) — `every 1 hour(s) at :50`
 - **manual** — node "When clicking ‘Execute workflow’" (id `b19dc6b0-0d64-4b84-81ce-f8a278397786`)
 - **schedule** — node "Schedule Trigger1" (id `fe361edf-fc55-4a83-bd0a-b32ab534e37f`) — `daily at 4:50`
@@ -78,25 +79,20 @@ auto_generated_at: 2026-08-19T19:13:32Z
 ### Sub-workflows (Execute Workflow calls)
 
 - [[pax-portal-api-request|PAX Portal API Request]] (n8n_id `T0yGFQaEQnHpmPdt`) — node "GET /terminals/list Count" (id `0ef5e90b-3264-4991-a50d-2a3b42dde139`)
+- [[pax-portal-access-token-manager|PAX Portal Access Token Manager]] (n8n_id `pY05hGyMJwslcwoH`) — node "Check Access Token" (id `1a0d60f4-ea55-4b9e-8ad5-ba98f52fc2bd`)
 - [[pax-portal-api-request|PAX Portal API Request]] (n8n_id `T0yGFQaEQnHpmPdt`) — node "GET /resellers/tree" (id `36977806-6618-4345-beaa-99f8bd27ef94`)
 - [[pax-portal-api-request|PAX Portal API Request]] (n8n_id `T0yGFQaEQnHpmPdt`) — node "GET /p-market-web/v1/common/system-config" (id `4105b336-3d81-43c1-b270-11750b6b3f6e`)
 - [[pax-terminal-details-sync|PAX Terminal Details Sync]] (n8n_id `4ugBRdDoboJ4Uq3e`) — node "Call 'PAX Terminal Details Sync'" (id `6d00218a-9c16-4000-a105-c333f1564369`)
 - [[pax-portal-access-token-manager|PAX Portal Access Token Manager]] (n8n_id `pY05hGyMJwslcwoH`) — node "Access Token" (id `7689206b-f7a6-4fca-80e8-496e440bb4df`)
+- [[slack-send-notification|Slack - Send notification]] (n8n_id `U3EyWwhZtcf2tMh5`) — node "Token Alert: detail" (id `7af35c45-899b-4a89-bf90-b8d3250baebd`)
+- [[slack-create-a-base-message|Slack - Create a base message]] (n8n_id `VQPaemuwy6FdMa9L`) — node "Token Alert: base message" (id `91b1d77c-3644-45bb-8c02-97fff446206b`)
 - [[pax-portal-api-request|PAX Portal API Request]] (n8n_id `T0yGFQaEQnHpmPdt`) — node "GET /current-user" (id `a5209929-6698-42d7-b38d-6f8a5a29c1f7`)
 - [[pax-portal-api-request|PAX Portal API Request]] (n8n_id `T0yGFQaEQnHpmPdt`) — node "GET /p-market-web/v1/common/system-config1" (id `ab28bd2b-f699-4456-aa07-213f3799864d`)
 - [[pax-portal-api-request|PAX Portal API Request]] (n8n_id `T0yGFQaEQnHpmPdt`) — node "GET /terminals/list" (id `efbaf083-72c3-40ce-b996-572263c36ced`)
 
 ## Used by (workflows)
 
-- [[pax-device-monitoring-backup-2025-10-25|PAX Device Monitoring backup 2025-10-25]] — node "GET /current-user" (id `85c0cd76-1372-4c3a-8dbf-2d30d736d279`)
-- [[pax-device-monitoring-backup-2025-10-25|PAX Device Monitoring backup 2025-10-25]] — node "GET /installed-apks" (id `63ae018f-0a2b-4a3f-8b51-2a3e19fbe4e2`)
-- [[pax-device-monitoring-backup-2025-10-25|PAX Device Monitoring backup 2025-10-25]] — node "GET /p-market-web/v1/common/system-config" (id `ff950144-3287-460b-aeb9-f041415319fb`)
-- [[pax-device-monitoring-backup-2025-10-25|PAX Device Monitoring backup 2025-10-25]] — node "GET /p-market-web/v1/common/system-config1" (id `ca31a9e4-4da2-424c-93ff-b8574971fe70`)
-- [[pax-device-monitoring-backup-2025-10-25|PAX Device Monitoring backup 2025-10-25]] — node "GET /param" (id `1657d637-a10f-4a1f-8ce7-c42f7919a609`)
-- [[pax-device-monitoring-backup-2025-10-25|PAX Device Monitoring backup 2025-10-25]] — node "GET /resellers/tree" (id `e351caf3-86b6-4394-8d73-7f0d989fad8d`)
-- [[pax-device-monitoring-backup-2025-10-25|PAX Device Monitoring backup 2025-10-25]] — node "GET /terminals/list Count" (id `b97a5263-2bae-4dfd-8aaa-1c21fbd26915`)
-- [[pax-device-monitoring-backup-2025-10-25|PAX Device Monitoring backup 2025-10-25]] — node "GET /terminals/list1" (id `e8da3d52-611b-4553-abae-a730ebe5f5be`)
-- [[pax-device-monitoring-bk-2025-10-23-|PAX Device Monitoring (BK-2025-10-23)]] — node "Call 'PAX Device Monitoring'" (id `d3350bd3-91db-4d46-9ddf-afbf946e1640`)
+*(populated in the resource-aggregation pass after all workflows are rendered)*
 
 <!-- auto:end -->
 

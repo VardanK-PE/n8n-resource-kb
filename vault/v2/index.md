@@ -1,7 +1,7 @@
 ---
 type: index
 instance: v2
-auto_generated_at: 2026-08-28T20:46:45Z
+auto_generated_at: 2026-09-08T19:20:28Z
 ---
 
 <!-- auto:start -->
@@ -16,11 +16,14 @@ See `../../CLAUDE.md` (repo root) for the intent → runbook map and the manual 
 
 ## Sections
 
-- `workflows/` — 2 notes; one per n8n workflow
+- `workflows/` — 7 notes; one per n8n workflow
 - **Resources** — `resources/<type>/` (categories surface as the taxonomy grows):
-  - `resources/credentials/` — 1
+  - `resources/credentials/` — 6
+  - `resources/data-tables/` — 1
+  - `resources/databases/` — 1
   - `resources/http-urls/` — 1
-- `changelogs/` — 1 notes; one per refresh-day that produced semantic change
+  - `resources/slack-channels/` — 1
+- `changelogs/` — 2 notes; one per refresh-day that produced semantic change
 
 ## How to find things
 
@@ -30,7 +33,7 @@ See `../../CLAUDE.md` (repo root) for the intent → runbook map and the manual 
 
 ## Last refreshed
 
-2026-08-28T20:46:45Z
+2026-09-08T19:20:28Z
 
 <!-- auto:end -->
 

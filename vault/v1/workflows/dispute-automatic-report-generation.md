@@ -3,10 +3,10 @@ n8n_id: "omlYEtChOOFF02N0"
 instance: v1
 name: "Dispute - Automatic report generation"
 status: active
-last_modified: 2026-08-27T18:44:37.196Z
+last_modified: 2026-09-07T19:02:17.128Z
 tags: []
-fingerprint: "be2ac23e645fcbc9be657824292e951c76282fdeafe42016aed7fb90469302b7"
-auto_generated_at: 2026-08-28T21:13:05Z
+fingerprint: "265ad941e877720326996742773ba5d9ff3c39c2a721a853c2ab595e578ba9a9"
+auto_generated_at: 2026-09-07T19:04:01Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-08-28T21:13:05Z
 - **Status:** active
 - **n8n ID:** `omlYEtChOOFF02N0`
 - **Nodes:** 18
-- **Last modified:** 2026-08-27T18:44:37.196Z
+- **Last modified:** 2026-09-07T19:02:17.128Z
 
 ## Triggers
 

@@ -3,10 +3,10 @@ n8n_id: "9UH9sK3CWbFRtVGg"
 instance: v1
 name: "Elavon BI Automation (Daily Monitor)"
 status: active
-last_modified: 2026-08-27T18:38:18.296Z
+last_modified: 2026-08-31T19:48:48.651Z
 tags: []
-fingerprint: "8c879d60967f02111601be0ff587532d28748399c8de38638d4d1db16cee0705"
-auto_generated_at: 2026-08-28T21:13:05Z
+fingerprint: "4e78bbb29b878723a5f160d086660effcd6573021f99f2aef59e745a390ba578"
+auto_generated_at: 2026-09-07T19:04:01Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-08-28T21:13:05Z
 - **Status:** active
 - **n8n ID:** `9UH9sK3CWbFRtVGg`
 - **Nodes:** 101
-- **Last modified:** 2026-08-27T18:38:18.296Z
+- **Last modified:** 2026-08-31T19:48:48.651Z
 
 ## Triggers
 
