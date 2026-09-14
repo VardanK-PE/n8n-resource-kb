@@ -45,6 +45,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - [[chargebacks-response-expiration-monitoring|[Deprecated] Chargebacks: Response expiration monitoring]] — node "Slack - Create a base message for today" (id `79bdf65e-a2bf-4818-bc3e-8127c6cee2a9`)
 - [[closed-by-elavon-merchant-status-monitoring|Closed By Elavon: Merchant status monitoring]] — node "Call 'Slack - Create a base message'" (id `2fb455a4-6828-49ed-a83f-d0a5cfbf70f5`)
 - [[corksy-open-batch-monitoring|Corksy open batch monitoring]] — node "Call 'Slack - Create a base message'1" (id `7a21fa32-7378-4419-980b-cd3513e1c39a`)
+- [[curbwaste-merchant-mcc4900-notification|Curbwaste Merchant MCC4900 Notification]] — node "Post Slack base message" (id `22220000-0000-4000-8000-000000000009`)
 - [[disable-ach-gateway-main-logic|Disable ACH Gateway - Main Logic]] — node "Create a base message" (id `d14e6a9b-58cc-41ec-8227-e91a0eb3085c`)
 - [[disable-ach-gateway-main-logic|Disable ACH Gateway - Main Logic]] — node "Create a base message1" (id `739cdbfb-a3a1-4230-b8db-510df342d7f8`)
 - [[dispute-case-handler|Dispute - Case Handler]] — node "Create base message" (id `288af449-2ef4-4784-b989-fa31bb44fd58`)

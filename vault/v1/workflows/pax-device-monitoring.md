@@ -3,10 +3,10 @@ n8n_id: "Q9j3wpVGvegSl4Sy"
 instance: v1
 name: "PAX Device Monitoring"
 status: active
-last_modified: 2026-09-08T17:51:38.162Z
+last_modified: 2026-09-08T19:48:04.430Z
 tags: []
-fingerprint: "a5f1f3b8c92c88d976c0127269a86404c7822e6f55d7a920f59b0df7473c329e"
-auto_generated_at: 2026-09-08T19:08:03Z
+fingerprint: "3d1e0c139afc6bc16daa81d73566501bc9e5bd1d77d8bdd4dc4e4db8245cb23e"
+auto_generated_at: 2026-09-14T17:11:15Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-09-08T19:08:03Z
 - **Status:** active
 - **n8n ID:** `Q9j3wpVGvegSl4Sy`
 - **Nodes:** 65
-- **Last modified:** 2026-09-08T17:51:38.162Z
+- **Last modified:** 2026-09-08T19:48:04.430Z
 
 ## Triggers
 

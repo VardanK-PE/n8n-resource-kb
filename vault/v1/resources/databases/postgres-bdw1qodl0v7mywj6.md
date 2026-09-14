@@ -39,6 +39,7 @@ auto_generated_at: 2026-09-07T19:06:36Z
 - [[../../workflows/corksy-events-log-monitor|Corksy Events Log Monitor]] — op `executeQuery` — node "Postgres" (id `530e1ee1-b868-4f55-8ac8-9fba321b37f8`)
 - [[../../workflows/corksy-open-batch-monitoring|Corksy open batch monitoring]] — op `executeQuery` — node "Original - Query Open Batch transactions" (id `8334b83f-a5a3-49de-90c9-91c0177e123e`)
 - [[../../workflows/corksy-open-batch-monitoring|Corksy open batch monitoring]] — op `executeQuery` — node "Query Open Batch transactions" (id `d66b4d9a-099a-41c5-865b-c0e7214a7ea6`)
+- [[../../workflows/curbwaste-merchant-mcc4900-notification|Curbwaste Merchant MCC4900 Notification]] — op `executeQuery` — node "Find eligible" (id `22220000-0000-4000-8000-000000000006`)
 - [[../../workflows/daily-onboarding-alerts|Daily Onboarding Alerts]] — op `executeQuery` — node "Pending Applications" (id `91b6aa5a-8aa7-400e-8976-a67492060cec`)
 - [[../../workflows/deprecated-chargebacks-response-expiration-monitoring|[Deprecated] Chargebacks: Response expiration monitoring]] — op `executeQuery` — node "Request refund transactions in ACD or AMR states" (id `9b5dde13-3c17-425e-8259-3d31dde7bbb1`)
 - [[../../workflows/deprecated-hearth-transaction-alerts|[Deprecated] Hearth - Transaction Alerts]] — op `executeQuery` — node "Postgres" (id `100756ca-ec42-4c11-bdbf-32b305fdaaf3`)

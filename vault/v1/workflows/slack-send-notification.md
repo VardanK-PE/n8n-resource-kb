@@ -44,6 +44,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - [[chargebacks-response-expiration-monitoring|[Deprecated] Chargebacks: Response expiration monitoring]] — node "Call 'Slack - Send notification'1" (id `2555d8cf-ace6-4992-ac0b-80c25de6e8fd`)
 - [[corksy-open-batch-monitoring|Corksy open batch monitoring]] — node "Call 'Slack - Send notification'1" (id `bbcedc06-b775-4388-acdb-794fa94788e9`)
 - [[critical-workflow-activity-monitoring|Critical Workflow Activity Monitoring]] — node "Call 'Slack - Send notification'" (id `1a736db8-23fb-47f4-b880-3c4ce26e2400`)
+- [[curbwaste-merchant-mcc4900-notification|Curbwaste Merchant MCC4900 Notification]] — node "Post run tally" (id `22220000-0000-4000-8000-000000000013`)
 - [[disable-ach-gateway-main-logic|Disable ACH Gateway - Main Logic]] — node "Call 'Slack - Send notification'" (id `55c9c155-3e40-426a-ba0a-d6bd3d41257d`)
 - [[disable-ach-gateway-main-logic|Disable ACH Gateway - Main Logic]] — node "Call 'Slack - Send notification'1" (id `775881ec-519c-4594-af58-e04b0fd317a8`)
 - [[disable-ach-gateway-main-logic|Disable ACH Gateway - Main Logic]] — node "Call 'Slack - Send notification'2" (id `d81b9ea2-0644-4da3-836e-fb03d7b02efa`)

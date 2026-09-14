@@ -3,10 +3,10 @@ n8n_id: "4ugBRdDoboJ4Uq3e"
 instance: v1
 name: "PAX Terminal Details Sync"
 status: inactive
-last_modified: 2026-07-10T13:43:04.122Z
+last_modified: 2026-09-08T19:49:15.069Z
 tags: []
-fingerprint: "9ae5d6fd0ee8f99fb997cae11cca9628ff1066a11b31ec4814cc6b5567ef728c"
-auto_generated_at: 2026-08-19T19:13:32Z
+fingerprint: "50bde89381b77a73d4a3cf272b6694e72c4fb139536a9b44f5d21c1641ed8cce"
+auto_generated_at: 2026-09-14T17:11:15Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - **Status:** inactive
 - **n8n ID:** `4ugBRdDoboJ4Uq3e`
 - **Nodes:** 21
-- **Last modified:** 2026-07-10T13:43:04.122Z
+- **Last modified:** 2026-09-08T19:49:15.069Z
 
 ## Triggers
 

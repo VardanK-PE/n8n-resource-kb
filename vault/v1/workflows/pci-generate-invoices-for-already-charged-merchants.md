@@ -3,10 +3,10 @@ n8n_id: "1GngUg26uDoLxlom"
 instance: v1
 name: "PCI generate invoices for already charged merchants"
 status: inactive
-last_modified: 2026-08-14T19:27:02.017Z
+last_modified: 2026-09-09T18:10:53.813Z
 tags: []
-fingerprint: "fdb40ea407fea1e65ac764820ba5d7f01df97d6103c38f9543dc823cd9b789c4"
-auto_generated_at: 2026-08-19T19:13:32Z
+fingerprint: "092f018d302503a7e0e1dc131ddd05b14731d643f9837aa79d21a7c1d7652f33"
+auto_generated_at: 2026-09-14T17:11:15Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - **Status:** inactive
 - **n8n ID:** `1GngUg26uDoLxlom`
 - **Nodes:** 46
-- **Last modified:** 2026-08-14T19:27:02.017Z
+- **Last modified:** 2026-09-09T18:10:53.813Z
 
 ## Triggers
 
