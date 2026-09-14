@@ -3,10 +3,10 @@ n8n_id: "ru4K4o5884D9AiEj"
 instance: v1
 name: "Global open batch monitoring copy"
 status: active
-last_modified: 2026-08-12T15:41:21.876Z
+last_modified: 2026-09-11T16:27:32.779Z
 tags: []
-fingerprint: "5a847950730b94c1fc66a9fc42a00e67750db724d4faa2a9450d406a9390eaab"
-auto_generated_at: 2026-08-19T19:13:32Z
+fingerprint: "0f9984513f4585c33e03085aa42a317098afe978454b7592a1462af62eb1dcb2"
+auto_generated_at: 2026-09-14T17:11:15Z
 ---
 
 <!-- auto:start -->
@@ -18,7 +18,7 @@ auto_generated_at: 2026-08-19T19:13:32Z
 - **Status:** active
 - **n8n ID:** `ru4K4o5884D9AiEj`
 - **Nodes:** 23
-- **Last modified:** 2026-08-12T15:41:21.876Z
+- **Last modified:** 2026-09-11T16:27:32.779Z
 
 ## Triggers
 

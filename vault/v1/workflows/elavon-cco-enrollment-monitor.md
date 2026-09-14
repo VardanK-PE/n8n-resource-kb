@@ -3,10 +3,10 @@ n8n_id: "kaos1lAi2PZ7wDAw"
 instance: v1
 name: "Elavon CCO - Enrollment Monitor"
 status: inactive
-last_modified: 2026-09-08T18:51:02.484Z
+last_modified: 2026-09-08T19:10:56.604Z
 tags: []
-fingerprint: "001581ba40ac5f4aed9992d089c766470ac0718fd2fc07f501efd2e5f933c546"
-auto_generated_at: 2026-09-08T19:06:15Z
+fingerprint: "b1735f81f7b371f492d9be126f5d84fc2f0968a5c97cf633a205a5570a70b05d"
+auto_generated_at: 2026-09-14T17:11:15Z
 ---
 
 <!-- auto:start -->
@@ -17,8 +17,8 @@ auto_generated_at: 2026-09-08T19:06:15Z
 
 - **Status:** inactive
 - **n8n ID:** `kaos1lAi2PZ7wDAw`
-- **Nodes:** 21
-- **Last modified:** 2026-09-08T18:51:02.484Z
+- **Nodes:** 20
+- **Last modified:** 2026-09-08T19:10:56.604Z
 
 ## Triggers
 
@@ -30,8 +30,6 @@ auto_generated_at: 2026-09-08T19:06:15Z
 ### Credentials
 
 - [[../resources/credentials/bdw1qodl0v7mywj6|Postgres Production]] (`postgres`, id `BDw1qoDl0V7mYwj6`) — node "Find eligible" (id `11110000-0000-4000-8000-000000000006`)
-- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Post screenshot to Slack" (id `11110000-0000-4000-8000-000000000015`)
-- [[../resources/credentials/1hkdk4lbxxyibzyb|Slack account (PEBot)]] (`slackApi`, id `1HkDK4lbXXyibzYb`) — node "Resolve Slack channel" (id `11110000-0000-4000-8000-000000000016`)
 
 ### Databases
 
@@ -50,6 +48,7 @@ auto_generated_at: 2026-09-08T19:06:15Z
 - [[elavon-cco-edit-merchant-application-cco-enrollment|Elavon CCO - Edit merchant application (CCO Enrollment)]] (n8n_id `Q16AhMTvfmtLzuI6`) — node "Build CCO PDF" (id `11110000-0000-4000-8000-00000000000b`)
 - [[elavon-cco-submit-qualtrics-form|Elavon CCO - Submit Qualtrics form]] (n8n_id `1u22D61vqFen7q0m`) — node "Submit CCO form" (id `11110000-0000-4000-8000-00000000000c`)
 - [[slack-create-a-base-message|Slack - Create a base message]] (n8n_id `VQPaemuwy6FdMa9L`) — node "Post Slack base message" (id `11110000-0000-4000-8000-000000000013`)
+- [[slack-send-notification-with-attachment|Slack - Send notification with attachment]] (n8n_id `Ldmb0W2Y8CtaZtTM`) — node "Post evidence to Slack" (id `11110000-0000-4000-8000-000000000015`)
 
 ## Used by (workflows)
 

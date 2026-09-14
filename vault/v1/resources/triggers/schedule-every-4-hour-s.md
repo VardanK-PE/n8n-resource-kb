@@ -18,6 +18,7 @@ auto_generated_at: 2026-08-28T21:31:11Z
 
 ## Used by
 
+- [[../../workflows/curbwaste-merchant-mcc4900-notification|Curbwaste Merchant MCC4900 Notification]] — node "Every 4 hours" (id `22220000-0000-4000-8000-000000000001`)
 - [[../../workflows/elavon-ach-enrollment-project|Elavon ACH Enrollment Project]] — node "Schedule Trigger" (id `c02e695e-0f03-4c87-b0e9-995f31ba2d75`)
 - [[../../workflows/elavon-ach-enrollment-project-backup-mar-6-2026|Elavon ACH Enrollment Project - Backup Mar 6, 2026]] — node "Schedule Trigger" (id `24ff3d97-498e-4496-ab01-2f31700ef8f3`)
 - [[../../workflows/failed-ach-notifications|Failed ACH notifications]] — node "Schedule Trigger" (id `7357792e-0c98-4128-ac89-51b3e706de47`)
