@@ -1,0 +1,525 @@
+{
+  "name": "Elavon API - List Disputes",
+  "nodes": [
+    {
+      "id": "44440000-0000-4000-8000-000000000001",
+      "name": "When Executed by Another Workflow",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -900,
+        0
+      ],
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "use_prod",
+              "type": "boolean"
+            },
+            {
+              "name": "window_days",
+              "type": "number"
+            },
+            {
+              "name": "mids",
+              "type": "array"
+            },
+            {
+              "name": "access_token"
+            },
+            {
+              "name": "passthrough_item",
+              "type": "object"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "44440000-0000-4000-8000-000000000002",
+      "name": "Resolve Window",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -680,
+        0
+      ],
+      "parameters": {
+        "jsCode": "/*\n * Work out the search window and decide whether we need the database.\n *\n * The window is a fixed trailing period, not \"since last run\" - see the header\n * comment in the build script. Respond-by runs about 90 days, so the default\n * comfortably covers a case from open to close.\n */\nconst inp = $input.first().json || {};\n\nconst windowDays = Number(inp.window_days) > 0 ? Number(inp.window_days) : 180;\n\nfunction ymd(d) {\n  return d.toISOString().slice(0, 10);\n}\n\nconst today = new Date();\nconst from = new Date(today.getTime() - windowDays * 86400000);\n\n/*\n * A null MID would be sent as the literal string \"null\" and Elavon rejects the\n * ENTIRE search with a 400 - one bad MID blanks every result. The SQL excludes\n * them and this filter catches anything that slips through.\n */\nfunction cleanMids(list) {\n  const out = [];\n  for (const mid of (list || [])) {\n    const s = String(mid == null ? '' : mid).trim();\n    if (s && s !== 'null' && s !== 'undefined') out.push(s);\n  }\n  return out;\n}\n\nconst supplied = cleanMids(inp.mids);\n\nreturn [{\n  json: {\n    use_prod: inp.use_prod === true,\n    windowDays: windowDays,\n    fromDate: ymd(from),\n    toDate: ymd(today),\n    suppliedMids: supplied,\n    midsSupplied: supplied.length > 0,\n    access_token: String(inp.access_token || ''),\n    passthrough_item: inp.passthrough_item || {},\n  }\n}];"
+      }
+    },
+    {
+      "id": "44440000-0000-4000-8000-000000000003",
+      "name": "MIDs supplied?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -460,
+        0
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "mids-supplied",
+              "leftValue": "={{ $json.midsSupplied }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "44440000-0000-4000-8000-000000000004",
+      "name": "Get Elavon MIDs",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        -240,
+        140
+      ],
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT DISTINCT btrim(mpd.processor_merchant_id) AS mid\nFROM merchant_processor_detail mpd\nWHERE mpd.processor_id = 'elavon'\n  AND mpd.processor_merchant_id IS NOT NULL\n  AND btrim(mpd.processor_merchant_id) <> ''\nORDER BY 1;",
+        "options": {}
+      },
+      "credentials": {
+        "postgres": {
+          "id": "7298gzDHlw0sSdFs",
+          "name": "Postgres Staging Sandbox"
+        }
+      },
+      "alwaysOutputData": true
+    },
+    {
+      "id": "44440000-0000-4000-8000-000000000005",
+      "name": "Build Search Plan",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -20,
+        0
+      ],
+      "parameters": {
+        "jsCode": "/*\n * Turn the MID list into page-1 search requests for `Elavon API - Request`.\n *\n * MIDs go in as an ARRAY - verified: an array works, a comma-separated string\n * is accepted and then silently ignored. They are batched because the array\n * length Elavon tolerates is not documented.\n *\n * No `disputePhaseStatus` filter. Earlier dashboard work filtered to open cases\n * because it only counted a live queue; we need closed cases too, or we could\n * never write MERCHANT_WON, MERCHANT_LOST or MERCHANT_ACCEPTED.\n */\nconst cfg = $('Resolve Window').first().json;\n\nlet mids = cfg.suppliedMids || [];\nif (!cfg.midsSupplied) {\n  const rows = $input.all().map((i) => i.json || {});\n  mids = [];\n  for (const r of rows) {\n    const s = String(r.mid == null ? '' : r.mid).trim();\n    if (s && s !== 'null' && s !== 'undefined') mids.push(s);\n  }\n}\n\nif (!mids.length) {\n  throw new Error(\n    'Elavon dispute sync found no Elavon MIDs to search. Either the database '\n    + 'has no merchant_processor_detail rows with processor_id = \\'elavon\\', or '\n    + 'the `mids` input was empty. Refusing to run, because a search with no '\n    + 'MIDs would look like \"no disputes\" and advance the sync quietly.'\n  );\n}\n\nconst batches = [];\nfor (let i = 0; i < mids.length; i += 100) {\n  batches.push(mids.slice(i, i + 100));\n}\n\nreturn batches.map((batch, idx) => ({\n  json: {\n    batchIndex: idx,\n    use_prod: cfg.use_prod,\n    method: 'POST',\n    path: '/disputes/search',\n    body: {\n      receivedDate: { fromDate: cfg.fromDate, toDate: cfg.toDate },\n      merchantId: batch,\n      pageMeta: {\n        pageSize: 200,\n        pageNumber: 1,\n        sortBy: 'expirationDate',\n        sortOrder: 'ascending',\n      },\n    },\n    query: {},\n    // Only the search returns pageMeta. If a body without it comes back, it is\n    // another endpoint's response and the request layer rejects it.\n    expect_field: 'pageMeta',\n    // A batch of MIDs with no disputes is ordinary, not a failure.\n    allow_no_match: true,\n    access_token: cfg.access_token,\n    passthrough_item: { batchIndex: idx, pageNumber: 1 },\n  }\n}));"
+      }
+    },
+    {
+      "id": "44440000-0000-4000-8000-000000000006",
+      "name": "Search Page 1",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.3,
+      "position": [
+        200,
+        0
+      ],
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "cfoYK5Jvg1yz1CA6",
+          "mode": "list",
+          "cachedResultName": "Elavon API - Request"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "use_prod": "={{ $json.use_prod }}",
+            "method": "={{ $json.method }}",
+            "path": "={{ $json.path }}",
+            "body": "={{ $json.body }}",
+            "query": "={{ $json.query }}",
+            "expect_field": "={{ $json.expect_field }}",
+            "allow_no_match": "={{ $json.allow_no_match }}",
+            "access_token": "={{ $json.access_token }}",
+            "passthrough_item": "={{ $json.passthrough_item }}"
+          },
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {
+          "waitForSubWorkflow": true
+        }
+      }
+    },
+    {
+      "id": "44440000-0000-4000-8000-000000000007",
+      "name": "Plan Remaining Pages",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        420,
+        0
+      ],
+      "parameters": {
+        "jsCode": "/*\n * Page 1 of each batch told us how many pages that batch has. Emit requests for\n * the rest.\n *\n * Elavon caps pageSize at 200 - undocumented, 250 answers 400.4634.4108 - so\n * more than one page is normal once a window holds many cases.\n *\n * This node always emits at least one item. A node that receives nothing is\n * skipped in n8n, and so is everything downstream of it, which would quietly\n * drop the whole run when there happens to be only one page.\n */\nconst cfg = $('Resolve Window').first().json;\nconst plan = $('Build Search Plan').all().map((i) => i.json);\nconst firstPages = $input.all().map((i) => i.json || {});\n\nconst more = [];\nfor (const res of firstPages) {\n  const pt = res.passthrough_item || {};\n  const batchIndex = Number(pt.batchIndex);\n  if (!Number.isInteger(batchIndex)) continue;\n\n  // noMatch means this batch of MIDs has no disputes at all.\n  if (res.noMatch) continue;\n\n  const meta = (res.data || {}).pageMeta || {};\n  let pageCount = Number(meta.pageCount) || 1;\n  if (pageCount > 25) pageCount = 25;\n\n  const base = plan[batchIndex];\n  if (!base) continue;\n\n  for (let page = 2; page <= pageCount; page += 1) {\n    more.push({\n      json: {\n        hasMore: true,\n        batchIndex: batchIndex,\n        use_prod: base.use_prod,\n        method: base.method,\n        path: base.path,\n        body: Object.assign({}, base.body, {\n          pageMeta: Object.assign({}, base.body.pageMeta, { pageNumber: page }),\n        }),\n        query: {},\n        expect_field: base.expect_field,\n        allow_no_match: true,\n        access_token: cfg.access_token,\n        passthrough_item: { batchIndex: batchIndex, pageNumber: page },\n      }\n    });\n  }\n}\n\nif (!more.length) {\n  return [{ json: { hasMore: false } }];\n}\nreturn more;"
+      }
+    },
+    {
+      "id": "44440000-0000-4000-8000-000000000008",
+      "name": "More pages?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        640,
+        0
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "has-more",
+              "leftValue": "={{ $json.hasMore }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "44440000-0000-4000-8000-000000000009",
+      "name": "Search Remaining Pages",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.3,
+      "position": [
+        860,
+        -140
+      ],
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "cfoYK5Jvg1yz1CA6",
+          "mode": "list",
+          "cachedResultName": "Elavon API - Request"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "use_prod": "={{ $json.use_prod }}",
+            "method": "={{ $json.method }}",
+            "path": "={{ $json.path }}",
+            "body": "={{ $json.body }}",
+            "query": "={{ $json.query }}",
+            "expect_field": "={{ $json.expect_field }}",
+            "allow_no_match": "={{ $json.allow_no_match }}",
+            "access_token": "={{ $json.access_token }}",
+            "passthrough_item": "={{ $json.passthrough_item }}"
+          },
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {
+          "waitForSubWorkflow": true
+        }
+      }
+    },
+    {
+      "id": "44440000-0000-4000-8000-00000000000a",
+      "name": "Collect Rows",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1080,
+        0
+      ],
+      "parameters": {
+        "jsCode": "/*\n * Gather every row from every page of every batch.\n *\n * `Search Remaining Pages` only runs when some batch had more than one page, so\n * reading it has to tolerate the node not having executed.\n */\nfunction rowsFrom(items) {\n  const out = [];\n  for (const it of items) {\n    const res = it.json || {};\n    if (res.noMatch) continue;\n    for (const row of ((res.data || {})._embedded || [])) out.push(row);\n  }\n  return out;\n}\n\nconst rows = rowsFrom($('Search Page 1').all());\n\ntry {\n  for (const row of rowsFrom($('Search Remaining Pages').all())) rows.push(row);\n} catch (e) {\n  // Single page across all batches - nothing more to add.\n}\n\n/*\n * The overlap between pages means a case can appear twice. Keep one row per\n * dispute, preferring the newest phase timestamp.\n */\nconst byId = new Map();\nfor (const r of rows) {\n  const id = String(r.disputeId || r.externalDisputeId || '');\n  if (!id) continue;\n  const prev = byId.get(id);\n  if (!prev || String(r.disputePhaseTimeStamp || '') > String(prev.disputePhaseTimeStamp || '')) {\n    byId.set(id, r);\n  }\n}\n\nreturn [{ json: { rows: Array.from(byId.values()), rowCount: byId.size } }];"
+      }
+    },
+    {
+      "id": "44440000-0000-4000-8000-00000000000b",
+      "name": "Get Sync State",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        1300,
+        0
+      ],
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "PLACEHOLDER_SYNC_STATE_TABLE_ID",
+          "mode": "list",
+          "cachedResultName": "Dispute - API Sync State"
+        },
+        "filters": {
+          "conditions": []
+        },
+        "limit": 10000
+      },
+      "alwaysOutputData": true
+    },
+    {
+      "id": "44440000-0000-4000-8000-00000000000c",
+      "name": "Detect Changes",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1520,
+        0
+      ],
+      "parameters": {
+        "jsCode": "/*\n * The change gate. Only disputes that actually moved go on to Tasks 5-7, where\n * each case costs four serialised Elavon calls.\n *\n * The fingerprint is the phase triple, because that triple is what decides the\n * PayEngine status. Anything else changing on a dispute does not change what we\n * would write.\n *\n * Quarantined cases are re-emitted even when unchanged. An unknown status sits\n * in AWAITING_CHARGEBACK_DETAILS and has to keep alerting until a human\n * resolves it - going quiet would let the respond-by date pass.\n */\nconst rows = ($('Collect Rows').first().json || {}).rows || [];\n\nconst seen = new Map();\nfor (const it of $input.all()) {\n  const r = it.json || {};\n  // An empty table emits one item with no columns on it.\n  if (!r || !r.dispute_id) continue;\n  seen.set(String(r.dispute_id), r);\n}\n\nfunction fingerprint(row) {\n  return [\n    String(row.disputePhase || ''),\n    String(row.disputePhaseStatus || ''),\n    String(row.disputePhaseTimeStamp || ''),\n  ].join('|');\n}\n\nconst work = [];\nlet unchanged = 0;\nlet quarantineRetries = 0;\n\nfor (const row of rows) {\n  const id = String(row.disputeId || row.externalDisputeId || '');\n  if (!id) continue;\n\n  const fp = fingerprint(row);\n  const prev = seen.get(id);\n  const changed = !prev || String(prev.fingerprint || '') !== fp;\n  const quarantined = !!(prev && (prev.quarantined === true || prev.quarantined === 'true'));\n\n  if (!changed && !quarantined) {\n    unchanged += 1;\n    continue;\n  }\n  if (!changed && quarantined) quarantineRetries += 1;\n\n  work.push({\n    // Everything Task 5 needs to address the case. A dispute has no\n    // addressable URL - all of these come off the search row.\n    disputeId: id,\n    externalDisputeId: row.externalDisputeId || null,\n    customerLocationEnterpriseId: row.customerLocationEnterpriseId || null,\n    merchantId: row.merchantId != null ? String(row.merchantId) : null,\n    disputePhase: row.disputePhase || null,\n    disputePhaseStatus: row.disputePhaseStatus || null,\n    disputePhaseTimeStamp: row.disputePhaseTimeStamp || null,\n\n    isNew: !prev,\n    wasQuarantined: quarantined,\n    retryCount: prev ? Number(prev.retry_count || 0) : 0,\n    fingerprint: fp,\n    previousFingerprint: prev ? String(prev.fingerprint || '') : null,\n\n    // Carried so Task 7 does not have to re-read the search row.\n    searchRow: row,\n  });\n}\n\nconst cfg = $('Resolve Window').first().json;\n\nreturn [{\n  json: {\n    work: work,\n    summary: {\n      window: { fromDate: cfg.fromDate, toDate: cfg.toDate, days: cfg.windowDays },\n      found: rows.length,\n      changed: work.length,\n      unchanged: unchanged,\n      quarantineRetries: quarantineRetries,\n      newCases: work.filter((w) => w.isNew).length,\n    },\n    access_token: cfg.access_token,\n    passthrough_item: cfg.passthrough_item,\n  }\n}];"
+      }
+    },
+    {
+      "id": "44440000-0000-4000-8000-00000000000d",
+      "name": "Final Output",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1740,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "44440000-0000-4000-8000-00000000000e",
+      "name": "When clicking 'Execute workflow'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1120,
+        220
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "44440000-0000-4000-8000-00000000000f",
+      "name": "Test Inputs",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -900,
+        220
+      ],
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "{\n  \"use_prod\": false,\n  \"window_days\": 180,\n  \"mids\": [\n    \"REPLACE_WITH_A_REAL_ELAVON_MID\"\n  ],\n  \"access_token\": \"\",\n  \"passthrough_item\": {}\n}",
+        "options": {}
+      }
+    },
+    {
+      "id": "44440000-0000-4000-8000-000000000010",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -1160,
+        -420
+      ],
+      "parameters": {
+        "width": 1000,
+        "height": 330,
+        "content": "## Elavon API - List Disputes\nDiscovery step. Answers \"which disputes need work this run?\" and nothing else.\n\n**The window is a fixed trailing period, not a watermark.** Elavon's search filters on `receivedDate`, which is not a \"last changed\" field. A watermark on it would only find newly received disputes, so a case that moves to Declined months after it opened would never be seen and we could never write a terminal status.\n\n**Change detection costs no extra calls.** The search row already carries the phase triple (`disputePhase`, `disputePhaseStatus`, `disputePhaseTimeStamp`), and that triple is what decides the PayEngine status. It is fingerprinted and compared against `Dispute - API Sync State`. Only changed cases go downstream, where each one costs four serialised Elavon calls.\n\n**Quarantined cases are re-emitted even when unchanged**, so an unknown status keeps alerting until a human resolves it.\n\n**This workflow only reads the state table.** Rows are written after a dispute is really upserted (Task 8). Writing here would lose the case if the upsert then failed.\n\n**MIDs come from `merchant_processor_detail`**, not from the `Elavon - MIDs` data table - that one is fed from the BI spreadsheet and has known gaps. Pass `mids` explicitly to skip the database, which is how this is tested against sandbox MIDs."
+      }
+    }
+  ],
+  "connections": {
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "Resolve Window",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking 'Execute workflow'": {
+      "main": [
+        [
+          {
+            "node": "Test Inputs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Test Inputs": {
+      "main": [
+        [
+          {
+            "node": "Resolve Window",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Resolve Window": {
+      "main": [
+        [
+          {
+            "node": "MIDs supplied?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MIDs supplied?": {
+      "main": [
+        [
+          {
+            "node": "Build Search Plan",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get Elavon MIDs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Elavon MIDs": {
+      "main": [
+        [
+          {
+            "node": "Build Search Plan",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Search Plan": {
+      "main": [
+        [
+          {
+            "node": "Search Page 1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search Page 1": {
+      "main": [
+        [
+          {
+            "node": "Plan Remaining Pages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Plan Remaining Pages": {
+      "main": [
+        [
+          {
+            "node": "More pages?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "More pages?": {
+      "main": [
+        [
+          {
+            "node": "Search Remaining Pages",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Collect Rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search Remaining Pages": {
+      "main": [
+        [
+          {
+            "node": "Collect Rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Collect Rows": {
+      "main": [
+        [
+          {
+            "node": "Get Sync State",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Sync State": {
+      "main": [
+        [
+          {
+            "node": "Detect Changes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Detect Changes": {
+      "main": [
+        [
+          {
+            "node": "Final Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "callerPolicy": "workflowsFromSameOwner",
+    "availableInMCP": false,
+    "errorWorkflow": "KBN9sWK9juozY766"
+  }
+}
