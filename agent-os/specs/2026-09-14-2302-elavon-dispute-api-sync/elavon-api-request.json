@@ -1,0 +1,299 @@
+{
+  "name": "Elavon API - Request",
+  "nodes": [
+    {
+      "id": "33330000-0000-4000-8000-000000000001",
+      "name": "When Executed by Another Workflow",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -460,
+        0
+      ],
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "use_prod",
+              "type": "boolean"
+            },
+            {
+              "name": "method"
+            },
+            {
+              "name": "path"
+            },
+            {
+              "name": "body",
+              "type": "object"
+            },
+            {
+              "name": "query",
+              "type": "object"
+            },
+            {
+              "name": "expect_field"
+            },
+            {
+              "name": "allow_no_match",
+              "type": "boolean"
+            },
+            {
+              "name": "access_token"
+            },
+            {
+              "name": "passthrough_item",
+              "type": "object"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "33330000-0000-4000-8000-000000000002",
+      "name": "Resolve Environment",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -240,
+        0
+      ],
+      "parameters": {
+        "jsCode": "/*\n * Resolve the host and normalise the caller's inputs.\n *\n * There is no Elavon production host or credential yet - only the sandbox. We\n * fail loudly on use_prod rather than quietly calling sandbox, because a sync\n * that believes it is in production but reads sandbox data would create real\n * disputes from test rows.\n */\nconst inp = $input.first().json || {};\n\nif (inp.use_prod === true) {\n  throw new Error(\n    'Elavon production host and credentials are not configured yet. ' +\n    'Only the sandbox is available. Call with use_prod = false.'\n  );\n}\n\nconst method = String(inp.method || 'GET').toUpperCase();\nif (!['GET', 'POST', 'PUT', 'PATCH'].includes(method)) {\n  throw new Error('Elavon request: unsupported method \"' + method + '\".');\n}\n\n// Accept a path with or without the API base prefix, and with or without a\n// leading slash. Callers should pass '/disputes/search'.\nlet path = String(inp.path || '').trim();\nif (!path) throw new Error('Elavon request: `path` is required.');\nif (!path.startsWith('/')) path = '/' + path;\nif (!path.startsWith(\"/service/dispute-management/v2\")) path = \"/service/dispute-management/v2\" + path;\n\nreturn [{\n  json: {\n    elavonHost: \"https://sandbox.elavonapi.com\",\n    method: method,\n    path: path,\n    body: inp.body || null,\n    query: inp.query || null,\n    // Response-shape check. Elavon can return one endpoint's body for another\n    // (see the request node), so the caller names a field only its own\n    // endpoint returns. Empty string disables the check.\n    expectField: String(inp.expect_field || ''),\n    // A search that matches nothing is an ordinary state for most callers.\n    allowNoMatch: inp.allow_no_match === true,\n    accessToken: String(inp.access_token || ''),\n    needToken: String(inp.access_token || '') === '',\n    passthrough_item: inp.passthrough_item || {},\n  }\n}];"
+      }
+    },
+    {
+      "id": "33330000-0000-4000-8000-000000000003",
+      "name": "Need a token?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -20,
+        0
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "need-token",
+              "leftValue": "={{ $json.needToken }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "33330000-0000-4000-8000-000000000004",
+      "name": "Elavon Token",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        200,
+        -120
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $json.elavonHost }}/oauth2/client-credentials/v2/token",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Correlation-ID",
+              "value": "={{ $execution.id }}-token"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "form-urlencoded",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "grant_type",
+              "value": "client_credentials"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "w4wa61x6UmWXzrlF",
+          "name": "Elavon Disputes API (Sandbox)"
+        }
+      }
+    },
+    {
+      "id": "33330000-0000-4000-8000-000000000005",
+      "name": "Elavon Request",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        420,
+        0
+      ],
+      "parameters": {
+        "jsCode": "/*\n * The one place the dispute sync talks to Elavon.\n *\n * Quirks handled here, each verified against the sandbox:\n *\n *  - A search matching NOTHING answers HTTP 400 carrying error code\n *    '404.1567.4040 Resource Not Found'. It does NOT return an empty set. The\n *    identical body returns 200 for a MID that does have disputes. So that one\n *    prefix maps onto `noMatch`, while every other failure still throws.\n *  - Elavon can return ONE ENDPOINT'S BODY FOR ANOTHER when several calls are\n *    in flight. Two defences: callers must invoke this sub-workflow serially,\n *    and `expectField` names a field only the intended endpoint returns.\n *  - It is flaky enough that one retry is standard.\n *  - 'Request failed with status code 400' says nothing on its own, so\n *    describeError carries Elavon's own error body into the thrown message.\n *\n * This node makes exactly ONE call. Serialisation is the caller's job.\n */\nconst cfg = $('Resolve Environment').first().json;\n\n// The token node only runs when the caller did not supply a token, so reading\n// it has to tolerate the node not having executed.\nlet token = cfg.accessToken;\nif (!token) {\n  try {\n    token = ($('Elavon Token').first().json || {}).access_token || '';\n  } catch (e) {\n    token = '';\n  }\n}\nif (!token) {\n  throw new Error('Elavon request: no access token available.');\n}\n\nfunction correlationId() {\n  return [8, 4, 4, 4, 12]\n    .map((n) => Array.from({ length: n }, () => '0123456789abcdef'[Math.floor(Math.random() * 16)]).join(''))\n    .join('-');\n}\n\nfunction headers() {\n  return {\n    Authorization: 'Bearer ' + token,\n    Accept: 'application/json',\n    'Content-Type': 'application/json',\n    'Correlation-ID': correlationId(),\n    'tenant-ID': 'master',\n  };\n}\n\nfunction queryString(q) {\n  if (!q) return '';\n  const parts = [];\n  for (const key of Object.keys(q)) {\n    const v = q[key];\n    if (v === null || v === undefined || v === '') continue;\n    parts.push(encodeURIComponent(key) + '=' + encodeURIComponent(v));\n  }\n  return parts.length ? '?' + parts.join('&') : '';\n}\n\nfunction isNoMatch(e) {\n  const res = e && e.response;\n  if (!res || Number(res.status) !== 400) return false;\n  const body = res.data || res.body || {};\n  return ((body && body.errors) || []).some(\n    (x) => String((x && x.code) || '').indexOf('404.') === 0);\n}\n\nfunction describeError(e) {\n  const res = e && e.response;\n  const body = res && (res.data || res.body);\n  return ((e && e.message) || String(e))\n    + (res && res.status ? ' [http ' + res.status + ']' : '')\n    + (body ? ' ' + JSON.stringify(body).slice(0, 400) : '');\n}\n\n/*\n * Arrow function on purpose: it captures the node's `this`, which a plain\n * function declaration would lose.\n */\nconst rawRequest = (opts) => this.helpers.httpRequest(opts);\n\n/*\n * Two attempts, no delay between them - the same shape the sandbox work used.\n * Timers are not dependable inside the Code sandbox, so this deliberately does\n * not back off.\n */\nasync function callOnce(opts) {\n  let last = null;\n  for (let attempt = 0; attempt < 2; attempt += 1) {\n    try {\n      return { noMatch: false, data: await rawRequest(opts) };\n    } catch (e) {\n      if (isNoMatch(e)) return { noMatch: true, data: null };\n      last = e;\n    }\n  }\n  throw new Error('Elavon ' + opts.method + ' ' + cfg.path + ' failed: ' + describeError(last));\n}\n\n/*\n * Elavon also reports failure inside a 200 body, so a successful HTTP status is\n * not enough on its own.\n */\nfunction guard(res) {\n  if (!res || typeof res !== 'object') return res;\n  const meta = res.pageMeta || {};\n  if (meta.errors) {\n    throw new Error('Elavon ' + cfg.path + ' failed: ' + JSON.stringify(meta.errors));\n  }\n  if (res.code || res.errors) {\n    throw new Error('Elavon ' + cfg.path + ' failed: '\n      + JSON.stringify(res.errors || res.message || res.code));\n  }\n  return res;\n}\n\nfunction validateShape(res) {\n  if (!cfg.expectField) return res;\n  if (!res || typeof res !== 'object' || !Object.prototype.hasOwnProperty.call(res, cfg.expectField)) {\n    throw new Error(\n      'Elavon ' + cfg.path + ' returned an unexpected body: field \"'\n      + cfg.expectField + '\" is missing. This is how a crossed response from '\n      + 'another endpoint shows up. Keys seen: '\n      + Object.keys(res || {}).join(', ')\n    );\n  }\n  return res;\n}\n\nconst url = cfg.elavonHost + cfg.path + queryString(cfg.query);\n\nconst result = await callOnce({\n  method: cfg.method,\n  url: url,\n  headers: headers(),\n  body: cfg.body || undefined,\n  json: true,\n});\n\nif (result.noMatch && !cfg.allowNoMatch) {\n  throw new Error(\n    'Elavon ' + cfg.method + ' ' + cfg.path + ' matched nothing, and the caller '\n    + 'did not set allow_no_match. Treating this as an error so a silent gap in '\n    + 'the sync is impossible.'\n  );\n}\n\nconst data = result.noMatch ? null : validateShape(guard(result.data));\n\nreturn [{\n  json: {\n    ok: true,\n    noMatch: result.noMatch,\n    method: cfg.method,\n    requestUrl: url,\n    data: data,\n    // Handed back so the caller can thread it through the rest of the run\n    // instead of paying for a token on every call.\n    access_token: token,\n    passthrough_item: cfg.passthrough_item,\n  }\n}];"
+      }
+    },
+    {
+      "id": "33330000-0000-4000-8000-000000000006",
+      "name": "Final Output",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        640,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "33330000-0000-4000-8000-000000000007",
+      "name": "When clicking 'Execute workflow'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -680,
+        220
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "33330000-0000-4000-8000-000000000008",
+      "name": "Test Inputs",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -460,
+        220
+      ],
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "{\n  \"use_prod\": false,\n  \"method\": \"POST\",\n  \"path\": \"/disputes/search\",\n  \"body\": {\n    \"receivedDate\": {\n      \"fromDate\": \"2025-01-01\",\n      \"toDate\": \"2025-12-31\"\n    },\n    \"merchantId\": [\n      \"REPLACE_WITH_A_REAL_ELAVON_MID\"\n    ],\n    \"pageMeta\": {\n      \"pageSize\": 200,\n      \"pageNumber\": 1,\n      \"sortBy\": \"expirationDate\",\n      \"sortOrder\": \"ascending\"\n    }\n  },\n  \"query\": {},\n  \"expect_field\": \"pageMeta\",\n  \"allow_no_match\": true,\n  \"access_token\": \"\",\n  \"passthrough_item\": {}\n}",
+        "options": {}
+      }
+    },
+    {
+      "id": "33330000-0000-4000-8000-000000000009",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -720,
+        -300
+      ],
+      "parameters": {
+        "width": 900,
+        "height": 240,
+        "content": "## Elavon API - Request\nShared auth and call layer for the Elavon dispute sync. Every Elavon call goes through here.\n\n**Callers must invoke this serially.** Elavon can return one endpoint's body for another when several calls are in flight. `expect_field` names a field only the intended endpoint returns, and the call fails if it is missing.\n\n**`allow_no_match`** \u2014 a search that matches nothing comes back as HTTP 400 with error code `404.1567.4040`, not as an empty set. Set this to `true` and read the `noMatch` flag on the output.\n\n**`access_token`** \u2014 optional. Leave empty and this workflow fetches one. The token is always returned on the output, so a caller can fetch once and thread it through the rest of the run.\n\n**Production is not wired up.** Only the sandbox host and credential exist. `use_prod: true` throws on purpose."
+      }
+    }
+  ],
+  "connections": {
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "Resolve Environment",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking 'Execute workflow'": {
+      "main": [
+        [
+          {
+            "node": "Test Inputs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Test Inputs": {
+      "main": [
+        [
+          {
+            "node": "Resolve Environment",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Resolve Environment": {
+      "main": [
+        [
+          {
+            "node": "Need a token?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Need a token?": {
+      "main": [
+        [
+          {
+            "node": "Elavon Token",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Elavon Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Elavon Token": {
+      "main": [
+        [
+          {
+            "node": "Elavon Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Elavon Request": {
+      "main": [
+        [
+          {
+            "node": "Final Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "callerPolicy": "workflowsFromSameOwner",
+    "availableInMCP": false,
+    "errorWorkflow": "KBN9sWK9juozY766"
+  }
+}
